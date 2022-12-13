@@ -1,0 +1,304 @@
+Label: Content
+
+Type: Tech-1
+
+Repos:
+
+- apache/jackrabbit
+- ModeShape/modeshape
+
+Label: Document
+
+Type: Tech-1
+
+Repos:
+
+- mongodb/mongo
+- databricks/dbt-databricks
+- couchbase/couchbase-lite-ios
+- apache/couchdb
+- realm/realm-cocoa
+- aerospike/aerospike-server
+- openlink/virtuoso-opensource
+- arangodb/arangodb
+- orientechnologies/orientdb
+- oracle/nosql-go-sdk
+- ravendb/ravendb
+- pouchdb/pouchdb
+- rethinkdb/rethinkdb
+- apache/drill
+- apple/foundationdb
+- beardedeagle/mnesiac
+- mbdavid/LiteDB
+- bigchaindb/bigchaindb
+- AlaSQL/alasql
+- percona/percona-server-mongodb
+- techfort/LokiJS
+- ydb-platform/ydb
+- SequoiaDB/SequoiaDB
+- surrealdb/surrealdb
+- Softmotions/ejdb
+- ArcadeData/arcadedb
+- appy-one/acebase
+- xtdb/xtdb
+- sachin-sinha/BangDB
+- iboxdb/ftserver
+- Alachisoft/NosDB
+- torodb/server
+- DevrexLabs/OrigoDB
+- mgholam/RaptorDB-Document
+- LinkedInAttic/sensei
+- priitj/whitedb
+- oberasoftware/jasdb
+
+Label: Event
+
+Type: Tech-1
+
+Repos:
+
+- EventStore/EventStore
+- NEventStore/NEventStore
+
+Label: Graph
+
+Type: Tech-1
+
+Repos:
+
+- neo4j/neo4j
+- JanusGraph/janusgraph
+- dgraph-io/dgraph
+- apache/giraph
+- vaticle/typedb
+- vesoft-inc/nebula
+- blazegraph/database
+- memgraph/memgraph
+- microsoft/GraphEngine
+- apache/incubator-hugegraph
+- apache/tinkerpop
+- twitter-archive/flockdb
+- fluree/db
+- terminusdb/terminusdb
+- hypergraphdb/hypergraphdb
+- rayokota/hgraphdb
+- bitnine-oss/agensgraph
+
+Label: Key-value
+
+Type: Tech-1
+
+Repos:
+
+- redis/redis
+- memcached/memcached
+- hazelcast/hazelcast
+- etcd-io/etcd
+- ehcache/ehcache3
+- apache/ignite
+- basho/riak_kv
+- facebook/rocksdb
+- google/leveldb
+- infinispan/infinispan
+- berkeleydb/libdb
+- LMDB/lmdb
+- apache/geode
+- tarantool/tarantool
+- Alachisoft/NCache
+- zopefoundation/ZODB
+- hibari/hibari
+- etcd-io/bbolt
+- jankotek/mapdb
+- scalaris-team/scalaris
+- Snapchat/KeyDB
+- hthetiot/Tokyo-Tyrant
+- voldemort/voldemort
+- speedb-io/speedb
+- codenotary/immudb
+- AlticeLabsProjects/kyoto
+- tomp2p/TomP2P
+- ledisdb/ledisdb
+- reverbrain/elliptics
+- rescrv/HyperLevelDB
+- STSSoft/STSdb4
+- cruppstahl/upscaledb
+- dgraph-io/badger
+- dlitz/resin
+- simerplaha/SwayDB
+- bergdb/bergdb
+- cachelot/cachelot
+- datajaguar/jaguardb
+- estraier/tkrzw
+
+Label: Multivalue
+
+Type: Tech-1
+
+Repos:
+
+- cran/scidb
+- dioptre/rasdaman
+- gregjurman/openqm
+
+Label: Native XML
+
+Type: Tech-1
+
+Repos:
+
+- BaseXdb/basex
+- sedna/sedna
+- eXist-db/exist
+
+Label: Object oriented
+
+Type: Tech-1
+
+Repos:
+
+- iboxdb/db4o-gpl
+- objectbox/objectbox-java
+- The-Alchemist/perst
+
+Label: RDF
+
+Type: Tech-1
+
+Repos:
+
+- apache/jena
+- eclipse/rdf4j
+- 4store/4store
+- esarbanis/strabon
+- dajobe/librdf
+- njh/redstore
+- quoll/mulgara
+- BrightstarDB/BrightstarDB
+
+Label: Relational
+
+Type: Tech-1
+
+Repos:
+
+- mysql/mysql-server
+- postgres/postgres
+- sqlite/sqlite
+- MariaDB/server
+- apache/hive
+- FirebirdSQL/firebird
+- apache/spark
+- apache/impala
+- prestodb/presto
+- ClickHouse/ClickHouse
+- greenplum-db/gpdb
+- h2database/h2database
+- cockroachdb/cockroach
+- apache/derby
+- ryenus/hsqldb
+- yugabyte/yugabyte-db
+- trinodb/trino
+- pingcap/tidb
+- percona/percona-server
+- citusdata/citus
+- apache/phoenix
+- heavyai/heavydb
+- MonetDB/MonetDB
+- apache/druid
+- VoltDB/voltdb
+- duckdb/duckdb
+- apache/kylin
+- CUBRID/cubrid
+- apache/hawq
+- ALTIBASE/altibase
+- oceanbase/oceanbase
+- sql-js/sql.js
+- opengauss-mirror/openGauss-server
+- matrixorigin/matrixone
+- crate/crate
+- splicemachine/spliceengine
+- dolthub/dolt
+- Postgres-XL/Postgres-XL
+- apache/tajo
+- apache/trafodion
+- apache/doris
+- apache/pinot
+- bloomberg/comdb2
+- google/lovefield
+- pipelinedb/pipelinedb
+- biokoda/actordb
+- CptTZ/SmallSQL
+- CovenantSQL/CovenantSQL
+- edgelesssys/edgelessdb
+
+Label: Search engine
+
+Type: Tech-1
+
+Repos:
+
+- elastic/elasticsearch
+- apache/solr
+- opensearch-project/OpenSearch
+- sphinxsearch/sphinx
+- xapian/xapian
+- meilisearch/meilisearch
+- milvus-io/milvus
+- semi-technologies/weaviate
+- typesense/typesense
+- qdrant/qdrant
+- manticoresoftware/manticoresearch
+
+Label: Spatial DBMS
+
+Type: Tech-1
+
+Repos:
+
+- postgis/postgis
+- illarionov/SpatiaLite
+- geomesa/geomesa-geoserver
+- orbisgis/h2gis
+
+Label: Time Series
+
+Type: Tech-1
+
+Repos:
+
+- influxdata/influxdb
+- graphite-project/graphite-web
+- prometheus/prometheus
+- timescale/timescaledb
+- oetiker/rrdtool-1.x
+- OpenTSDB/opentsdb
+- taosdata/TDengine
+- griddb/griddb
+- questdb/questd
+- VictoriaMetrics/VictoriaMetrics
+- kairosdb/kairosdb
+- m3db/m3
+- apache/iotdb
+- basho-labs/Riak-TS-JDBC-Driver
+- spotify/heroic
+- SiriDB/siridb-server
+- hawkular/hawkular-metrics
+- rackerlabs/blueflood
+- sitewhere/sitewhere
+- senx/warp10-platform
+- OpenNMS/newts
+- radicalbit/NSDb
+
+Label: Wide column
+
+Type: Tech-1
+
+Repos:
+
+- apache/cassandra
+- apache/hbase
+- apache/accumulo
+- scylladb/scylla
+- strapdata/elassandra
+- kashirin-alex/swc-db
+
