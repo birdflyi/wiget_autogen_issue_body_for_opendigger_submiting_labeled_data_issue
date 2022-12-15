@@ -1,0 +1,17 @@
+Label: Content
+
+Type: Tech-1
+
+Repos:
+
+- 206403 # repo:apache/jackrabbit
+- 1244027 # repo:ModeShape/modeshape
+
+Label: Document
+
+Type: Tech-1
+
+Repos:
+
+- 108110 # repo:mongodb/mongo
+- 419004753 # repo:databricks/dbt-databricks

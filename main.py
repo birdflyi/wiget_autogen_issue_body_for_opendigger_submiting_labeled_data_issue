@@ -17,7 +17,6 @@ print('Add root directory "{}" to system path.'.format(pkg_rootdir))
 
 
 import re
-import numpy as np
 import pandas as pd
 import textwrap
 
@@ -25,11 +24,11 @@ import textwrap
 from script.tree_node import TreeNode
 
 
-def data_preprocessing(df):
+def data_preprocessing(df, filter_has_github_repo_link=True, filter_with_open_source_license=False):
     # add your preprocessing function body here
     # filter
-    open_source_license_valid = lambda x: str(x).lower().startswith('y')
-    github_repo_link_valid = lambda x: pd.notna(x) and x != '-'
+    open_source_license_valid = lambda x: str(x).lower().startswith('y') if filter_with_open_source_license else True  # always return True to ignore filter
+    github_repo_link_valid = lambda x: pd.notna(x) and x != '-' if filter_has_github_repo_link else True
     df = df[(df["open_source_license"].apply(open_source_license_valid)) & (df["github_repo_link"].apply(github_repo_link_valid))]
     # format strs
     trim_open_source_license = lambda x: str(x).split('_')[0] if len(str(x)) else ''
@@ -37,17 +36,23 @@ def data_preprocessing(df):
     return df
 
 
-def get_kdata_vlabel_dict(df, kv_colnames):
-    k_colname, v_colname = tuple(list(kv_colnames))
-    return df.set_index(k_colname)[v_colname].to_dict()
-
-
-def get_klabel_vdatalist_dict(df, kv_colnames, groupby_idx=-1):
+def get_klabel_vdatalist_dict(df, kv_colnames, multi_onehot_label_cols=True):
     kv_colnames = list(kv_colnames)
-    groupby_colname = kv_colnames[groupby_idx]
-    k_colname, v_colname = tuple(kv_colnames[:2])
-    df.set_index(k_colname, inplace=True)
-    return dict(df.groupby(groupby_colname).groups)
+    group_dict = {}
+    if not multi_onehot_label_cols:
+        k_colname, v_colname = kv_colnames[:2]
+        groupby_colname = v_colname
+        df.set_index(k_colname, inplace=True)
+        group_dict = dict(df.groupby(groupby_colname).groups)
+    else:
+        k_colname, v_colnames = kv_colnames[:2]
+        groupby_colnames = list(v_colnames)
+        groupby_idxes = list(range(len(groupby_colnames)))
+        df.set_index(k_colname, inplace=True)
+        for each_groupby_idx in groupby_idxes:
+            groupby_colname = groupby_colnames[each_groupby_idx]
+            group_dict[groupby_colname] = list(df[df[groupby_colname] != 0].index)
+    return group_dict
 
 
 def format_on_keys(s: str, d: dict, strict=False):
@@ -277,13 +282,60 @@ def gen_issue_body_format_str_simple(label_datalist_dict):
     return content_pattern_formated
 
 
+def to_yaml_parts(src_path, tar_dir=None, encoding='utf-8', pre_format_conf=None, filename_reg=None, sep="===="):
+    if not tar_dir:
+        tar_dir = os.path.dirname(src_path)
+    with open(src_path, 'r', encoding=encoding) as f:
+        s = f.read()
+        if pre_format_conf:
+            for reg, repl in dict(pre_format_conf).items():
+                s = re.sub(r'{}'.format(reg), '{}'.format(repl), s)
+        yaml_formatstrs = s.split(sep=sep)
+        yaml_formatstrs = [x.strip() for x in yaml_formatstrs if x.strip() != '']
+        yaml_filename_formatstr_dict = {}
+        suffix = '.yml'
+        for i in range(len(yaml_formatstrs)):
+            yaml_formatstr = yaml_formatstrs[i]
+            if filename_reg:
+                curr_yaml_filename = re.findall(r'{}'.format(filename_reg), yaml_formatstr)[0]
+                curr_yaml_filename = str(curr_yaml_filename).strip().lower()
+                curr_yaml_filename = re.sub(r"[ -]", "_", curr_yaml_filename)
+            else:
+                curr_yaml_filename = str(i)
+            curr_yaml_filename_suffix = curr_yaml_filename + suffix
+            yaml_filename_formatstr_dict[curr_yaml_filename_suffix] = yaml_formatstr
+        for fname, formatstr in yaml_filename_formatstr_dict.items():
+            curr_yaml_path = os.path.join(tar_dir, fname)
+            with open(curr_yaml_path, 'w', encoding=encoding) as f:
+                f.write(formatstr)
+                f.write("\n")
+            print(f"{curr_yaml_path} is saved!")
+    return
+
+
 if __name__ == '__main__':
+    # ------------------------1. Auto generate [data] issue body for opendigger-------------------
     labeled_data_path = './data/DB_EngRank_full_202212.csv'
     df = pd.read_csv(labeled_data_path)
-    df = data_preprocessing(df)
-    kv_colnames = ["github_repo_link", "category_label"]
-    # data_label_pairs = get_kdata_vlabel_dict(df, kv_colnames)
-    label_datalist_dict = get_klabel_vdatalist_dict(df, kv_colnames)
+    df = data_preprocessing(df, filter_has_github_repo_link=True, filter_with_open_source_license=False)
+
+    use_column_configs = ["category_label_col", "multimodel_onehot_label_cols"]
+
+    use_column_config = use_column_configs[1]
+    print(f"use_column_config: {use_column_config}")
+
+    if use_column_config == "category_label_col":
+        kv_colnames = ["github_repo_link", "category_label"]
+        multi_onehot_label_cols = False
+    elif use_column_config == "multimodel_onehot_label_cols":
+        # use multi-model onehot_label_cols
+        onehot_label_cols = ["Content", "Document", "Event", "Graph", "Key-value", "Multivalue", "Native XML", "Navigational", "Object oriented", "RDF", "Relational", "Search engine", "Spatial DBMS", "Time Series", "Wide column"]
+        kv_colnames = ["github_repo_link", onehot_label_cols]
+        multi_onehot_label_cols = True
+    else:
+        raise ValueError(f"ValueError: use_column_config must be in {use_column_configs}, while {use_column_config} is got!")
+
+    label_datalist_dict = get_klabel_vdatalist_dict(df, kv_colnames, multi_onehot_label_cols)
     # print(label_datalist_dict)
 
     # 一个pattern内只能包含同级的信息，两级之间使用"__"分隔，每一级的类型只能是dict, list, str，变量命令格式为：
@@ -316,3 +368,39 @@ if __name__ == '__main__':
     path_issue_body_format_txt = './data/issue_body_format.txt'
     with open(path_issue_body_format_txt, 'w') as f:
         f.write(issue_body_str)
+
+    # ------------------------2. Create data issue in open-digger--------------------------
+    #
+    #  e.g. [X-lab2017/open-digger#1055](https://github.com/X-lab2017/open-digger/issues/1055)
+    #  Save content generated with `/parse-github-id` option as "issue_body_format_parse_github_id.txt"
+    #
+
+    # ----------3. Auto-generate yaml for issue_body_format after parse-github-id----------
+    # issue_body_format_parse_github_id.txt is parsed by open-digger, here are steps should be done before:
+    #   1) Open a issue with content in path_issue_body_format_txt = './data/issue_body_format.txt'
+    #   2) Create an issue comment "/parse-github-id". Bot(github-actions) will reply a parsed format, which will take a while.
+    #   3) Copy the parse-github-id content replyed by bot into file src_path = os.path.join(src_dir, "issue_body_format_parse_github_id.txt")
+    #   4) Set parse_github_id_prepared = True and run
+    #   5) Copy all the generated yaml file into "open-digger/labeled_data/technology/database", replace old files
+    #   6) Open a new pull request to [open-digger](https://github.com/X-lab2017/open-digger) to fix the issue created above.
+    parse_github_id_prepared = False
+    src_dir = os.path.dirname(path_issue_body_format_txt)
+    src_path = os.path.join(src_dir, "issue_body_format_parse_github_id.txt")
+    tar_dir = src_dir
+
+    sep = "#====#"
+    pre_format_conf = {
+        "\n- (.*)": "\n    - \\1",
+        "\n?Label: ([^\n]+)\n": f"\n{sep}name: Database - \\1\n",
+        "\n+": "\n",
+        "Type: Tech-1": "type: Tech-1",
+        "Repos:\n": "data:\n  github_repo:\n",
+        "name: Database - Object oriented": "name: Database - Object Oriented",
+        "name: Database - Search engine": "name: Database - Search Engine",
+        "name: Database - Spatial DBMS": "name: Database - Spatial",
+        "name: Database - Wide column": "name: Database - Wide Column",
+
+    }
+    filename_reg = "name: Database - ([^\n]+)\n"
+    if parse_github_id_prepared:
+        to_yaml_parts(src_path=src_path, tar_dir=tar_dir, pre_format_conf=pre_format_conf, filename_reg=filename_reg, sep=sep)
