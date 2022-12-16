@@ -383,7 +383,7 @@ if __name__ == '__main__':
     #   4) Set parse_github_id_prepared = True and run
     #   5) Copy all the generated yaml file into "open-digger/labeled_data/technology/database", replace old files
     #   6) Open a new pull request to [open-digger](https://github.com/X-lab2017/open-digger) to fix the issue created above.
-    parse_github_id_prepared = False
+    parse_github_id_prepared = True
     src_dir = os.path.dirname(path_issue_body_format_txt)
     src_path = os.path.join(src_dir, "issue_body_format_parse_github_id.txt")
     tar_dir = src_dir
