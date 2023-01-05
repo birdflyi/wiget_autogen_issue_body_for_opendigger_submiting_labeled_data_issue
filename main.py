@@ -313,61 +313,62 @@ def to_yaml_parts(src_path, tar_dir=None, encoding='utf-8', pre_format_conf=None
     return
 
 
-if __name__ == '__main__':
-    # ------------------------1. Auto generate [data] issue body for opendigger-------------------
-    labeled_data_path = './data/DB_EngRank_full_202212.csv'
-    df = pd.read_csv(labeled_data_path)
-    df = data_preprocessing(df, filter_has_github_repo_link=True, filter_with_open_source_license=False)
+def df_getRepoId_to_yaml(labeled_data_path, path_issue_body_format_txt, src_path, tar_dir,
+                         GEN_ISSUE_BODY_RAW_STR=True, PARSE_GITHUB_ID_STR_TO_YAML=True):
+    if GEN_ISSUE_BODY_RAW_STR:
+        # ------------------------1. Auto generate [data] issue body for opendigger-------------------
+        df = pd.read_csv(labeled_data_path)
+        df = data_preprocessing(df, filter_has_github_repo_link=True, filter_with_open_source_license=False)
 
-    use_column_configs = ["category_label_col", "multimodel_onehot_label_cols"]
+        use_column_configs = ["category_label_col", "multimodel_onehot_label_cols"]
 
-    use_column_config = use_column_configs[1]
-    print(f"use_column_config: {use_column_config}")
+        use_column_config = use_column_configs[1]
+        print(f"use_column_config: {use_column_config}")
 
-    if use_column_config == "category_label_col":
-        kv_colnames = ["github_repo_link", "category_label"]
-        multi_onehot_label_cols = False
-    elif use_column_config == "multimodel_onehot_label_cols":
-        # use multi-model onehot_label_cols
-        onehot_label_cols = ["Content", "Document", "Event", "Graph", "Key-value", "Multivalue", "Native XML", "Navigational", "Object oriented", "RDF", "Relational", "Search engine", "Spatial DBMS", "Time Series", "Wide column"]
-        kv_colnames = ["github_repo_link", onehot_label_cols]
-        multi_onehot_label_cols = True
-    else:
-        raise ValueError(f"ValueError: use_column_config must be in {use_column_configs}, while {use_column_config} is got!")
+        if use_column_config == "category_label_col":
+            kv_colnames = ["github_repo_link", "category_label"]
+            multi_onehot_label_cols = False
+        elif use_column_config == "multimodel_onehot_label_cols":
+            # use multi-model onehot_label_cols
+            onehot_label_cols = ["Content", "Document", "Event", "Graph", "Key-value", "Multivalue", "Native XML", "Navigational", "Object oriented", "RDF", "Relational", "Search engine", "Spatial DBMS", "Time Series", "Wide column"]
+            kv_colnames = ["github_repo_link", onehot_label_cols]
+            multi_onehot_label_cols = True
+        else:
+            raise ValueError(f"ValueError: use_column_config must be in {use_column_configs}, while {use_column_config} is got!")
 
-    label_datalist_dict = get_klabel_vdatalist_dict(df, kv_colnames, multi_onehot_label_cols)
-    # print(label_datalist_dict)
+        label_datalist_dict = get_klabel_vdatalist_dict(df, kv_colnames, multi_onehot_label_cols)
+        # print(label_datalist_dict)
 
-    # 一个pattern内只能包含同级的信息，两级之间使用"__"分隔，每一级的类型只能是dict, list, str，变量命令格式为：
-    # [parentalias]__level_dtype:{dict|list|final}_attrrole:{keys|values|elements}[__childdtype:{dict|list|final}][__childalias]
-    # 即 [parentalias]__level_dtype_attrrole[__childdtype][__childalias]
-    # 当下一级有子pattern时，需要给出dtype信息，若不给出则默认到了叶子结点。
-    content_pattern = '''\
-    Label: {__0_dict0_keys__final}
-    
-    Type: Tech-1
-    
-    Repos:
-    
-    {__0_dict0_values__list__each_repo_pat}
-    '''
-    content_pattern = textwrap.dedent(content_pattern)
+        # 一个pattern内只能包含同级的信息，两级之间使用"__"分隔，每一级的类型只能是dict, list, str，变量命令格式为：
+        # [parentalias]__level_dtype:{dict|list|final}_attrrole:{keys|values|elements}[__childdtype:{dict|list|final}][__childalias]
+        # 即 [parentalias]__level_dtype_attrrole[__childdtype][__childalias]
+        # 当下一级有子pattern时，需要给出dtype信息，若不给出则默认到了叶子结点。
+        content_pattern = '''\
+        Label: {__0_dict0_keys__final}
+        
+        Type: Tech-1
+        
+        Repos:
+        
+        {__0_dict0_values__list__each_repo_pat}
+        '''
+        content_pattern = textwrap.dedent(content_pattern)
 
-    value_pattern = '''\
-    - {each_repo_pat__1_list_elements__final}
-    '''
-    value_pattern = textwrap.dedent(value_pattern)
+        value_pattern = '''\
+        - {each_repo_pat__1_list_elements__final}
+        '''
+        value_pattern = textwrap.dedent(value_pattern)
 
-    level_pattern_dict = {
-        0: content_pattern,
-        1: value_pattern
-    }
-    issue_body_str = gen_issue_body_format_str(label_datalist_dict, level_pattern_dict)
-    # print(issue_boddy_str)
+        level_pattern_dict = {
+            0: content_pattern,
+            1: value_pattern
+        }
+        issue_body_str = gen_issue_body_format_str(label_datalist_dict, level_pattern_dict)
+        # print(issue_boddy_str)
 
-    path_issue_body_format_txt = './data/issue_body_format.txt'
-    with open(path_issue_body_format_txt, 'w') as f:
-        f.write(issue_body_str)
+        path_issue_body_format_txt = path_issue_body_format_txt
+        with open(path_issue_body_format_txt, 'w') as f:
+            f.write(issue_body_str)
 
     # ------------------------2. Create data issue in open-digger--------------------------
     #
@@ -383,10 +384,7 @@ if __name__ == '__main__':
     #   4) Set parse_github_id_prepared = True and run
     #   5) Copy all the generated yaml file into "open-digger/labeled_data/technology/database", replace old files
     #   6) Open a new pull request to [open-digger](https://github.com/X-lab2017/open-digger) to fix the issue created above.
-    parse_github_id_prepared = True
-    src_dir = os.path.dirname(path_issue_body_format_txt)
-    src_path = os.path.join(src_dir, "issue_body_format_parse_github_id.txt")
-    tar_dir = src_dir
+    parse_github_id_prepared = PARSE_GITHUB_ID_STR_TO_YAML
 
     sep = "#====#"
     pre_format_conf = {
@@ -404,3 +402,15 @@ if __name__ == '__main__':
     filename_reg = "name: Database - ([^\n]+)\n"
     if parse_github_id_prepared:
         to_yaml_parts(src_path=src_path, tar_dir=tar_dir, pre_format_conf=pre_format_conf, filename_reg=filename_reg, sep=sep)
+
+    return
+
+
+if __name__ == '__main__':
+    # regenerate_last_version
+    labeled_data_path = 'data/database_repo_label_dataframe/DB_EngRank_full_202212.csv'
+    path_issue_body_format_txt = './data/result/last_version/issue_body_format.txt'
+    src_dir = os.path.dirname(path_issue_body_format_txt)
+    src_path = os.path.join(src_dir, "issue_body_format_parse_github_id.txt")
+    tar_dir = src_dir
+    df_getRepoId_to_yaml(labeled_data_path, path_issue_body_format_txt, src_path, tar_dir, True, True)
