@@ -24,6 +24,32 @@ import textwrap
 from script.tree_node import TreeNode
 
 
+# 一个pattern内只能包含同级的信息，两级之间使用"__"分隔，每一级的类型只能是dict, list, str，变量命令格式为：
+# [parentalias]__level_dtype:{dict|list|final}_attrrole:{keys|values|elements}[__childdtype:{dict|list|final}][__childalias]
+# 即 [parentalias]__level_dtype_attrrole[__childdtype][__childalias]
+# 当下一级有子pattern时，需要给出dtype信息，若不给出则默认到了叶子结点。
+content_pattern = '''\
+        Label: {__0_dict0_keys__final}
+
+        Type: Tech-1
+
+        Repos:
+
+        {__0_dict0_values__list__each_repo_pat}
+        '''
+content_pattern = textwrap.dedent(content_pattern)
+
+value_pattern = '''\
+        - {each_repo_pat__1_list_elements__final}
+        '''
+value_pattern = textwrap.dedent(value_pattern)
+
+level_pattern_dict = {
+    0: content_pattern,
+    1: value_pattern
+}
+
+
 def data_preprocessing(df, filter_has_github_repo_link=True, filter_with_open_source_license=False):
     # add your preprocessing function body here
     # filter
@@ -339,30 +365,6 @@ def df_getRepoId_to_yaml(labeled_data_path, path_issue_body_format_txt, src_path
         label_datalist_dict = get_klabel_vdatalist_dict(df, kv_colnames, multi_onehot_label_cols)
         # print(label_datalist_dict)
 
-        # 一个pattern内只能包含同级的信息，两级之间使用"__"分隔，每一级的类型只能是dict, list, str，变量命令格式为：
-        # [parentalias]__level_dtype:{dict|list|final}_attrrole:{keys|values|elements}[__childdtype:{dict|list|final}][__childalias]
-        # 即 [parentalias]__level_dtype_attrrole[__childdtype][__childalias]
-        # 当下一级有子pattern时，需要给出dtype信息，若不给出则默认到了叶子结点。
-        content_pattern = '''\
-        Label: {__0_dict0_keys__final}
-        
-        Type: Tech-1
-        
-        Repos:
-        
-        {__0_dict0_values__list__each_repo_pat}
-        '''
-        content_pattern = textwrap.dedent(content_pattern)
-
-        value_pattern = '''\
-        - {each_repo_pat__1_list_elements__final}
-        '''
-        value_pattern = textwrap.dedent(value_pattern)
-
-        level_pattern_dict = {
-            0: content_pattern,
-            1: value_pattern
-        }
         issue_body_str = gen_issue_body_format_str(label_datalist_dict, level_pattern_dict)
         # print(issue_boddy_str)
 
