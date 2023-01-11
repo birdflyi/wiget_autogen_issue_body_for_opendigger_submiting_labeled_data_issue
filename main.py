@@ -7,6 +7,7 @@
 # @File   : main.py 
 
 import os
+import shutil
 import sys
 
 cur_dir = os.getcwd()
@@ -55,7 +56,7 @@ def data_preprocessing(df, filter_has_github_repo_link=True, filter_with_open_so
     # filter
     open_source_license_valid = lambda x: str(x).lower().startswith('y') if filter_with_open_source_license else True  # always return True to ignore filter
     github_repo_link_valid = lambda x: pd.notna(x) and x != '-' if filter_has_github_repo_link else True
-    df = df[(df["open_source_license"].apply(open_source_license_valid)) & (df["github_repo_link"].apply(github_repo_link_valid))]
+    df = df[(df["open_source_license"].apply(open_source_license_valid)) & (df["github_repo_link"].apply(github_repo_link_valid))].copy()
     # format strs
     trim_open_source_license = lambda x: str(x).split('_')[0] if len(str(x)) else ''
     df.loc[:, "open_source_license"] = df.apply({"open_source_license": trim_open_source_license})
@@ -105,7 +106,7 @@ def rebuild_samevars_in_str(s, varname, sep="__", start_idx=0):
     return s_rebuild
 
 
-def gen_issue_body_format_str(data_dict, level_pattern_dict, level_start=0):
+def gen_issue_body_format_str(data_dict, level_pattern_dict, level_start=0, **kwargs):
     level_pattern_kasc_dict = dict(sorted(level_pattern_dict.items(), key=lambda x: x[0], reverse=False))
     pat_vars_list = []
     for pat in level_pattern_kasc_dict.values():
@@ -208,6 +209,13 @@ def gen_issue_body_format_str(data_dict, level_pattern_dict, level_start=0):
         content_pattern_curr_layer = str(level_pattern_kasc_dict[recovered_level])
 
         dataset = dataset_handler_layers_dicts[recovered_level]
+        if dataset_handler_layers_dicts.get("kwargs"):
+            if dataset_handler_layers_dicts.get("kwargs").get("del_emptyval_data"):
+                temp_dataset = {}
+                for k, v in dict(dataset).items():
+                    if len(v):
+                        temp_dataset[k] = v
+                dataset = temp_dataset
 
         curr_layer_pat_dict = {}
 
@@ -294,7 +302,10 @@ def gen_issue_body_format_str(data_dict, level_pattern_dict, level_start=0):
             return content_pattern_formated
 
     curr_layer = 0
-    content_pattern_formated = gen_curr_layer_format_str(curr_layer, bfs_trav_groupby_layer_asc, level_pattern_kasc_dict, {curr_layer: data_dict}, offset=OFFSET)
+    del_emptyval_data = kwargs.get("del_emptyval_data")
+    if del_emptyval_data is None:
+        del_emptyval_data = True
+    content_pattern_formated = gen_curr_layer_format_str(curr_layer, bfs_trav_groupby_layer_asc, level_pattern_kasc_dict, {curr_layer: data_dict, "kwargs": {"del_emptyval_data": del_emptyval_data}}, offset=OFFSET)
     return content_pattern_formated
 
 
@@ -311,6 +322,11 @@ def gen_issue_body_format_str_simple(label_datalist_dict):
 def to_yaml_parts(src_path, tar_dir=None, encoding='utf-8', pre_format_conf=None, filename_reg=None, sep="===="):
     if not tar_dir:
         tar_dir = os.path.dirname(src_path)
+    if not os.path.isdir(tar_dir):
+        os.makedirs(tar_dir)
+    if not os.path.exists(src_path):
+        raise FileNotFoundError(f"FileNotFoundError: [Errno 2] No such file or directory: {src_path}. You may skip "
+              f"the step 2. Create data issue in open-digger: save content generated with `/parse-github-id` option as 'issue_body_format_parse_github_id.txt'")
     with open(src_path, 'r', encoding=encoding) as f:
         s = f.read()
         if pre_format_conf:
@@ -340,7 +356,7 @@ def to_yaml_parts(src_path, tar_dir=None, encoding='utf-8', pre_format_conf=None
 
 
 def df_getRepoId_to_yaml(labeled_data_path, path_issue_body_format_txt, src_path, tar_dir,
-                         GEN_ISSUE_BODY_RAW_STR=True, PARSE_GITHUB_ID_STR_TO_YAML=True):
+                         GEN_ISSUE_BODY_RAW_STR=True, PARSE_GITHUB_ID_STR_TO_YAML=True, **kwargs):
     if GEN_ISSUE_BODY_RAW_STR:
         # ------------------------1. Auto generate [data] issue body for opendigger-------------------
         df = pd.read_csv(labeled_data_path)
@@ -348,7 +364,11 @@ def df_getRepoId_to_yaml(labeled_data_path, path_issue_body_format_txt, src_path
 
         use_column_configs = ["category_label_col", "multimodel_onehot_label_cols"]
 
-        use_column_config = use_column_configs[1]
+        default_use_column_config = use_column_configs[1]
+        use_column_config = kwargs.get("use_column_config", default_use_column_config)
+        if type(use_column_config) is int:
+            idx = use_column_config
+            use_column_config = use_column_configs[idx]
         print(f"use_column_config: {use_column_config}")
 
         if use_column_config == "category_label_col":
@@ -362,10 +382,21 @@ def df_getRepoId_to_yaml(labeled_data_path, path_issue_body_format_txt, src_path
         else:
             raise ValueError(f"ValueError: use_column_config must be in {use_column_configs}, while {use_column_config} is got!")
 
+        if kwargs.get("incremental"):
+            base_labeled_data_path = kwargs.get("base_labeled_data_path")
+            if not base_labeled_data_path:
+                print("ParamError: incremental mode must specify base_labeled_data_path for the last version of data.")
+                return
+            df_base = pd.read_csv(base_labeled_data_path)
+            df_base = data_preprocessing(df_base, filter_has_github_repo_link=True, filter_with_open_source_license=False)
+            df_incremental = pd.concat([df, df_base, df_base]).drop_duplicates(subset=[kv_colnames[0]], keep=False)
+            df = df_incremental
+
         label_datalist_dict = get_klabel_vdatalist_dict(df, kv_colnames, multi_onehot_label_cols)
         # print(label_datalist_dict)
 
-        issue_body_str = gen_issue_body_format_str(label_datalist_dict, level_pattern_dict)
+        del_emptyval_data = kwargs.get("del_emptyval_data")
+        issue_body_str = gen_issue_body_format_str(label_datalist_dict, level_pattern_dict, del_emptyval_data=del_emptyval_data)
         # print(issue_boddy_str)
 
         path_issue_body_format_txt = path_issue_body_format_txt
@@ -389,7 +420,7 @@ def df_getRepoId_to_yaml(labeled_data_path, path_issue_body_format_txt, src_path
     parse_github_id_prepared = PARSE_GITHUB_ID_STR_TO_YAML
 
     sep = "#====#"
-    pre_format_conf = {
+    pre_format_conf_kpattern_vstdreplacement = {
         "\n- (.*)": "\n    - \\1",
         "\n?Label: ([^\n]+)\n": f"\n{sep}name: Database - \\1\n",
         "\n+": "\n",
@@ -403,16 +434,93 @@ def df_getRepoId_to_yaml(labeled_data_path, path_issue_body_format_txt, src_path
     }
     filename_reg = "name: Database - ([^\n]+)\n"
     if parse_github_id_prepared:
-        to_yaml_parts(src_path=src_path, tar_dir=tar_dir, pre_format_conf=pre_format_conf, filename_reg=filename_reg, sep=sep)
+        to_yaml_parts(src_path=src_path, tar_dir=tar_dir, pre_format_conf=pre_format_conf_kpattern_vstdreplacement, filename_reg=filename_reg, sep=sep)
 
     return
 
 
+def get_filenames_from_dir(dir_str, suffix='.yml', recursive=False):
+    suffix_filter = lambda fname: fname.lower().endswith(suffix) if suffix is not None else True
+    recursive_filter = lambda subdir: True if recursive else not len(directories)
+    filenames = []
+    for root, directories, files in os.walk(dir_str):
+        for filename in files:
+            if not recursive_filter or not suffix_filter(filename):
+                continue
+            filenames.append(filename)
+    return filenames
+
+
+def merge_data_incremental_order(base_path, inc_path, tar_path, encoding='utf-8'):
+    shutil.copyfile(base_path, tar_path)
+    with open(inc_path, 'r', encoding=encoding) as f:
+        yaml_formatstr = f.read()
+    yaml_data_github_repo_formatstr = re.findall(r"(\n  github_repo:(\n    - .*)*)", yaml_formatstr)[0][0]
+    with open(tar_path, 'a', encoding=encoding) as f:
+        f.write(yaml_data_github_repo_formatstr)
+        print(f'Warning: {tar_path} is updated! Manual check may be required!!!')
+
+
+def auto_gen_current_version_incremental_order_merged(base_dir, inc_dir, curr_merged_tar_dir, suffix='.yml'):
+    base_filenames = get_filenames_from_dir(base_dir, suffix=suffix, recursive=False)
+    inc_filenames = get_filenames_from_dir(inc_dir, suffix=suffix, recursive=False)
+    curr_merged_filenames = base_filenames
+    UNDEFINED = 0  # 00000000
+    ONLY_BASE_EXIST = 1  # 00000001
+    ONLY_INC_EXIST = 2  # 00000010
+    BASE_INC_EXIST = ONLY_BASE_EXIST | ONLY_INC_EXIST  # 00000011
+    curr_merged_states = [ONLY_BASE_EXIST] * len(curr_merged_filenames)
+    curr_merged_filenames_states_dict = dict(zip(curr_merged_filenames, curr_merged_states))
+    for filename in inc_filenames:
+        curr_merged_filenames_states_dict[filename] = curr_merged_filenames_states_dict.get(filename, UNDEFINED) | ONLY_INC_EXIST
+        # if filename not in curr_merged_filenames:
+        #     curr_merged_filenames_states_dict[filename] = ONLY_INC_EXIST
+        # else:
+        #     curr_merged_filenames_states_dict[filename] = BASE_INC_EXIST
+    # curr_merged_filenames, curr_merged_states = zip(*curr_merged_filenames_states_dict.items())
+    # print(curr_merged_filenames, curr_merged_states)
+    for filename,  state in curr_merged_filenames_states_dict.items():
+        temp_tar_path = os.path.join(curr_merged_tar_dir, filename)
+        if state in [ONLY_BASE_EXIST, ONLY_INC_EXIST]:
+            src_dir = base_dir if state == ONLY_BASE_EXIST else inc_dir
+            temp_src_path = os.path.join(src_dir, filename)
+            shutil.copyfile(temp_src_path, temp_tar_path)
+        elif state == BASE_INC_EXIST:
+            temp_base_path = os.path.join(base_dir, filename)
+            temp_inc_path = os.path.join(inc_dir, filename)
+            merge_data_incremental_order(temp_base_path, temp_inc_path, temp_tar_path)
+
+
 if __name__ == '__main__':
-    # regenerate_last_version
+    # incremental generation mode
+    # 1. auto regenerate last_version
     labeled_data_path = 'data/database_repo_label_dataframe/DB_EngRank_full_202212.csv'
-    path_issue_body_format_txt = './data/result/last_version/issue_body_format.txt'
-    src_dir = os.path.dirname(path_issue_body_format_txt)
+    path_issue_body_format_txt = 'data/result/incremental_generation/last_version/issue_body_format.txt'
+    src_dir = os.path.join(os.path.dirname(path_issue_body_format_txt), "parsed")
     src_path = os.path.join(src_dir, "issue_body_format_parse_github_id.txt")
     tar_dir = src_dir
-    df_getRepoId_to_yaml(labeled_data_path, path_issue_body_format_txt, src_path, tar_dir, True, True)
+    df_getRepoId_to_yaml(labeled_data_path, path_issue_body_format_txt, src_path, tar_dir, GEN_ISSUE_BODY_RAW_STR=True,
+                         PARSE_GITHUB_ID_STR_TO_YAML=True, del_emptyval_data=False)
+
+    # 2. generate curr_relative_incremental
+    incremental, base_labeled_data_path = True, labeled_data_path
+    curr_inc_labeled_data_path = 'data/database_repo_label_dataframe/DB_EngRank_full_202301.csv'
+    curr_inc_path_issue_body_format_txt = 'data/result/incremental_generation/curr_relative_incremental/issue_body_format.txt'
+    curr_inc_src_dir = os.path.join(os.path.dirname(curr_inc_path_issue_body_format_txt), "parsed")
+    curr_inc_src_path = os.path.join(curr_inc_src_dir, "issue_body_format_parse_github_id.txt")
+    curr_inc_tar_dir = curr_inc_src_dir
+    parse_github_id_str_to_yaml = False
+    # ------------------------2. Create data issue in open-digger--------------------------
+    #  e.g. [X-lab2017/open-digger#1055](https://github.com/X-lab2017/open-digger/issues/1055)
+    #  Save content generated with `/parse-github-id` option as "issue_body_format_parse_github_id.txt"
+    #  Then turn on parse_github_id_str_to_yaml
+    parse_github_id_str_to_yaml = True
+    df_getRepoId_to_yaml(curr_inc_labeled_data_path, curr_inc_path_issue_body_format_txt, curr_inc_src_path, curr_inc_tar_dir, GEN_ISSUE_BODY_RAW_STR=True,
+                         PARSE_GITHUB_ID_STR_TO_YAML=parse_github_id_str_to_yaml, del_emptyval_data=True, use_column_config=1,  # del_emptyval_data=True to skip empty data list of labels
+                         incremental=incremental, base_labeled_data_path=base_labeled_data_path)
+
+    # 3. auto generate current_version_incremental_order_merged
+    base_tar_dir = tar_dir
+    inc_tar_dir = curr_inc_tar_dir
+    curr_merged_tar_dir = 'data/result/incremental_generation/current_version_incremental_order_merged'
+    auto_gen_current_version_incremental_order_merged(base_tar_dir, inc_tar_dir, curr_merged_tar_dir, suffix='.yml')

@@ -1,0 +1,5 @@
+name: Database - Key-value
+type: Tech-1
+data:
+  github_repo:
+    - skytable/skytable  # placeholder for parse_github_id
