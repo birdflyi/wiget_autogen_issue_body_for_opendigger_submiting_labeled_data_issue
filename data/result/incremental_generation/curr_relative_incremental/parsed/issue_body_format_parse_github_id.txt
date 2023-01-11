@@ -4,5 +4,5 @@ Type: Tech-1
 
 Repos:
 
-- skytable/skytable  # placeholder for parse_github_id
+- 276042304 # repo:skytable/skytable
 
