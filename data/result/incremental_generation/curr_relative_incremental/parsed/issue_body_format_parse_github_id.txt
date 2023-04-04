@@ -1,8 +1,0 @@
-Label: Key-value
-
-Type: Tech-1
-
-Repos:
-
-- 276042304 # repo:skytable/skytable
-

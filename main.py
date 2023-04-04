@@ -7,20 +7,25 @@
 # @File   : main.py 
 
 import os
-import shutil
 import sys
 
-cur_dir = os.getcwd()
-pkg_rootdir = os.path.dirname(cur_dir)  # os.path.dirname()向上一级，注意要对应工程root路径
-if pkg_rootdir not in sys.path:
-    sys.path.append(pkg_rootdir)
-print('Add root directory "{}" to system path.'.format(pkg_rootdir))
+if '__file__' not in globals():
+    # !pip install ipynbname  # Remove comment symbols to solve the ModuleNotFoundError
+    import ipynbname
 
+    nb_path = ipynbname.path()
+    __file__ = str(nb_path)
+cur_dir = os.path.dirname(__file__)
+pkg_rootdir = cur_dir  # os.path.dirname()向上一级，注意要对应工程root路径
+if pkg_rootdir not in sys.path:  # 解决ipynb引用上层路径中的模块时的ModuleNotFoundError问题
+    sys.path.append(pkg_rootdir)
+    print('-- Add root directory "{}" to system path.'.format(pkg_rootdir))
 
 import re
-import pandas as pd
+import shutil
 import textwrap
 
+import pandas as pd
 
 from script.tree_node import TreeNode
 
@@ -523,25 +528,36 @@ def auto_gen_current_version_incremental_order_merged(last_v_dir, inc_dir, curr_
 
 
 if __name__ == '__main__':
+    # prepare data
+    BASE_DIR = pkg_rootdir
+    labeled_data_filenames = [
+        "dbfeatfusion_records_202303_automerged_manulabeled.csv",
+    ]
+    submodule_result_dbfeatfusion_records_dir = os.path.join(BASE_DIR, "db_feature_data_fusion/data/manulabeled")
+    database_repo_label_dataframe_dir = os.path.join(BASE_DIR, "data/database_repo_label_dataframe")
+    for filename in labeled_data_filenames:
+        shutil.copyfile(src=os.path.join(submodule_result_dbfeatfusion_records_dir, filename),
+                        dst=os.path.join(database_repo_label_dataframe_dir, filename))
+    # settings
+    INITIALIZATION = True
+    REGEN_ISSUE_BODY_RAW_STR_LAST_VERSION = True
+    ORDER_BY_GITHUB_REPO_LINK = True
     # ------------------------1. Auto generate [data] issue body for opendigger-------------------
     # incremental generation mode
     # 1. auto regenerate last_version
-    last_v_labeled_data_path = 'data/database_repo_label_dataframe/DB_EngRank_full_202212.csv'
-    last_v_issue_body_format_txt_path = 'data/result/incremental_generation/last_version/issue_body_format.txt'
+    last_v_labeled_data_path = os.path.join(database_repo_label_dataframe_dir, labeled_data_filenames[0])
+    last_v_issue_body_format_txt_path = os.path.join(BASE_DIR, 'data/result/incremental_generation/last_version/issue_body_format.txt')
     last_v_dir = os.path.join(os.path.dirname(last_v_issue_body_format_txt_path), "parsed")
-    INITIALIZATION = False
-    REGEN_ISSUE_BODY_RAW_STR_LAST_VERSION = True
-    ORDER_BY_GITHUB_REPO_LINK = False
     if REGEN_ISSUE_BODY_RAW_STR_LAST_VERSION:
         df_last_v_labeled_data = pd.read_csv(last_v_labeled_data_path, index_col=False, encoding="utf-8")
         if ORDER_BY_GITHUB_REPO_LINK:
             df_last_v_labeled_data.sort_values(by=['github_repo_link'], axis=0, ascending=True, inplace=True)
         auto_gen_issue_body_for_opendigger(df_last_v_labeled_data, last_v_issue_body_format_txt_path,
-                                           use_column__mode_col_config=(2, None), del_emptyval_data=False)
+                                           use_column__mode_col_config=(1, "category_label"), del_emptyval_data=False)
 
     # 2. generate curr_relative_incremental
-    curr_inc_labeled_data_path = 'data/database_repo_label_dataframe/DB_EngRank_full_202301.csv'
-    curr_inc_path_issue_body_format_txt = 'data/result/incremental_generation/curr_relative_incremental/issue_body_format.txt'
+    curr_inc_labeled_data_path = os.path.join(BASE_DIR, 'data/database_repo_label_dataframe/DB_EngRank_full_202301.csv')
+    curr_inc_path_issue_body_format_txt = os.path.join(BASE_DIR, 'data/result/incremental_generation/curr_relative_incremental/issue_body_format.txt')
     if not INITIALIZATION:
         df_curr_inc_labeled_data = pd.read_csv(curr_inc_labeled_data_path, index_col=False, encoding="utf-8")
         if ORDER_BY_GITHUB_REPO_LINK:
@@ -554,9 +570,10 @@ if __name__ == '__main__':
     #  e.g. [X-lab2017/open-digger#1055](https://github.com/X-lab2017/open-digger/issues/1055)
     #  Save content generated with `/parse-github-id` option as "issue_body_format_parse_github_id.txt"
     #  Then turn on parse_github_id_str_to_yaml
-    parse_github_id_str_to_yaml = True
+    parse_github_id_str_to_yaml = False
     if not parse_github_id_str_to_yaml:
-        raise PermissionError("Please Create data issue in open-digger, then save the bot comments into issue_body_format_parse_github_id.txt!")
+        raise Warning("Please Create data issue in open-digger, then save the bot comments into "
+                      "issue_body_format_parse_github_id.txt! Finally, set parse_github_id_str_to_yaml = True.")
 
     # ----------3. Auto-generate yaml for issue_body_format after parse-github-id----------
     # issue_body_format_parse_github_id.txt is parsed by open-digger, here are steps should be done before:
@@ -580,5 +597,5 @@ if __name__ == '__main__':
 
     # -------------4. auto generate current_version_incremental_order_merged--------------
     last_version_tar_dir = os.path.join(os.path.dirname(last_v_issue_body_format_txt_path), "parsed")
-    curr_merged_tar_dir = 'data/result/incremental_generation/current_version_incremental_order_merged'
+    curr_merged_tar_dir = os.path.join(BASE_DIR, 'data/result/incremental_generation/current_version_incremental_order_merged')
     auto_gen_current_version_incremental_order_merged(last_version_tar_dir, curr_inc_src_dir, curr_merged_tar_dir, suffix='.yml')

@@ -1,0 +1,3 @@
+[submodule "db_feature_data_fusion"]
+	path = db_feature_data_fusion
+	url = git@github.com:birdflyi/db_feature_data_fusion.git
