@@ -353,9 +353,8 @@ def to_yaml_parts(src_path, tar_dir=None, encoding='utf-8', pre_format_conf=None
 
 
 # ------------------------1. Auto generate [data] issue body for opendigger-------------------
-def auto_gen_issue_body_for_opendigger(labeled_data_path, issue_body_format_txt_path, use_column__mode_col_config=(2, None),
+def auto_gen_issue_body_for_opendigger(df, issue_body_format_txt_path, use_column__mode_col_config=(2, None),
                                        del_emptyval_data=True, incremental=False, **kwargs):
-    df = pd.read_csv(labeled_data_path, index_col=False, encoding="utf-8")
     df = data_preprocessing(df, filter_has_github_repo_link=kwargs.get("filter_has_github_repo_link", True),
                             filter_with_open_source_license=kwargs.get("filter_with_open_source_license", False))
     df = pd.DataFrame(df)
@@ -397,6 +396,9 @@ def auto_gen_issue_body_for_opendigger(labeled_data_path, issue_body_format_txt_
             substr_list_Multi_model_info = series_Multi_model_info.apply(func_str_split_nan_as_emptylist, seps=[',', '#dbdbio>\|<dbengines#'])
             types_Multi_model_info = list(set(substr_list_Multi_model_info.sum()))
             types_Multi_model_info.sort()
+            if len(set(df.columns) & set(types_Multi_model_info)) > 0:
+                raise ValueError(f"The values in column {use_column_config_col} conflict with column names in df.columns!")
+
             temp_d = {}
             for k_type in types_Multi_model_info:
                 temp_k_type_onehot_vec = {}
@@ -405,7 +407,7 @@ def auto_gen_issue_body_for_opendigger(labeled_data_path, issue_body_format_txt_
                     temp_k_type_onehot_vec[i] = onehot
                 temp_d[k_type] = temp_k_type_onehot_vec
             temp_df = pd.DataFrame().from_dict(temp_d)
-            assert(df.index.values == temp_df.index.values)
+            assert(all(df.index == temp_df.index))
             df = pd.concat([df, temp_df], axis=1)
             onehot_label_cols = types_Multi_model_info
 
@@ -526,24 +528,35 @@ if __name__ == '__main__':
     # 1. auto regenerate last_version
     last_v_labeled_data_path = 'data/database_repo_label_dataframe/DB_EngRank_full_202212.csv'
     last_v_issue_body_format_txt_path = 'data/result/incremental_generation/last_version/issue_body_format.txt'
+    last_v_dir = os.path.join(os.path.dirname(last_v_issue_body_format_txt_path), "parsed")
+    INITIALIZATION = False
     REGEN_ISSUE_BODY_RAW_STR_LAST_VERSION = True
+    ORDER_BY_GITHUB_REPO_LINK = False
     if REGEN_ISSUE_BODY_RAW_STR_LAST_VERSION:
-        auto_gen_issue_body_for_opendigger(last_v_labeled_data_path, last_v_issue_body_format_txt_path,
+        df_last_v_labeled_data = pd.read_csv(last_v_labeled_data_path, index_col=False, encoding="utf-8")
+        if ORDER_BY_GITHUB_REPO_LINK:
+            df_last_v_labeled_data.sort_values(by=['github_repo_link'], axis=0, ascending=True, inplace=True)
+        auto_gen_issue_body_for_opendigger(df_last_v_labeled_data, last_v_issue_body_format_txt_path,
                                            use_column__mode_col_config=(2, None), del_emptyval_data=False)
 
     # 2. generate curr_relative_incremental
-    incremental = True
     curr_inc_labeled_data_path = 'data/database_repo_label_dataframe/DB_EngRank_full_202301.csv'
     curr_inc_path_issue_body_format_txt = 'data/result/incremental_generation/curr_relative_incremental/issue_body_format.txt'
-    auto_gen_issue_body_for_opendigger(curr_inc_labeled_data_path, curr_inc_path_issue_body_format_txt,
-                                       incremental=incremental, last_v_labeled_data_path=last_v_labeled_data_path)
-    parse_github_id_str_to_yaml = False
+    if not INITIALIZATION:
+        df_curr_inc_labeled_data = pd.read_csv(curr_inc_labeled_data_path, index_col=False, encoding="utf-8")
+        if ORDER_BY_GITHUB_REPO_LINK:
+            df_curr_inc_labeled_data.sort_values(by=['github_repo_link'], axis=0, ascending=True, inplace=True)
+        auto_gen_issue_body_for_opendigger(df_curr_inc_labeled_data, curr_inc_path_issue_body_format_txt,
+                                           # use_column__mode_col_config=(2, None),
+                                           incremental=True, last_v_labeled_data_path=last_v_labeled_data_path)
 
     # ------------------------2. Create data issue in open-digger--------------------------
     #  e.g. [X-lab2017/open-digger#1055](https://github.com/X-lab2017/open-digger/issues/1055)
     #  Save content generated with `/parse-github-id` option as "issue_body_format_parse_github_id.txt"
     #  Then turn on parse_github_id_str_to_yaml
     parse_github_id_str_to_yaml = True
+    if not parse_github_id_str_to_yaml:
+        raise PermissionError("Please Create data issue in open-digger, then save the bot comments into issue_body_format_parse_github_id.txt!")
 
     # ----------3. Auto-generate yaml for issue_body_format after parse-github-id----------
     # issue_body_format_parse_github_id.txt is parsed by open-digger, here are steps should be done before:
@@ -553,11 +566,19 @@ if __name__ == '__main__':
     #   4) Set parse_github_id_prepared = True and run
     #   5) Copy all the generated yaml file into "open-digger/labeled_data/technology/database", replace old files
     #   6) Open a new pull request to [open-digger](https://github.com/X-lab2017/open-digger) to fix the issue created above.
+    if INITIALIZATION:
+        src_getRepoId_to_yaml_path = os.path.join(last_v_dir, "issue_body_format_parse_github_id.txt")
+        tar_getRepoId_to_yaml_dir = last_v_dir
+        df_getRepoId_to_yaml(src_getRepoId_to_yaml_path, tar_dir=tar_getRepoId_to_yaml_dir)
+        sys.exit(0)
+
     curr_inc_src_dir = os.path.join(os.path.dirname(curr_inc_path_issue_body_format_txt), "parsed")
     curr_inc_src_path = os.path.join(curr_inc_src_dir, "issue_body_format_parse_github_id.txt")  # manually saved csv: contents are from the open-digger Bot(github-actions) comments
-    df_getRepoId_to_yaml(curr_inc_src_path, tar_dir=curr_inc_src_dir)
+    src_getRepoId_to_yaml_path = curr_inc_src_path
+    tar_getRepoId_to_yaml_dir = curr_inc_src_dir
+    df_getRepoId_to_yaml(src_getRepoId_to_yaml_path, tar_dir=tar_getRepoId_to_yaml_dir)
 
-    # 3. auto generate current_version_incremental_order_merged
+    # -------------4. auto generate current_version_incremental_order_merged--------------
     last_version_tar_dir = os.path.join(os.path.dirname(last_v_issue_body_format_txt_path), "parsed")
     curr_merged_tar_dir = 'data/result/incremental_generation/current_version_incremental_order_merged'
     auto_gen_current_version_incremental_order_merged(last_version_tar_dir, curr_inc_src_dir, curr_merged_tar_dir, suffix='.yml')
