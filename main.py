@@ -106,7 +106,110 @@ def rebuild_samevars_in_str(s, varname, sep="__", start_idx=0):
     return s_rebuild
 
 
-def gen_issue_body_format_str(data_dict, level_pattern_dict, level_start=0, **kwargs):
+def gen_curr_layer_format_str(curr_layer, bfs_trav_groupby_layer_asc, level_pattern_kasc_dict, dataset_handler_layers_dicts, offset):
+    if curr_layer == 0:  # 跳过额外增加的虚拟根节点
+        return gen_curr_layer_format_str(curr_layer + 1, bfs_trav_groupby_layer_asc, level_pattern_kasc_dict, dataset_handler_layers_dicts, offset)
+
+    content_pattern_formated = ''
+
+    tns = bfs_trav_groupby_layer_asc[curr_layer]
+    recovered_level = curr_layer - offset
+    content_pattern_curr_layer = str(level_pattern_kasc_dict[recovered_level])
+
+    dataset = dataset_handler_layers_dicts[recovered_level]
+    if dataset_handler_layers_dicts.get("del_emptyval_data"):
+        temp_dataset = {}
+        for k, v in dict(dataset).items():
+            if len(v):
+                temp_dataset[k] = v
+        dataset = temp_dataset
+
+    curr_layer_pat_dict = {}
+
+    curr_layer_formatable = []
+
+    # reflect: 优先递归解决无法format的
+    def sortedby_key_reflect(list_k, list_v, asc=True):
+        list_k = list(list_k)
+        list_v = list(list_v)
+        k_v_pairs = list(zip(list_k, list_v))
+        k_v_pairs = list(sorted(k_v_pairs, key=lambda x: x[0], reverse=not asc))
+        return list(zip(*k_v_pairs))[1]
+
+    dataset_handler_currlayer_dicts = {}
+    for tn in tns:
+        pat_var = tn.val["pat_var"]
+        if tn.val["node_body"]["dtype"].startswith('dict'):
+            dataset = dict(dataset)
+            func_name = tn.val["node_body"]["attrrole"]
+            temp_data_list = getattr(dataset, func_name)()
+        elif tn.val["node_body"]["dtype"].startswith('list'):
+            temp_data_list = list(dataset[tn.parent.val["pat_var"]])
+            assert (tn.val["node_body"]["attrrole"] == "elements")
+        else:
+            raise ValueError("ValueError: The pattern value format: [parentalias]__level_dtype:{dict|list|final}_attrrole:{keys|values|elements}[__childdtype:{dict|list|final}][__childalias]")
+        dataset_handler_currlayer_dicts[pat_var] = temp_data_list
+        if tn.val["child_node_info"]["childdtype"] == "final" or not len(tn.children):
+            temp_formatable = True
+        else:
+            temp_formatable = False
+        curr_layer_formatable.append(temp_formatable)
+    dataset_handler_layers_dicts[curr_layer] = dataset_handler_currlayer_dicts
+
+    idx_sortedby_formatable_asc = sortedby_key_reflect(curr_layer_formatable, list(range(len(curr_layer_formatable))))
+    if all(curr_layer_formatable):
+        for tn in tns:
+            pat_var = tn.val["pat_var"]
+            if tn.val["node_body"]["dtype"].startswith('dict'):
+                dataset = dict(dataset)
+                func_name = tn.val["node_body"]["attrrole"]
+                temp_data_list = getattr(dataset, func_name)()
+                # content_pattern_formated += content_pattern_curr_layer.format(**curr_layer_pat_dict)
+                for elem in temp_data_list:
+                    curr_layer_pat_dict[pat_var] = elem
+                    content_pattern_formated += format_on_keys(content_pattern_curr_layer, curr_layer_pat_dict, strict=False)
+            elif tn.val["node_body"]["dtype"].startswith('list'):
+                temp_data_list = list(dataset[tn.parent.val["pat_var"]])
+                assert(tn.val["node_body"]["attrrole"] == "elements")
+                for elem in temp_data_list:
+                    curr_layer_pat_dict[pat_var] = elem
+                    content_pattern_formated += format_on_keys(content_pattern_curr_layer, curr_layer_pat_dict, strict=False)
+            tn.val["child_node_info"]["childdtype"] = "final"  # reset final after get formated str
+        return content_pattern_formated
+    else:
+        dataset_handler_currlayer_dicts = dataset_handler_layers_dicts[curr_layer]
+        assert(len(idx_sortedby_formatable_asc) == len(dataset_handler_currlayer_dicts))
+        for i in idx_sortedby_formatable_asc:
+            temp_keys = list(dataset_handler_currlayer_dicts.keys())
+            dataset_handler_unformatable_values = list(dataset_handler_currlayer_dicts[temp_keys[i]])
+            temp_tns = bfs_trav_groupby_layer_asc[curr_layer]
+            temp_tn = temp_tns[i]
+            if not curr_layer_formatable[i]:
+                if temp_tn.val["node_body"]["dtype"].startswith("dict"):
+                    for j in range(len(dataset_handler_unformatable_values)):
+                        temp_dataset_handler_layers_dicts = {
+                            curr_layer: {temp_keys[i]: dataset_handler_unformatable_values[j]}}
+                        # dataset_handler_layers_dicts[curr_layer][temp_keys[i]] = dataset_handler_unformatable_values[j]
+                        dataset_handler_unformatable_values[j] = gen_curr_layer_format_str(curr_layer + 1,
+                                                                                      bfs_trav_groupby_layer_asc,
+                                                                                      level_pattern_kasc_dict,
+                                                                                      temp_dataset_handler_layers_dicts,
+                                                                                      offset)
+                elif temp_tn.val["node_body"]["dtype"].startswith("list"):
+                    for j in range(len(dataset_handler_unformatable_values)):
+                        temp_dataset_handler_layers_dicts = {curr_layer: {temp_keys[i]: dataset_handler_unformatable_values[j]}}
+                        dataset_handler_unformatable_values[j] = gen_curr_layer_format_str(curr_layer + 1, bfs_trav_groupby_layer_asc, level_pattern_kasc_dict, temp_dataset_handler_layers_dicts, offset)
+                dataset_handler_currlayer_dicts[temp_keys[i]] = dataset_handler_unformatable_values
+            else:
+                dataset_handler_currlayer_dicts[temp_keys[i]] = list(dataset_handler_currlayer_dicts[temp_keys[i]])
+            temp_tn.val["child_node_info"]["childdtype"] = "final"  # reset final after get formated str
+        dataset_currlayer_record_list = pd.DataFrame(dataset_handler_currlayer_dicts).to_dict("records")
+        for record_dict in dataset_currlayer_record_list:
+            content_pattern_formated += format_on_keys(content_pattern_curr_layer, record_dict, strict=False)
+        return content_pattern_formated
+
+
+def gen_issue_body_format_str(data_dict, level_pattern_dict, level_start=0, del_emptyval_data=True):
     level_pattern_kasc_dict = dict(sorted(level_pattern_dict.items(), key=lambda x: x[0], reverse=False))
     pat_vars_list = []
     for pat in level_pattern_kasc_dict.values():
@@ -198,114 +301,8 @@ def gen_issue_body_format_str(data_dict, level_pattern_dict, level_start=0, **kw
     # bfs_trav_groupby_layer_desc = sorted(TreeNode.bfs_trav.items(), key=lambda x: x[0], reverse=True)  # 按layer逆序format
     bfs_trav_groupby_layer_asc = dict(sorted(TreeNode.bfs_trav.items(), key=lambda x: x[0]))  # 按layer逆序format
 
-    def gen_curr_layer_format_str(curr_layer, bfs_trav_groupby_layer_asc, level_pattern_kasc_dict, dataset_handler_layers_dicts, offset=OFFSET):
-        if curr_layer == 0:  # 跳过额外增加的虚拟根节点
-            return gen_curr_layer_format_str(curr_layer + 1, bfs_trav_groupby_layer_asc, level_pattern_kasc_dict, dataset_handler_layers_dicts, offset=OFFSET)
-
-        content_pattern_formated = ''
-
-        tns = bfs_trav_groupby_layer_asc[curr_layer]
-        recovered_level = curr_layer - offset
-        content_pattern_curr_layer = str(level_pattern_kasc_dict[recovered_level])
-
-        dataset = dataset_handler_layers_dicts[recovered_level]
-        if dataset_handler_layers_dicts.get("kwargs"):
-            if dataset_handler_layers_dicts.get("kwargs").get("del_emptyval_data"):
-                temp_dataset = {}
-                for k, v in dict(dataset).items():
-                    if len(v):
-                        temp_dataset[k] = v
-                dataset = temp_dataset
-
-        curr_layer_pat_dict = {}
-
-        curr_layer_formatable = []
-
-        # reflect: 优先递归解决无法format的
-        def sortedby_key_reflect(list_k, list_v, asc=True):
-            list_k = list(list_k)
-            list_v = list(list_v)
-            k_v_pairs = list(zip(list_k, list_v))
-            k_v_pairs = list(sorted(k_v_pairs, key=lambda x: x[0], reverse=not asc))
-            return list(zip(*k_v_pairs))[1]
-
-        dataset_handler_currlayer_dicts = {}
-        for tn in tns:
-            pat_var = tn.val["pat_var"]
-            if tn.val["node_body"]["dtype"].startswith('dict'):
-                dataset = dict(dataset)
-                func_name = tn.val["node_body"]["attrrole"]
-                temp_data_list = getattr(dataset, func_name)()
-            elif tn.val["node_body"]["dtype"].startswith('list'):
-                temp_data_list = list(dataset[tn.parent.val["pat_var"]])
-                assert (tn.val["node_body"]["attrrole"] == "elements")
-            else:
-                raise ValueError("ValueError: The pattern value format: [parentalias]__level_dtype:{dict|list|final}_attrrole:{keys|values|elements}[__childdtype:{dict|list|final}][__childalias]")
-            dataset_handler_currlayer_dicts[pat_var] = temp_data_list
-            if tn.val["child_node_info"]["childdtype"] == "final" or not len(tn.children):
-                temp_formatable = True
-            else:
-                temp_formatable = False
-            curr_layer_formatable.append(temp_formatable)
-        dataset_handler_layers_dicts[curr_layer] = dataset_handler_currlayer_dicts
-
-        idx_sortedby_formatable_asc = sortedby_key_reflect(curr_layer_formatable, list(range(len(curr_layer_formatable))))
-        if all(curr_layer_formatable):
-            for tn in tns:
-                pat_var = tn.val["pat_var"]
-                if tn.val["node_body"]["dtype"].startswith('dict'):
-                    dataset = dict(dataset)
-                    func_name = tn.val["node_body"]["attrrole"]
-                    temp_data_list = getattr(dataset, func_name)()
-                    # content_pattern_formated += content_pattern_curr_layer.format(**curr_layer_pat_dict)
-                    for elem in temp_data_list:
-                        curr_layer_pat_dict[pat_var] = elem
-                        content_pattern_formated += format_on_keys(content_pattern_curr_layer, curr_layer_pat_dict, strict=False)
-                elif tn.val["node_body"]["dtype"].startswith('list'):
-                    temp_data_list = list(dataset[tn.parent.val["pat_var"]])
-                    assert(tn.val["node_body"]["attrrole"] == "elements")
-                    for elem in temp_data_list:
-                        curr_layer_pat_dict[pat_var] = elem
-                        content_pattern_formated += format_on_keys(content_pattern_curr_layer, curr_layer_pat_dict, strict=False)
-                tn.val["child_node_info"]["childdtype"] = "final"  # reset final after get formated str
-            return content_pattern_formated
-        else:
-            dataset_handler_currlayer_dicts = dataset_handler_layers_dicts[curr_layer]
-            assert(len(idx_sortedby_formatable_asc) == len(dataset_handler_currlayer_dicts))
-            for i in idx_sortedby_formatable_asc:
-                temp_keys = list(dataset_handler_currlayer_dicts.keys())
-                dataset_handler_unformatable_values = list(dataset_handler_currlayer_dicts[temp_keys[i]])
-                temp_tns = bfs_trav_groupby_layer_asc[curr_layer]
-                temp_tn = temp_tns[i]
-                if not curr_layer_formatable[i]:
-                    if temp_tn.val["node_body"]["dtype"].startswith("dict"):
-                        for j in range(len(dataset_handler_unformatable_values)):
-                            temp_dataset_handler_layers_dicts = {
-                                curr_layer: {temp_keys[i]: dataset_handler_unformatable_values[j]}}
-                            # dataset_handler_layers_dicts[curr_layer][temp_keys[i]] = dataset_handler_unformatable_values[j]
-                            dataset_handler_unformatable_values[j] = gen_curr_layer_format_str(curr_layer + 1,
-                                                                                          bfs_trav_groupby_layer_asc,
-                                                                                          level_pattern_kasc_dict,
-                                                                                          temp_dataset_handler_layers_dicts,
-                                                                                          offset=OFFSET)
-                    elif temp_tn.val["node_body"]["dtype"].startswith("list"):
-                        for j in range(len(dataset_handler_unformatable_values)):
-                            temp_dataset_handler_layers_dicts = {curr_layer: {temp_keys[i]: dataset_handler_unformatable_values[j]}}
-                            dataset_handler_unformatable_values[j] = gen_curr_layer_format_str(curr_layer + 1, bfs_trav_groupby_layer_asc, level_pattern_kasc_dict, temp_dataset_handler_layers_dicts, offset=OFFSET)
-                    dataset_handler_currlayer_dicts[temp_keys[i]] = dataset_handler_unformatable_values
-                else:
-                    dataset_handler_currlayer_dicts[temp_keys[i]] = list(dataset_handler_currlayer_dicts[temp_keys[i]])
-                temp_tn.val["child_node_info"]["childdtype"] = "final"  # reset final after get formated str
-            dataset_currlayer_record_list = pd.DataFrame(dataset_handler_currlayer_dicts).to_dict("records")
-            for record_dict in dataset_currlayer_record_list:
-                content_pattern_formated += format_on_keys(content_pattern_curr_layer, record_dict, strict=False)
-            return content_pattern_formated
-
     curr_layer = 0
-    del_emptyval_data = kwargs.get("del_emptyval_data")
-    if del_emptyval_data is None:
-        del_emptyval_data = True
-    content_pattern_formated = gen_curr_layer_format_str(curr_layer, bfs_trav_groupby_layer_asc, level_pattern_kasc_dict, {curr_layer: data_dict, "kwargs": {"del_emptyval_data": del_emptyval_data}}, offset=OFFSET)
+    content_pattern_formated = gen_curr_layer_format_str(curr_layer, bfs_trav_groupby_layer_asc, level_pattern_kasc_dict, {curr_layer: data_dict, "del_emptyval_data": del_emptyval_data}, offset=OFFSET)
     return content_pattern_formated
 
 
@@ -355,69 +352,102 @@ def to_yaml_parts(src_path, tar_dir=None, encoding='utf-8', pre_format_conf=None
     return
 
 
-def df_getRepoId_to_yaml(labeled_data_path, path_issue_body_format_txt, src_path, tar_dir,
-                         GEN_ISSUE_BODY_RAW_STR=True, PARSE_GITHUB_ID_STR_TO_YAML=True, **kwargs):
-    if GEN_ISSUE_BODY_RAW_STR:
-        # ------------------------1. Auto generate [data] issue body for opendigger-------------------
-        df = pd.read_csv(labeled_data_path)
-        df = data_preprocessing(df, filter_has_github_repo_link=True, filter_with_open_source_license=False)
+# ------------------------1. Auto generate [data] issue body for opendigger-------------------
+def auto_gen_issue_body_for_opendigger(labeled_data_path, issue_body_format_txt_path, use_column__mode_col_config=(2, None),
+                                       del_emptyval_data=True, incremental=False, **kwargs):
+    df = pd.read_csv(labeled_data_path, index_col=False, encoding="utf-8")
+    df = data_preprocessing(df, filter_has_github_repo_link=kwargs.get("filter_has_github_repo_link", True),
+                            filter_with_open_source_license=kwargs.get("filter_with_open_source_license", False))
+    df = pd.DataFrame(df)
 
-        use_column_configs = ["category_label_col", "multimodel_onehot_label_cols"]
+    use_column_config_modes = ["category_label_col", "multimodel_labels_col", "multimodel_onehot_label_cols"]
+    use_column_config_mode, use_column_config_col = tuple(use_column__mode_col_config)[:2]
 
-        default_use_column_config = use_column_configs[1]
-        use_column_config = kwargs.get("use_column_config", default_use_column_config)
-        if type(use_column_config) is int:
-            idx = use_column_config
-            use_column_config = use_column_configs[idx]
-        print(f"use_column_config: {use_column_config}")
+    if type(use_column_config_mode) is int:
+        idx = use_column_config_mode
+        use_column_config_mode = use_column_config_modes[idx]
+    print(f"use_column_config_mode: {use_column_config_mode}. All supported settings(you can also use index): {use_column_config_modes}.")
+    assert (use_column_config_mode in use_column_config_modes)
 
-        if use_column_config == "category_label_col":
-            kv_colnames = ["github_repo_link", "category_label"]
-            multi_onehot_label_cols = False
-        elif use_column_config == "multimodel_onehot_label_cols":
-            # use multi-model onehot_label_cols
-            onehot_label_cols = ["Content", "Document", "Event", "Graph", "Key-value", "Multivalue", "Native XML", "Navigational", "Object oriented", "RDF", "Relational", "Search engine", "Spatial DBMS", "Time Series", "Wide column"]
-            kv_colnames = ["github_repo_link", onehot_label_cols]
-            multi_onehot_label_cols = True
+    msg_use_column_config_setting_error = f"use_column_config_mode must be in {use_column_config_modes}, while {use_column_config_mode} is got!"
+    if use_column_config_mode == "category_label_col":
+        if use_column_config_col:
+            if not isinstance(use_column_config_col, str):
+                raise TypeError(f"Mode:{use_column_config_mode}. use_column_config_col must be a str or None!")
+
+        use_column_config_col = use_column_config_col or "category_label"
+        kv_colnames = ["github_repo_link", use_column_config_col]
+        multi_onehot_label_cols = False
+
+    elif use_column_config_mode.lower().startswith("multimodel"):
+        default_onehot_label_cols = ["Content", "Document", "Event", "Graph", "Key-value", "Multivalue", "Native XML",
+                                     "Navigational", "Object oriented", "RDF", "Relational", "Search engine",
+                                     "Spatial DBMS",
+                                     "Time Series", "Wide column"]
+
+        if use_column_config_mode == "multimodel_labels_col":
+            if use_column_config_col:
+                if not isinstance(use_column_config_col, list):
+                    raise TypeError(f"Mode:{use_column_config_mode}. use_column_config_col must be a list or None!")
+
+            # 将Database Model, Multi_model_info两列中的str按','切分为类型列表，nan则返回[]，最后series纵向求和，得到拼接列表，去重后得到标签列表
+            use_column_config_col = use_column_config_col or "Multi_model_info"
+            series_Multi_model_info = df[use_column_config_col]
+            func_str_split_nan_as_emptylist = lambda x, seps: [s.strip() for s in re.split('|'.join(seps), str(x))] if pd.notna(x) else []
+            substr_list_Multi_model_info = series_Multi_model_info.apply(func_str_split_nan_as_emptylist, seps=[',', '#dbdbio>\|<dbengines#'])
+            types_Multi_model_info = list(set(substr_list_Multi_model_info.sum()))
+            types_Multi_model_info.sort()
+            temp_d = {}
+            for k_type in types_Multi_model_info:
+                temp_k_type_onehot_vec = {}
+                for i in pd.Series(substr_list_Multi_model_info).index:
+                    onehot = 1 if k_type in substr_list_Multi_model_info[i] else 0
+                    temp_k_type_onehot_vec[i] = onehot
+                temp_d[k_type] = temp_k_type_onehot_vec
+            temp_df = pd.DataFrame().from_dict(temp_d)
+            assert(df.index.values == temp_df.index.values)
+            df = pd.concat([df, temp_df], axis=1)
+            onehot_label_cols = types_Multi_model_info
+
+        elif use_column_config_mode == "multimodel_onehot_label_cols":
+            if use_column_config_col:
+                if not isinstance(use_column_config_col, list):
+                    raise TypeError(f"Mode:{use_column_config_mode}. use_column_config_col must be a list or None!")
+            onehot_label_cols = use_column_config_col or default_onehot_label_cols
         else:
-            raise ValueError(f"ValueError: use_column_config must be in {use_column_configs}, while {use_column_config} is got!")
+            raise ValueError(msg_use_column_config_setting_error)
+        # use multi-model onehot_label_cols
+        onehot_label_cols = onehot_label_cols or default_onehot_label_cols
+        kv_colnames = ["github_repo_link", onehot_label_cols]
+        multi_onehot_label_cols = True
+    else:
+        raise ValueError(msg_use_column_config_setting_error)
 
-        if kwargs.get("incremental"):
-            base_labeled_data_path = kwargs.get("base_labeled_data_path")
-            if not base_labeled_data_path:
-                print("ParamError: incremental mode must specify base_labeled_data_path for the last version of data.")
-                return
-            df_base = pd.read_csv(base_labeled_data_path)
-            df_base = data_preprocessing(df_base, filter_has_github_repo_link=True, filter_with_open_source_license=False)
-            df_incremental = pd.concat([df, df_base, df_base]).drop_duplicates(subset=[kv_colnames[0]], keep=False)
-            df = df_incremental
+    if incremental:
+        last_v_labeled_data_path = kwargs.get("last_v_labeled_data_path")
+        if not last_v_labeled_data_path:
+            print("ParamError: incremental mode must specify last_v_labeled_data_path for the last version of data.")
+            return
+        df_last_v = pd.read_csv(last_v_labeled_data_path)
+        df_last_v = data_preprocessing(df_last_v, filter_has_github_repo_link=kwargs.get("filter_has_github_repo_link", True),
+                            filter_with_open_source_license=kwargs.get("filter_with_open_source_license", False))
+        # Why [df, df_last_v, df_last_v]:
+        # 1. df contains the newest data, drop_duplicates will keep the first hit record.
+        # 2. [df_last_v, df_last_v] duplicates every records in df_last_v, which will be dropped by drop_duplicates.
+        df = pd.concat([df, df_last_v, df_last_v], axis=0).drop_duplicates(subset=[kv_colnames[0]], keep=False)
+    label_datalist_dict = get_klabel_vdatalist_dict(df, kv_colnames, multi_onehot_label_cols)
+    # print(label_datalist_dict)
 
-        label_datalist_dict = get_klabel_vdatalist_dict(df, kv_colnames, multi_onehot_label_cols)
-        # print(label_datalist_dict)
+    issue_body_str = gen_issue_body_format_str(label_datalist_dict, level_pattern_dict, del_emptyval_data=del_emptyval_data)
+    # print(issue_boddy_str)
 
-        del_emptyval_data = kwargs.get("del_emptyval_data")
-        issue_body_str = gen_issue_body_format_str(label_datalist_dict, level_pattern_dict, del_emptyval_data=del_emptyval_data)
-        # print(issue_boddy_str)
+    with open(issue_body_format_txt_path, 'w') as f:
+        f.write(issue_body_str)
 
-        path_issue_body_format_txt = path_issue_body_format_txt
-        with open(path_issue_body_format_txt, 'w') as f:
-            f.write(issue_body_str)
 
-    # ------------------------2. Create data issue in open-digger--------------------------
-    #
-    #  e.g. [X-lab2017/open-digger#1055](https://github.com/X-lab2017/open-digger/issues/1055)
-    #  Save content generated with `/parse-github-id` option as "issue_body_format_parse_github_id.txt"
-    #
-
-    # ----------3. Auto-generate yaml for issue_body_format after parse-github-id----------
-    # issue_body_format_parse_github_id.txt is parsed by open-digger, here are steps should be done before:
-    #   1) Open a issue with content in path_issue_body_format_txt = './data/issue_body_format.txt'
-    #   2) Create an issue comment "/parse-github-id". Bot(github-actions) will reply a parsed format, which will take a while.
-    #   3) Copy the parse-github-id content replyed by bot into file src_path = os.path.join(src_dir, "issue_body_format_parse_github_id.txt")
-    #   4) Set parse_github_id_prepared = True and run
-    #   5) Copy all the generated yaml file into "open-digger/labeled_data/technology/database", replace old files
-    #   6) Open a new pull request to [open-digger](https://github.com/X-lab2017/open-digger) to fix the issue created above.
-    parse_github_id_prepared = PARSE_GITHUB_ID_STR_TO_YAML
+def df_getRepoId_to_yaml(src_path, tar_dir=None):
+    if not tar_dir:
+        tar_dir = os.path.dirname(src_path)
 
     sep = "#====#"
     pre_format_conf_kpattern_vstdreplacement = {
@@ -433,9 +463,7 @@ def df_getRepoId_to_yaml(labeled_data_path, path_issue_body_format_txt, src_path
 
     }
     filename_reg = "name: Database - ([^\n]+)\n"
-    if parse_github_id_prepared:
-        to_yaml_parts(src_path=src_path, tar_dir=tar_dir, pre_format_conf=pre_format_conf_kpattern_vstdreplacement, filename_reg=filename_reg, sep=sep)
-
+    to_yaml_parts(src_path=src_path, tar_dir=tar_dir, pre_format_conf=pre_format_conf_kpattern_vstdreplacement, filename_reg=filename_reg, sep=sep)
     return
 
 
@@ -451,76 +479,85 @@ def get_filenames_from_dir(dir_str, suffix='.yml', recursive=False):
     return filenames
 
 
-def merge_data_incremental_order(base_path, inc_path, tar_path, encoding='utf-8'):
-    shutil.copyfile(base_path, tar_path)
+def merge_data_incremental_order(last_v_path, inc_path, tar_path, encoding='utf-8'):
+    shutil.copyfile(last_v_path, tar_path)
     with open(inc_path, 'r', encoding=encoding) as f:
         yaml_formatstr = f.read()
-    yaml_data_github_repo_formatstr = re.findall(r"(\n  github_repo:(\n    - .*)*)", yaml_formatstr)[0][0]
-    with open(tar_path, 'a', encoding=encoding) as f:
-        f.write(yaml_data_github_repo_formatstr)
+    github_repo_text_header = "\n  github_repo:"
+    github_repo_text_paragraph_pattern = r"(\n  github_repo:(\n    - .*)*)"
+    yaml_data_github_repo_formatstr_matchlist = re.findall(github_repo_text_paragraph_pattern, yaml_formatstr)[0]
+    with open(tar_path, 'r+', encoding=encoding) as f:
+        tar_text = f.read().strip('\n')
+        github_repo_text_header_is_exist = tar_text.find(github_repo_text_header) >= 0
+        yaml_data_github_repo_formatstr = yaml_data_github_repo_formatstr_matchlist[int(github_repo_text_header_is_exist)]
+        tar_text += yaml_data_github_repo_formatstr
+        f.seek(0, 0)
+        f.write(tar_text)
         print(f'Warning: {tar_path} is updated! Manual check may be required!!!')
 
 
-def auto_gen_current_version_incremental_order_merged(base_dir, inc_dir, curr_merged_tar_dir, suffix='.yml'):
-    base_filenames = get_filenames_from_dir(base_dir, suffix=suffix, recursive=False)
+def auto_gen_current_version_incremental_order_merged(last_v_dir, inc_dir, curr_merged_tar_dir, suffix='.yml'):
+    last_v_filenames = get_filenames_from_dir(last_v_dir, suffix=suffix, recursive=False)
     inc_filenames = get_filenames_from_dir(inc_dir, suffix=suffix, recursive=False)
-    curr_merged_filenames = base_filenames
+    curr_merged_filenames = last_v_filenames
     UNDEFINED = 0  # 00000000
-    ONLY_BASE_EXIST = 1  # 00000001
+    ONLY_LAST_V_EXIST = 1  # 00000001
     ONLY_INC_EXIST = 2  # 00000010
-    BASE_INC_EXIST = ONLY_BASE_EXIST | ONLY_INC_EXIST  # 00000011
-    curr_merged_states = [ONLY_BASE_EXIST] * len(curr_merged_filenames)
+    LAST_V_INC_BOTH_EXIST = ONLY_LAST_V_EXIST | ONLY_INC_EXIST  # 00000011
+    curr_merged_states = [ONLY_LAST_V_EXIST] * len(curr_merged_filenames)
     curr_merged_filenames_states_dict = dict(zip(curr_merged_filenames, curr_merged_states))
     for filename in inc_filenames:
         curr_merged_filenames_states_dict[filename] = curr_merged_filenames_states_dict.get(filename, UNDEFINED) | ONLY_INC_EXIST
-        # if filename not in curr_merged_filenames:
-        #     curr_merged_filenames_states_dict[filename] = ONLY_INC_EXIST
-        # else:
-        #     curr_merged_filenames_states_dict[filename] = BASE_INC_EXIST
-    # curr_merged_filenames, curr_merged_states = zip(*curr_merged_filenames_states_dict.items())
-    # print(curr_merged_filenames, curr_merged_states)
     for filename,  state in curr_merged_filenames_states_dict.items():
         temp_tar_path = os.path.join(curr_merged_tar_dir, filename)
-        if state in [ONLY_BASE_EXIST, ONLY_INC_EXIST]:
-            src_dir = base_dir if state == ONLY_BASE_EXIST else inc_dir
+        if state in [ONLY_LAST_V_EXIST, ONLY_INC_EXIST]:
+            src_dir = last_v_dir if state == ONLY_LAST_V_EXIST else inc_dir
             temp_src_path = os.path.join(src_dir, filename)
             shutil.copyfile(temp_src_path, temp_tar_path)
-        elif state == BASE_INC_EXIST:
-            temp_base_path = os.path.join(base_dir, filename)
+        elif state == LAST_V_INC_BOTH_EXIST:
+            temp_last_v_path = os.path.join(last_v_dir, filename)
             temp_inc_path = os.path.join(inc_dir, filename)
-            merge_data_incremental_order(temp_base_path, temp_inc_path, temp_tar_path)
+            merge_data_incremental_order(temp_last_v_path, temp_inc_path, temp_tar_path)
 
 
 if __name__ == '__main__':
+    # ------------------------1. Auto generate [data] issue body for opendigger-------------------
     # incremental generation mode
     # 1. auto regenerate last_version
-    labeled_data_path = 'data/database_repo_label_dataframe/DB_EngRank_full_202212.csv'
-    path_issue_body_format_txt = 'data/result/incremental_generation/last_version/issue_body_format.txt'
-    src_dir = os.path.join(os.path.dirname(path_issue_body_format_txt), "parsed")
-    src_path = os.path.join(src_dir, "issue_body_format_parse_github_id.txt")
-    tar_dir = src_dir
-    df_getRepoId_to_yaml(labeled_data_path, path_issue_body_format_txt, src_path, tar_dir, GEN_ISSUE_BODY_RAW_STR=True,
-                         PARSE_GITHUB_ID_STR_TO_YAML=True, del_emptyval_data=False)
+    last_v_labeled_data_path = 'data/database_repo_label_dataframe/DB_EngRank_full_202212.csv'
+    last_v_issue_body_format_txt_path = 'data/result/incremental_generation/last_version/issue_body_format.txt'
+    REGEN_ISSUE_BODY_RAW_STR_LAST_VERSION = True
+    if REGEN_ISSUE_BODY_RAW_STR_LAST_VERSION:
+        auto_gen_issue_body_for_opendigger(last_v_labeled_data_path, last_v_issue_body_format_txt_path,
+                                           use_column__mode_col_config=(2, None), del_emptyval_data=False)
 
     # 2. generate curr_relative_incremental
-    incremental, base_labeled_data_path = True, labeled_data_path
+    incremental = True
     curr_inc_labeled_data_path = 'data/database_repo_label_dataframe/DB_EngRank_full_202301.csv'
     curr_inc_path_issue_body_format_txt = 'data/result/incremental_generation/curr_relative_incremental/issue_body_format.txt'
-    curr_inc_src_dir = os.path.join(os.path.dirname(curr_inc_path_issue_body_format_txt), "parsed")
-    curr_inc_src_path = os.path.join(curr_inc_src_dir, "issue_body_format_parse_github_id.txt")
-    curr_inc_tar_dir = curr_inc_src_dir
+    auto_gen_issue_body_for_opendigger(curr_inc_labeled_data_path, curr_inc_path_issue_body_format_txt,
+                                       incremental=incremental, last_v_labeled_data_path=last_v_labeled_data_path)
     parse_github_id_str_to_yaml = False
+
     # ------------------------2. Create data issue in open-digger--------------------------
     #  e.g. [X-lab2017/open-digger#1055](https://github.com/X-lab2017/open-digger/issues/1055)
     #  Save content generated with `/parse-github-id` option as "issue_body_format_parse_github_id.txt"
     #  Then turn on parse_github_id_str_to_yaml
     parse_github_id_str_to_yaml = True
-    df_getRepoId_to_yaml(curr_inc_labeled_data_path, curr_inc_path_issue_body_format_txt, curr_inc_src_path, curr_inc_tar_dir, GEN_ISSUE_BODY_RAW_STR=True,
-                         PARSE_GITHUB_ID_STR_TO_YAML=parse_github_id_str_to_yaml, del_emptyval_data=True, use_column_config=1,  # del_emptyval_data=True to skip empty data list of labels
-                         incremental=incremental, base_labeled_data_path=base_labeled_data_path)
+
+    # ----------3. Auto-generate yaml for issue_body_format after parse-github-id----------
+    # issue_body_format_parse_github_id.txt is parsed by open-digger, here are steps should be done before:
+    #   1) Open a issue with content in last_v_issue_body_format_txt_path = './data/issue_body_format.txt'
+    #   2) Create an issue comment "/parse-github-id". Bot(github-actions) will reply a parsed format, which will take a while.
+    #   3) Copy the parse-github-id content replyed by bot into file src_path = os.path.join(src_dir, "issue_body_format_parse_github_id.txt")
+    #   4) Set parse_github_id_prepared = True and run
+    #   5) Copy all the generated yaml file into "open-digger/labeled_data/technology/database", replace old files
+    #   6) Open a new pull request to [open-digger](https://github.com/X-lab2017/open-digger) to fix the issue created above.
+    curr_inc_src_dir = os.path.join(os.path.dirname(curr_inc_path_issue_body_format_txt), "parsed")
+    curr_inc_src_path = os.path.join(curr_inc_src_dir, "issue_body_format_parse_github_id.txt")  # manually saved csv: contents are from the open-digger Bot(github-actions) comments
+    df_getRepoId_to_yaml(curr_inc_src_path, tar_dir=curr_inc_src_dir)
 
     # 3. auto generate current_version_incremental_order_merged
-    base_tar_dir = tar_dir
-    inc_tar_dir = curr_inc_tar_dir
+    last_version_tar_dir = os.path.join(os.path.dirname(last_v_issue_body_format_txt_path), "parsed")
     curr_merged_tar_dir = 'data/result/incremental_generation/current_version_incremental_order_merged'
-    auto_gen_current_version_incremental_order_merged(base_tar_dir, inc_tar_dir, curr_merged_tar_dir, suffix='.yml')
+    auto_gen_current_version_incremental_order_merged(last_version_tar_dir, curr_inc_src_dir, curr_merged_tar_dir, suffix='.yml')
