@@ -387,8 +387,8 @@ def auto_gen_issue_body_for_opendigger(labeled_data_path, issue_body_format_txt_
 
         if use_column_config_mode == "multimodel_labels_col":
             if use_column_config_col:
-                if not isinstance(use_column_config_col, list):
-                    raise TypeError(f"Mode:{use_column_config_mode}. use_column_config_col must be a list or None!")
+                if not isinstance(use_column_config_col, str):
+                    raise TypeError(f"Mode:{use_column_config_mode}. use_column_config_col must be a str or None!")
 
             # 将Database Model, Multi_model_info两列中的str按','切分为类型列表，nan则返回[]，最后series纵向求和，得到拼接列表，去重后得到标签列表
             use_column_config_col = use_column_config_col or "Multi_model_info"
