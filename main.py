@@ -570,7 +570,7 @@ if __name__ == '__main__':
     #  e.g. [X-lab2017/open-digger#1055](https://github.com/X-lab2017/open-digger/issues/1055)
     #  Save content generated with `/parse-github-id` option as "issue_body_format_parse_github_id.txt"
     #  Then turn on parse_github_id_str_to_yaml
-    parse_github_id_str_to_yaml = False
+    parse_github_id_str_to_yaml = True
     if not parse_github_id_str_to_yaml:
         raise Warning("Please Create data issue in open-digger, then save the bot comments into "
                       "issue_body_format_parse_github_id.txt! Finally, set parse_github_id_str_to_yaml = True.")
