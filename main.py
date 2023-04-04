@@ -567,7 +567,7 @@ if __name__ == '__main__':
                                            incremental=True, last_v_labeled_data_path=last_v_labeled_data_path)
 
     # ------------------------2. Create data issue in open-digger--------------------------
-    #  e.g. [X-lab2017/open-digger#1055](https://github.com/X-lab2017/open-digger/issues/1055)
+    #  e.g. [X-lab2017/open-digger#1245](https://github.com/X-lab2017/open-digger/issues/1245)
     #  Save content generated with `/parse-github-id` option as "issue_body_format_parse_github_id.txt"
     #  Then turn on parse_github_id_str_to_yaml
     parse_github_id_str_to_yaml = True
@@ -577,10 +577,10 @@ if __name__ == '__main__':
 
     # ----------3. Auto-generate yaml for issue_body_format after parse-github-id----------
     # issue_body_format_parse_github_id.txt is parsed by open-digger, here are steps should be done before:
-    #   1) Open a issue with content in last_v_issue_body_format_txt_path = './data/issue_body_format.txt'
+    #   1) Open a issue(e.g. [X-lab2017/open-digger#1245](https://github.com/X-lab2017/open-digger/issues/1245)) with content in last_v_issue_body_format_txt_path = './data/issue_body_format.txt'
     #   2) Create an issue comment "/parse-github-id". Bot(github-actions) will reply a parsed format, which will take a while.
     #   3) Copy the parse-github-id content replyed by bot into file src_path = os.path.join(src_dir, "issue_body_format_parse_github_id.txt")
-    #   4) Set parse_github_id_prepared = True and run
+    #   4) Set parse_github_id_prepared = True and run main.py
     #   5) Copy all the generated yaml file into "open-digger/labeled_data/technology/database", replace old files
     #   6) Open a new pull request to [open-digger](https://github.com/X-lab2017/open-digger) to fix the issue created above.
     if INITIALIZATION:
