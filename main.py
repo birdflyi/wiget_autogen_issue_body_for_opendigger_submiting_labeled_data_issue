@@ -527,6 +527,32 @@ def auto_gen_current_version_incremental_order_merged(last_v_dir, inc_dir, curr_
             merge_data_incremental_order(temp_last_v_path, temp_inc_path, temp_tar_path)
 
 
+def df_getRepoId_to_labeled_data_col(labeled_data_without_repoid_path, src_issue_body_format_parse_github_id_path,
+                                     labeled_data_with_repoid_path, github_repo_link_colname="github_repo_link",
+                                     github_repo_id_colname="github_repo_id"):
+    df = pd.read_csv(labeled_data_without_repoid_path, index_col=False, encoding="utf-8", dtype=str)
+    assert(github_repo_link_colname in df.columns)
+    new_columns = []
+    for c in df.columns:
+        new_columns.append(c)
+        if c == github_repo_link_colname:
+            new_columns.append(github_repo_id_colname)
+
+    df[github_repo_id_colname] = [""] * len(df)
+    df = df[new_columns]
+    with open(src_issue_body_format_parse_github_id_path, encoding="utf-8") as f:
+        content_str = f.read()
+
+    for idx in df.index:
+        pattern = re.compile(f"- (\d+) # repo:{df.loc[idx][github_repo_link_colname]}")
+        temp_substrs = re.findall(pattern, content_str)
+        temp_substr = temp_substrs[0] if len(temp_substrs) else ""
+        df.loc[idx][github_repo_id_colname] = temp_substr
+
+    df.to_csv(labeled_data_with_repoid_path, index=False, encoding="utf-8")
+    return
+
+
 if __name__ == '__main__':
     # prepare data
     BASE_DIR = pkg_rootdir
@@ -545,7 +571,8 @@ if __name__ == '__main__':
     # ------------------------1. Auto generate [data] issue body for opendigger-------------------
     # incremental generation mode
     # 1. auto regenerate last_version
-    last_v_labeled_data_path = os.path.join(database_repo_label_dataframe_dir, labeled_data_filenames[0])
+    last_v_labeled_data_filename = labeled_data_filenames[0]
+    last_v_labeled_data_path = os.path.join(database_repo_label_dataframe_dir, last_v_labeled_data_filename)
     last_v_issue_body_format_txt_path = os.path.join(BASE_DIR, 'data/result/incremental_generation/last_version/issue_body_format.txt')
     last_v_dir = os.path.join(os.path.dirname(last_v_issue_body_format_txt_path), "parsed")
     if REGEN_ISSUE_BODY_RAW_STR_LAST_VERSION:
@@ -587,15 +614,22 @@ if __name__ == '__main__':
         src_getRepoId_to_yaml_path = os.path.join(last_v_dir, "issue_body_format_parse_github_id.txt")
         tar_getRepoId_to_yaml_dir = last_v_dir
         df_getRepoId_to_yaml(src_getRepoId_to_yaml_path, tar_dir=tar_getRepoId_to_yaml_dir)
-        sys.exit(0)
+    else:
+        curr_inc_src_dir = os.path.join(os.path.dirname(curr_inc_path_issue_body_format_txt), "parsed")
+        curr_inc_src_path = os.path.join(curr_inc_src_dir, "issue_body_format_parse_github_id.txt")  # manually saved csv: contents are from the open-digger Bot(github-actions) comments
+        src_getRepoId_to_yaml_path = curr_inc_src_path
+        tar_getRepoId_to_yaml_dir = curr_inc_src_dir
+        df_getRepoId_to_yaml(src_getRepoId_to_yaml_path, tar_dir=tar_getRepoId_to_yaml_dir)
 
-    curr_inc_src_dir = os.path.join(os.path.dirname(curr_inc_path_issue_body_format_txt), "parsed")
-    curr_inc_src_path = os.path.join(curr_inc_src_dir, "issue_body_format_parse_github_id.txt")  # manually saved csv: contents are from the open-digger Bot(github-actions) comments
-    src_getRepoId_to_yaml_path = curr_inc_src_path
-    tar_getRepoId_to_yaml_dir = curr_inc_src_dir
-    df_getRepoId_to_yaml(src_getRepoId_to_yaml_path, tar_dir=tar_getRepoId_to_yaml_dir)
+        # -------------4. auto generate current_version_incremental_order_merged--------------
+        last_version_tar_dir = os.path.join(os.path.dirname(last_v_issue_body_format_txt_path), "parsed")
+        curr_merged_tar_dir = os.path.join(BASE_DIR, 'data/result/incremental_generation/current_version_incremental_order_merged')
+        auto_gen_current_version_incremental_order_merged(last_version_tar_dir, curr_inc_src_dir, curr_merged_tar_dir, suffix='.yml')
 
-    # -------------4. auto generate current_version_incremental_order_merged--------------
-    last_version_tar_dir = os.path.join(os.path.dirname(last_v_issue_body_format_txt_path), "parsed")
-    curr_merged_tar_dir = os.path.join(BASE_DIR, 'data/result/incremental_generation/current_version_incremental_order_merged')
-    auto_gen_current_version_incremental_order_merged(last_version_tar_dir, curr_inc_src_dir, curr_merged_tar_dir, suffix='.yml')
+    # -------------5. get repo id from issue_body_format_parse_github_id.txt as a new column of database repo label dataframe--------------
+    labeled_data_without_repoid_path = os.path.join(database_repo_label_dataframe_dir, labeled_data_filenames[0])
+    labeled_data_with_repoid_filename = labeled_data_without_repoid_path.replace('\\', '/').split('/')[-1].strip('.csv') + '_with_repoid' + '.csv'
+    labeled_data_with_repoid_path = os.path.join(database_repo_label_dataframe_dir, labeled_data_with_repoid_filename)
+    github_repo_link_colname = "github_repo_link"
+    df_getRepoId_to_labeled_data_col(labeled_data_without_repoid_path, src_getRepoId_to_yaml_path,
+                                     labeled_data_with_repoid_path, github_repo_link_colname)
