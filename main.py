@@ -68,22 +68,31 @@ def data_preprocessing(df, filter_has_github_repo_link=True, filter_with_open_so
     return df
 
 
-def get_klabel_vdatalist_dict(df, kv_colnames, multi_onehot_label_cols=True):
+def get_klabel_vdatalist_dict(df, kv_colnames, multi_onehot_label_cols=True, df_dedup_base=None, base_filter=None):
     kv_colnames = list(kv_colnames)
     group_dict = {}
     if not multi_onehot_label_cols:
         k_colname, v_colname = kv_colnames[:2]
         groupby_colname = v_colname
+        if df_dedup_base is not None:
+            df_dedup_base = pd.DataFrame(df_dedup_base)
+            df = pd.concat([df, df_dedup_base, df_dedup_base], axis=0).drop_duplicates(subset=[k_colname], keep=False)
         df.set_index(k_colname, inplace=True)
         group_dict = dict(df.groupby(groupby_colname).groups)
     else:
         k_colname, v_colnames = kv_colnames[:2]
         groupby_colnames = list(v_colnames)
         groupby_idxes = list(range(len(groupby_colnames)))
+        if df_dedup_base is not None:
+            df_dedup_base = pd.DataFrame(df_dedup_base)
+            df_dedup_base.set_index(k_colname, inplace=True)
         df.set_index(k_colname, inplace=True)
         for each_groupby_idx in groupby_idxes:
             groupby_colname = groupby_colnames[each_groupby_idx]
-            group_dict[groupby_colname] = list(df[df[groupby_colname] != 0].index)
+            filter = df[groupby_colname] != 0
+            if df_dedup_base is not None and groupby_colname is not None:
+                filter = filter & (filter ^ base_filter(df_dedup_base, groupby_colname))  # use xor to deal with records not in df_dedup_base
+            group_dict[groupby_colname] = list(df[filter].index)
     return group_dict
 
 
@@ -430,6 +439,8 @@ def auto_gen_issue_body_for_opendigger(df, issue_body_format_txt_path, use_colum
     else:
         raise ValueError(msg_use_column_config_setting_error)
 
+    df_last_v = None
+    base_filter = None
     if incremental:
         last_v_labeled_data_path = kwargs.get("last_v_labeled_data_path")
         if not last_v_labeled_data_path:
@@ -441,8 +452,9 @@ def auto_gen_issue_body_for_opendigger(df, issue_body_format_txt_path, use_colum
         # Why [df, df_last_v, df_last_v]:
         # 1. df contains the newest data, drop_duplicates will keep the first hit record.
         # 2. [df_last_v, df_last_v] duplicates every records in df_last_v, which will be dropped by drop_duplicates.
-        df = pd.concat([df, df_last_v, df_last_v], axis=0).drop_duplicates(subset=[kv_colnames[0]], keep=False)
-    label_datalist_dict = get_klabel_vdatalist_dict(df, kv_colnames, multi_onehot_label_cols)
+        df = pd.concat([df, df_last_v, df_last_v], axis=0).drop_duplicates(subset=[kv_colnames[0], 'category_label'], keep=False)
+        base_filter = lambda df, label_str: df["category_label"].apply(lambda x: label_str in x if pd.notna(x) else False)
+    label_datalist_dict = get_klabel_vdatalist_dict(df, kv_colnames, multi_onehot_label_cols, df_dedup_base=df_last_v, base_filter=base_filter)
     # print(label_datalist_dict)
 
     issue_body_str = gen_issue_body_format_str(label_datalist_dict, level_pattern_dict, del_emptyval_data=del_emptyval_data)
@@ -491,7 +503,7 @@ def merge_data_incremental_order(last_v_path, inc_path, tar_path, encoding='utf-
     with open(inc_path, 'r', encoding=encoding) as f:
         yaml_formatstr = f.read()
     github_repo_text_header = "\n  github_repo:"
-    github_repo_text_paragraph_pattern = r"(\n  github_repo:(\n    - .*)*)"
+    github_repo_text_paragraph_pattern = r"(\n  github_repo:((\n    - [^\n]*)*))"
     yaml_data_github_repo_formatstr_matchlist = re.findall(github_repo_text_paragraph_pattern, yaml_formatstr)[0]
     with open(tar_path, 'r+', encoding=encoding) as f:
         tar_text = f.read().strip('\n')
@@ -558,39 +570,47 @@ if __name__ == '__main__':
     BASE_DIR = pkg_rootdir
     labeled_data_filenames = [
         "dbfeatfusion_records_202303_automerged_manulabeled.csv",
+        "dbfeatfusion_records_202304_automerged_manulabeled.csv",
     ]
+    # dynamic settings
+    idx_last_v = 0
+    idx_curr_v = 1
+    INITIALIZATION = False
+
+    # initialize the source data
     submodule_result_dbfeatfusion_records_dir = os.path.join(BASE_DIR, "db_feature_data_fusion/data/manulabeled")
     database_repo_label_dataframe_dir = os.path.join(BASE_DIR, "data/database_repo_label_dataframe")
     for filename in labeled_data_filenames:
         shutil.copyfile(src=os.path.join(submodule_result_dbfeatfusion_records_dir, filename),
                         dst=os.path.join(database_repo_label_dataframe_dir, filename))
-    # settings
-    INITIALIZATION = True
+    # default settings
     REGEN_ISSUE_BODY_RAW_STR_LAST_VERSION = True
     ORDER_BY_GITHUB_REPO_LINK = True
+    encoding = "utf-8"
     # ------------------------1. Auto generate [data] issue body for opendigger-------------------
     # incremental generation mode
     # 1. auto regenerate last_version
-    last_v_labeled_data_filename = labeled_data_filenames[0]
+    last_v_labeled_data_filename = labeled_data_filenames[idx_last_v]
     last_v_labeled_data_path = os.path.join(database_repo_label_dataframe_dir, last_v_labeled_data_filename)
     last_v_issue_body_format_txt_path = os.path.join(BASE_DIR, 'data/result/incremental_generation/last_version/issue_body_format.txt')
     last_v_dir = os.path.join(os.path.dirname(last_v_issue_body_format_txt_path), "parsed")
     if REGEN_ISSUE_BODY_RAW_STR_LAST_VERSION:
-        df_last_v_labeled_data = pd.read_csv(last_v_labeled_data_path, index_col=False, encoding="utf-8")
+        df_last_v_labeled_data = pd.read_csv(last_v_labeled_data_path, index_col=False, encoding=encoding)
         if ORDER_BY_GITHUB_REPO_LINK:
             df_last_v_labeled_data.sort_values(by=['github_repo_link'], axis=0, ascending=True, inplace=True)
         auto_gen_issue_body_for_opendigger(df_last_v_labeled_data, last_v_issue_body_format_txt_path,
                                            use_column__mode_col_config=(1, "category_label"), del_emptyval_data=False)
 
     # 2. generate curr_relative_incremental
-    curr_inc_labeled_data_path = os.path.join(BASE_DIR, 'data/database_repo_label_dataframe/DB_EngRank_full_202301.csv')
+    curr_inc_labeled_data_filename = labeled_data_filenames[idx_curr_v]
+    curr_inc_labeled_data_path = os.path.join(database_repo_label_dataframe_dir, curr_inc_labeled_data_filename)
     curr_inc_path_issue_body_format_txt = os.path.join(BASE_DIR, 'data/result/incremental_generation/curr_relative_incremental/issue_body_format.txt')
     if not INITIALIZATION:
-        df_curr_inc_labeled_data = pd.read_csv(curr_inc_labeled_data_path, index_col=False, encoding="utf-8")
+        df_curr_inc_labeled_data = pd.read_csv(curr_inc_labeled_data_path, index_col=False, encoding=encoding)
         if ORDER_BY_GITHUB_REPO_LINK:
             df_curr_inc_labeled_data.sort_values(by=['github_repo_link'], axis=0, ascending=True, inplace=True)
         auto_gen_issue_body_for_opendigger(df_curr_inc_labeled_data, curr_inc_path_issue_body_format_txt,
-                                           # use_column__mode_col_config=(2, None),
+                                           use_column__mode_col_config=(1, "category_label"),  # 1 for "category_label_col"
                                            incremental=True, last_v_labeled_data_path=last_v_labeled_data_path)
 
     # ------------------------2. Create data issue in open-digger--------------------------
@@ -610,11 +630,11 @@ if __name__ == '__main__':
     #   4) Set parse_github_id_prepared = True and run main.py
     #   5) Copy all the generated yaml file into "open-digger/labeled_data/technology/database", replace old files
     #   6) Open a new pull request to [open-digger](https://github.com/X-lab2017/open-digger) to fix the issue created above.
-    if INITIALIZATION:
-        src_getRepoId_to_yaml_path = os.path.join(last_v_dir, "issue_body_format_parse_github_id.txt")
-        tar_getRepoId_to_yaml_dir = last_v_dir
-        df_getRepoId_to_yaml(src_getRepoId_to_yaml_path, tar_dir=tar_getRepoId_to_yaml_dir)
-    else:
+    src_getRepoId_to_yaml_path = os.path.join(last_v_dir, "issue_body_format_parse_github_id.txt")
+    tar_getRepoId_to_yaml_dir = last_v_dir
+    df_getRepoId_to_yaml(src_getRepoId_to_yaml_path, tar_dir=tar_getRepoId_to_yaml_dir)
+
+    if not INITIALIZATION:
         curr_inc_src_dir = os.path.join(os.path.dirname(curr_inc_path_issue_body_format_txt), "parsed")
         curr_inc_src_path = os.path.join(curr_inc_src_dir, "issue_body_format_parse_github_id.txt")  # manually saved csv: contents are from the open-digger Bot(github-actions) comments
         src_getRepoId_to_yaml_path = curr_inc_src_path
@@ -625,11 +645,11 @@ if __name__ == '__main__':
         last_version_tar_dir = os.path.join(os.path.dirname(last_v_issue_body_format_txt_path), "parsed")
         curr_merged_tar_dir = os.path.join(BASE_DIR, 'data/result/incremental_generation/current_version_incremental_order_merged')
         auto_gen_current_version_incremental_order_merged(last_version_tar_dir, curr_inc_src_dir, curr_merged_tar_dir, suffix='.yml')
-
-    # -------------5. get repo id from issue_body_format_parse_github_id.txt as a new column of database repo label dataframe--------------
-    labeled_data_without_repoid_path = os.path.join(database_repo_label_dataframe_dir, labeled_data_filenames[0])
-    labeled_data_with_repoid_filename = labeled_data_without_repoid_path.replace('\\', '/').split('/')[-1].strip('.csv') + '_with_repoid' + '.csv'
-    labeled_data_with_repoid_path = os.path.join(database_repo_label_dataframe_dir, labeled_data_with_repoid_filename)
-    github_repo_link_colname = "github_repo_link"
-    df_getRepoId_to_labeled_data_col(labeled_data_without_repoid_path, src_getRepoId_to_yaml_path,
-                                     labeled_data_with_repoid_path, github_repo_link_colname)
+    else:
+        # -------------5. get repo id from issue_body_format_parse_github_id.txt as a new column of database repo label dataframe--------------
+        labeled_data_without_repoid_path = os.path.join(database_repo_label_dataframe_dir, labeled_data_filenames[idx_last_v])
+        labeled_data_with_repoid_filename = labeled_data_without_repoid_path.replace('\\', '/').split('/')[-1].strip('.csv') + '_with_repoid' + '.csv'
+        labeled_data_with_repoid_path = os.path.join(database_repo_label_dataframe_dir, labeled_data_with_repoid_filename)
+        github_repo_link_colname = "github_repo_link"
+        df_getRepoId_to_labeled_data_col(labeled_data_without_repoid_path, src_getRepoId_to_yaml_path,
+                                         labeled_data_with_repoid_path, github_repo_link_colname)

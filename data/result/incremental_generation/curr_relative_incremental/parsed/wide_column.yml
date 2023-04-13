@@ -1,0 +1,5 @@
+name: Database - Wide Column
+type: Tech-1
+data:
+  github_repo:
+    - 388946490 # repo:facebookincubator/velox

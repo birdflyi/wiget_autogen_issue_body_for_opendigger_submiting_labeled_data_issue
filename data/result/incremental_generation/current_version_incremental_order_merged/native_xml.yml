@@ -1,0 +1,7 @@
+name: Database - Native XML
+type: Tech-1
+data:
+  github_repo:
+    - 1374129 # repo:BaseXdb/basex
+    - 11695619 # repo:eXist-db/exist
+    - 5841618 # repo:sedna/sedna

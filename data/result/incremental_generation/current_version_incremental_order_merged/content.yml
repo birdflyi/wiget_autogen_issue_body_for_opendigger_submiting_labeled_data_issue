@@ -1,0 +1,6 @@
+name: Database - Content
+type: Tech-1
+data:
+  github_repo:
+    - 1244027 # repo:ModeShape/modeshape
+    - 206403 # repo:apache/jackrabbit
