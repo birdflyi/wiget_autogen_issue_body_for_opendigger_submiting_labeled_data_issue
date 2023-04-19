@@ -76,6 +76,7 @@ data:
     - 8544988 # repo:dreamdbvilas/wonderdb
     - 97518356 # repo:dremio/dremio-oss
     - 138754790 # repo:duckdb/duckdb
+    - 95817032 # repo:edgedb/edgedb
     - 341208515 # repo:edgelesssys/edgelessdb
     - 61373806 # repo:elasql/elasql
     - 387622288 # repo:elliotchance/vsql
@@ -139,6 +140,7 @@ data:
     - 176278485 # repo:sqlite/sqlite
     - 151367139 # repo:stellarsql/StellarSQL
     - 12067343 # repo:stephentu/silo
+    - 436658287 # repo:surrealdb/surrealdb
     - 196353673 # repo:taosdata/TDengine
     - 285012797 # repo:tensorbase/tensorbase
     - 443220240 # repo:tinyplex/tinybase

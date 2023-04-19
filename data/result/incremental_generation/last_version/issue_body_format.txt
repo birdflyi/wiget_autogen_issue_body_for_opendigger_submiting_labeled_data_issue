@@ -6,6 +6,7 @@ Repos:
 
 - TileDB-Inc/TileDB
 - datajaguar/jaguardb
+- facebookincubator/velox
 - featureform/embeddinghub
 - jnidzwetzki/bboxdb
 - milvus-io/milvus
@@ -33,6 +34,7 @@ Repos:
 - 256dpi/lungo
 - AlaSQL/alasql
 - Alachisoft/NosDB
+- Anna-Team/AnnaDB
 - ArcadeData/arcadedb
 - BaseXdb/basex
 - DevrexLabs/OrigoDB
@@ -260,6 +262,7 @@ Repos:
 - couchbase/couchbase-lite-core
 - couchbase/forestdb
 - cruppstahl/upscaledb
+- danielealbano/cachegrand
 - datajaguar/jaguardb
 - datajaguar/jaguardb
 - deroproject/graviton
@@ -380,6 +383,7 @@ Repos:
 - dioptre/rasdaman
 - gregjurman/openqm
 - jrmarino/AdaBase
+- vanilladb/vanillacore
 
 Label: Native XML
 
@@ -540,6 +544,7 @@ Repos:
 - dreamdbvilas/wonderdb
 - dremio/dremio-oss
 - duckdb/duckdb
+- edgedb/edgedb
 - edgelesssys/edgelessdb
 - elasql/elasql
 - elliotchance/vsql
@@ -603,6 +608,7 @@ Repos:
 - sqlite/sqlite
 - stellarsql/StellarSQL
 - stephentu/silo
+- surrealdb/surrealdb
 - taosdata/TDengine
 - tensorbase/tensorbase
 - tinyplex/tinybase
@@ -696,6 +702,7 @@ Repos:
 - baidu/tera
 - delta-io/delta
 - eleme/lindb
+- facebookincubator/velox
 - hypertable/hypertable
 - influxdata/influxdb
 - kashirin-alex/swc-db

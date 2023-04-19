@@ -6,6 +6,7 @@ Repos:
 
 - 86868560 # repo:TileDB-Inc/TileDB
 - 96580430 # repo:datajaguar/jaguardb
+- 388946490 # repo:facebookincubator/velox
 - 304530333 # repo:featureform/embeddinghub
 - 45732002 # repo:jnidzwetzki/bboxdb
 - 208728772 # repo:milvus-io/milvus
@@ -33,6 +34,7 @@ Repos:
 - 215532341 # repo:256dpi/lungo
 - 25780780 # repo:AlaSQL/alasql
 - 61179047 # repo:Alachisoft/NosDB
+- 522606931 # repo:Anna-Team/AnnaDB
 - 396867188 # repo:ArcadeData/arcadedb
 - 1374129 # repo:BaseXdb/basex
 - 8799170 # repo:DevrexLabs/OrigoDB
@@ -260,6 +262,7 @@ Repos:
 - 66783145 # repo:couchbase/couchbase-lite-core
 - 12497058 # repo:couchbase/forestdb
 - 811881 # repo:cruppstahl/upscaledb
+- 125234630 # repo:danielealbano/cachegrand
 - 96580430 # repo:datajaguar/jaguardb
 - 96580430 # repo:datajaguar/jaguardb
 - 292903178 # repo:deroproject/graviton
@@ -380,6 +383,7 @@ Repos:
 - 5407611 # repo:dioptre/rasdaman
 - 1984888 # repo:gregjurman/openqm
 - 34215181 # repo:jrmarino/AdaBase
+- 61269853 # repo:vanilladb/vanillacore
 
 Label: Native XML
 
@@ -540,6 +544,7 @@ Repos:
 - 8544988 # repo:dreamdbvilas/wonderdb
 - 97518356 # repo:dremio/dremio-oss
 - 138754790 # repo:duckdb/duckdb
+- 95817032 # repo:edgedb/edgedb
 - 341208515 # repo:edgelesssys/edgelessdb
 - 61373806 # repo:elasql/elasql
 - 387622288 # repo:elliotchance/vsql
@@ -603,6 +608,7 @@ Repos:
 - 176278485 # repo:sqlite/sqlite
 - 151367139 # repo:stellarsql/StellarSQL
 - 12067343 # repo:stephentu/silo
+- 436658287 # repo:surrealdb/surrealdb
 - 196353673 # repo:taosdata/TDengine
 - 285012797 # repo:tensorbase/tensorbase
 - 443220240 # repo:tinyplex/tinybase
@@ -696,6 +702,7 @@ Repos:
 - 18129915 # repo:baidu/tera
 - 182849188 # repo:delta-io/delta
 - 191676087 # repo:eleme/lindb
+- 388946490 # repo:facebookincubator/velox
 - 1584552 # repo:hypertable/hypertable
 - 13124802 # repo:influxdata/influxdb
 - 191442206 # repo:kashirin-alex/swc-db
@@ -704,3 +711,4 @@ Repos:
 - 28449431 # repo:scylladb/scylla
 - 28449431 # repo:scylladb/scylla
 - 41209174 # repo:strapdata/elassandra
+

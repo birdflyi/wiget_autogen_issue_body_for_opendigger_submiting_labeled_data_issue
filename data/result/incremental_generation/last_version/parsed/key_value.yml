@@ -58,6 +58,7 @@ data:
     - 66783145 # repo:couchbase/couchbase-lite-core
     - 12497058 # repo:couchbase/forestdb
     - 811881 # repo:cruppstahl/upscaledb
+    - 125234630 # repo:danielealbano/cachegrand
     - 96580430 # repo:datajaguar/jaguardb
     - 96580430 # repo:datajaguar/jaguardb
     - 292903178 # repo:deroproject/graviton

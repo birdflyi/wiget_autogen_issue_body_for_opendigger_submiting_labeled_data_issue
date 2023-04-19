@@ -458,10 +458,84 @@ def auto_gen_issue_body_for_opendigger(df, issue_body_format_txt_path, use_colum
     # print(label_datalist_dict)
 
     issue_body_str = gen_issue_body_format_str(label_datalist_dict, level_pattern_dict, del_emptyval_data=del_emptyval_data)
+    issue_body_str = re.sub(r"\n\n+", "\n\n", issue_body_str)
     # print(issue_boddy_str)
 
     with open(issue_body_format_txt_path, 'w') as f:
         f.write(issue_body_str)
+
+
+def get_label_records_dict_from_issue_body_format(issue_body_format_path, pre_format_conf, c_sep, c_name_reg,
+                                                  rec_k_v_reg, encoding='utf-8'):
+    with open(issue_body_format_path, 'r', encoding=encoding) as f:
+        s = f.read()
+        if pre_format_conf:
+            for reg, repl in dict(pre_format_conf).items():
+                s = re.sub(r'{}'.format(reg), '{}'.format(repl), s)
+        c_rec_formatstrs = s.split(sep=c_sep)
+        c_rec_formatstrs = [x.strip() for x in c_rec_formatstrs if x.strip() != '']
+        label_records_dict = {}
+        for i in range(len(c_rec_formatstrs)):
+            c_rec_formatstr = c_rec_formatstrs[i]
+            temp_category_label = re.findall(r'{}'.format(c_name_reg), c_rec_formatstr)[0]
+            temp_records_dict = dict(re.findall(r'{}'.format(rec_k_v_reg), c_rec_formatstr))
+            label_records_dict[temp_category_label] = temp_records_dict
+    return label_records_dict
+
+
+def update_issue_body_format_parse_github_id(last_v_path, curr_inc_path, ref_body_format_path, update_res_path=None):
+    update_res_path = update_res_path or last_v_path
+    sep = "#====#"
+    pre_format_conf_kpattern_vstdreplacement = {
+        "\n(- \\d+ # repo:([^\\s]+))": "\nREC::\\2[k:v]\\1",
+        "\n(- ([^\\s]+) # not found)": "\nREC::\\2[k:v]\\1",
+        "\n?Label: ([^\n]+)\n": f"\n{sep}name: Database - \\1\n",
+    }
+    pre_format_conf = pre_format_conf_kpattern_vstdreplacement
+    c_name_reg = "name: Database - ([^\n]+)\n"
+    rec_k_v_reg = "REC::([^\\s]+)\[k:v\](- [^\\n]+)"
+    last_v_label_records_dict = get_label_records_dict_from_issue_body_format(last_v_path, pre_format_conf, c_sep=sep,
+                                                                              c_name_reg=c_name_reg, rec_k_v_reg=rec_k_v_reg)
+
+    curr_inc_label_records_dict = get_label_records_dict_from_issue_body_format(curr_inc_path, pre_format_conf, c_sep=sep,
+                                                                                c_name_reg=c_name_reg, rec_k_v_reg=rec_k_v_reg)
+    for c, rec in curr_inc_label_records_dict.items():
+        if c not in last_v_label_records_dict.keys():
+            last_v_label_records_dict[c] = {}
+        else:
+            last_v_label_records_dict[c] = dict(last_v_label_records_dict[c])
+        last_v_label_records_dict[c].update(dict(curr_inc_label_records_dict[c]))
+
+    pre_format_conf_mini = {
+        "\n- ([^\\s]+)": "\n\\1",
+        "(\n?)Label: ([^\n]+)\n": f"\\1{sep}Label: \\2\n",
+    }
+    c_name_reg = "Label: ([^\n]+)\n"
+    with open(ref_body_format_path, 'r', encoding=encoding) as f:
+        s = f.read()
+        for reg, repl in dict(pre_format_conf_mini).items():
+            s = re.sub(r'{}'.format(reg), '{}'.format(repl), s)
+        c_rec_formatstrs = s.split(sep=sep)
+        # c_rec_formatstrs = [x.strip() for x in c_rec_formatstrs if x.strip() != '']  # keep all format here
+        for i in range(len(c_rec_formatstrs)):
+            c_rec_formatstr = c_rec_formatstrs[i]
+            temp_category_label_findall = re.findall(r'{}'.format(c_name_reg), c_rec_formatstr)
+            if not temp_category_label_findall:
+                continue
+            temp_category_label = temp_category_label_findall[0]
+            temp_records_dict = last_v_label_records_dict[temp_category_label]
+            c_record_keys = c_rec_formatstr.split('\n')
+            for j in range(len(c_record_keys)):
+                key = c_record_keys[j]
+                if key in temp_records_dict.keys():
+                    c_record_keys[j] = temp_records_dict[key]
+            c_rec_formatstr_parse_github_id = '\n'.join(c_record_keys)
+            c_rec_formatstrs[i] = c_rec_formatstr_parse_github_id
+        c_rec_formatstrs_parse_github_id = ''.join(c_rec_formatstrs)
+    with open(update_res_path, 'w', encoding=encoding) as f:
+        f.write(c_rec_formatstrs_parse_github_id)
+    print(f"{update_res_path} is saved!")
+    return
 
 
 def df_getRepoId_to_yaml(src_path, tar_dir=None):
@@ -573,9 +647,9 @@ if __name__ == '__main__':
         "dbfeatfusion_records_202304_automerged_manulabeled.csv",
     ]
     # dynamic settings
-    idx_last_v = 0
+    idx_last_v = 1
     idx_curr_v = 1
-    INITIALIZATION = False
+    INITIALIZE = True
 
     # initialize the source data
     submodule_result_dbfeatfusion_records_dir = os.path.join(BASE_DIR, "db_feature_data_fusion/data/manulabeled")
@@ -605,7 +679,7 @@ if __name__ == '__main__':
     curr_inc_labeled_data_filename = labeled_data_filenames[idx_curr_v]
     curr_inc_labeled_data_path = os.path.join(database_repo_label_dataframe_dir, curr_inc_labeled_data_filename)
     curr_inc_path_issue_body_format_txt = os.path.join(BASE_DIR, 'data/result/incremental_generation/curr_relative_incremental/issue_body_format.txt')
-    if not INITIALIZATION:
+    if not INITIALIZE:
         df_curr_inc_labeled_data = pd.read_csv(curr_inc_labeled_data_path, index_col=False, encoding=encoding)
         if ORDER_BY_GITHUB_REPO_LINK:
             df_curr_inc_labeled_data.sort_values(by=['github_repo_link'], axis=0, ascending=True, inplace=True)
@@ -622,6 +696,12 @@ if __name__ == '__main__':
         raise Warning("Please Create data issue in open-digger, then save the bot comments into "
                       "issue_body_format_parse_github_id.txt! Finally, set parse_github_id_str_to_yaml = True.")
 
+    last_v_issue_body_format_parse_github_id_path = os.path.join(last_v_dir, "issue_body_format_parse_github_id.txt")
+    curr_inc_issue_body_format_txt_path = os.path.join(BASE_DIR, 'data/result/incremental_generation/curr_relative_incremental/issue_body_format.txt')
+    curr_inc_dir = os.path.join(os.path.dirname(curr_inc_issue_body_format_txt_path), "parsed")
+    curr_inc_issue_body_format_parse_github_id_path = os.path.join(curr_inc_dir, "issue_body_format_parse_github_id.txt")
+    update_issue_body_format_parse_github_id(last_v_issue_body_format_parse_github_id_path, curr_inc_issue_body_format_parse_github_id_path, last_v_issue_body_format_txt_path)
+
     # ----------3. Auto-generate yaml for issue_body_format after parse-github-id----------
     # issue_body_format_parse_github_id.txt is parsed by open-digger, here are steps should be done before:
     #   1) Open a issue(e.g. [X-lab2017/open-digger#1245](https://github.com/X-lab2017/open-digger/issues/1245)) with content in last_v_issue_body_format_txt_path = './data/issue_body_format.txt'
@@ -634,7 +714,7 @@ if __name__ == '__main__':
     tar_getRepoId_to_yaml_dir = last_v_dir
     df_getRepoId_to_yaml(src_getRepoId_to_yaml_path, tar_dir=tar_getRepoId_to_yaml_dir)
 
-    if not INITIALIZATION:
+    if not INITIALIZE:
         curr_inc_src_dir = os.path.join(os.path.dirname(curr_inc_path_issue_body_format_txt), "parsed")
         curr_inc_src_path = os.path.join(curr_inc_src_dir, "issue_body_format_parse_github_id.txt")  # manually saved csv: contents are from the open-digger Bot(github-actions) comments
         src_getRepoId_to_yaml_path = curr_inc_src_path
