@@ -1,4 +1,4 @@
-DBMS_uriform,X_DBMS_uriform,Y_DBMS_uriform,match_state,manu_labeled_flag,DBMS_common_name,category_label,Written in,Query Interface,System Architecture,Developer,Country of Origin,initial_release_year,current_release_year,Project Type,License_info,github_repo_link,open_source_license,Score_Mar-2023,Rank_Mar-2023
+DBMS_urnform,X_DBMS_urnform,Y_DBMS_urnform,match_state,manu_labeled_flag,DBMS_common_name,category_label,Written in,Query Interface,System Architecture,Developer,Country of Origin,initial_release_year,current_release_year,Project Type,License_info,github_repo_link,open_source_license,Score_Mar-2023,Rank_Mar-2023
 4store,4store,4store,Normal,Y_auto,4store,RDF,C,SPARQL,,,GB,2009,,Open Source,GPL v3,4store/4store,Y,0.66,250
 abhot,abhot,,X_Single,Y_auto,abhot,,Java,,,,CN,2017,,"Academic,Open Source",Apache v2,quqiangsheng/abhot,Y,,
 accumulo,accumulo,accumulo,Normal,Y_auto,Accumulo,Wide column,Java,"Custom API,Command-line / Shell",Shared-Disk,US National Security Agency,US,2008,2020,Open Source,Apache v2,apache/accumulo,Y,5.39,77
