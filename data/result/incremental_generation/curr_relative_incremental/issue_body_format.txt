@@ -1,34 +1,10 @@
-Label: Array
-
-Type: Tech-1
-
-Repos:
-
-- facebookincubator/velox
-
-Label: Document
-
-Type: Tech-1
-
-Repos:
-
-- Anna-Team/AnnaDB
-
 Label: Key-value
 
 Type: Tech-1
 
 Repos:
 
-- danielealbano/cachegrand
-
-Label: Multivalue
-
-Type: Tech-1
-
-Repos:
-
-- vanilladb/vanillacore
+- boltdb/bolt
 
 Label: Relational
 
@@ -36,14 +12,5 @@ Type: Tech-1
 
 Repos:
 
-- edgedb/edgedb
-- surrealdb/surrealdb
-
-Label: Wide column
-
-Type: Tech-1
-
-Repos:
-
-- facebookincubator/velox
+- georgia-tech-db/eva
 

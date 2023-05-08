@@ -5,6 +5,7 @@ Type: Tech-1
 Repos:
 
 - TileDB-Inc/TileDB
+- cran/scidb
 - datajaguar/jaguardb
 - facebookincubator/velox
 - featureform/embeddinghub
@@ -58,6 +59,7 @@ Repos:
 - arangodb/arangodb
 - attic-labs/noms
 - beardedeagle/mnesiac
+- bergdb/bergdb
 - berkeleydb/libdb
 - bigchaindb/bigchaindb
 - bitnine-oss/agensgraph
@@ -114,6 +116,7 @@ Repos:
 - rethinkdb/rethinkdb
 - ribelo/doxa
 - sachin-sinha/BangDB
+- sedna/sedna
 - sergeyksv/tingodb
 - sirixdb/sirix
 - small-tech/jsdb
@@ -128,6 +131,7 @@ Repos:
 - typicode/lowdb
 - unnamed38/fueldb
 - vespa-engine/vespa
+- xapian/xapian
 - xtdb/xtdb
 - ydb-platform/ydb
 - zerodb/zerodb
@@ -317,6 +321,7 @@ Repos:
 - oleiade/Elevator
 - oleiade/trousseau
 - oracle/coherence
+- oracle/nosql-go-sdk
 - orbitdb/orbit-db
 - orientechnologies/orientdb
 - petermattis/pebble
@@ -437,6 +442,7 @@ Repos:
 - orientechnologies/orientdb
 - pilgr/Paper
 - pipelinedb/pipelinedb
+- postgres/postgres
 - realm/realm-core
 - tzaeschke/zoodb
 - zhihu/Matisse
@@ -668,6 +674,7 @@ Repos:
 - SiriDB/siridb-server
 - VictoriaMetrics/VictoriaMetrics
 - apache/iotdb
+- cnosdb/cnosdb
 - graphite-project/graphite-web
 - griddb/griddb
 - hawkular/hawkular-metrics

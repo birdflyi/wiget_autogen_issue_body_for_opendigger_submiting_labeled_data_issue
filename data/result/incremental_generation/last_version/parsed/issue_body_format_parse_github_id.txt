@@ -5,6 +5,7 @@ Type: Tech-1
 Repos:
 
 - 86868560 # repo:TileDB-Inc/TileDB
+- 17699493 # repo:cran/scidb
 - 96580430 # repo:datajaguar/jaguardb
 - 388946490 # repo:facebookincubator/velox
 - 304530333 # repo:featureform/embeddinghub
@@ -58,6 +59,7 @@ Repos:
 - 2649214 # repo:arangodb/arangodb
 - 36778364 # repo:attic-labs/noms
 - 141378316 # repo:beardedeagle/mnesiac
+- 88422672 # repo:bergdb/bergdb
 - 2380364 # repo:berkeleydb/libdb
 - 51290852 # repo:bigchaindb/bigchaindb
 - 57401138 # repo:bitnine-oss/agensgraph
@@ -114,6 +116,7 @@ Repos:
 - 6452529 # repo:rethinkdb/rethinkdb
 - 336867666 # repo:ribelo/doxa
 - 34056205 # repo:sachin-sinha/BangDB
+- 5841618 # repo:sedna/sedna
 - 9525219 # repo:sergeyksv/tingodb
 - 4604367 # repo:sirixdb/sirix
 - 295745510 # repo:small-tech/jsdb
@@ -128,6 +131,7 @@ Repos:
 - 18351848 # repo:typicode/lowdb
 - 25364889 # repo:unnamed38/fueldb
 - 60377070 # repo:vespa-engine/vespa
+- 735981 # repo:xapian/xapian
 - 125824259 # repo:xtdb/xtdb
 - 456549280 # repo:ydb-platform/ydb
 - 47479424 # repo:zerodb/zerodb
@@ -317,6 +321,7 @@ Repos:
 - 4211523 # repo:oleiade/Elevator
 - 12106192 # repo:oleiade/trousseau
 - 242776849 # repo:oracle/coherence
+- 192418550 # repo:oracle/nosql-go-sdk
 - 48617634 # repo:orbitdb/orbit-db
 - 7083240 # repo:orientechnologies/orientdb
 - 278684767 # repo:petermattis/pebble
@@ -437,6 +442,7 @@ Repos:
 - 7083240 # repo:orientechnologies/orientdb
 - 37285717 # repo:pilgr/Paper
 - 14702444 # repo:pipelinedb/pipelinedb
+- 927442 # repo:postgres/postgres
 - 1917262 # repo:realm/realm-core
 - 3893984 # repo:tzaeschke/zoodb
 - 88111990 # repo:zhihu/Matisse
@@ -668,6 +674,7 @@ Repos:
 - 55093657 # repo:SiriDB/siridb-server
 - 150954997 # repo:VictoriaMetrics/VictoriaMetrics
 - 158975124 # repo:apache/iotdb
+- 420965027 # repo:cnosdb/cnosdb
 - 4254338 # repo:graphite-project/graphite-web
 - 52420005 # repo:griddb/griddb
 - 17705626 # repo:hawkular/hawkular-metrics

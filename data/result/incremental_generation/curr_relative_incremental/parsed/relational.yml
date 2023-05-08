@@ -2,5 +2,4 @@ name: Database - Relational
 type: Tech-1
 data:
   github_repo:
-    - 95817032 # repo:edgedb/edgedb
-    - 436658287 # repo:surrealdb/surrealdb
+    - 148087762 # repo:georgia-tech-db/eva

@@ -113,6 +113,7 @@ data:
     - 4211523 # repo:oleiade/Elevator
     - 12106192 # repo:oleiade/trousseau
     - 242776849 # repo:oracle/coherence
+    - 192418550 # repo:oracle/nosql-go-sdk
     - 48617634 # repo:orbitdb/orbit-db
     - 7083240 # repo:orientechnologies/orientdb
     - 278684767 # repo:petermattis/pebble
