@@ -3,5 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/db_feature_data_fusion" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/db_feature_data_fusion/db_engines_ranking_table_crawling" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/db_feature_data_fusion/dbdbio_OSDB_info_crawling" vcs="Git" />
   </component>
 </project>

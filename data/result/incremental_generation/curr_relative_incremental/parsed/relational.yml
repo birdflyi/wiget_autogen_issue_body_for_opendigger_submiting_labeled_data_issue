@@ -2,4 +2,7 @@ name: Database - Relational
 type: Tech-1
 data:
   github_repo:
-    - 148087762 # repo:georgia-tech-db/eva
+    - 496817075 # repo:GlareDB/glaredb
+    - 20587599 # repo:apache/flink
+    - 91715647 # repo:gnocchixyz/gnocchi
+    - 507829396 # repo:openGemini/openGemini

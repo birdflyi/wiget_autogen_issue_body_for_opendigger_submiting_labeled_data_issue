@@ -7,7 +7,6 @@ Repos:
 - 86868560 # repo:TileDB-Inc/TileDB
 - 17699493 # repo:cran/scidb
 - 96580430 # repo:datajaguar/jaguardb
-- 388946490 # repo:facebookincubator/velox
 - 304530333 # repo:featureform/embeddinghub
 - 45732002 # repo:jnidzwetzki/bboxdb
 - 208728772 # repo:milvus-io/milvus
@@ -193,7 +192,6 @@ Repos:
 - 605999 # repo:twitter-archive/flockdb
 - 63110867 # repo:vaticle/typedb
 - 146459443 # repo:vesoft-inc/nebula
-- 146459443 # repo:vesoft-inc/nebula
 
 Label: Hierarchical
 
@@ -257,6 +255,7 @@ Repos:
 - beryldb/beryldb # not found
 - 51290852 # repo:bigchaindb/bigchaindb
 - 57401138 # repo:bitnine-oss/agensgraph
+- 15345331 # repo:boltdb/bolt
 - 320459354 # repo:bytedance/terarkdb
 - 33275300 # repo:cachelot/cachelot
 - 1196286 # repo:cbd/edis
@@ -268,17 +267,14 @@ Repos:
 - 811881 # repo:cruppstahl/upscaledb
 - 125234630 # repo:danielealbano/cachegrand
 - 96580430 # repo:datajaguar/jaguardb
-- 96580430 # repo:datajaguar/jaguardb
 - 292903178 # repo:deroproject/graviton
 - 132499340 # repo:developit/histore
-- 80087836 # repo:dgraph-io/badger
 - 80087836 # repo:dgraph-io/badger
 - 3115025 # repo:dlitz/resin
 - 437245741 # repo:dragonflydb/dragonfly
 - 17224514 # repo:ehcache/ehcache3
 - 393005910 # repo:engula/engula
 - 278320002 # repo:estraier/tkrzw
-- 94593596 # repo:etcd-io/bbolt
 - 94593596 # repo:etcd-io/bbolt
 - 11225014 # repo:etcd-io/etcd
 - 6934395 # repo:facebook/rocksdb
@@ -560,6 +556,7 @@ Repos:
 - 392839612 # repo:firebolt-db/firebolt-python-sdk
 - 305513242 # repo:fluree/db
 - 600860 # repo:fosslc/Ingres
+- 148087762 # repo:georgia-tech-db/eva
 - 3084708 # repo:ggaughan/ThinkSQL
 - 24650236 # repo:google/lovefield
 - 44781140 # repo:greenplum-db/gpdb
@@ -596,7 +593,6 @@ Repos:
 - 166387176 # repo:polypheny/Polypheny-DB
 - 927442 # repo:postgres/postgres
 - 258454329 # repo:ppml38/icecoal
-- 5349565 # repo:prestodb/presto
 - 5349565 # repo:prestodb/presto
 - 275838748 # repo:qikkDB/qikkdb
 - 19257422 # repo:questdb/questdb
@@ -709,13 +705,11 @@ Repos:
 - 18129915 # repo:baidu/tera
 - 182849188 # repo:delta-io/delta
 - 191676087 # repo:eleme/lindb
-- 388946490 # repo:facebookincubator/velox
 - 1584552 # repo:hypertable/hypertable
 - 13124802 # repo:influxdata/influxdb
 - 191442206 # repo:kashirin-alex/swc-db
 - 473235285 # repo:polarsignals/frostdb
 - 5349565 # repo:prestodb/presto
-- 28449431 # repo:scylladb/scylla
 - 28449431 # repo:scylladb/scylla
 - 41209174 # repo:strapdata/elassandra
 

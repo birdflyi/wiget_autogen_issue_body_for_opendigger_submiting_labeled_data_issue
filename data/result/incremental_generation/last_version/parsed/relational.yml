@@ -86,6 +86,7 @@ data:
     - 392839612 # repo:firebolt-db/firebolt-python-sdk
     - 305513242 # repo:fluree/db
     - 600860 # repo:fosslc/Ingres
+    - 148087762 # repo:georgia-tech-db/eva
     - 3084708 # repo:ggaughan/ThinkSQL
     - 24650236 # repo:google/lovefield
     - 44781140 # repo:greenplum-db/gpdb
@@ -122,7 +123,6 @@ data:
     - 166387176 # repo:polypheny/Polypheny-DB
     - 927442 # repo:postgres/postgres
     - 258454329 # repo:ppml38/icecoal
-    - 5349565 # repo:prestodb/presto
     - 5349565 # repo:prestodb/presto
     - 275838748 # repo:qikkDB/qikkdb
     - 19257422 # repo:questdb/questdb

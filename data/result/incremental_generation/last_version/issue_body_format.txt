@@ -7,7 +7,6 @@ Repos:
 - TileDB-Inc/TileDB
 - cran/scidb
 - datajaguar/jaguardb
-- facebookincubator/velox
 - featureform/embeddinghub
 - jnidzwetzki/bboxdb
 - milvus-io/milvus
@@ -193,7 +192,6 @@ Repos:
 - twitter-archive/flockdb
 - vaticle/typedb
 - vesoft-inc/nebula
-- vesoft-inc/nebula
 
 Label: Hierarchical
 
@@ -257,6 +255,7 @@ Repos:
 - beryldb/beryldb
 - bigchaindb/bigchaindb
 - bitnine-oss/agensgraph
+- boltdb/bolt
 - bytedance/terarkdb
 - cachelot/cachelot
 - cbd/edis
@@ -268,17 +267,14 @@ Repos:
 - cruppstahl/upscaledb
 - danielealbano/cachegrand
 - datajaguar/jaguardb
-- datajaguar/jaguardb
 - deroproject/graviton
 - developit/histore
-- dgraph-io/badger
 - dgraph-io/badger
 - dlitz/resin
 - dragonflydb/dragonfly
 - ehcache/ehcache3
 - engula/engula
 - estraier/tkrzw
-- etcd-io/bbolt
 - etcd-io/bbolt
 - etcd-io/etcd
 - facebook/rocksdb
@@ -560,6 +556,7 @@ Repos:
 - firebolt-db/firebolt-python-sdk
 - fluree/db
 - fosslc/Ingres
+- georgia-tech-db/eva
 - ggaughan/ThinkSQL
 - google/lovefield
 - greenplum-db/gpdb
@@ -596,7 +593,6 @@ Repos:
 - polypheny/Polypheny-DB
 - postgres/postgres
 - ppml38/icecoal
-- prestodb/presto
 - prestodb/presto
 - qikkDB/qikkdb
 - questdb/questdb
@@ -709,13 +705,11 @@ Repos:
 - baidu/tera
 - delta-io/delta
 - eleme/lindb
-- facebookincubator/velox
 - hypertable/hypertable
 - influxdata/influxdb
 - kashirin-alex/swc-db
 - polarsignals/frostdb
 - prestodb/presto
-- scylladb/scylla
 - scylladb/scylla
 - strapdata/elassandra
 

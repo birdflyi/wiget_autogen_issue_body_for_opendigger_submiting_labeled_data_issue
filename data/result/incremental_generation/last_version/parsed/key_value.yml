@@ -49,6 +49,7 @@ data:
     - beryldb/beryldb # not found
     - 51290852 # repo:bigchaindb/bigchaindb
     - 57401138 # repo:bitnine-oss/agensgraph
+    - 15345331 # repo:boltdb/bolt
     - 320459354 # repo:bytedance/terarkdb
     - 33275300 # repo:cachelot/cachelot
     - 1196286 # repo:cbd/edis
@@ -60,17 +61,14 @@ data:
     - 811881 # repo:cruppstahl/upscaledb
     - 125234630 # repo:danielealbano/cachegrand
     - 96580430 # repo:datajaguar/jaguardb
-    - 96580430 # repo:datajaguar/jaguardb
     - 292903178 # repo:deroproject/graviton
     - 132499340 # repo:developit/histore
-    - 80087836 # repo:dgraph-io/badger
     - 80087836 # repo:dgraph-io/badger
     - 3115025 # repo:dlitz/resin
     - 437245741 # repo:dragonflydb/dragonfly
     - 17224514 # repo:ehcache/ehcache3
     - 393005910 # repo:engula/engula
     - 278320002 # repo:estraier/tkrzw
-    - 94593596 # repo:etcd-io/bbolt
     - 94593596 # repo:etcd-io/bbolt
     - 11225014 # repo:etcd-io/etcd
     - 6934395 # repo:facebook/rocksdb

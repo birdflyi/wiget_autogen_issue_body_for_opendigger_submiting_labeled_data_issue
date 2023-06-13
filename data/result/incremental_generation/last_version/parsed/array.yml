@@ -5,7 +5,6 @@ data:
     - 86868560 # repo:TileDB-Inc/TileDB
     - 17699493 # repo:cran/scidb
     - 96580430 # repo:datajaguar/jaguardb
-    - 388946490 # repo:facebookincubator/velox
     - 304530333 # repo:featureform/embeddinghub
     - 45732002 # repo:jnidzwetzki/bboxdb
     - 208728772 # repo:milvus-io/milvus
