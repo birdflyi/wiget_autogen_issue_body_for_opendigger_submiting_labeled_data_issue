@@ -4,6 +4,7 @@ Type: Tech-1
 
 Repos:
 
+- 534109388 # repo:EuclidOLAP/EuclidOLAP
 - 86868560 # repo:TileDB-Inc/TileDB
 - 17699493 # repo:cran/scidb
 - 96580430 # repo:datajaguar/jaguardb
@@ -320,6 +321,7 @@ Repos:
 - 192418550 # repo:oracle/nosql-go-sdk
 - 48617634 # repo:orbitdb/orbit-db
 - 7083240 # repo:orientechnologies/orientdb
+- 606125384 # repo:paypal/junodb
 - 278684767 # repo:petermattis/pebble
 - 502268740 # repo:photondb/photondb
 - 37285717 # repo:pilgr/Paper
@@ -488,6 +490,7 @@ Repos:
 - 8799170 # repo:DevrexLabs/OrigoDB
 - 67904342 # repo:Expensify/Bedrock
 - 54005538 # repo:FirebirdSQL/firebird
+- 496817075 # repo:GlareDB/glaredb
 - 345982729 # repo:GreatSQL/GreatSQL
 - 516821813 # repo:HydrasDB/hydra
 - 858418 # repo:JakSprats/Alchemy-Database
@@ -508,6 +511,7 @@ Repos:
 - 1918497 # repo:apache/derby
 - 99919302 # repo:apache/doris
 - 6358188 # repo:apache/druid
+- 20587599 # repo:apache/flink
 - 41952293 # repo:apache/hawq
 - 206444 # repo:apache/hive
 - 56128733 # repo:apache/impala
@@ -558,6 +562,7 @@ Repos:
 - 600860 # repo:fosslc/Ingres
 - 148087762 # repo:georgia-tech-db/eva
 - 3084708 # repo:ggaughan/ThinkSQL
+- 91715647 # repo:gnocchixyz/gnocchi
 - 24650236 # repo:google/lovefield
 - 44781140 # repo:greenplum-db/gpdb
 - 33745913 # repo:h2database/h2database
@@ -583,6 +588,7 @@ Repos:
 - 351806852 # repo:neondatabase/neon
 - 147880351 # repo:njaard/sonnerie
 - 372536760 # repo:oceanbase/oceanbase
+- 507829396 # repo:openGemini/openGemini
 - 276117477 # repo:opengauss-mirror/openGauss-server
 - 3766330 # repo:pentaho/mondrian
 - 30753733 # repo:percona/percona-server
@@ -637,12 +643,10 @@ Repos:
 - 95614931 # repo:manticoresoftware/manticoresearch
 - 520096046 # repo:marqo-ai/marqo
 - 130688011 # repo:meilisearch/meilisearch
-- 208728772 # repo:milvus-io/milvus
 - 334274271 # repo:opensearch-project/OpenSearch
-- 268163609 # repo:qdrant/qdrant
-- 55072677 # repo:semi-technologies/weaviate
 - 36992044 # repo:sphinxsearch/sphinx
 - 79317191 # repo:typesense/typesense
+- 60377070 # repo:vespa-engine/vespa
 - 735981 # repo:xapian/xapian
 
 Label: Spatial DBMS
@@ -687,6 +691,19 @@ Repos:
 - 36483902 # repo:spotify/heroic
 - 196353673 # repo:taosdata/TDengine
 - 84240850 # repo:timescale/timescaledb
+
+Label: Vector DBMS
+
+Type: Tech-1
+
+Repos:
+
+- 201403923 # repo:activeloopai/deeplake
+- 546206616 # repo:chroma-core/chroma
+- 208728772 # repo:milvus-io/milvus
+- 268163609 # repo:qdrant/qdrant
+- 55072677 # repo:semi-technologies/weaviate
+- 195619075 # repo:vdaas/vald
 
 Label: Wide column
 

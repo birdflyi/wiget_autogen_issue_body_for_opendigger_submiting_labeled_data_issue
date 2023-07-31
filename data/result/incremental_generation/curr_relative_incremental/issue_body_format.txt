@@ -4,7 +4,25 @@ Type: Tech-1
 
 Repos:
 
-- EuclidOLAP/EuclidOLAP
+- dioptre/rasdaman
+- marqo-ai/marqo
+
+Label: Document
+
+Type: Tech-1
+
+Repos:
+
+- chroma-core/chroma
+- lancedb/lancedb
+
+Label: Graph
+
+Type: Tech-1
+
+Repos:
+
+- apache/age
 
 Label: Key-value
 
@@ -12,7 +30,15 @@ Type: Tech-1
 
 Repos:
 
-- paypal/junodb
+- firstbatchxyz/hollowdb
+
+Label: Object oriented
+
+Type: Tech-1
+
+Repos:
+
+- orioledb/orioledb
 
 Label: Relational
 
@@ -20,29 +46,8 @@ Type: Tech-1
 
 Repos:
 
-- GlareDB/glaredb
-- apache/flink
-- gnocchixyz/gnocchi
-- openGemini/openGemini
-
-Label: Search engine
-
-Type: Tech-1
-
-Repos:
-
-- vespa-engine/vespa
-
-Label: Vector DBMS
-
-Type: Tech-1
-
-Repos:
-
-- activeloopai/deeplake
-- chroma-core/chroma
-- milvus-io/milvus
-- qdrant/qdrant
-- semi-technologies/weaviate
-- vdaas/vald
+- ByConity/ByConity
+- lingo-db/lingo-db
+- man-group/ArcticDB
+- orioledb/orioledb
 

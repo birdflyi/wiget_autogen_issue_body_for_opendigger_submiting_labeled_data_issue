@@ -1,0 +1,613 @@
+DBMS_urnform,X_DBMS_urnform,Y_DBMS_urnform,match_state,manu_labeled_flag,DBMS_common_name,category_label,Written in,Query Interface,System Architecture,Developer,Country of Origin,initial_release_year,current_release_year,Project Type,License_info,github_repo_link,open_source_license,Score_Jul-2023,Rank_Jul-2023
+3store,3store,,X_Single,Y_auto,3store,RDF,C,SPARQL,Shared-Everything,Southampton University,GB,2003,2006,"Academic,Open Source",GPL v2,,Y,,
+4store,4store,4store,Normal,Y_auto,4store,RDF,C,SPARQL,,,GB,2009,,Open Source,GPL v3,4store/4store,Y,0.69,267
+abhot,abhot,,X_Single,Y_auto,abhot,,Java,,,,CN,2017,,"Academic,Open Source",Apache v2,quqiangsheng/abhot,Y,,
+accumulo,accumulo,accumulo,Normal,Y_auto,Accumulo,Wide column,Java,"Custom API,Command-line / Shell",Shared-Disk,US National Security Agency,US,2008,2022,Open Source,Apache v2,apache/accumulo,Y,4.93,82
+acedb,acedb,,X_Single,Y_auto,AceDB,,C,,,"Richard M. Durbin, Jean Thierry-Mieg",GB,1989,2018,"Academic,Open Source","GPL v2,LGPL v2",richarddurbin/acedb,Y,,
+actordb,actordb,actordb,Normal,Y_auto,ActorDB,Relational,Erlang,"Custom API,SQL",Shared-Nothing,Biokoda,SI,2014,,"Commercial,Open Source",Mozilla Public License 2.0,biokoda/actordb,Y,0.09,387
+aerospike,aerospike,aerospike,Normal,Y_auto,Aerospike,Key-value,C,Custom API,Shared-Nothing,"Aerospike, Inc.",US,2009#dbdbio>|<dbengines#2012,2022,"Commercial,Open Source",AGPL v3 and AGPL Licenses; open sourced in June 2014; commercial Enterprise Edition available,aerospike/aerospike-server,Y,6.48,66
+agatedb,agatedb,,X_Single,Y_auto,AgateDB,Key-value,Rust,Custom API,Embedded,PingCAP,CN,2019,,"Industrial Research,Open Source",Apache v2,tikv/agatedb,Y,,
+agedb,agedb,,X_Single,Y_auto,AGEDB,Graph,C,"SQL,Cypher",,Apache,CA,2019,,"Commercial,Open Source",Apache v2,apache/age,Y,,
+agensgraph,agensgraph,agensgraph,Normal,Y_auto,AgensGraph,"Relational,Key-value,Document,Graph",C,"SQL,Cypher",Shared-Everything,Bitnine Global Inc.,US,2013#dbdbio>|<dbengines#2016,2018,"Commercial,Open Source",Apache v2,bitnine-oss/agensgraph,Y,0.07,392
+akdb,akdb,,X_Single,Y_auto,AKDB,Relational,C,SQL,Shared-Everything,University of Zagreb,HR,2009,,"Academic,Educational,Open Source",,AILab-FOI/akdb,Y,,
+akumuli,akumuli,,X_Single,Y_auto,Akumuli,,C++,Custom API,,,RU,2013,,Open Source,Apache v2,akumuli/Akumuli,Y,,
+akutan,akutan,,X_Single,Y_auto,Akutan,RDF,Go,Custom API,Shared-Nothing,eBay,US,2019,,"Industrial Research,Open Source",Apache v2,eBay/akutan,Y,,
+alasql,alasql,alasql,Normal,Y_auto,AlaSQL,"Relational,Document",JavaScript,SQL,,Andrey Gershun & Mathias R. Wulff,RU,2014,,Open Source,MIT,AlaSQL/alasql,Y,0.72,263
+alchemydb,alchemydb,,X_Single,Y_auto,AlchemyDB,Relational,C,SQL,Shared-Everything,Russell Sullivan,US,2010,2012,"Commercial,Open Source",AGPL v3,JakSprats/Alchemy-Database,Y,,
+alenka,alenka,,X_Single,Y_auto,Alenka,Relational,C,SQL,,,US,2012,2017,Open Source,Apache v2,antonmks/Alenka,Y,,
+altibase,altibase,altibase,Normal,Y_auto,Altibase,Relational,"C,C++",SQL,Shared-Nothing,Altibase Corp.,KR,1999,2021,"Commercial,Open Source",AGPL v3,ALTIBASE/altibase,Y,1.53,179
+angstromdb,angstromdb,,X_Single,Y_auto,AngstromDB,Key-value,C,,,Amaury Bouchard,FR,2013,2013,"Hobby,Open Source",Apache v2,Amaury/AngstromDB,Y,,
+annadb,annadb,,X_Single,Y_auto,AnnaDB,Document,Rust,Custom API,Shared-Everything,Roman Right,DE,2021,,"Hobby,Open Source",Apache v2,Anna-Team/AnnaDB,Y,,
+antdb,antdb,antdb,Normal,Y_auto,AntDB,"Object oriented,Relational",C,SQL,,AsiaInfo Technologies Limited,CN,,,"Commercial,Open Source",Apache v2,ADBSQL/AntDB,Y#dbdbio>|<dbengines#N,0.35,321
+antidote,antidote,,X_Single,Y_auto,Antidote,Key-value,Erlang,SQL,,SyncFree European Project,FR,2015,,"Academic,Open Source",Apache v2,AntidoteDB/antidote,Y,,
+aodbm,aodbm,,X_Single,Y_auto,AODBM,,C,,,Daniel Waterworth,GB,2011,2011,Open Source,LGPL v3,DanielWaterworth/AODBM,Y,,
+arakoon,arakoon,,X_Single,Y_auto,Arakoon,Key-value,Ocaml,Custom API,Shared-Nothing,Incubaid,BE,2010,2015,Open Source,Apache v2,Incubaid/arakoon,Y,,
+arangodb,arangodb,arangodb,Normal,Y_auto,ArangoDB,"Key-value,Document,Graph",C++,"Custom API,HTTP / REST,Command-line / Shell",Shared-Nothing,ArangoDB Inc.,DE,2011#dbdbio>|<dbengines#2012,2023,"Commercial,Open Source",Apache v2; Commercial license (Enterprise) available,arangodb/arangodb,Y,4.57,87
+arcadedb,arcadedb,arcadedb,Normal,Y_auto,ArcadeDB,"Key-value,Document,Graph,Time Series",Java,"SQL,Cypher,HTTP / REST","Shared-Everything,Embedded",Arcade Data Ltd,GB,2021,2021,"Commercial,Open Source",Apache v2.0,ArcadeData/arcadedb,Y,0.23,350
+arcticdb,arcticdb,,X_Single,Y_auto,ArcticDB,Relational,C++,Custom API,Embedded,Man Group,GB,2018,,Open Source,Business Source License,man-group/ArcticDB,Y,,
+ardb,ardb,,X_Single,Y_auto,Ardb,Key-value,C++,Custom API,,Yinqi Wen,CN,2013,,Open Source,BSD,yinqiwen/ardb,Y,,
+aresdb,aresdb,,X_Single,Y_auto,AresDB,Relational,"C,C++,Go",Custom API,Shared-Disk,Uber,US,2018,,Open Source,Apache v2,uber/aresdb,Y,,
+asami,asami,,X_Single,Y_auto,Asami,Graph,Clojure,Custom API,Shared-Everything,"Cisco, Paula Gearon",US,2018,,"Hobby,Open Source",Eclipse Public License,quoll/asami,Y,,
+assassin,assassin,,X_Single,Y_auto,Assassin,Key-value,JavaScript,Custom API,Shared-Nothing,Ender Minyard,US,2020,,Open Source,MIT,genderev/assassin,Y,,
+asterixdb,asterixdb,,X_Single,Y_auto,AsterixDB,Document,Java,Custom API,Shared-Nothing,University of California-Irvine and University of California-Riverside,US,2009,,"Academic,Open Source",Apache v2,apache/asterixdb,Y,,
+atlas,atlas,,X_Single,Y_auto,Atlas,,Scala,Custom API,,Netflix,US,2014,,Open Source,,Netflix/atlas,Y,,
+aviondb,aviondb,,X_Single,Y_auto,AvionDB,Document,JavaScript,Custom API,Shared-Nothing,DappKit,"IN,US",2020,,"Commercial,Open Source",MIT,dappkit/aviondb,Y,,
+axion,axion,,X_Single,Y_auto,Axion,Relational,Java,SQL,Embedded,,US,2002,2007,Open Source,,,Y,,
+badgerdb,badgerdb,badger,Fuzzy:Normal,Y,BadgerDB,Key-value,Go,Custom API,Embedded,Dgraph,US,2017,,Open Source,Apache v2.0,dgraph-io/badger,Y,0.12,381
+bagri,bagri,,X_Single,Y_auto,Bagri,Document,Java,,,,RU,2014,,Open Source,Apache v2,dsukhoroslov/bagri,Y,,
+baikaldb,baikaldb,,X_Single,Y_auto,BaikalDB,Relational,C++,SQL,Shared-Nothing,Baidu,CN,2018,,Open Source,Apache v2,baidu/BaikalDB,Y,,
+bangdb,bangdb,bangdb,Normal,Y_auto,BangDB,Key-value#dbdbio>|<dbengines#Document,C,,"Shared-Everything,Embedded","IQLECT#dbdbio>|<dbengines#Sachin Sinha, BangDB",IN,2015#dbdbio>|<dbengines#2012,2021,"Commercial,Open Source",BSD 3,sachin-sinha/BangDB,Y,0.28,335
+basex,basex,basex,Normal,Y_auto,BaseX,Document#dbdbio>|<dbengines#Native XML,Java,XQuery,,BaseX GmbH,DE,2007,2023,"Academic,Open Source",BSD,BaseXdb/basex,Y,2.3,138
+bayesdb,bayesdb,,X_Single,Y_auto,BayesDB,,Python,,,Massachusetts Institute of Technology,US,2015,,"Academic,Open Source",Apache v2,probcomp/bayeslite,Y,,
+bbolt,bbolt,,X_Single,Y_auto,bbolt,Key-value,Go,,,CoreOS,US,2017,,Open Source,MIT,etcd-io/bbolt,Y,,
+bboxdb,bboxdb,,X_Single,Y_auto,BBoxDB,Array,Java,"Custom API,Command-line / Shell",Shared-Nothing,Jan Nidzwetzki,DE,2015,,Open Source,Apache v2,jnidzwetzki/bboxdb,Y,,
+beagle-sql,beagle-sql,,X_Single,Y_auto,Beagle SQL,Relational,C++,,,"Robert Klein, Jean-Claude Magras",US,1996,1999,Open Source,,jonahharris/osdb-beaglesql,Y,,
+bedrock,bedrock,,X_Single,Y_auto,Bedrock,Relational,C++,"SQL,Command-line / Shell","Shared-Disk,Embedded",Expensify,US,2016,,Open Source,LGPL v3,Expensify/Bedrock,Y,,
+bergdb,bergdb,bergdb,Normal,Y_auto,BergDB,Document#dbdbio>|<dbengines#Key-value,Java,,Embedded,Frans Lundberg,SE,2013,,Open Source,AGPL v3,bergdb/bergdb,Y,0.0,405
+beringei,beringei,,X_Single,Y_auto,Beringei,Key-value,C++,Custom API,Shared-Nothing,Facebook,US,2015,2017,Open Source,BSD,facebookarchive/beringei,Y,,
+berkeley-db,berkeley-db,oracle-berkeley-db,Fuzzy:Normal,Y,Oracle Berkeley DB,"Key-value,Document",,"Custom API,SQL,PL/SQL",Embedded,Sleepycat Software#dbdbio>|<dbengines#Oracle,US,1994,2020,"Commercial,Open Source","AGPL v3,Apache v2; commercial license available",berkeleydb/libdb,Y,3.64,101
+beryldb,beryldb,,X_Single,Y_auto,BerylDB,Key-value,C++,Custom API,,Beryl Labs,CL,2021,,"Hobby,Open Source",BSD,beryldb/beryldb,Y,,
+bigchaindb,bigchaindb,bigchaindb,Normal,Y_auto,BigchainDB,"Key-value,Document",Python,HTTP / REST,Shared-Nothing,BigchainDB GmbH,DE,2015#dbdbio>|<dbengines#2016,,"Commercial,Open Source",Apache v2#dbdbio>|<dbengines#AGPL v3,bigchaindb/bigchaindb,Y,0.99,225
+binaryrage,binaryrage,,X_Single,Y_auto,BinaryRage,Key-value,C#,Custom API,Embedded,Michael Christensen,DK,2012,2016,"Hobby,Open Source",,mchidk/BinaryRage,Y,,
+bitcask,bitcask,,X_Single,Y_auto,Bitcask,Key-value,Go,Custom API,Embedded,James Mills,AU,2019,,Open Source,MIT,prologic/bitcask,Y,,
+bitsy,bitsy,,X_Single,Y_auto,Bitsy,Graph,Java,Gremlin,Embedded,LambdaZen LLC,US,2013,,Open Source,Apache v2,lambdazen/bitsy,Y,,
+blackray,blackray,,X_Single,Y_auto,BlackRay,Relational,C++,SQL,Shared-Everything,"SoftMethod, Deutsche Telekom",DE,2005,2013,"Commercial,Open Source",GPL v2,,Y,,
+blazegraph,blazegraph,blazegraph,Normal,Y_auto,Blazegraph,"Graph,RDF",Java,SPARQL,Shared-Nothing,"SYSTAP, LLC.#dbdbio>|<dbengines#Blazegraph",US,2006,2019,"Commercial,Open Source",GPL v2#dbdbio>|<dbengines#extended commercial license available,blazegraph/database,Y,1.01,222
+blazingsql,blazingsql,,X_Single,Y_auto,BlazingSQL,Relational,C++,SQL,Shared-Nothing,BlazingDB,PE,2015,2021,"Commercial,Open Source","Apache v2,Proprietary",blazingdb/pyBlazing,Y,,
+blinkdb,blinkdb,,X_Single,Y_auto,BlinkDB,Relational,,SQL,Shared-Disk,"University of California-Berkeley, Massachusetts Institute of Technology",US,2012,2014,"Academic,Open Source",Apache v2,sameeragarwal/blinkdb,Y,,
+blueflood,blueflood,blueflood,Normal,Y_auto,Blueflood,Time Series,Java,,,Rackspace,US,2013,,Open Source,Apache v2.0,rackerlabs/blueflood,Y,0.18,363
+bojack,bojack,,X_Single,Y_auto,BoJack,Key-value,Crystal,Command-line / Shell,Shared-Everything,Marcelo Boeira,DE,2016,2018,Open Source,MIT,marceloboeira/bojack,Y,,
+boltdb,boltdb,boltdb,Normal,Y_auto,BoltDB,Key-value,Go,Custom API,Embedded,Ben Johnson,US,2013,2017,Open Source,MIT,boltdb/bolt,Y,0.94,229
+bonsaidb,bonsaidb,,X_Single,Y_auto,BonsaiDb,Key-value,Rust,,"Shared-Everything,Embedded",Khonsu Labs,US,2021,,Open Source,"Apache v2,MIT",khonsulabs/bonsaidb,Y,,
+brightstardb,brightstardb,brightstardb,Normal,Y_auto,BrightstarDB,RDF,C#,,,,GB,2012,,Open Source,MIT,BrightstarDB/BrightstarDB,Y,0.3,329
+btdb,btdb,,X_Single,Y_auto,BTDB,"Key-value,Object oriented",C#,Custom API,,Boris Letocha,CZ,2010,,Open Source,MIT,Bobris/BTDB,Y,,
+btrdb,btrdb,,X_Single,Y_auto,BTrDB,Relational,Go,,Shared-Disk,"University of California, Berkeley",US,2014,,"Academic,Open Source",GPL v3,BTrDB/btrdb-server,Y,,
+bugfruit,bugfruit,,X_Single,Y_auto,bugfruit,Key-value,Go,Custom API,Embedded,Reese Porter,US,2022,,"Hobby,Open Source",BSD,reesporte/bugfruit,Y,,
+buntdb,buntdb,,X_Single,Y_auto,BuntDB,Key-value,Go,,Embedded,Josh Baker,US,2016,,Open Source,MIT,tidwall/buntdb,Y,,
+bustub,bustub,,X_Single,Y_auto,BusTub,Relational,C++,SQL,,Carnegie Mellon University,US,2019,,"Academic,Educational,Open Source",MIT,cmu-db/bustub,Y,,
+byconity,byconity,,X_Single,Y_auto,ByConity,Relational,C++,SQL,Shared-Disk,ByteDance,CN,2020,,"Commercial,Open Source",Apache v2,ByConity/ByConity,Y,,
+c-store,c-store,,X_Single,Y_auto,C-Store,Relational,C++,SQL,Shared-Nothing,"Massachusetts Institute of Technology, Brown University",US,2005,2008,"Academic,Open Source",BSD,,Y,,
+cachegrand,cachegrand,,X_Single,Y_auto,Cachegrand,Key-value,C,HTTP / REST,,Cachegrand,CH,2018,,"Commercial,Open Source",BSD,danielealbano/cachegrand,Y,,
+calvin,calvin,,X_Single,Y_auto,Calvin,Relational,C++,,,Yale University,US,2012,2015,"Academic,Open Source",,yaledb/calvin,Y,,
+caskdb,caskdb,,X_Single,Y_auto,CaskDB,Key-value,Python,,Embedded,Avinash Sajjanshetty,IN,2022,,"Educational,Open Source",MIT,avinassh/py-caskdb,Y,,
+cassandra,cassandra,cassandra,Normal,Y_auto,Cassandra,"Wide column,Key-value",Java,Custom API,Shared-Nothing,Apache Software Foundation,US,2008,2023,Open Source,Apache v2,apache/cassandra,Y,106.53,12
+castledb,castledb,,X_Single,Y_auto,CastleDB,Document,Haxe,HTTP / REST,,Nicolas Cannasse,FR,2012,,Open Source,ISC License,ncannasse/castle,Y,,
+cayley,cayley,,X_Single,Y_auto,Cayley,RDF,Go,"GraphQL,Gremlin",,Google,US,2014,,Open Source,Apache v2,cayleygraph/cayley,Y,,
+ceresdb,ceresdb,,X_Single,Y_auto,CeresDB,Relational,Rust,"SQL,HTTP / REST",,,CN,2021,,Open Source,Apache v2,CeresDB/ceresdb,Y,,
+chaozzdb,chaozzdb,,X_Single,Y_auto,chaozzDB,,PHP,SQL,Embedded,Elmar Wenners,NL,2008,,"Hobby,Open Source",Creative Commons License,chaozznl/chaozzDB,Y,,
+cheetah,cheetah,,X_Single,Y_auto,Cheetah,Relational,Visual Basic,Custom API,Embedded,PlanetSquires Software,CA,2005,2012,Open Source,GPL v2,,Y,,
+chroma,chroma,chroma,Normal,Y_auto,Chroma,Document#dbdbio>|<dbengines#Vector DBMS,Python,Custom API,"Shared-Everything,Embedded",Chroma Inc.#dbdbio>|<dbengines#Chroma,US,2022,,"Commercial,Open Source",Apache v2#dbdbio>|<dbengines#Apache-2.0 license,chroma-core/chroma,Y,2.41,135
+chronicle-map,chronicle-map,,X_Single,Y_auto,Chronicle Map,Key-value,Java,,,Chronicle Software,GB,2014,,"Commercial,Open Source",LGPL v3,OpenHFT/Chronicle-Map,Y,,
+chronix,chronix,,X_Single,Y_auto,Chronix,,Java,Custom API,,QAware,DE,2015,2019,"Commercial,Open Source",Apache v2,ChronixDB/chronix.server,Y,,
+citus,citus,citus,Normal,Y_auto,Citus,Relational,C,SQL,Shared-Nothing,Citus Data,"TR,US",2010,2018,"Commercial,Open Source",AGPL v3; commercial license also available,citusdata/citus,Y,2.58,131
+clickhouse,clickhouse,clickhouse,Normal,Y_auto,ClickHouse,Relational,C++,"Custom API,SQL,HTTP / REST,Command-line / Shell",Shared-Nothing,Yandex#dbdbio>|<dbengines#Clickhouse Inc.,RU,2016,2023,"Commercial,Open Source",Apache v2.0,ClickHouse/ClickHouse,Y,15.3,40
+cloudkit,cloudkit,cloudkit,Normal,Y_auto,CloudKit,Document,,,,,US,2008#dbdbio>|<dbengines#2016,2011,Open Source,MIT,jcrosby/cloudkit,Y,2.92,119
+cnosdb,cnosdb,cnosdb,Normal,Y_auto,CnosDB,Relational#dbdbio>|<dbengines#Time Series,Rust,SQL,Shared-Disk,CnosDB,CN,2021#dbdbio>|<dbengines#2022,2023,"Commercial,Open Source",AGPL v3.0,cnosdb/cnosdb,Y,0.38,310
+cockroachdb,cockroachdb,cockroachdb,Normal,Y_auto,CockroachDB,Relational,Go,SQL,Shared-Nothing,Cockroach Labs,US,2014#dbdbio>|<dbengines#2015,2023,"Commercial,Open Source","Business Source License#dbdbio>|<dbengines#Apache 2.0, commercial license available",cockroachdb/cockroach,Y,7.04,60
+codernitydb,codernitydb,,X_Single,Y_auto,CodernityDB,Key-value,Python,HTTP / REST,Shared-Everything,Codernity.com,PL,2011,,Open Source,Apache v2,,Y,,
+cogadb,cogadb,,X_Single,Y_auto,CoGaDB,Relational,C++,SQL,Shared-Everything,TU Berlin,DE,2012,2020,"Academic,Open Source",GPL v3,,Y,,
+cogdb,cogdb,,X_Single,Y_auto,CogDB,RDF,Python,Custom API,Embedded,Arun Mahendra,CA,2017,,"Hobby,Open Source",MIT,arun1729/cog,Y,,
+column,column,,X_Single,Y_auto,Column,Relational,Go,Custom API,Embedded,Roman Atachiants,AE,2021,,"Hobby,Open Source",MIT,kelindar/column,Y,,
+comdb2,comdb2,comdb2,Normal,Y_auto,Comdb2,Relational,C,SQL,,Bloomberg#dbdbio>|<dbengines#Bloomberg Finance L.P.,US,2004,,Open Source,Apache v2.0,bloomberg/comdb2,Y,0.45,300
+compass,compass,,X_Single,Y_auto,Compass,"Document,Object oriented",Java,Custom API,Shared-Memory,Shay Banon,GB,2006,2009,Open Source,Apache v2,kimchy/compass,Y,,
+composedb,composedb,,X_Single,Y_auto,ComposeDB,Graph,TypeScript,GraphQL,,3Box Labs,IE,2022,,Open Source,"Apache v2,MIT",ceramicstudio/js-composedb,Y,,
+computedb,computedb,tibco-computedb,Fuzzy:Normal,Y,ComputeDB,Relational,Java,SQL,,Tibco,US,2015,,"Commercial,Open Source",Apache v2.0,SnappyDataInc/snappydata,Y,0.28,334
+conceptbasecc,conceptbasecc,,X_Single,Y_auto,ConceptBase.cc,Object oriented,,Datalog,,"University of Skövde, University of Aachen","DE,SE",1995,,"Academic,Open Source",BSD,,Y,,
+concourse,concourse,,X_Single,Y_auto,Concourse,Document,Java,Custom API,,Cinchapi Inc.,US,2012,,"Commercial,Open Source",Apache v2,cinchapi/concourse,Y,,
+condensation,condensation,,X_Single,Y_auto,Condensation,Object oriented,Java,Custom API,,,CH,2020,,Open Source,Apache v2,CondensationDB/Condensation-java,Y,,
+consus,consus,,X_Single,Y_auto,Consus,Key-value,C++,,,Cornell University,US,2015,,"Academic,Open Source",BSD,rescrv/Consus,Y,,
+consus-java,consus-java,,X_Single,Y_auto,Consus,"Object oriented,Relational",Java,,Embedded,Konstantin Knizhnik,RU,2004,,Open Source,BSD,,Y,,
+coreobject,coreobject,,X_Single,Y_auto,CoreObject,Object oriented,Objective-C,Custom API,,Étoilé Project,FR,2007,,"Academic,Open Source",MIT,etoile/CoreObject,Y,,
+couchbase,couchbase,couchbase,Normal,Y_auto,Couchbase,"Document,Key-value","C,C++,Erlang,Go",Custom API,Shared-Nothing,"Couchbase, Inc.",US,2010#dbdbio>|<dbengines#2011,2021,"Commercial,Open Source",Apache v2; Commercial licenses also available,couchbase/couchbase-lite-core,Y,25.14,32
+couchdb,couchdb,couchdb,Normal,Y_auto,CouchDB,Document,Erlang,HTTP / REST,Shared-Nothing,Damien Katz#dbdbio>|<dbengines#Apache Software Foundation,US,2005,2023,Open Source,Apache v2,apache/couchdb,Y,14.4,44
+covenantsql,covenantsql,covenantsql,Normal,Y_auto,CovenantSQL,Relational,Go,SQL,Shared-Nothing,Covenant Labs,CN,2018,,"Commercial,Open Source",Apache v2,CovenantSQL/CovenantSQL,Y,0.0,405
+cozodb,cozodb,,X_Single,Y_auto,CozoDB,Relational,Rust,Datalog,Embedded,Ziyang Hu,GB,2022,,"Hobby,Open Source",Mozilla Public License,cozodb/cozo,Y,,
+cql,cql,,X_Single,Y_auto,CQL++,Relational,C++,,"Shared-Everything,Embedded",Machine Independent Software Corporation,US,1994,2011,"Commercial,Open Source","GPL v2,Proprietary",,Y,,
+cqlite,cqlite,,X_Single,Y_auto,CQLite,Graph,Rust,Cypher,Embedded,Tilman Roeder,GB,2021,,"Hobby,Open Source",MIT,dyedgreen/cqlite,Y,,
+cratedb,cratedb,cratedb,Normal,Y_auto,CrateDB,Document,Java,"SQL,HTTP / REST,Command-line / Shell",Shared-Nothing,Crate.io,AT,2014#dbdbio>|<dbengines#2013,,"Commercial,Open Source",Apache v2,crate/crate,Y,0.91,231
+csql,csql,,X_Single,Y_auto,CSQL,Relational,,,,LAKSHYA Solutions Limited,IN,2005,2008,"Commercial,Open Source",GPL v2,,Y,,
+cubicweb,cubicweb,cubicweb,Normal,Y_auto,CubicWeb,Graph#dbdbio>|<dbengines#RDF,Python,Custom API,,Logilab,FR,2000#dbdbio>|<dbengines#2001,2021,Open Source,LGPL v2,-,Y,0.41,305
+cubrid,cubrid,cubrid,Normal,Y_auto,Cubrid,"Object oriented,Relational",C,"Custom API,SQL,Stored Procedures,Command-line / Shell",Shared-Nothing,"Naver Corporation#dbdbio>|<dbengines#CUBRID Corporation, CUBRID Foundation",KR,2008,2021,Open Source,"BSD,GPL v2#dbdbio>|<dbengines#Apache Version 2.0",CUBRID/cubrid,Y,1.67,169
+curiodb,curiodb,,X_Single,Y_auto,CurioDB,Key-value,Scala,Custom API,Shared-Nothing,Stephen McDonald,AU,2015,,Open Source,BSD,stephenmcd/curiodb,Y,,
+dalmatinerdb,dalmatinerdb,,X_Single,Y_auto,DalmatinerDB,,Erlang,,,Project FiFo,DE,2014,,Open Source,MIT,,Y,,
+databend,databend,databend,Normal,Y_auto,Databend,Relational,Rust,SQL,Shared-Disk,Databend Labs,CN,2020,2023,"Commercial,Open Source",Apache v2.0,datafuselabs/databend,Y,0.56,280
+datafusion,datafusion,,X_Single,Y_auto,DataFusion,Relational,Rust,SQL,Shared-Everything,,US,2016,,Open Source,Apache v2,apache/arrow-datafusion,Y,,
+datahike,datahike,,X_Single,Y_auto,Datahike,,Clojure,Datalog,Shared-Everything,lambdaforge UG,DE,2018,,Open Source,Eclipse Public License,replikativ/datahike,Y,,
+datascript,datascript,,X_Single,Y_auto,DataScript,Key-value,Clojure,Datalog,,Nikita Prokopov,RU,2014,,Open Source,Eclipse Public License,tonsky/datascript,Y,,
+db4o,db4o,db4o,Normal,Y_auto,db4o,Object oriented,,,Embedded,db4objects Inc.,US,2000#dbdbio>|<dbengines#2001,2014,"Commercial,Open Source","GPL v2,Proprietary#dbdbio>|<dbengines#commercial license available for existing customers only",iboxdb/db4o-gpl,Y,2.14,148
+dbreeze,dbreeze,,X_Single,Y_auto,DBreeze,"Key-value,Document",C#,Custom API,,Alexey Solovyov,DE,2012,,Open Source,BSD,hhblaze/DBreeze,Y,,
+dbx1000,dbx1000,,X_Single,Y_auto,DBx1000,Relational,"Assembly,C++",,Shared-Everything,"Massachusetts Institute of Technology, Carnegie Mellon University",US,2014,,"Academic,Open Source",ISC License,yxymit/DBx1000,Y,,
+deepdb,deepdb,,X_Single,Y_auto,DeepDB,Relational,C++,SQL,Shared-Everything,"Deep Information Sciences, Inc.",US,2010,2017,"Commercial,Open Source","AGPL v3,Proprietary",DeepFound/deep_engine,Y,,
+degdb,degdb,,X_Single,Y_auto,DegDB,Graph,Go,,,Tristan Rice,CA,2015,,Open Source,MIT,degdb/degdb,Y,,
+delta-lake,delta-lake,,X_Single,Y_auto,Delta Lake,Wide column,Scala,,Shared-Disk,Databricks,US,2019,,"Commercial,Open Source",Apache v2,delta-io/delta,Y,,
+densodb,densodb,,X_Single,Y_auto,DensoDB,Document,C#,,,Paolo Possanzini,IT,2012,2013,Open Source,,teamdev/densodb,Y,,
+derby,derby,derby,Normal,Y_auto,Derby,Relational,Java,SQL,Embedded,Cloudscape Inc.#dbdbio>|<dbengines#Apache Software Foundation,US,1997,2022,Open Source,Apache v2,apache/derby,Y,6.81,62
+dgraph,dgraph,dgraph,Normal,Y_auto,Dgraph,Graph,Go,GraphQL,Shared-Nothing,"Dgraph Labs, Inc.",US,2015#dbdbio>|<dbengines#2016,,"Commercial,Open Source",Apache v2.0,dgraph-io/dgraph,Y,1.66,170
+dolt,dolt,dolt,Normal,Y_auto,Dolt,Relational,Go,"Custom API,SQL,Command-line / Shell","Shared-Everything,Embedded",DoltHub Inc,US,2018,,Open Source,Apache v2.0,dolthub/dolt,Y,1.39,189
+doris,doris,apache-doris,Fuzzy:Normal,Y,Apache Doris,Relational,C++,SQL,,"Baidu#dbdbio>|<dbengines#Apache Software Foundation, originally contributed from Baidu",CN,2017,2023,Open Source,Apache v2.0,apache/doris,Y,0.64,272
+doxa,doxa,,X_Single,Y_auto,Doxa,Document,Clojure,Custom API,Embedded,Rafal Krzywaznia,PL,2021,,"Hobby,Open Source",Public Domain,ribelo/doxa,Y,,
+dqlite,dqlite,,X_Single,Y_auto,Dqlite,Relational,C,SQL,Shared-Nothing,Canonical,IT,2017,,Open Source,Apache v2,canonical/dqlite,Y,,
+dragonfly,dragonfly,dragonfly,Normal,Y_auto,Dragonfly,Key-value,C++,,Shared-Everything,Attos Technologies Ltd.#dbdbio>|<dbengines#DragonflyDB team and community contributors,IL,2021#dbdbio>|<dbengines#2023,2023,"Commercial,Open Source",Business Source License#dbdbio>|<dbengines#BSL 1.1,dragonflydb/dragonfly,Y,0.13,378
+dremio,dremio,,X_Single,Y_auto,Dremio,Relational,Java,SQL,Shared-Disk,Dremio,US,2015,,"Commercial,Open Source",Apache v2,dremio/dremio-oss,Y,,
+drill,drill,apache-drill,Fuzzy:Normal,Y,Apache Drill,Wide column#dbdbio>|<dbengines#Document,Java,"SQL,HTTP / REST",Shared-Nothing,Apache Software Foundation,US,2012,2023,Open Source,Apache v2,apache/drill,Y,2.94,117
+drizzle,drizzle,,X_Single,Y_auto,Drizzle,Relational,C++,SQL,,,US,2008,2012,Open Source,"BSD,GPL v2,GPL v3",,Y,,
+druid,druid,apache-druid,Fuzzy:Normal,Y,Apache Druid,Wide column#dbdbio>|<dbengines#Relational,Java,"Custom API,SQL,HTTP / REST",Shared-Nothing,Metamarkets#dbdbio>|<dbengines#Apache Software Foundation and contributors,US,2011#dbdbio>|<dbengines#2012,2023,Open Source,Apache v2,apache/druid,Y,3.23,108
+duckdb,duckdb,duckdb,Normal,Y_auto,DuckDB,Relational,C++,Custom API,Embedded,CWI,NL,2018,2020,"Academic,Open Source",MIT,duckdb/duckdb,Y,3.36,106
+ductiledb,ductiledb,,X_Single,Y_auto,DuctileDB,Graph,Java,Gremlin,Shared-Disk,PureSol Technologies,DE,2015,2018,Open Source,Apache v2,PureSolTechnologies/DuctileDB,Y,,
+dynomitedb,dynomitedb,,X_Single,Y_auto,DynomiteDB,,C,,,Netflix,US,2012,,Open Source,Apache v2,Netflix/dynomite,Y,,
+earthstar,earthstar,,X_Single,Y_auto,Earthstar,Document,TypeScript,Custom API,Embedded,Earthstar Project,US,2020,,"Academic,Open Source",LGPL v3,earthstar-project/earthstar,Y,,
+easedb,easedb,,X_Single,Y_auto,EaseDB,Document,Ruby,HTTP / REST,,Alexander Shakhmatov,RU,2013,2014,Open Source,MIT,X2rdas/easedb,Y,,
+echodb,echodb,,X_Single,Y_auto,EchoDB,Key-value,Rust,Custom API,Embedded,SurrealDB Ltd.,GB,2021,,Open Source,Apache v2,surrealdb/echodb,Y,,
+edgedb,edgedb,,X_Single,Y_auto,EdgeDB,"Object oriented,Relational","C,Python,Rust","Custom API,SQL,GraphQL,HTTP / REST,Command-line / Shell",Shared-Everything,MagicStack,CA,2018,,"Commercial,Open Source",Apache v2,edgedb/edgedb,Y,,
+edgelessdb,edgelessdb,edgelessdb,Normal,Y_auto,EdgelessDB,Relational,,SQL,Shared-Everything,Edgeless Systems,DE,2021,,"Commercial,Open Source",GPL v2,edgelesssys/edgelessdb,Y,0.0,405
+edis,edis,,X_Single,Y_auto,Edis,Key-value,Erlang,,,Chad DePue,US,2010,,Open Source,,cbd/edis,Y,,
+effiproz,effiproz,,X_Single,Y_auto,EffiProz,Relational,C#,SQL,Embedded,EffiProz LLC,US,,2012,"Commercial,Open Source",,,Y,,
+ehcache,ehcache,ehcache,Normal,Y_auto,Ehcache,Key-value,Java,Custom API,,"Terracotta Inc., owned by Software AG",US,2003#dbdbio>|<dbengines#2009,2022,Open Source,Apache v2; commercial licenses available,ehcache/ehcache3,Y,6.59,64
+einsteindb,einsteindb,,X_Single,Y_auto,EinsteinDB,Key-value,Rust,,,Whtcorps Inc.,US,2019,,Open Source,,YosiSF/EinsteinDB,Y,,
+ejdb,ejdb,ejdb,Normal,Y_auto,EJDB,"Document,Key-value",C,"Custom API,HTTP / REST",Embedded,Softmotions,RU,2012,,Open Source,MIT#dbdbio>|<dbengines#GPLv2,Softmotions/ejdb,Y,0.49,294
+elara-db,elara-db,,X_Single,Y_auto,Elara DB,Key-value,Python,Custom API,Embedded,Saurabh Pujari,IN,2021,,"Hobby,Open Source",BSD,saurabh0719/elara,Y,,
+elasql,elasql,,X_Single,Y_auto,ElaSQL,Relational,Java,SQL,,National Tsing Hua University,TW,2016,,"Academic,Open Source",Apache v2,elasql/elasql,Y,,
+elasticsearch,elasticsearch,elasticsearch,Normal,Y_auto,Elasticsearch,Document#dbdbio>|<dbengines#Search engine,Java,Custom API,Shared-Nothing,Elasticsearch BV,US,2004#dbdbio>|<dbengines#2010,2023,Open Source,Apache v2#dbdbio>|<dbengines#Elastic License,elastic/elasticsearch,Y,139.59,8
+elephantdb,elephantdb,,X_Single,Y_auto,ElephantDB,Key-value,Clojure,,,Nathan Marz,US,2011,,Open Source,BSD,nathanmarz/elephantdb,Y,,
+elevator,elevator,,X_Single,Y_auto,Elevator,Key-value,,"Custom API,Command-line / Shell",,Théo Crevon,DE,2012,2014,Open Source,MIT,oleiade/Elevator,Y,,
+eliasdb,eliasdb,,X_Single,Y_auto,EliasDB,Graph,Go,,,Matthias Ladkau,GB,2016,,Open Source,Mozilla Public License,krotik/eliasdb,Y,,
+elliptics,elliptics,elliptics,Normal,Y_auto,Elliptics,Key-value,"C++,Python","Custom API,Command-line / Shell",Shared-Disk,Reverbrain,RU,2009,,"Commercial,Open Source",LGPL v3,reverbrain/elliptics,Y,0.47,297
+engula,engula,,X_Single,Y_auto,Engula,Key-value,Rust,Custom API,Shared-Nothing,Huachao Huang,CN,2022,,"Hobby,Open Source",Apache v2,engula/engula,Y,,
+ennodb,ennodb,,X_Single,Y_auto,EnnoDB,Key-value,C,HTTP / REST,,Enno Rehling,NO,2012,2016,"Hobby,Open Source",ISC License,badgerman/ennodb,Y,,
+etcd,etcd,etcd,Normal,Y_auto,etcd,Key-value,Go,RPC,Shared-Nothing,CoreOS,US,2013,2019,Open Source,Apache v2.0,etcd-io/etcd,Y,9.01,51
+euclidesdb,euclidesdb,,X_Single,Y_auto,EuclidesDB,Array,C++,"Custom API,HTTP / REST",Shared-Everything,Christian S. Perone,PT,2018,,Open Source,Apache v2,perone/euclidesdb,Y,,
+euclidolap,euclidolap,,X_Single,Y_auto,EuclidOLAP,Array,C,Custom API,,Chen Zhigang,CN,2022,,"Hobby,Open Source",Apache v2,EuclidOLAP/EuclidOLAP,Y,,
+eva-db,eva-db,,X_Single,Y_auto,EVA DB,Relational,Python,SQL,Shared-Everything,Georgia Institute of Technology,US,2018,,"Academic,Open Source",Apache v2,georgia-tech-db/eva,Y,,
+evcache,evcache,,X_Single,Y_auto,EVCache,Key-value,,,Shared-Nothing,Netflix,US,2012,,Open Source,Apache v2,Netflix/EVCache,Y,,
+event-store,event-store,eventstoredb,Fuzzy:Normal,Y,Event Store,Event,"C#,C++,JavaScript",,,Event Store LLP,GB,2012,2021,"Commercial,Open Source",BSD,EventStore/EventStore,Y,1.55,174
+eventql,eventql,,X_Single,Y_auto,EventQL,Relational,C++,SQL,Shared-Nothing,DeepCortex GmbH,"DE,NL",2014,2017,"Commercial,Open Source",AGPL v3,eventql/eventql,Y,,
+exist-db,exist-db,exist-db,Normal,Y_auto,eXist-db,Document#dbdbio>|<dbengines#Native XML,Java,XQuery,,eXist Solutions GmbH,DE,2000,,"Commercial,Open Source",LGPL v2,eXist-db/exist,Y,1.1,216
+extensible-storage-engine,extensible-storage-engine,,X_Single,Y_auto,Extensible Storage Engine,Key-value,C++,Custom API,Embedded,Microsoft,US,1994,,"Commercial,Open Source",MIT,microsoft/Extensible-Storage-Engine,Y,,
+eyedb,eyedb,,X_Single,Y_auto,EyeDB,Object oriented,C++,Custom API,,Genethon Laboratories,FR,1992,2014,"Academic,Open Source",LGPL v2,,Y,,
+eyros,eyros,,X_Single,Y_auto,eyros,Array,Rust,Custom API,Embedded,bits.coop,US,2018,,Open Source,Parity Public License,peermaps/eyros,Y,,
+falcon,falcon,,X_Single,Y_auto,Falcon,,,,,Sun Microsystems,US,2006,2010,"Commercial,Open Source",,,Y,,
+fallen-8,fallen-8,,X_Single,Y_auto,Fallen-8,Graph,C#,HTTP / REST,,Henning Rauch,DE,2011,,"Hobby,Open Source",MIT,cosh/fallen-8,Y,,
+fastdb,fastdb,,X_Single,Y_auto,FastDB,Relational,C++,,Shared-Everything,Konstantin Knizhnik,RU,2011,,Open Source,,,Y,,
+faster,faster,,X_Single,Y_auto,FASTER,Key-value,"C#,C++",Custom API,Embedded,Microsoft,US,2018,,"Commercial,Open Source",MIT,microsoft/FASTER,Y,,
+featurebase,featurebase,featurebase,Normal,Y_auto,FeatureBase,Relational,Go,"Custom API,SQL,HTTP / REST,Command-line / Shell",Shared-Nothing,Molecula#dbdbio>|<dbengines#Molecula and Pilosa Open Source Contributors,US,2017,2022,Open Source,Apache v2,featurebasedb/featurebase,Y,0.36,317
+featureform,featureform,,X_Single,Y_auto,FeatureForm,Array,Go,Custom API,Shared-Everything,Featureform,US,2020,,"Commercial,Open Source",Mozilla Public License,featureform/embeddinghub,Y,,
+ferretdb,ferretdb,,X_Single,Y_auto,FerretDB,Document,Go,Custom API,Shared-Everything,FerretDB Inc.,US,2021,,Open Source,,FerretDB/FerretDB,Y,,
+filedb,filedb,,X_Single,Y_auto,FileDB,Key-value,C#,,,Mauricio David,BR,2015,2015,"Hobby,Open Source",MIT,mbdavid/FileDB,Y,,
+filodb,filodb,,X_Single,Y_auto,FiloDB,,Scala,PromQL,,Evan Chan,US,2015,,Open Source,Apache v2,filodb/FiloDB,Y,,
+finedb,finedb,,X_Single,Y_auto,FineDB,Key-value,C,Custom API,Shared-Memory,Amaury Bouchard,FR,2013,,Open Source,Apache v2,,Y,,
+firebird,firebird,firebird,Normal,Y_auto,Firebird,Relational,"C,C++","Custom API,SQL,Stored Procedures,Command-line / Shell",Shared-Everything,Borland#dbdbio>|<dbengines#Firebird Foundation,US,2000,2022,Open Source,Mozilla Public License#dbdbio>|<dbengines#Initial Developer's Public License,FirebirdSQL/firebird,Y,26.16,31
+flashdb,flashdb,,X_Single,Y_auto,FlashDB,Key-value,C,Custom API,Embedded,Armink,CN,2020,,"Hobby,Open Source",Apache v2,armink/FlashDB,Y,,
+fleetdb,fleetdb,,X_Single,Y_auto,FleetDB,Document,Clojure,Custom API,,Mark McGranaghan,US,2009,2014,"Academic,Open Source",MIT,mmcgrana/fleetdb,Y,,
+flockdb,flockdb,flockdb,Normal,Y_auto,FlockDB,Graph,Scala,,,Twitter,US,2010,2012,Open Source,Apache v2,twitter-archive/flockdb,Y,0.45,299
+fluree,fluree,fluree,Normal,Y_auto,Fluree,"Graph,Relational,Document,RDF",Clojure,"Custom API,SQL,GraphQL,SPARQL,HTTP / REST",,"Fluree, PBC",US,2017#dbdbio>|<dbengines#2018,,"Commercial,Open Source",AGPL v3; open-sourced in October 2020,fluree/db,Y,0.56,283
+fongo,fongo,,X_Single,Y_auto,Fongo,Document,Java,Custom API,Shared-Everything,Foursquare,US,2012,,Open Source,Apache v2,fakemongo/fongo,Y,,
+forestdb,forestdb,,X_Single,Y_auto,ForestDB,Key-value,C++,Custom API,Embedded,"Couchbase, Inc.",US,2013,,Open Source,Apache v2,couchbase/forestdb,Y,,
+foundationdb,foundationdb,foundationdb,Normal,Y_auto,FoundationDB,Key-value#dbdbio>|<dbengines#Document,C++,Custom API,Shared-Nothing,FoundationDB,US,2009#dbdbio>|<dbengines#2013,2020,Open Source,Apache v2.0,apple/foundationdb,Y,1.48,184
+framerd,framerd,,X_Single,Y_auto,FramerD,Object oriented,C,Custom API,,MIT Media Lab,US,1996,2005,"Academic,Open Source",GPL v2,,Y,,
+frostdb,frostdb,,X_Single,Y_auto,FrostDB,Wide column,Go,Custom API,Embedded,Polar Signals,US,2022,,Open Source,Apache v2,polarsignals/frostdb,Y,,
+fueldb,fueldb,,X_Single,Y_auto,FuelDB,Document,Java,,,Joris Basiglio,FR,2014,,Open Source,MIT,unnamed38/fueldb,Y,,
+gadfly,gadfly,,X_Single,Y_auto,Gadfly,Relational,Python,,,Aaron Watters,US,1994,2013,Open Source,Python License,,Y,,
+gaffer,gaffer,,X_Single,Y_auto,Gaffer,Graph,Java,HTTP / REST,,Government Communications Headquarters,GB,2016,,Open Source,Apache v2,gchq/Gaffer,Y,,
+gaia,gaia,,X_Single,Y_auto,Gaia,Object oriented,C++,Custom API,Embedded,GAIA,US,,,"Commercial,Open Source",MIT,gaia-platform/GaiaPlatform,Y,,
+genji,genji,,X_Single,Y_auto,Genji,Document,Go,SQL,Embedded,Asdine El Hrychy,AE,2018,,Open Source,,genjidb/genji,Y,,
+geode,geode,geode,Normal,Y_auto,Geode,Key-value,Java,Custom API,Shared-Nothing,Apache#dbdbio>|<dbengines#Originally developed by Gemstone. They outsourced the project to Apache in 2015 but still deliver a commercial version as Gemfire.,US,2015#dbdbio>|<dbengines#2002,2017,Open Source,Apache v2; commercial licenses available as Gemfire,apache/geode,Y,2.78,123
+ghostdb,ghostdb,,X_Single,Y_auto,GhostDB,Key-value,Go,,Shared-Nothing,Jake Grogan,IE,2020,,Open Source,BSD,jakekgrog/GhostDB,Y,,
+gigabase,gigabase,,X_Single,Y_auto,GigaBASE,"Object oriented,Relational",C++,,,Konstantin Knizhnik,RU,,,"Hobby,Open Source",,,Y,,
+glaredb,glaredb,,X_Single,Y_auto,GlareDB,Relational,Rust,SQL,Shared-Nothing,"GlareDB, Inc.",US,2022,,"Commercial,Open Source",AGPL v3,GlareDB/glaredb,Y,,
+gnocchi,gnocchi,,X_Single,Y_auto,Gnocchi,Relational,Python,HTTP / REST,,Open Infrastructure Foundation,FR,2014,,Open Source,Apache v2,gnocchixyz/gnocchi,Y,,
+gnu-sql-server,gnu-sql-server,,X_Single,Y_auto,GNU SQL Server,Relational,C,,,,RU,1997,1998,Open Source,GPL v2,,Y,,
+goods,goods,,X_Single,Y_auto,GOODS,Object oriented,,,,Konstantin Knizhnik,RU,,,Open Source,MIT,,Y,,
+goshawkdb,goshawkdb,,X_Single,Y_auto,GoshawkDB,,,,,Matthew Sackman,GB,,2016,"Commercial,Open Source",AGPL v3,goshawkdb/server,Y,,
+grapheekdb,grapheekdb,,X_Single,Y_auto,GrapheekDB,"Key-value,Graph",Python,"Custom API,Gremlin",Embedded,Raphaël Braud,FR,2014,2015,Open Source,GPL v3,,Y,,
+graphik,graphik,,X_Single,Y_auto,Graphik,Document,Go,GraphQL,,Coleman Word,US,2020,,"Hobby,Open Source",Apache v2,graphikDB/graphik,Y,,
+graviton,graviton,,X_Single,Y_auto,Graviton,Key-value,Go,Custom API,Embedded,DERO Foundation,FR,2020,,Open Source,GPL v3,deroproject/graviton,Y,,
+greatsql,greatsql,,X_Single,Y_auto,GreatSQL,Relational,C++,SQL,Shared-Everything,"Beijing Wanli Open Source Software Co., Ltd.",CN,2020,,"Commercial,Open Source",GPL v2,GreatSQL/GreatSQL,Y,,
+greenplum,greenplum,greenplum,Normal,Y_auto,Greenplum,Relational,C,"SQL,PL/SQL",Shared-Nothing,"Greenplum, Pivotal Software Inc.",US,2003#dbdbio>|<dbengines#2005,2020,"Commercial,Open Source",Apache v2.0,greenplum-db/gpdb,Y,10.33,48
+greptimedb,greptimedb,greptimedb,Normal,Y_auto,GreptimeDB,Time Series,Rust,"SQL,HTTP / REST",Shared-Disk,Greptime Inc.,CN,2022,,"Commercial,Open Source",Apache v2.0,GreptimeTeam/greptimedb,Y,0.13,379
+griddb,griddb,griddb,Normal,Y_auto,GridDB,Key-value#dbdbio>|<dbengines#Time Series,C++,"Custom API,SQL,HTTP / REST,Command-line / Shell",Shared-Nothing,Toshiba Corporation,JP,2011#dbdbio>|<dbengines#2013,2022,"Commercial,Open Source","AGPL v3,Apache v2.0",griddb/griddb,Y,2.07,152
+gridgain,gridgain,gridgain,Normal,Y_auto,GridGain,Key-value,Java,Custom API,,"GridGain Systems#dbdbio>|<dbengines#GridGain Systems, Inc.",US,2007,,"Commercial,Open Source",Apache v2,gridgain/gridgain,Y#dbdbio>|<dbengines#N,2.2,146
+gun,gun,,X_Single,Y_auto,GUN,Graph,JavaScript,Custom API,Shared-Everything,Mark Nadal,US,2014,,"Commercial,Open Source",Apache v2,amark/gun,Y,,
+h-store,h-store,,X_Single,Y_auto,H-Store,Relational,"C++,Java","SQL,Stored Procedures",Shared-Nothing,"Brown University, Massachusetts Institute of Technology, Carnegie Mellon University",US,2006,2016,"Academic,Open Source","BSD,GPL v3",apavlo/h-store,Y,,
+h2,h2,h2,Normal,Y_auto,H2,Relational,Java,SQL,"Shared-Everything,Embedded",Thomas Mueller,CH,2004#dbdbio>|<dbengines#2005,2023,Open Source,"Eclipse Public License,Mozilla Public License",h2database/h2database,Y,8.87,52
+haildb,haildb,,X_Single,Y_auto,HailDB,Key-value,,,Embedded,Stewart Smith,AU,2010,2015,Open Source,,,Y,,
+halodb,halodb,,X_Single,Y_auto,HaloDB,Key-value,Java,,Embedded,Yahoo!,US,2017,,"Industrial Research,Open Source",Apache v2,yahoo/HaloDB,Y,,
+hampusdb,hampusdb,,X_Single,Y_auto,HampusDB,Key-value,C,Custom API,Shared-Everything,Hampus Soderstrom,SE,2006,2013,"Hobby,Open Source",LGPL v2,,Y,,
+hanoidb,hanoidb,,X_Single,Y_auto,HanoiDB,Key-value,Erlang,,,Kresten Krab Thorup,DK,2012,2016,Open Source,,krestenkrab/hanoidb,Y,,
+hawq,hawq,apache-hawq,Fuzzy:Normal,Y,Apache HAWQ,Relational,Java,SQL,Shared-Disk,Pivotal#dbdbio>|<dbengines#Pivotal Software; Apache,US,2015#dbdbio>|<dbengines#2012,,Open Source,Apache v2,apache/hawq,Y,1.5,181
+hazelcast,hazelcast,hazelcast,Normal,Y_auto,Hazelcast,Key-value,Java,Custom API,Shared-Nothing,Hazelcast,US,2008,2023,"Commercial,Open Source",Apache v2; commercial licenses available,hazelcast/hazelcast,Y,7.79,58
+hbase,hbase,hbase,Normal,Y_auto,HBase,Wide column,Java,Custom API,Shared-Disk,Powerset#dbdbio>|<dbengines#Apache Software Foundation,US,2007#dbdbio>|<dbengines#2008,2021,Open Source,Apache v2,apache/hbase,Y,36.11,27
+heavydb,heavydb,,X_Single,Y_auto,HeavyDB,Relational,C++,SQL,Shared-Everything,HEAVY.AI,US,2013,,"Commercial,Open Source",Apache v2,heavyai/heavydb,Y,,
+herddb,herddb,,X_Single,Y_auto,HerdDB,Relational,Java,"Custom API,SQL,Command-line / Shell",Shared-Nothing,Diennea S.r.l.,IT,2016,,Open Source,Apache v2,diennea/herddb,Y,,
+heroic,heroic,heroic,Normal,Y_auto,Heroic,Key-value#dbdbio>|<dbengines#Time Series,Java,Custom API,Shared-Nothing,Spotify,SE,2015#dbdbio>|<dbengines#2014,2019,Open Source,Apache v2.0,spotify/heroic,Y,0.85,238
+hibari,hibari,hibari,Normal,Y_auto,Hibari,Key-value,Erlang,,,Gemini Mobile Technologies,"JP,US",2005,,Open Source,Apache v2,hibari/hibari,Y,1.22,206
+hipsterdb,hipsterdb,,X_Single,Y_auto,hipsterDB,Key-value,Go,HTTP / REST,,Rob Merrell,US,2013,2013,"Hobby,Open Source",,robmerrell/hipsterdb,Y,,
+histore,histore,,X_Single,Y_auto,Histore,Key-value,JavaScript,Custom API,,Jason Miller,US,2018,,Open Source,Apache v2,developit/histore,Y,,
+hive,hive,hive,Normal,Y_auto,Hive,Relational,Java,SQL,,Facebook#dbdbio>|<dbengines#Apache Software Foundation,US,2010#dbdbio>|<dbengines#2012,2022,Open Source,Apache v2,apache/hive,Y,72.87,17
+hive-dart,hive-dart,,X_Single,Y_auto,Hive (Dart),Key-value,Dart,Custom API,Embedded,Simon Leier,DE,2019,,Open Source,Apache v2,hivedb/hive,Y,,
+hollowdb,hollowdb,,X_Single,Y_auto,HollowDB,Key-value,TypeScript,Custom API,Shared-Nothing,FirstBatch,TR,2023,,"Hobby,Open Source",MIT,firstbatchxyz/hollowdb,Y,,
+hstreamdb,hstreamdb,,X_Single,Y_auto,HStreamDB,Relational,Haskell,"Custom API,SQL",,"EMQ Technologies Co., Ltd.",CN,2020,,"Commercial,Open Source",BSD,hstreamdb/hstream,Y,,
+hydra,hydra,,X_Single,Y_auto,Hydra,"Object oriented,Relational",C,SQL,Shared-Everything,Hydra,CA,2022,,"Commercial,Open Source","AGPL v3,Apache v2",HydrasDB/hydra,Y,,
+hyperdex,hyperdex,,X_Single,Y_auto,HyperDex,Key-value,C++,Custom API,Shared-Nothing,Cornell University,US,2011,2016,"Academic,Open Source",BSD,rescrv/HyperDex,Y,,
+hypergraphdb,hypergraphdb,hypergraphdb,Normal,Y_auto,HyperGraphDB,Graph,Java,Custom API,Shared-Nothing,Kobrix Software,US,2007,,Open Source,Apache v2#dbdbio>|<dbengines#L-GPL,hypergraphdb/hypergraphdb,Y,0.56,282
+hypersql,hypersql,hypersql,Normal,Y_auto,HyperSQL,Relational,Java,SQL,Embedded,HSQLDB Development Group,US,2001,2022,Open Source,BSD,ryenus/hsqldb,Y,5.07,80
+hypertable,hypertable,,X_Single,Y_auto,Hypertable,Wide column,C++,"Custom API,Command-line / Shell",Shared-Disk,Zvents,US,2008,2016,"Commercial,Open Source",GPL v3,hypertable/hypertable,Y,,
+hyrise,hyrise,,X_Single,Y_auto,Hyrise,Relational,C++,"SQL,Stored Procedures",Shared-Everything,Hasso Plattner Institute,DE,2009,,"Academic,Open Source",MIT,hyrise/hyrise,Y,,
+icecoal,icecoal,,X_Single,Y_auto,Icecoal,Relational,Python,SQL,Embedded,,IN,2020,,"Hobby,Open Source",MIT,ppml38/icecoal,Y,,
+icefiredb,icefiredb,,X_Single,Y_auto,IceFireDB,Key-value,Go,"Custom API,HTTP / REST",Shared-Nothing,Li Biao,CN,2021,,"Hobby,Open Source",Apache v2,IceFireDB/IceFireDB,Y,,
+ignite,ignite,ignite,Normal,Y_auto,Ignite,Key-value,Java,SQL,Shared-Nothing,Apache Software Foundation,US,2014#dbdbio>|<dbengines#2015,,Open Source,Apache v2.0,apache/ignite,Y,4.99,81
+immortaldb,immortaldb,,X_Single,Y_auto,ImmortalDB,Key-value,JavaScript,Custom API,Embedded,Ansgar Grunseid,US,2018,,Open Source,MIT,gruns/ImmortalDB,Y,,
+immudb,immudb,immudb,Normal,Y_auto,Immudb,Key-value,Go,HTTP / REST,,"Codenotary, Inc.",US,2019#dbdbio>|<dbengines#2020,2022,Open Source,Apache v2.0,codenotary/immudb,Y,0.28,336
+impala,impala,impala,Normal,Y_auto,Impala,Relational,C++,"Custom API,SQL",Shared-Nothing,Cloudera,US,2013,2022,"Commercial,Open Source",Apache v2,apache/impala,Y,19.66,36
+infinidb,infinidb,,X_Single,Y_auto,InfiniDB,Relational,C++,SQL,"Shared-Nothing,Shared-Disk","InfiniDB, Inc.",US,2000,2014,"Commercial,Open Source",GPL v2,infinidb/infinidb,Y,,
+infinispan,infinispan,infinispan,Normal,Y_auto,Infinispan,Key-value,Java,Custom API,,RedHat,US,2009,2023,"Commercial,Open Source",Apache v2,infinispan/infinispan,Y,3.79,98
+infinisql,infinisql,,X_Single,Y_auto,InfiniSQL,Relational,C++,,,Mark Travis,US,2013,2014,Open Source,GPL v3,infinisql/infinisql,Y,,
+influxdb,influxdb,influxdb,Normal,Y_auto,InfluxDB,Wide column#dbdbio>|<dbengines#Time Series,Go,"Custom API,SQL,HTTP / REST",,InfluxData,US,2013,2023,"Commercial,Open Source",MIT; commercial enterprise version available,influxdata/influxdb,Y,30.92,28
+infogrid,infogrid,,X_Single,Y_auto,InfoGrid,Graph,,,,,US,2008,2013,Open Source,AGPL v3,,Y,,
+ingres,ingres,ingres,Normal,Y_auto,Ingres,Relational,C,"Custom API,SQL,Stored Procedures,Command-line / Shell,QUEL",Shared-Everything,Actian#dbdbio>|<dbengines#Actian Corporation,US,1974,2022,"Academic,Commercial,Open Source",GPL v2,fosslc/Ingres,Y#dbdbio>|<dbengines#N,6.0,72
+iondb,iondb,,X_Single,Y_auto,IonDB,Key-value,C,Custom API,Embedded,Graeme Douglas,CA,2015,,"Academic,Open Source",BSD,iondbproject/iondb,Y,,
+iotdb,iotdb,apache-iotdb,Fuzzy:Normal,Y,Apache IoTDB,Hierarchical#dbdbio>|<dbengines#Time Series,Java,Custom API,Embedded,Tsinghua University#dbdbio>|<dbengines#Apache Software Foundation,CN,2017#dbdbio>|<dbengines#2018,2023,"Academic,Open Source",Apache v2.0,apache/iotdb,Y,0.83,242
+irmin,irmin,,X_Single,Y_auto,Irmin,Document,Ocaml,"Custom API,Command-line / Shell",,MirageOS,FR,2013,,Open Source,ISC License,mirage/irmin,Y,,
+jackrabbit,jackrabbit,jackrabbit,Normal,Y_auto,Jackrabbit,Object oriented#dbdbio>|<dbengines#Content,Java,,,Day Software#dbdbio>|<dbengines#Apache Software Foundation,CH,2004#dbdbio>|<dbengines#2006,,Open Source,Apache v2,apache/jackrabbit,Y,6.53,65
+jaguar,jaguar,jaguardb,Fuzzy:Normal,Y,JaguarDB,"Key-value,Array",C++,"Custom API,SQL,Command-line / Shell",Shared-Nothing,"DataJaguar, Inc.",US,2017#dbdbio>|<dbengines#2015,2018,"Commercial,Open Source",AGPL V3.0,datajaguar/jaguardb,Y,0.01,402
+janusgraph,janusgraph,janusgraph,Normal,Y_auto,JanusGraph,Graph,Java,Gremlin,Shared-Disk,"The Linux Foundation; originally developed as,Titan,by Aurelius",US,2012#dbdbio>|<dbengines#2017,2023,Open Source,Apache v2.0,JanusGraph/janusgraph,Y,2.66,125
+jasdb,jasdb,jasdb,Normal,Y_auto,JasDB,Document,Java,HTTP / REST,,Obera Software,NL,2013#dbdbio>|<dbengines#2014,,"Commercial,Open Source",MIT,oberasoftware/jasdb,Y,0.0,405
+jena,jena,apache-jena-tdb,Fuzzy:Normal,Y,Apache Jena,RDF,Java,"SPARQL,Datalog",,HP Labs#dbdbio>|<dbengines#Apache Software Foundation,GB,2000,2022,Open Source,Apache v2.0,apache/jena,Y,5.21,78
+jindb,jindb,,X_Single,Y_auto,JinDB,,Rust,Custom API,Shared-Everything,Shoyo Inokuchi,JP,2019,,"Hobby,Open Source",MIT,shoyo/jindb,Y,,
+jsdb,jsdb,,X_Single,Y_auto,JSDB,Document,JavaScript,Custom API,,Small Technology Foundation,IE,2020,,"Hobby,Open Source",AGPL v3,small-tech/jsdb,Y,,
+jsonstoreio,jsonstoreio,,X_Single,Y_auto,jsonstore.io,Document,JavaScript,HTTP / REST,,Eliran Pe'er,IL,2018,2019,Open Source,MIT,bluzi/jsonstore,Y,,
+jsqldb,jsqldb,,X_Single,Y_auto,JSqlDb,Document,C++,,Shared-Everything,Konrad von Backström,ZA,2017,,Open Source,LGPL v3,jsqldb/jsqldb,Y,,
+juliadb,juliadb,,X_Single,Y_auto,JuliaDB,Relational,Julia,Custom API,Embedded,,US,2017,,Open Source,MIT,JuliaData/JuliaDB.jl,Y,,
+junodb,junodb,,X_Single,Y_auto,JunoDB,Key-value,Go,Custom API,Shared-Nothing,PayPal,US,,,Open Source,Apache v2,paypal/junodb,Y,,
+justindb,justindb,,X_Single,Y_auto,JustinDB,Key-value,Scala,HTTP / REST,Shared-Nothing,Mateusz Maciaszek,PL,2015,,Open Source,Apache v2,justin-db/JustinDB,Y,,
+kahadb,kahadb,,X_Single,Y_auto,KahaDB,,Java,,,,US,,,Open Source,Apache v2,,Y,,
+kai,kai,,X_Single,Y_auto,Kai,Key-value,Erlang,Custom API,Shared-Nothing,Hiroyuki Uchiyama,JP,2008,2009,Open Source,,,Y,,
+kairosdb,kairosdb,kairosdb,Normal,Y_auto,KairosDB,Time Series,,HTTP / REST,,KairosDB,US,2013,2018,Open Source,Apache v2.0,kairosdb/kairosdb,Y,0.84,241
+kareldb,kareldb,,X_Single,Y_auto,KarelDB,Relational,Java,SQL,,Confluent,US,2019,,Open Source,Apache v2,rayokota/kareldb,Y,,
+kekedb,kekedb,,X_Single,Y_auto,KekeDB,Relational,C,SQL,Embedded,Sampo Nurmentaus,FI,,2001,Open Source,GPL v2,,Y,,
+kerf,kerf,,X_Single,Y_auto,Kerf,,C,"SQL,HTTP / REST",,Kevin Lawler,US,2014,,"Commercial,Open Source",,kevinlawler/kerf,Y,,
+keydb,keydb,keydb,Normal,Y_auto,KeyDB,Key-value,C++,Custom API,,EQ Alpha Technology Ltd.,CA,2019,,"Commercial,Open Source",BSD-3,Snapchat/KeyDB,Y,0.72,261
+kingdb,kingdb,,X_Single,Y_auto,KingDB,Key-value,,Custom API,"Shared-Everything,Embedded",Emmanuel Goossaert,NL,2012,2015,"Hobby,Open Source",BSD,goossaert/kingdb,Y,,
+kinto,kinto,,X_Single,Y_auto,Kinto,Document,Python,HTTP / REST,,Mathieu Leplatre,ES,2014,,"Commercial,Open Source",Mozilla Public License,Kinto/kinto,Y,,
+kirbybase,kirbybase,,X_Single,Y_auto,KirbyBase,,"Python,Ruby",,"Shared-Everything,Embedded",NetPro Technologies,US,2003,,Open Source,,weppos/kirbybase,Y,,
+krati,krati,,X_Single,Y_auto,Krati,Key-value,Java,,,LinkedIn,US,2010,2013,Open Source,Apache v2,jingwei/krati,Y,,
+ksqldb,ksqldb,,X_Single,Y_auto,ksqlDB,"Relational,Key-value",Java,"Custom API,SQL,Command-line / Shell",Shared-Everything,Confluent,US,2017,,"Commercial,Open Source",Proprietary,confluentinc/ksql,Y,,
+kudu,kudu,,X_Single,Y_auto,Kudu,Relational,C++,Custom API,Shared-Nothing,Cloudera,US,2016,,Open Source,Apache v2,apache/kudu,Y,,
+kunlun,kunlun,,X_Single,Y_auto,Kunlun,Relational,C,SQL,Shared-Nothing,Zetuo Technology,CN,2019,,"Hobby,Open Source",Commons Clause License,zettadb/kunlun,Y,,
+kuzu,kuzu,,X_Single,Y_auto,Kùzu,Graph,C++,Cypher,Embedded,University of Waterloo,CA,2020,,"Academic,Open Source",MIT,kuzudb/kuzu,Y,,
+kvrocks,kvrocks,,X_Single,Y_auto,Kvrocks,Key-value,C++,Custom API,Shared-Nothing,Meitu,CN,2019,,"Commercial,Open Source",Apache v2,KvrocksLabs/kvrocks,Y,,
+kylin,kylin,apache-kylin,Fuzzy:Normal,Y,Apache Kylin,Key-value#dbdbio>|<dbengines#Relational,Java,SQL,Shared-Disk,"eBay#dbdbio>|<dbengines#Apache Software Foundation, originally contributed from eBay Inc",CN,2013#dbdbio>|<dbengines#2015,2020,Open Source,Apache v2.0,apache/kylin,Y,1.46,185
+kyoto-cabinet,kyoto-cabinet,,X_Single,Y_auto,Kyoto Cabinet,Key-value,C++,"Custom API,Command-line / Shell",Embedded,FAL Labs,JP,2009,,Open Source,GPL v3,,Y,,
+lancedb,lancedb,,X_Single,Y_auto,LanceDB,Document,Rust,"Custom API,SQL",Shared-Everything,,US,2023,,Open Source,Apache v2,lancedb/lancedb,Y,,
+lazer,lazer,,X_Single,Y_auto,Lazer,Document,PHP,Custom API,Embedded,Grzegorz Kuznik,PL,2013,,Open Source,MIT,Greg0/Lazer-Database,Y,,
+lealone,lealone,,X_Single,Y_auto,Lealone,Relational,Java,SQL,Shared-Nothing,,CN,2012,,Open Source,"Eclipse Public License,Mozilla Public License",lealone/Lealone,Y,,
+leap,leap,,X_Single,Y_auto,LEAP,Relational,C,,,Richard Leyton,GB,1997,,"Educational,Open Source",GPL v2,,Y,,
+ledisdb,ledisdb,ledisdb,Normal,Y_auto,LedisDB,Key-value,Go,"Custom API,HTTP / REST,Command-line / Shell","Shared-Nothing,Embedded",Siddon Tang,CN,2014,,Open Source,MIT,ledisdb/ledisdb,Y,0.14,369
+libmdbx,libmdbx,,X_Single,Y_auto,libmdbx,Key-value,,,Embedded,Positive Techlologies,RU,2015,,Open Source,OpenLDAP Public License,,Y,,
+lindb,lindb,,X_Single,Y_auto,LinDB,Wide column,Go,SQL,Shared-Nothing,ELEME Inc.,CN,2019,,Open Source,Apache v2,eleme/lindb,Y,,
+lineairdb,lineairdb,,X_Single,Y_auto,LineairDB,Key-value,C++,Custom API,Embedded,Nippon Telegraph and Telephone Corporation,JP,2020,,Open Source,Apache v2,LineairDB/LineairDB,Y,,
+lingodb,lingodb,,X_Single,Y_auto,LingoDB,Relational,C,SQL,Shared-Everything,Technical University of Munich,DE,2021,,"Academic,Open Source",MIT,lingo-db/lingo-db,Y,,
+litedb,litedb,litedb,Normal,Y_auto,LiteDB,Document,C#,SQL,Embedded,Mauricio David,BR,2014,,Open Source,MIT,mbdavid/LiteDB,Y,1.84,161
+littled,littled,,X_Single,Y_auto,LittleD,,,,,Graeme Douglas,CA,,,Open Source,Apache v2,graemedouglas/LittleD,Y,,
+llamadb,llamadb,,X_Single,Y_auto,LlamaDB,,Rust,,,Danny Spencer,CA,2015,2017,Open Source,MIT,nukep/llamadb,Y,,
+lmdb,lmdb,lmdb,Normal,Y_auto,LMDB,Key-value,C,Custom API,Shared-Memory,Howard Chu#dbdbio>|<dbengines#Symas,IE,2011,2021,"Commercial,Open Source",OpenLDAP Public License,LMDB/lmdb,Y,2.97,116
+localsql,localsql,,X_Single,Y_auto,LocalSQL,Relational,,SQL,Embedded,Dave Berton,US,2001,2002,Open Source,LGPL v2,,Y,,
+locustdb,locustdb,,X_Single,Y_auto,LocustDB,Relational,Rust,,,Clemens Winter,US,2017,,Open Source,,cswinter/LocustDB,Y,,
+lokijs,lokijs,lokijs,Normal,Y_auto,LokiJS,Document,JavaScript,,Embedded,Joe Minichino,IE,2013#dbdbio>|<dbengines#2014,,Open Source,,techfort/LokiJS,Y,0.71,264
+lovefield,lovefield,lovefield,Normal,Y_auto,Lovefield,Relational,JavaScript,,,Google,US,2014,2017,Open Source,Apache v2.0,google/lovefield,Y,0.6,278
+lowdb,lowdb,,X_Single,Y_auto,LowDB,Document,JavaScript,,Embedded,,,2014,,Open Source,MIT,typicode/lowdb,Y,,
+lucene,lucene,,X_Single,Y_auto,Lucene,Document,Java,Custom API,Embedded,Apache Software Foundation,US,1999,,Open Source,Apache v2,apache/lucene,Y,,
+luciddb,luciddb,,X_Single,Y_auto,LucidDB,,"C++,Java",,,"LucidEra, Inc.",US,2004,2009,"Commercial,Open Source","Apache v2,GPL v2,LGPL v2",LucidDB/luciddb,Y,,
+lungodb,lungodb,,X_Single,Y_auto,LungoDB,Document,Go,Custom API,Embedded,Joël Gähwiler,CH,2019,,Open Source,MIT,256dpi/lungo,Y,,
+m3db,m3db,m3db,Normal,Y_auto,M3DB,Relational#dbdbio>|<dbengines#Time Series,Go,,,Uber,US,2018,,Open Source,Apache v2,m3db/m3,Y,1.09,217
+magma,magma,,X_Single,Y_auto,Magma,Object oriented,Smalltalk,Custom API,,Chris Muller,US,2002,,Open Source,MIT,,Y,,
+mangodb,mangodb,,X_Single,Y_auto,MangoDB,Document,Python,Custom API,,David Cramer,US,2012,,"Hobby,Open Source",,dcramer/mangodb,Y,,
+manticore-search,manticore-search,manticore-search,Normal,Y_auto,Manticore Search,Relational#dbdbio>|<dbengines#Search engine,C++,"SQL,HTTP / REST",,Manticore Software Ltd,GB,2017,2023,"Commercial,Open Source",GPL v2,manticoresoftware/manticoresearch,Y,0.2,359
+mapdb,mapdb,mapdb,Normal,Y_auto,MapDB,Object oriented#dbdbio>|<dbengines#Key-value,Java,,Embedded,Jan Kotek,CZ,2012#dbdbio>|<dbengines#2002,,Open Source,Apache v2,jankotek/mapdb,Y,1.03,220
+marcellodb,marcellodb,,X_Single,Y_auto,MarcelloDB,Object oriented,C#,Custom API,Embedded,Mark Meeus,BE,2014,,Open Source,MIT,markmeeus/MarcelloDB,Y,,
+mariadb,mariadb,mariadb,Normal,Y_auto,MariaDB,Relational,"Bash,C,C++,Perl","Custom API,SQL,Stored Procedures",,"MariaDB Foundation#dbdbio>|<dbengines#MariaDB Corporation Ab (MariaDB Enterprise),,MariaDB Foundation (community MariaDB Server)",SE,2009,2023,Open Source,"GPL v2, commercial enterprise subscription available",MariaDB/server,Y,96.1,13
+mariposa,mariposa,,X_Single,Y_auto,Mariposa,Relational,,,Shared-Nothing,University of Calfornia-Berkeley,US,1994,1999,"Academic,Open Source",BSD,,Y,,
+marqo,marqo,marqo,Normal,Y_auto,Marqo,Array#dbdbio>|<dbengines#Search engine,Python,Custom API,Shared-Everything,Marqo,AU,2022,,"Commercial,Open Source",Apache v2#dbdbio>|<dbengines#Apache Version 2.0,marqo-ai/marqo,Y,0.35,320
+matrixone,matrixone,matrixone,Normal,Y_auto,MatrixOne,Relational,Go,SQL,,MatrixOrigin,CN,2021,,"Commercial,Open Source",Apache v2.0,matrixorigin/matrixone,Y,1.42,186
+mcdb,mcdb,,X_Single,Y_auto,mcdb,Key-value,C,,,Glenn Strauss,US,2010,,Open Source,LGPL v2,gstrauss/mcdb,Y,,
+mckoi-sql-database,mckoi-sql-database,,X_Single,Y_auto,Mckoi SQL Database,Relational,Java,SQL,"Shared-Everything,Embedded","Diehl and Associates, Inc.",US,1998,2019,"Commercial,Open Source",GPL v2,Mckoi/origsqldb,Y,,
+meilisearch,meilisearch,meilisearch,Normal,Y_auto,Meilisearch,Document#dbdbio>|<dbengines#Search engine,Rust,"Custom API,HTTP / REST",,Meilisearch,FR,2018#dbdbio>|<dbengines#2020,,"Commercial,Open Source",MIT,meilisearch/meilisearch,Y,1.3,199
+memcached,memcached,memcached,Normal,Y_auto,Memcached,Key-value,C,Custom API,Shared-Nothing,Danga Interactive,US,2003,2023,"Commercial,Open Source",BSD,memcached/memcached,Y,22.07,33
+memgraph,memgraph,memgraph,Normal,Y_auto,Memgraph,Graph,"C,C++",Cypher,Shared-Nothing,Dominik Tomicevic and Marko Budiselic#dbdbio>|<dbengines#Memgraph Ltd,GB,2016#dbdbio>|<dbengines#2017,,"Commercial,Open Source",Business Source License; Free license available,memgraph/memgraph,Y#dbdbio>|<dbengines#N,2.7,124
+memstate,memstate,,X_Single,Y_auto,Memstate,Object oriented,C#,Custom API,Shared-Everything,Devrex Labs,SE,2017,,"Commercial,Open Source","GPL v3,LGPL v3",devrexlabs/memstate,Y,,
+mentat,mentat,,X_Single,Y_auto,Mentat,Relational,Rust,,,Mozilla,US,2016,,Open Source,Apache v2,mozilla/mentat,Y,,
+metalbase,metalbase,,X_Single,Y_auto,MetalBase,Relational,C,,Shared-Everything,Richard P Jernigan IV,US,,1994,Open Source,,apavlo/metalbase,Y,,
+milvus,milvus,milvus,Normal,Y_auto,Milvus,Array#dbdbio>|<dbengines#Vector DBMS,Go,Custom API,,The Milvus Project,CN,2019,2022,Open Source,Apache v2.0,milvus-io/milvus,Y,1.36,193
+mldb,mldb,,X_Single,Y_auto,MLDB,,C++,"SQL,HTTP / REST",,MLDB.ai,CA,2015,,"Commercial,Open Source",Apache v2,mldbai/mldb,Y,,
+mnesia,mnesia,mnesia,Normal,Y_auto,Mnesia,Relational#dbdbio>|<dbengines#Document,Erlang,Custom API,Shared-Nothing,Ericsson,FI,1999,2018,Open Source,proprietary license,beardedeagle/mnesiac,Y,1.82,162
+modeshape,modeshape,modeshape,Normal,Y_auto,ModeShape,Object oriented#dbdbio>|<dbengines#Content,Java,"Custom API,SQL,HTTP / REST",,Red Hat,US,2008#dbdbio>|<dbengines#2010,,"Commercial,Open Source",Apache v2,ModeShape/modeshape,Y,0.79,250
+mondrian,mondrian,,X_Single,Y_auto,Mondrian,Relational,Java,,,Pentaho,US,2002,,"Commercial,Open Source",Eclipse Public License,pentaho/mondrian,Y,,
+monetdb,monetdb,monetdb,Normal,Y_auto,MonetDB,Wide column#dbdbio>|<dbengines#Relational,C,SQL,,CWI#dbdbio>|<dbengines#MonetDB BV,NL,2002#dbdbio>|<dbengines#2004,2021,"Academic,Open Source",Mozilla Public License 2.0,MonetDB/MonetDB,Y,2.21,145
+mongodb,mongodb,mongodb,Multiple:Normal,Y_ConflictResolved,MongoDB,Document,"C++,JavaScript,Python",Custom API,Shared-Nothing,MongoDB Inc.,US,2009,2023,"Commercial,Open Source",Server Side Public License#dbdbio>|<dbengines#MongoDB Inc.'s Server Side Public License v1. Prior versions were published under GNU AGPL v3.0. Commercial licenses are also available.,mongodb/mongo,Y,435.49,5
+mulgara,mulgara,mulgara,Normal,Y_auto,Mulgara,RDF,Java,SPARQL,,,US,2006,2012,Open Source,Open Software License 3.0#dbdbio>|<dbengines#Apache Version 2,quoll/mulgara,Y,0.48,296
+mysql,mysql,mysql,Multiple:Normal,Y_ConflictResolved,MySQL,Relational,"C,C++",SQL,Shared-Everything,MySQL AB#dbdbio>|<dbengines#Oracle,SE,1994#dbdbio>|<dbengines#1995,2023,Open Source,GPL v2. Commercial licenses with extended functionallity are available,mysql/mysql-server,Y,1150.35,2
+nanolat,nanolat,,X_Single,Y_auto,Nanolat,Key-value,,,,,KR,2012,2014,Open Source,Apache v2,Nanolat/nldb,Y,,
+ncache,ncache,ncache,Normal,Y_auto,NCache,Key-value,,,,Alachisoft,US,2015#dbdbio>|<dbengines#2005,2022,"Commercial,Open Source","Apache v2,Proprietary#dbdbio>|<dbengines#Enterprise Edition available",Alachisoft/NCache,Y,1.38,190
+ndatabase,ndatabase,,X_Single,Y_auto,NDatabase,Object oriented,C#,Custom API,Embedded,Jacek Spólnik,PL,,2014,"Commercial,Open Source",LGPL v2,,Y,,
+ndb-cluster,ndb-cluster,,X_Single,Y_auto,NDB Cluster,Key-value,C++,Custom API,Shared-Nothing,Oracle,SE,,,"Commercial,Open Source",GPL v2,,Y,,
+nebula-graph,nebula-graph,nebulagraph,Fuzzy:Normal,Y,Nebula Graph,Graph,C++,Custom API,Shared-Nothing,vesoft Inc.,CN,2018#dbdbio>|<dbengines#2019,,Open Source,Apache v2.0 + Common Clause 1.0,vesoft-inc/nebula,Y,2.6,130
+nedb,nedb,,X_Single,Y_auto,NeDB,Document,JavaScript,Custom API,Embedded,Louis Chatriot,FR,2013,2017,Open Source,MIT,louischatriot/nedb,Y,,
+neo,neo,,X_Single,Y_auto,NEO,Document,Python,Custom API,Shared-Nothing,Nexedi,FR,2005,,"Commercial,Open Source",GPL v3,,Y,,
+neo4j,neo4j,neo4j,Normal,Y_auto,Neo4j,Graph,"Java,Scala",Cypher,Shared-Nothing,"Neo4j, Inc.",SE,2007,2023,"Commercial,Open Source","AGPL v3,GPL v3; commercial licenses available",neo4j/neo4j,Y,52.06,22
+neodatis-odb,neodatis-odb,,X_Single,Y_auto,NeoDatis ODB,Object oriented,Java,Custom API,,NeoDatis,BR,2006,2017,Open Source,GPL v2,,Y,,
+neon,neon,,X_Single,Y_auto,Neon,"Object oriented,Relational","C,Rust",,Shared-Disk,Neon,US,2021,,"Commercial,Open Source",Apache v2,neondatabase/neon,Y,,
+nessdb,nessdb,,X_Single,Y_auto,nessDB,Key-value,C,Custom API,Embedded,Bohu Tang,CN,2011,2016,Open Source,BSD,BohuTANG/nessDB,Y,,
+nitrite,nitrite,,X_Single,Y_auto,Nitrite,Document,Java,Custom API,Embedded,Anindya Chatterjee,IN,2017,,Open Source,Apache v2,dizitart/nitrite-database,Y,,
+noisepage,noisepage,,X_Single,Y_auto,NoisePage,Relational,C++,SQL,Shared-Everything,Carnegie Mellon University,US,2018,,"Academic,Open Source",MIT,cmu-db/noisepage,Y,,
+noms,noms,,X_Single,Y_auto,Noms,Document,Go,,,Attic Labs,US,2015,2021,Open Source,Apache v2,attic-labs/noms,Y,,
+nosdb,nosdb,nosdb,Normal,Y_auto,NosDB,Document,C#,"Custom API,HTTP / REST",,Alachisoft,US,2016,,"Commercial,Open Source",Apache v2; Professional and Enterprise Versions available,Alachisoft/NosDB,Y,0.12,384
+nucliadb,nucliadb,,X_Single,Y_auto,NucliaDB,Array,"Python,Rust","Custom API,HTTP / REST",,Bosutech XXI S.L.,ES,2021,,"Commercial,Open Source",AGPL v3,nuclia/nucliadb,Y,,
+nudb,nudb,,X_Single,Y_auto,NuDB,Key-value,C++,Custom API,Embedded,Vinnie Falco,US,2016,,Open Source,Boost Software License,vinniefalco/NuDB,Y,,
+nutsdb,nutsdb,,X_Single,Y_auto,NutsDB,Key-value,Go,Custom API,,Jiajun Xu,CN,2018,,Open Source,Apache v2,xujiajun/nutsdb,Y,,
+objectbox,objectbox,objectbox,Normal,Y_auto,ObjectBox,Object oriented,"C,C++,Go,Java,Python,Swift",Custom API,Embedded,ObjectBox Limited,DE,2016#dbdbio>|<dbengines#2017,,"Commercial,Open Source",Apache v2,objectbox/objectbox-java,Y,1.62,171
+oceanbase,oceanbase,oceanbase,Normal,Y_auto,OceanBase,Relational,C++,SQL,Shared-Nothing,OceanBase,CN,2010#dbdbio>|<dbengines#2011,2022,"Commercial,Open Source",Mulan PubL v2; Commercial license available,oceanbase/oceanbase,Y,2.85,121
+ocelot,ocelot,,X_Single,Y_auto,Ocelot,Relational,Assembly,SQL,,Ocelot Computer Services Inc.,CA,2001,2003,Open Source,"GPL v2,Mozilla Public License",,Y,,
+odaba,odaba,,X_Single,Y_auto,ODABA,Object oriented,C++,"Custom API,HTTP / REST",,RUN Software,DE,1994,,"Commercial,Open Source",GPL v2,,Y,,
+olegdb,olegdb,,X_Single,Y_auto,OlegDB,Key-value,"C,Go",HTTP / REST,Shared-Everything,"Quinlan Pfiffer, Kyle Terry",US,2014,,"Commercial,Open Source",MIT,infoforcefeed/OlegDB,Y,,
+opengemini,opengemini,,X_Single,Y_auto,openGemini,Relational,Go,SQL,Shared-Nothing,Huawei,CN,2022,,Open Source,Apache v2,openGemini/openGemini,Y,,
+openmldb,openmldb,,X_Single,Y_auto,OpenMLDB,Relational,C++,"SQL,HTTP / REST",,4Paradigm,CN,2017,,Open Source,Apache v2,4paradigm/OpenMLDB,Y,,
+openqm,openqm,openqm,Normal,Y_auto,OpenQM,Multivalue,,,,Ladybridge Systems#dbdbio>|<dbengines#Martin Phillips,GB,1993,,"Commercial,Open Source","GPL v2,Proprietary#dbdbio>|<dbengines#GPLv2, extended commercial license available",gregjurman/openqm,Y,0.63,273
+opentsdb,opentsdb,opentsdb,Normal,Y_auto,OpenTSDB,Key-value#dbdbio>|<dbengines#Time Series,Java,"Custom API,HTTP / REST,Command-line / Shell",Shared-Disk,currently maintained by Yahoo and other contributors,US,2010#dbdbio>|<dbengines#2011,,Open Source,LGPL v2,OpenTSDB/opentsdb,Y,2.28,140
+oracle-nosql,oracle-nosql,oracle-nosql,Normal,Y_auto,Oracle NoSQL,Key-value#dbdbio>|<dbengines#Document,Java,Custom API,Shared-Nothing,Oracle,US,2011,2023,"Commercial,Open Source","Apache v2,Proprietary#dbdbio>|<dbengines#Proprietary for Enterprise Edition (Oracle Database EE license has Oracle NoSQL database EE covered:,details,)",oracle/nosql-go-sdk,Y,3.85,96
+orbitdb,orbitdb,,X_Single,Y_auto,OrbitDB,"Key-value,Document",JavaScript,Custom API,Shared-Nothing,Haja Networks,DE,2015,,Open Source,MIT,orbitdb/orbit-db,Y,,
+orientdb,orientdb,orientdb,Normal,Y_auto,OrientDB,"Document,Key-value,Graph,Object oriented",Java,"SQL,Stored Procedures,GraphQL,Gremlin,HTTP / REST",Shared-Nothing,OrientDB LTD#dbdbio>|<dbengines#OrientDB LTD; CallidusCloud; SAP,GB,2010,2023,"Commercial,Open Source",Apache v2,orientechnologies/orientdb,Y,4.76,85
+origodb,origodb,origodb,Normal,Y_auto,OrigoDB,"Document,Relational,Key-value,Graph,Object oriented",C#,Custom API,Shared-Nothing,Devrex Labs#dbdbio>|<dbengines#Robert Friberg et al,SE,2011#dbdbio>|<dbengines#2009,2016,"Commercial,Open Source",MIT,DevrexLabs/OrigoDB,Y,0.14,373
+orioledb,orioledb,,X_Single,Y_auto,OrioleDB,"Object oriented,Relational",C,SQL,Shared-Everything,OrioleDB,BY,2021,,"Commercial,Open Source",PostgreSQL License,orioledb/orioledb,Y,,
+paldb,paldb,,X_Single,Y_auto,PalDB,Key-value,Java,Custom API,,LinkedIn,US,2015,2016,Open Source,Apache v2,linkedin/PalDB,Y,,
+paper,paper,,X_Single,Y_auto,Paper,"Key-value,Object oriented",Java,Custom API,Embedded,Aleksey Masny,SE,2015,,Open Source,Apache v2,pilgr/Paper,Y,,
+pearldb,pearldb,,X_Single,Y_auto,PearlDB,Key-value,C,HTTP / REST,,,NZ,2015,,Open Source,BSD,willemt/pearldb,Y,,
+pebble,pebble,,X_Single,Y_auto,Pebble,Key-value,Go,Custom API,Embedded,Cockroach Labs,US,2018,,Open Source,BSD,petermattis/pebble,Y,,
+percona-server,percona-server,percona-server-for-mysql,Multiple:Normal,Y_ConflictResolved,Percona Server for MySQL,Relational,,SQL,Shared-Everything,Percona,US,2006#dbdbio>|<dbengines#2008,2023,"Commercial,Open Source",GPL version 2,percona/percona-server,Y,3.11,111
+perst,perst,perst,Normal,Y_auto,Perst,Object oriented,Java,,Embedded,Konstantin Knizhnik,RU,2003,,Open Source,"GPL v3,Proprietary#dbdbio>|<dbengines#commercial license available",The-Alchemist/perst,Y,1.49,182
+phoenix,phoenix,apache-phoenix,Fuzzy:Normal,Y,Apache Phoenix,Relational,Java,SQL,Shared-Disk,Apache Software Foundation,US,2014,2019,Open Source,Apache v2.0,apache/phoenix,Y,2.56,132
+photondb,photondb,,X_Single,Y_auto,PhotonDB,Key-value,Rust,,,Huachao Huang,CN,2022,,"Hobby,Open Source",Apache v2,photondb/photondb,Y,,
+pickledb,pickledb,,X_Single,Y_auto,pickleDB,Document,Python,Custom API,Embedded,Harrison Erd,US,2011,,"Hobby,Open Source",BSD,patx/pickledb,Y,,
+picodb,picodb,,X_Single,Y_auto,PicoDB,Document,JavaScript,,Embedded,jclo,FR,2016,,Open Source,MIT,jclo/picodb,Y,,
+picosql,picosql,,X_Single,Y_auto,picoSQL,Relational,,SQL,Shared-Everything,picoSoft,IT,1995,2006,"Commercial,Open Source",GPL v2,,Y,,
+pika,pika,,X_Single,Y_auto,Pika,Key-value,C++,Custom API,Shared-Everything,Qihoo,CN,2014,,Open Source,MIT,Qihoo360/pika,Y,,
+piladb,piladb,,X_Single,Y_auto,piladb,Object oriented,Go,HTTP / REST,,Fernando Álvarez,ES,2015,,Open Source,MIT,fern4lvarez/piladb,Y,,
+pilosa,pilosa,,X_Single,Y_auto,Pilosa,Array,Go,"Custom API,HTTP / REST",Shared-Everything,Pilosa,US,2017,,"Commercial,Open Source",Apache v2,pilosa/pilosa,Y,,
+pincaster,pincaster,,X_Single,Y_auto,Pincaster,Document,C,HTTP / REST,,Frank Denis,FR,2010,,Open Source,MIT,jedisct1/Pincaster,Y,,
+pinot,pinot,apache-pinot,Fuzzy:Normal,Y,Apache Pinot,Relational,Java,SQL,Shared-Nothing,LinkedIn#dbdbio>|<dbengines#Apache Software Foundation and contributors,US,2014#dbdbio>|<dbengines#2015,2022,Open Source,Apache v2.0,apache/pinot,Y,0.8,248
+pinusdb,pinusdb,,X_Single,Y_auto,PinusDB,Relational,C++,SQL,,ChangSha JuSong Soft Inc.,CN,2019,,Open Source,GPL v3,pinusdb/pinusdb,Y,,
+pipelinedb,pipelinedb,pipelinedb,Normal,Y_auto,PipelineDB,"Relational,Object oriented",C,SQL,,"PipelineDB, Inc.",US,2013#dbdbio>|<dbengines#2015,2019,"Commercial,Open Source","BSD,GPL v3",pipelinedb/pipelinedb,Y,0.4,306
+pocketsql,pocketsql,,X_Single,Y_auto,pocketSQL,,C,,,Steve Grubb,US,2001,2002,Open Source,GPL v2,,Y,,
+pogreb,pogreb,,X_Single,Y_auto,Pogreb,Key-value,Go,Custom API,Embedded,Artem Krylysov,US,2018,,Open Source,Apache v2,akrylysov/pogreb,Y,,
+polypheny,polypheny,,X_Single,Y_auto,Polypheny,"Relational,Document,Graph",Java,"SQL,Cypher,HTTP / REST",Shared-Everything,"Polypheny GmbH, University of Basel",CH,2017,,"Academic,Commercial,Open Source",Apache v2,polypheny/Polypheny-DB,Y,,
+postgresql,postgresql,postgresql,Normal,Y_auto,PostgreSQL,"Object oriented,Relational",C,PL/SQL,Shared-Everything,University of California-Berkeley#dbdbio>|<dbengines#PostgreSQL Global Development Group,US,1986#dbdbio>|<dbengines#1989,2023,"Academic,Open Source",PostgreSQL License#dbdbio>|<dbengines#BSD,postgres/postgres,Y,617.83,4
+pouchdb,pouchdb,pouchdb,Normal,Y_auto,PouchDB,Document,JavaScript,Custom API,Embedded,Apache Software Foundation,US,2010#dbdbio>|<dbengines#2012,2019,Open Source,Apache v2,pouchdb/pouchdb,Y,3.14,110
+pranadb,pranadb,,X_Single,Y_auto,PranaDB,Relational,Go,SQL,,Cash App,GB,2022,,Open Source,,cashapp/pranadb,Y,,
+predator,predator,,X_Single,Y_auto,Predator,"Object oriented,Relational",,,,Cornell University,US,1996,2002,"Academic,Open Source",GPL v2,,Y,,
+prestodb,prestodb,presto,Fuzzy:Normal,Y,Presto,"Wide column,Relational,Key-value,Document",Java,SQL,Shared-Nothing,Facebook; Presto Foundation,US,2013,,Open Source,Apache v2.0,prestodb/presto,Y,14.88,42
+profanedb,profanedb,,X_Single,Y_auto,ProfaneDB,Object oriented,C++,Custom API,Shared-Everything,,CH,2017,,"Hobby,Open Source",GPL v3,,Y,,
+prometheus,prometheus,prometheus,Normal,Y_auto,Prometheus,Key-value#dbdbio>|<dbengines#Time Series,Go,"HTTP / REST,PromQL",Shared-Disk,SoundCloud,DE,2012#dbdbio>|<dbengines#2015,,Open Source,Apache v2.0,prometheus/prometheus,Y,8.05,56
+pumpkindb,pumpkindb,,X_Single,Y_auto,PumpkinDB,Key-value,Rust,,,Yurii Rashkovskii,CA,2017,,Open Source,Mozilla Public License,PumpkinDB/PumpkinDB,Y,,
+pupdb,pupdb,,X_Single,Y_auto,PupDB,Key-value,Python,HTTP / REST,Shared-Everything,tuxmonk,IN,2019,,Open Source,MIT,tuxmonk/pupdb,Y,,
+qikkdb,qikkdb,,X_Single,Y_auto,qikkDB,Relational,C++,SQL,,Instarea s.r.o.,SK,2019,2020,"Commercial,Open Source",Apache v2,qikkDB/qikkdb,Y,,
+ql,ql,,X_Single,Y_auto,ql,Relational,Go,SQL,Embedded,Jan Mercl,PL,2013,,"Hobby,Open Source",BSD,,Y,,
+qserv,qserv,,X_Single,Y_auto,Qserv,Relational,C++,,,SLAC National Accelerator Laboratory,US,2011,,"Academic,Open Source",,lsst/qserv,Y,,
+quadrable,quadrable,,X_Single,Y_auto,Quadrable,Key-value,C++,"Custom API,Command-line / Shell",Embedded,Doug Hoyte,CA,2020,,"Commercial,Open Source",BSD,hoytech/quadrable,Y,,
+questdb,questdb,questdb,Normal,Y_auto,QuestDB,Relational#dbdbio>|<dbengines#Time Series,"C++,Java",SQL,"Shared-Nothing,Embedded",QuestDB Limited,GB,2014,,"Commercial,Open Source",Apache v2.0,questdb/questdb,Y,2.43,134
+quickstep,quickstep,,X_Single,Y_auto,Quickstep,Relational,,,,University of Wisconsin,US,2013,2018,"Academic,Open Source",Apache v2,apache/incubator-retired-quickstep,Y,,
+quinedb,quinedb,,X_Single,Y_auto,QuineDB,Key-value,Bash,Command-line / Shell,,Gary Fredericks,US,2016,,Open Source,Eclipse Public License,gfredericks/quinedb,Y,,
+quokka,quokka,,X_Single,Y_auto,Quokka,Relational,Python,SQL,Shared-Disk,Ziheng Wang,US,2021,,"Hobby,Open Source",Apache v2,marsupialtail/quokka,Y,,
+radondb,radondb,,X_Single,Y_auto,RadonDB,Relational,Go,SQL,Shared-Nothing,Yunify Technologies Inc.,CN,2018,,"Commercial,Open Source",GPL v3,radondb/radon,Y,,
+ragedb,ragedb,,X_Single,Y_auto,RageDB,Graph,C++,HTTP / REST,Shared-Nothing,Max De Marzi,US,2021,,"Hobby,Open Source",Apache v2,ragedb/ragedb,Y,,
+raptordb,raptordb,raptordb,Normal,Y_auto,RaptorDB,Document,C#,Custom API,Embedded,Mehdi Gholam,GB,2012,,Open Source,Code Project Open License#dbdbio>|<dbengines#Apache Version 2,mgholam/RaptorDB-Document,Y,0.15,368
+rasdaman,rasdaman,rasdaman,Normal,Y_auto,Rasdaman,Array#dbdbio>|<dbengines#Multivalue,C++,SQL,Shared-Everything,Jacobs University Bremen,DE,1989#dbdbio>|<dbengines#1998,2019,"Commercial,Open Source",GPL v3#dbdbio>|<dbengines#extended commercial license available,dioptre/rasdaman,Y,0.81,246
+ravendb,ravendb,ravendb,Normal,Y_auto,RavenDB,"Key-value,Document",C#,"Custom API,HTTP / REST",Shared-Nothing,Hibernating Rhinos,IL,2009#dbdbio>|<dbengines#2010,2022,"Commercial,Open Source",AGPL v3; commercial license available,ravendb/ravendb,Y,4.29,91
+realm,realm,realm,Normal,Y_auto,Realm,Object oriented#dbdbio>|<dbengines#Document,C++,Custom API,Embedded,"Realm, acquired by MongoDB in May 2019",US,2011#dbdbio>|<dbengines#2014,,"Commercial,Open Source",Apache v2,realm/realm-core,Y,8.24,54
+redb,redb,,X_Single,Y_auto,redb,Key-value,Rust,Custom API,Embedded,Christopher Berner,US,2018,,"Hobby,Open Source",Apache v2,cberner/redb,Y,,
+redcon,redcon,,X_Single,Y_auto,Redcon,Key-value,Go,HTTP / REST,,Josh Baker,US,2016,,"Hobby,Open Source",MIT,tidwall/redcon,Y,,
+redis,redis,redis,Normal,Y_auto,Redis,Key-value,,Custom API,Shared-Nothing,"Salvatore Sanfilippo#dbdbio>|<dbengines#Redis project core team, inspired by Salvatore Sanfilippo",IT,2009,2023,"Commercial,Open Source","BSD#dbdbio>|<dbengines#source-available extensions (modules), commercial licenses for Redis Enterprise",redis/redis,Y,163.76,6
+redisgraph,redisgraph,,X_Single,Y_auto,RedisGraph,Graph,C,"Stored Procedures,Cypher,Command-line / Shell",Shared-Nothing,Redis Ltd.,US,2018,,"Commercial,Open Source",Server Side Public License,RedisGraph/RedisGraph,Y,,
+redisql,redisql,,X_Single,Y_auto,RediSQL,Relational,Rust,SQL,,Red Beard Lab,IT,2016,,"Commercial,Open Source",AGPL v3,RedBeardLab/rediSQL,Y,,
+redixdb,redixdb,,X_Single,Y_auto,RedixDB,Key-value,Go,Custom API,Shared-Everything,Mohammed Al Ashaal,EG,2018,,"Hobby,Open Source",,alash3al/redix,Y,,
+redstore,redstore,redstore,Normal,Y_auto,RedStore,RDF,C,"SPARQL,HTTP / REST",,Nicholas Humfrey,GB,2009,,Open Source,GPL v3,njh/redstore,Y,0.38,309
+reductstore,reductstore,,X_Single,Y_auto,ReductStore,Key-value,"C++,Rust","Custom API,HTTP / REST",Shared-Everything,Alexey Timin,DE,2021,,"Commercial,Open Source",Mozilla Public License,reductstore/reductstore,Y,,
+redwood,redwood,,X_Single,Y_auto,Redwood,Key-value,Go,Custom API,,Bryn Bellomy,US,2019,,"Hobby,Open Source",MIT,redwood/redwood,Y,,
+refinedb,refinedb,,X_Single,Y_auto,RefineDB,Document,Rust,Custom API,,Heyang Zhou,CN,2021,,"Hobby,Open Source",MIT,losfair/RefineDB,Y,,
+rel,rel,,X_Single,Y_auto,Rel,Relational,Java,Custom API,Shared-Everything,Dave Voorhis,GB,2004,,"Academic,Educational,Open Source",Apache v2,DaveVoorhis/Rel,Y,,
+relaxo,relaxo,,X_Single,Y_auto,Relaxo,Document,Ruby,Custom API,Shared-Everything,Samuel Williams,NZ,2012,,Open Source,MIT,ioquatix/relaxo,Y,,
+rethinkdb,rethinkdb,rethinkdb,Normal,Y_auto,RethinkDB,Document,"Bash,C++,Java,JavaScript,Python",Custom API,Shared-Nothing,RethinkDB#dbdbio>|<dbengines#The Linux Foundation,US,2009,2020,Open Source,Apache v2,rethinkdb/rethinkdb,Y,3.64,100
+rexdb,rexdb,,X_Single,Y_auto,RexDB,"Object oriented,Relational","JavaScript,Python","Custom API,SQL,PL/SQL",Shared-Everything,"Prometheus Research, LLC",US,2006,,Open Source,AGPL v3,,Y,,
+riak,riak,,Multiple:X_Single,Y_ConflictResolved,Riak,Key-value,Erlang,,,Basho Technologies,US,2010,,"Commercial,Open Source",Apache v2,basho/riak,Y,,
+risinglight,risinglight,,X_Single,Y_auto,RisingLight,Relational,Rust,SQL,Embedded,,US,2021,,"Educational,Open Source",Apache v2,risinglightdb/risinglight,Y,,
+risingwave,risingwave,,X_Single,Y_auto,RisingWave,Relational,Rust,SQL,Shared-Everything,RisingWave Labs,US,2021,,"Commercial,Open Source",Apache v2,risingwavelabs/risingwave,Y,,
+rocksdb,rocksdb,rocksdb,Normal,Y_auto,RocksDB,Key-value,"C,C++",Custom API,Embedded,"Facebook, Inc.",US,2012#dbdbio>|<dbengines#2013,2023,Open Source,Apache v2#dbdbio>|<dbengines#BSD,facebook/rocksdb,Y,4.23,92
+roma,roma,,X_Single,Y_auto,ROMA,Key-value,Ruby,Custom API,Shared-Nothing,"Rakuten, Inc.",JP,2009,,"Commercial,Open Source",,roma/roma,Y,,
+rondb,rondb,,X_Single,Y_auto,RonDB,Key-value,C,"Custom API,SQL",Shared-Nothing,Logical Clocks,SE,2020,,"Commercial,Open Source",GPL v2,logicalclocks/rondb,Y,,
+rosedb,rosedb,,X_Single,Y_auto,RoseDB,Key-value,Go,Custom API,Shared-Everything,,CN,2020,,"Hobby,Open Source",MIT,roseduan/rosedb,Y,,
+rqlite,rqlite,,X_Single,Y_auto,rqlite,Relational,Go,"SQL,HTTP / REST",Embedded,Philip O'Toole,US,2014,,Open Source,MIT,rqlite/rqlite,Y,,
+rxdb,rxdb,,X_Single,Y_auto,RxDB,Document,JavaScript,"Custom API,GraphQL",,Daniel Van Meyer,DE,2016,,Open Source,Apache v2,pubkey/rxdb,Y,,
+sapphiredb,sapphiredb,,X_Single,Y_auto,SapphireDb,Object oriented,C#,"Custom API,HTTP / REST",,Morris Janatzek,DE,2018,,"Hobby,Open Source",MIT,SapphireDb/SapphireDb,Y,,
+scalaris,scalaris,scalaris,Normal,Y_auto,Scalaris,Key-value,Erlang,,,Zuse Institute Berlin,DE,2010,,"Academic,Open Source",Apache v2,scalaris-team/scalaris,Y,0.72,262
+scaliendb,scaliendb,,X_Single,Y_auto,ScalienDB,Key-value,C++,HTTP / REST,Shared-Nothing,Scalien,HU,2010,2013,"Commercial,Open Source",AGPL v3,scalien/scaliendb,Y,,
+scidb,scidb,scidb,Normal,Y_auto,SciDB,Array#dbdbio>|<dbengines#Multivalue,C++,Command-line / Shell,Shared-Nothing,Paradigm4,US,2008,,"Academic,Commercial,Open Source","AGPL v3,Proprietary",cran/scidb,Y,0.99,223
+scylla,scylla,scylladb,Fuzzy:Normal,Y,Scylla,"Wide column,Key-value",C++,Custom API,Shared-Nothing,ScyllaDB Inc.,IL,2014#dbdbio>|<dbengines#2015,2022,"Commercial,Open Source",AGPL v3,scylladb/scylla,Y,6.36,67
+sdb,sdb,,X_Single,Y_auto,SDB,"Relational,Document",C,Custom API,Embedded,,ES,,,Open Source,MIT,radare/sdb,Y,,
+seafowl,seafowl,,X_Single,Y_auto,Seafowl,Relational,Rust,SQL,Shared-Everything,"Splitgraph, Inc.",GB,2022,,"Commercial,Open Source",Apache v2,splitgraph/seafowl,Y,,
+sedna,sedna,sedna,Normal,Y_auto,Sedna,Document#dbdbio>|<dbengines#Native XML,C++,,,Institute for System Programming RAS,RU,2006,,"Commercial,Open Source",Apache v2,sedna/sedna,Y,1.7,165
+senseidb,senseidb,senseidb,Normal,Y_auto,SenseiDB,Relational#dbdbio>|<dbengines#Document,Java,Custom API,Shared-Nothing,"LinkedIn, Xiaomi",US,2012#dbdbio>|<dbengines#2010,2013,Open Source,Apache v2,LinkedInAttic/sensei,Y,0.21,355
+sequins,sequins,,X_Single,Y_auto,Sequins,Key-value,Go,,,Stripe,US,2014,,Open Source,MIT,stripe/sequins,Y,,
+sequoiadb,sequoiadb,sequoiadb,Normal,Y_auto,SequoiaDB,Document,C++,"SQL,HTTP / REST,Command-line / Shell",Shared-Disk,SequoiaDB Corporation,CN,2011#dbdbio>|<dbengines#2013,,"Commercial,Open Source",AGPL v3,SequoiaDB/SequoiaDB,Y,0.61,276
+serenity,serenity,,X_Single,Y_auto,Serenity,,C,,,,RU,2015,2016,Open Source,,pmwkaa/serenity,Y,,
+sesame,sesame,,X_Single,Y_auto,Sesame,RDF,Java,SPARQL,,Aduna,NL,1997,2016,Open Source,BSD,,Y,,
+shardingsphere,shardingsphere,,X_Single,Y_auto,ShardingSphere,Relational,Java,SQL,Shared-Nothing,Apache,CN,2016,,Open Source,Apache v2,apache/shardingsphere,Y,,
+shore-mt,shore-mt,,X_Single,Y_auto,Shore-MT,,C,,,"Carnegie Mellon University, EPFL",US,2007,2014,"Commercial,Open Source",,,Y,,
+shsql,shsql,,X_Single,Y_auto,shsql,Relational,Bash,"SQL,Command-line / Shell",,Steve Alt,,2002,2013,Open Source,GPL v2,,Y,,
+silo,silo,,X_Single,Y_auto,Silo,Relational,"C++,Python",Custom API,Shared-Everything,"Stephen Tu, Eddie Kohler",US,2013,,"Academic,Open Source",MIT,stephentu/silo,Y,,
+sirdb,sirdb,,X_Single,Y_auto,Sir.DB,Document,JavaScript,Custom API,,Cris Stringfellow,HK,2020,,"Hobby,Open Source",MIT,c9fe/sirdb,Y,,
+siridb,siridb,siridb,Normal,Y_auto,SiriDB,Time Series,C,Custom API,,Cesbit,NL,2016#dbdbio>|<dbengines#2017,,"Commercial,Open Source",MIT,SiriDB/siridb-server,Y,0.17,367
+sirixdb,sirixdb,,X_Single,Y_auto,SirixDB,Document,"Java,Kotlin","XQuery,HTTP / REST",,University of Konstanz,DE,2012,,"Academic,Open Source",BSD,sirixdb/sirix,Y,,
+skeletondb,skeletondb,,X_Single,Y_auto,SkeletonDB,,Go,,,Tristan Rice,CA,2016,2016,Open Source,MIT,d4l3k/skeletondb,Y,,
+sksql,sksql,,X_Single,Y_auto,SKSQL,Relational,TypeScript,SQL,Embedded,Alex Raffy,ES,2021,,"Hobby,Open Source",MIT,alexraffy/sksql,Y,,
+skytable,skytable,skytable,Normal,Y_auto,Skytable,Key-value,Rust,Custom API,,"Skytable, Inc.",US,2020,,Open Source,AGPL v3.0,skytable/skytable,Y,0.3,328
+sled,sled,,X_Single,Y_auto,Sled,Key-value,Rust,Custom API,Embedded,Tyler Neely,"DE,US",2016,,Open Source,"Apache v2,MIT",spacejam/sled,Y,,
+sleekdb,sleekdb,,X_Single,Y_auto,SleekDB,Document,PHP,Custom API,Embedded,,BD,2018,,Open Source,MIT,rakibtg/SleekDB,Y,,
+slumber-db,slumber-db,,X_Single,Y_auto,Slumber DB,Key-value,Java,,,Richard Hightower,US,2014,,Open Source,Apache v2,RichardHightower/slumberdb,Y,,
+smallsql,smallsql,smallsql,Normal,Y_auto,SmallSQL,Relational,Java,,Embedded,Volker Berlin,DE,2005,2013,Open Source,LGPL v3,CptTZ/SmallSQL,Y,0.02,396
+sneller,sneller,,X_Single,Y_auto,Sneller,Document,Go,SQL,Shared-Disk,"Sneller, Inc.",US,2022,,"Commercial,Open Source",AGPL v3,SnellerInc/sneller,Y,,
+solr,solr,solr,Normal,Y_auto,Solr,Document#dbdbio>|<dbengines#Search engine,Java,Custom API,Shared-Nothing,Apache Software Foundation,US,2004#dbdbio>|<dbengines#2006,2023,Open Source,Apache v2,apache/solr,Y,48.55,24
+sones-graphdb,sones-graphdb,,X_Single,Y_auto,sones GraphDB,Graph,C#,,,sones GmbH,DE,2007,2012,"Commercial,Open Source",AGPL v3,sones/sones,Y,,
+sonnerie,sonnerie,,X_Single,Y_auto,Sonnerie,Relational,Rust,"HTTP / REST,Command-line / Shell",,Charles Samuels,US,,,Open Source,BSD,njaard/sonnerie,Y,,
+spark-sql,spark-sql,spark-sql,Normal,Y_auto,Spark SQL,Relational,,"Custom API,SQL",Shared-Nothing,Apache Software Foundation,US,2014,2023,Open Source,Apache v2.0,apache/spark,Y,19.63,37
+sparrowdb,sparrowdb,,X_Single,Y_auto,SparrowDB,Key-value,Go,HTTP / REST,,SparrowDB,BR,2016,,Open Source,MIT,SparrowDb/sparrowdb,Y,,
+speedy,speedy,,X_Single,Y_auto,Speedy,Relational,C,SQL,,Harald Wabnig,AT,,2003,"Hobby,Open Source",,,Y,,
+sphinx,sphinx,sphinx,Normal,Y_auto,Sphinx,Search engine,C++,,,Sphinx Technologies Inc.,US,2001,2023,"Commercial,Open Source","GPL v2, commercial licence available",sphinxsearch/sphinx,Y,6.08,70
+spicedb,spicedb,,X_Single,Y_auto,SpiceDB,Object oriented,Go,"Custom API,HTTP / REST",,Authzed,US,2021,,"Commercial,Open Source",Apache v2,authzed/spicedb,Y,,
+splice-machine,splice-machine,splice-machine,Normal,Y_auto,Splice Machine,Relational,Java,SQL,Shared-Disk,Splice Machine,US,2012#dbdbio>|<dbengines#2014,2021,"Commercial,Open Source",AGPL v3.0; commercial license available,splicemachine/spliceengine,Y,0.82,244
+splinterdb,splinterdb,,X_Single,Y_auto,SplinterDB,Key-value,C,Custom API,Embedded,"VMware, Inc.",US,2018,,"Industrial Research,Open Source",Apache v2,vmware/splinterdb,Y,,
+sqlite,sqlite,sqlite,Normal,Y_auto,SQLite,Relational,,"Custom API,SQL","Shared-Disk,Embedded","D. Richard Hipp, Dan Kennedy, Joe Mistachkin#dbdbio>|<dbengines#Dwayne Richard Hipp",US,2000,2023,"Commercial,Open Source",Public Domain,sqlite/sqlite,Y,130.2,10
+srch2,srch2,,X_Single,Y_auto,SRCH²,,C++,,,SRCH²,US,2010,2017,"Commercial,Open Source",Proprietary,SRCH2/srch2-ngn,Y,,
+ssdb,ssdb,,X_Single,Y_auto,SSDB,Key-value,C++,"Custom API,Command-line / Shell",Shared-Nothing,Zuyang Wu,CN,2013,,Open Source,BSD,ideawu/ssdb,Y,,
+starrocks,starrocks,starrocks,Normal,Y_auto,StarRocks,Relational,C++,SQL,,StarRocks Labs#dbdbio>|<dbengines#The Linux Foundation,CN,2021#dbdbio>|<dbengines#2020,2023,"Commercial,Open Source",Apache Version 2.0,StarRocks/StarRocks,Y,1.03,219
+stellarsql,stellarsql,,X_Single,Y_auto,StellarSQL,Relational,Rust,SQL,,An-Chi Liu,TW,2018,,"Hobby,Open Source",MIT,stellarsql/StellarSQL,Y,,
+stig,stig,,X_Single,Y_auto,Stig,Graph,C++,,Shared-Nothing,Tagged,US,2010,2014,Open Source,Apache v2,jssmith/stigdb,Y,,
+stonedb,stonedb,,X_Single,Y_auto,StoneDB,Relational,,SQL,,StoneAtom Ltd.,CN,2022,,"Commercial,Open Source",,StoneAtom/stonedb,Y,,
+strabon,strabon,strabon,Normal,Y_auto,Strabon,RDF,Java,SPARQL,,KRR&A Team,GR,2011,,"Academic,Open Source",Mozilla public license,esarbanis/strabon,Y,0.65,271
+strixdb,strixdb,,X_Single,Y_auto,StrixDB,RDF,,"SPARQL,Datalog",Embedded,,FR,,,"Commercial,Open Source",Proprietary,,Y,,
+strozzi-nosql,strozzi-nosql,,X_Single,Y_auto,Strozzi NoSQL,Relational,,,,Carlo Strozzi,IT,1989,,"Commercial,Open Source",GPL v2,,Y,,
+stsdb,stsdb,stsdb,Normal,Y_auto,STSdb,Key-value,C#,,Embedded,STS Soft SC,BG,2008#dbdbio>|<dbengines#2011,2015,Open Source,"GPL v2,GPL v3#dbdbio>|<dbengines#GPLv2, commercial license available",STSSoft/STSdb4,Y,0.37,312
+summitdb,summitdb,,X_Single,Y_auto,SummitDB,Key-value,Go,Custom API,Shared-Nothing,Josh Baker,US,2016,,"Hobby,Open Source",MIT,tidwall/summitdb,Y,,
+surrealdb,surrealdb,surrealdb,Normal,Y_auto,SurrealDB,"Relational,Document,Graph",Rust,"Custom API,SQL,HTTP / REST,RPC","Shared-Nothing,Embedded",SurrealDB Ltd.#dbdbio>|<dbengines#SurrealDB Ltd,GB,2016#dbdbio>|<dbengines#2022,,"Commercial,Open Source",Business Source License,surrealdb/surrealdb,Y,0.83,243
+swaydb,swaydb,swaydb,Normal,Y_auto,SwayDB,Key-value,Scala,Custom API,Embedded,Simer Plaha,AU,2018,,"Commercial,Open Source",AGPL v3.0,simerplaha/SwayDB,Y,0.0,404
+swc-db,swc-db,swc-db,Normal,Y_auto,SWC-DB,"Wide column,Key-value",C++,"Custom API,SQL,Command-line / Shell",Shared-Nothing,Kashirin Alex#dbdbio>|<dbengines#Alex Kashirin,IL,2019#dbdbio>|<dbengines#2020,2021,"Commercial,Open Source","GPL v3,Proprietary",kashirin-alex/swc-db,Y,0.01,401
+sylvadb,sylvadb,,X_Single,Y_auto,SylvaDB,Graph,JavaScript,,,The CulturePlex Lab,CA,2009,,"Academic,Open Source",AGPL v3,CulturePlex/Sylva,Y,,
+tabdb,tabdb,,X_Single,Y_auto,TabDB,Relational,JavaScript,SQL,,Kevin Kuchta,US,2019,,"Hobby,Open Source",,kkuchta/tabdb,Y,,
+taffydb,taffydb,,X_Single,Y_auto,TaffyDB,Document,JavaScript,,Embedded,Ian Smith,US,2009,,Open Source,MIT,typicaljoe/taffydb,Y,,
+tajo,tajo,tajo,Normal,Y_auto,Tajo,Relational,Java,"Custom API,SQL,Command-line / Shell",Shared-Disk,"Hyunsik Choi and Jihoon Son, who was a member of Korea University's DB Laboratory#dbdbio>|<dbengines#Apache Software Foundation",KR,2012,2020,Open Source,Apache v2,apache/tajo,Y,0.57,279
+tarantool,tarantool,tarantool,Normal,Y_auto,Tarantool,Key-value,C,"Custom API,Stored Procedures,Command-line / Shell",Shared-Nothing,Tarantool#dbdbio>|<dbengines#VK,RU,2008,2022,"Commercial,Open Source",BSD,tarantool/tarantool,Y,1.94,157
+tayzgrid,tayzgrid,,X_Single,Y_auto,TayzGrid,Object oriented,Java,,,Alachisoft,US,,,"Commercial,Open Source",Proprietary,,Y,,
+tdengine,tdengine,tdengine,Normal,Y_auto,TDengine,Relational#dbdbio>|<dbengines#Time Series,C,"Custom API,SQL,HTTP / REST,Command-line / Shell",Shared-Nothing,"TDengine#dbdbio>|<dbengines#TDEngine, previously Taos Data",CN,2017#dbdbio>|<dbengines#2019,2022,"Commercial,Open Source","AGPL v3#dbdbio>|<dbengines#GPL V3, also commercial editions available",taosdata/TDengine,Y,2.93,118
+tendis,tendis,,X_Single,Y_auto,Tendis,Key-value,C++,Custom API,Shared-Nothing,Tencent,CN,2018,,Open Source,GPL v3,Tencent/Tendis,Y,,
+tensorbase,tensorbase,,X_Single,Y_auto,TensorBase,Relational,Rust,SQL,Shared-Disk,,CN,2020,,Open Source,Apache v2,tensorbase/tensorbase,Y,,
+tera,tera,,X_Single,Y_auto,Tera,Wide column,C++,SQL,Shared-Disk,"Baidu, Inc.",CN,2014,,"Commercial,Open Source",BSD,baidu/tera,Y,,
+terarkdb,terarkdb,terarkdb,Normal,Y_auto,TerarkDB,Key-value,C++,Custom API,Embedded,Bytedance Engineering Team#dbdbio>|<dbengines#Terark,CN,2016,,Open Source,Apache v2; restricted open source version available,bytedance/terarkdb,Y#dbdbio>|<dbengines#N,0.14,371
+terminusdb,terminusdb,terminusdb,Normal,Y_auto,TerminusDB,"Graph,Document,RDF","Prolog,Rust","Custom API,Datalog",,TerminusDB#dbdbio>|<dbengines#DataChemist Ltd.,IE,2019#dbdbio>|<dbengines#2018,2023,"Commercial,Open Source",GPL v3,terminusdb/terminusdb,Y,0.33,323
+terrastore,terrastore,,X_Single,Y_auto,Terrastore,Document,Java,Custom API,,Sergio Bossa,GB,2009,2011,Open Source,Apache v2,,Y,,
+thinksql,thinksql,,X_Single,Y_auto,ThinkSQL,Relational,Pascal,SQL,Shared-Everything,,GB,2000,,"Commercial,Open Source",,ggaughan/ThinkSQL,Y,,
+thrudb,thrudb,,X_Single,Y_auto,ThruDB,,C++,,,Jake Luciani,US,2006,2008,Open Source,BSD,,Y,,
+tidb,tidb,tidb,Normal,Y_auto,TiDB,Key-value#dbdbio>|<dbengines#Relational,Go,SQL,Shared-Nothing,"PingCAP, Inc.",US,2015#dbdbio>|<dbengines#2016,2023,"Commercial,Open Source",Apache v2.0,pingcap/tidb,Y,3.29,107
+tiedot,tiedot,,X_Single,Y_auto,tiedot,Document,Go,,"Shared-Everything,Embedded",Howard Guo,FI,2013,,Open Source,BSD,HouzuoGuo/tiedot,Y,,
+tieredmemdb,tieredmemdb,,X_Single,Y_auto,TieredMemDB,,,Command-line / Shell,Shared-Everything,Intel,PL,2020,,"Industrial Research,Open Source",,TieredMemDB/TieredMemDB,Y,,
+tigerbeetle,tigerbeetle,,X_Single,Y_auto,TigerBeetle,Relational,Zig,Custom API,Shared-Nothing,"Coil Technologies, Inc.",ZA,2020,,Open Source,Apache v2,coilhq/tigerbeetle,Y,,
+tikv,tikv,,X_Single,Y_auto,TiKV,Key-value,Rust,Custom API,Shared-Nothing,Cloud Nature Computing Foundation (CNCF),CN,2016,,Open Source,Apache v2,tikv/tikv,Y,,
+tile38,tile38,,X_Single,Y_auto,Tile38,,Go,"Custom API,HTTP / REST",Shared-Everything,Josh Baker,US,2016,,Open Source,MIT,tidwall/tile38,Y,,
+tiledb,tiledb,,X_Single,Y_auto,TileDB,Array,C++,"Custom API,SQL",Embedded,"TileDB Inc, Intel Labs",US,2014,,"Commercial,Open Source",MIT,TileDB-Inc/TileDB,Y,,
+timbala,timbala,,X_Single,Y_auto,Timbala,Relational,Go,"HTTP / REST,PromQL",,Matt Bostock,GB,2016,2018,"Hobby,Open Source",Apache v2,mattbostock/timbala,Y,,
+timber,timber,,X_Single,Y_auto,TIMBER,Document,,XQuery,,University of Michigan,US,,2006,"Academic,Open Source",,,Y,,
+tingodb,tingodb,,X_Single,Y_auto,TingoDB,Document,JavaScript,Custom API,Embedded,PushOk Software,RU,2013,,Open Source,MIT,sergeyksv/tingodb,Y,,
+tinybase,tinybase,,X_Single,Y_auto,TinyBase,Relational,TypeScript,Custom API,Embedded,James Pearce,US,2021,,Open Source,MIT,tinyplex/tinybase,Y,,
+tinydb,tinydb,,X_Single,Y_auto,TinyDB,Document,Python,Custom API,Embedded,Markus Siemens,DE,2013,,Open Source,MIT,msiemens/tinydb,Y,,
+tinysql,tinysql,,X_Single,Y_auto,tinySQL,,Java,,,Brian Jepson,US,2003,2007,Open Source,,,Y,,
+titan,titan,,X_Single,Y_auto,Titan,Graph,Java,Gremlin,,Aurelius,US,2012,2015,Open Source,Apache v2,thinkaurelius/titan,Y,,
+titan-nosql,titan-nosql,,X_Single,Y_auto,Titan,,Go,,,"Meitu, Inc.",CN,2018,,"Hobby,Open Source",Apache v2,meitu/titan,Y,,
+tokudb,tokudb,,X_Single,Y_auto,TokuDB,Relational,,,,Percona,US,2009,,"Commercial,Open Source",GPL v2,percona/tokudb-engine,Y,,
+tokumx,tokumx,,X_Single,Y_auto,TokuMX,,,,,Tokutek,US,,,"Commercial,Open Source","AGPL v3,Apache v2,GPL v2",Tokutek/mongo,Y,,
+tokyo-cabinet,tokyo-cabinet,,X_Single,Y_auto,Tokyo Cabinet,Key-value,C,Custom API,Embedded,FAL Labs,JP,2006,,Open Source,LGPL v2,,Y,,
+tomp2p,tomp2p,tomp2p,Normal,Y_auto,TomP2P,Key-value,Java,,,Thomas Bocek,CH,2004,,Open Source,Apache v2,tomp2p/TomP2P,Y,0.25,343
+torodb,torodb,torodb,Normal,Y_auto,ToroDB,Document,Java,,Shared-Everything,8Kdata,ES,2016,,Open Source,AGPL v3,torodb/server,Y,0.18,365
+trafodion,trafodion,trafodion,Normal,Y_auto,Trafodion,Wide column#dbdbio>|<dbengines#Relational,"C++,Java",SQL,,"Apache Software Foundation, originally developed by Hewlett-Packard Company",US,2014,2021#dbdbio>|<dbengines#2019,Open Source,Apache v2.0,apache/trafodion,Y,0.6,277
+traildb,traildb,,X_Single,Y_auto,TrailDB,Relational,C,Custom API,Embedded,AdRoll Inc.,US,2014,,"Commercial,Open Source",MIT,traildb/traildb,Y,,
+treodedb,treodedb,,X_Single,Y_auto,TreodeDB,Key-value,Scala,,,"Treode, Inc.",US,2012,2015,"Commercial,Open Source",Apache v2,Treode/store,Y,,
+trino,trino,trino,Normal,Y_auto,Trino,Relational,Java,SQL,Shared-Disk,Trino Software Foundation,US,2019#dbdbio>|<dbengines#2012,,Open Source,Apache v2.0,trinodb/trino,Y,6.63,63
+trousseau,trousseau,,X_Single,Y_auto,Trousseau,Key-value,Go,Command-line / Shell,Shared-Everything,Théo Crevon,DE,2013,,Open Source,MIT,oleiade/trousseau,Y,,
+ts-sql,ts-sql,,X_Single,Y_auto,ts-sql,Relational,TypeScript,SQL,Embedded,Charles Pick,GB,2020,,"Hobby,Open Source",,codemix/ts-sql,Y,,
+twig,twig,,X_Single,Y_auto,Twig,Object oriented,Java,,,John Patterson,US,2009,2013,Open Source,Apache v2,,Y,,
+typedb,typedb,typedb,Normal,Y_auto,TypeDB,Graph,,Custom API,,Vaticle,GB,2016,2023,"Commercial,Open Source","AGPL v3#dbdbio>|<dbengines#GPL Version 3, commercial licenses available",vaticle/typedb,Y,1.15,212
+typhoon,typhoon,,X_Single,Y_auto,Typhoon,Relational,,,,"Thomas B. Pedersen, Kaz Kylheku",DK,1996,1999,Open Source,MIT,jonahharris/osdb-typhoon,Y,,
+unqlite,unqlite,,X_Single,Y_auto,UnQLite,"Key-value,Document",C,,Embedded,Symisc Systems,TN,,,"Commercial,Open Source",,symisc/unqlite,Y,,
+upscaledb,upscaledb,upscaledb,Normal,Y_auto,upscaledb,Key-value,"C,C++",,,Christoph Rupp,DE,2007,,"Commercial,Open Source",Apache v2,cruppstahl/upscaledb,Y,0.29,333
+vanilladb,vanilladb,,X_Single,Y_auto,VanillaDB,Multivalue,Java,"Custom API,SQL,Stored Procedures",Shared-Everything,National Tsing Hua University,TW,2016,,"Academic,Open Source",Apache v2,vanilladb/vanillacore,Y,,
+vectorsql,vectorsql,,X_Single,Y_auto,VectorSQL,Relational,Go,SQL,,Bohu Tang,CN,2020,,"Hobby,Open Source",Apache v2,vectorengine/vectorsql,Y,,
+velox,velox,,X_Single,Y_auto,Velox,Relational,C++,Custom API,Embedded,Meta,US,2020,,"Industrial Research,Open Source",Apache v2,facebookincubator/velox,Y,,
+veloxdb,veloxdb,,X_Single,Y_auto,VeloxDB,Object oriented,C#,Custom API,Shared-Everything,VeloxDB,RS,2022,,"Commercial,Open Source",MIT,VeloxDB/VeloxDB,Y,,
+vertexdb,vertexdb,,X_Single,Y_auto,VertexDB,Graph,,,,"Steve Dekorte, Rich Collins",US,,,"Hobby,Open Source",,stevedekorte/vertexdb,Y,,
+vespa,vespa,vespa,Normal,Y_auto,Vespa,Document#dbdbio>|<dbengines#Search engine,C++,"Custom API,SQL",,Yahoo!,NO,1997,,Open Source,Apache v2,vespa-engine/vespa,Y,0.55,285
+victoriametrics,victoriametrics,victoriametrics,Normal,Y_auto,VictoriaMetrics,Wide column#dbdbio>|<dbengines#Time Series,Go,"Custom API,PromQL",,VictoriaMetrics,UA,2018,2023,Open Source,Apache v2.0,VictoriaMetrics/VictoriaMetrics,Y,1.29,200
+vitess,vitess,vitess,Normal,Y_auto,Vitess,Relational,Go,SQL,Shared-Nothing,"Youtube#dbdbio>|<dbengines#The Linux Foundation, PlanetScale",US,2011#dbdbio>|<dbengines#2013,2022,Open Source,"Apache v2.0, commercial licenses available",vitessio/vitess,Y,1.21,208
+viyadb,viyadb,,X_Single,Y_auto,ViyaDB,,C++,HTTP / REST,,Michael Spector,IL,2017,,Open Source,Apache v2,viyadb/viyadb,Y,,
+voldemort,voldemort,project-voldemort,Fuzzy:Normal,Y,Project Voldemort,Key-value,Java,Custom API,,LinkedIn,US,2009,2017,Open Source,Apache v2,voldemort/voldemort,Y,0.48,295
+voltdb,voltdb,voltdb,Normal,Y_auto,VoltDB,Relational,"C++,Java","SQL,Stored Procedures",Shared-Nothing,VoltDB Inc.,US,2009#dbdbio>|<dbengines#2010,2022,"Commercial,Open Source","GPL v3,VoltDB Proprietary License#dbdbio>|<dbengines#AGPL for Community Edition, commercial license for Enterprise, AWS, and Pro Editions",VoltDB/voltdb,Y,2.13,149
+vsql,vsql,,X_Single,Y_auto,vsql,Relational,V,SQL,Shared-Everything,Elliot Chance,US,2021,,"Hobby,Open Source",MIT,elliotchance/vsql,Y,,
+vyhodb,vyhodb,,X_Single,Y_auto,vyhodb,Network,Java,Custom API,"Shared-Everything,Embedded",Igor Vykhodtsev,RU,2012,,"Hobby,Open Source",Microsoft Reference Source License,,Y,,
+warp-10,warp-10,warp-10,Normal,Y_auto,Warp 10,Time Series,Java,Custom API,,SenX S.A.S.,FR,2013#dbdbio>|<dbengines#2015,,"Commercial,Open Source",Apache v2.0,senx/warp10-platform,Y,0.07,391
+weaviate,weaviate,weaviate,Normal,Y_auto,Weaviate,Array#dbdbio>|<dbengines#Vector DBMS,"Assembly,C++,Go",,Shared-Everything,"Weaviate, B.V.",NL,2016#dbdbio>|<dbengines#2019,2023,"Commercial,Open Source",BSD#dbdbio>|<dbengines#commercial license available with Weaviate Enterprise,semi-technologies/weaviate,Y,1.27,201
+webscalesql,webscalesql,,X_Single,Y_auto,WebScaleSQL,,,,,"Facebook, Google, LinkedIn, Twitter, Alibaba Group","CN,US",2014,2016,Open Source,GPL v2,webscalesql/webscalesql-5.6,Y,,
+whitedb,whitedb,whitedb,Normal,Y_auto,WhiteDB,Network#dbdbio>|<dbengines#Document,C,Custom API,Shared-Memory,"Priit Järv, Tanel Tammet",EE,2008,,"Hobby,Open Source",GPL v3,priitj/whitedb,Y,0.14,372
+wiredtiger,wiredtiger,,X_Single,Y_auto,WiredTiger,Key-value,C,"Custom API,Command-line / Shell",Embedded,WiredTiger Inc.,"AU,US",2008,,"Commercial,Open Source","GPL v2,GPL v3",wiredtiger/wiredtiger,Y,,
+wonderdb,wonderdb,,X_Single,Y_auto,WonderDB,Relational,Java,SQL,Shared-Everything,Vilas Athavale,US,2013,2015,"Hobby,Open Source",,dreamdbvilas/wonderdb,Y,,
+xap,xap,,X_Single,Y_auto,XAP,Key-value,Java,"Custom API,SQL",Shared-Nothing,GigaSpaces,US,2000,,"Commercial,Open Source",Apache v2,xap/xap,Y,,
+xapian,xapian,xapian,Normal,Y_auto,Xapian,Document#dbdbio>|<dbengines#Search engine,C++,Custom API,Embedded,BrightStation,GB,2001#dbdbio>|<dbengines#1986,2023,"Commercial,Open Source",GPL v2,xapian/xapian,Y,1.31,198
+xodus,xodus,,X_Single,Y_auto,Xodus,Document,"Java,Kotlin",,Embedded,JetBrains,RU,2014,,Open Source,Apache v2,JetBrains/xodus,Y,,
+xtdb,xtdb,xtdb,Normal,Y_auto,XTDB,Document,Clojure,"SQL,Datalog",Shared-Disk,JUXT Ltd.,GB,2018#dbdbio>|<dbengines#2019,2021,"Commercial,Open Source",MIT,xtdb/xtdb,Y,0.13,375
+ydb,ydb,ydb,Normal,Y_auto,YDB,Relational#dbdbio>|<dbengines#Document,C++,"SQL,HTTP / REST",Shared-Disk,Yandex,RU,2019,,"Commercial,Open Source",Apache v2.0; commercial license available,ydb-platform/ydb,Y,0.56,281
+yottadb,yottadb,,X_Single,Y_auto,YottaDB,Key-value,C,Custom API,Embedded,"YottaDB, LLC",US,2001,,"Commercial,Open Source",AGPL v3,YottaDB/YDB,Y,,
+yugabytedb,yugabytedb,yugabytedb,Normal,Y_auto,YugabyteDB,"Relational,Key-value",C++,"Custom API,PL/SQL",Shared-Nothing,"Yugabyte, Inc.",US,2016#dbdbio>|<dbengines#2017,2023,"Commercial,Open Source",Apache v2.0,yugabyte/yugabyte-db,Y,3.73,99
+zerodb,zerodb,,X_Single,Y_auto,ZeroDB,Document,Python,Custom API,,ZeroDB Inc.,US,2015,2017,"Commercial,Open Source",AGPL v3,zerodb/zerodb,Y,,
+zodb,zodb,zodb,Normal,Y_auto,ZODB,Object oriented#dbdbio>|<dbengines#Key-value,Python,Custom API,Shared-Everything,Zope Foundation,US,2002#dbdbio>|<dbengines#2009,2020,Open Source,Zope Public License,zopefoundation/ZODB,Y,1.34,196
+zoodb,zoodb,,X_Single,Y_auto,ZooDB,Object oriented,Java,Custom API,,Tilmann Zäschke,CH,2008,,Open Source,GPL v3,tzaeschke/zoodb,Y,,
+zookeeper,zookeeper,,X_Single,Y_auto,Zookeeper,Hierarchical,Java,Command-line / Shell,Shared-Nothing,Apache Foundation,US,2008,,Open Source,Apache v2,apache/zookeeper,Y,,
+acebase,,acebase,Y_Single,Y_auto,Acebase,Document,,,,,,2018,,,MIT License,appy-one/acebase,Y,0.14,370
+adabas,,adabas,Y_Single,Y_auto,Adabas,Multivalue,,,,Software AG,,1971,,,,jrmarino/AdaBase,N,5.15,79
+apache-flink,,apache-flink,Y_Single,Y_auto,Apache Flink,Relational,,,,Apache Software Foundation and contributors,,,2023,,,apache/flink,Y,13.79,45
+atoti,,atoti,Y_Single,Y_auto,atoti,Object oriented,,,,ActiveViam,,,,,free versions available,atoti/atoti,N,0.84,240
+cachelotio,,cachelotio,Y_Single,Y_auto,Cachelot.io,Key-value,,,,,,2015,,,Simplified BSD License,cachelot/cachelot,Y,0.07,390
+databricks,,databricks,Y_Single,Y_auto,Databricks,Document,,,,Databricks,,2013,,,,-,Y,68.47,18
+deep-lake,,deep-lake,Y_Single,Y_auto,Deep Lake,Vector DBMS,,,,Activeloop,,,,,MPL-2.0 license,activeloopai/deeplake,Y,0.55,284
+dydra,,dydra,Y_Single,Y_auto,Dydra,RDF,,,,,,2010,,,,dydra/dydra,N,0.29,331
+elassandra,,elassandra,Y_Single,Y_auto,Elassandra,Wide column,,,,,,,,,Apache Version 2.0,strapdata/elassandra,Y,0.5,291
+firebolt,,firebolt,Y_Single,Y_auto,Firebolt,Relational,,,,Firebolt Analytics Inc.,,2020,,,,firebolt-db/firebolt-python-sdk,N,2.08,150
+geomesa,,geomesa,Y_Single,Y_auto,GeoMesa,Spatial DBMS,,,,CCRi and others,,2014,2023,,Apache License 2.0,geomesa/geomesa-geoserver,Y,1.02,221
+gigaspaces,,gigaspaces,Y_Single,Y_auto,GigaSpaces,Document,,,,Gigaspaces Technologies,,2000,2020,,Apache Version 2; Commercial licenses available,-,Y,1.55,175
+giraph,,giraph,Y_Single,Y_auto,Giraph,Graph,,,,,,2013,2020,,Apache Version 2,apache/giraph,Y,1.59,173
+graph-engine,,graph-engine,Y_Single,Y_auto,Graph Engine,Graph,,,,Microsoft,,2010,,,MIT License,microsoft/GraphEngine,Y,0.75,258
+graphite,,graphite,Y_Single,Y_auto,Graphite,Time Series,,,,Chris Davis,,2006,,,Apache 2.0,graphite-project/graphite-web,Y,5.82,74
+h2gis,,h2gis,Y_Single,Y_auto,H2GIS,Spatial DBMS,,,,CNRS,,2013,,,LGPL 3.0,orbisgis/h2gis,Y,0.27,340
+hawkular-metrics,,hawkular-metrics,Y_Single,Y_auto,Hawkular Metrics,Time Series,,,,Community supported by Red Hat,,2014,,,Apache 2.0,hawkular/hawkular-metrics,Y,0.21,357
+heavyai,,heavyai,Y_Single,Y_auto,HEAVY.AI,Relational,,,,"HEAVY.AI, Inc.",,2016,2022,,Apache Version 2; enterprise edition available,heavyai/heavydb,Y,3.17,109
+hgraphdb,,hgraphdb,Y_Single,Y_auto,HGraphDB,Graph,,,,,,2016,,,Apache 2.0,rayokota/hgraphdb,Y,0.0,405
+hugegraph,,hugegraph,Y_Single,Y_auto,HugeGraph,Graph,,,,Baidu,,2018,,,Apache Version 2.0,apache/incubator-hugegraph,Y,0.34,322
+hyperleveldb,,hyperleveldb,Y_Single,Y_auto,HyperLevelDB,Key-value,,,,,,2010,,,,rescrv/HyperLevelDB,Y,0.19,360
+iboxdb,,iboxdb,Y_Single,Y_auto,iBoxDB,Document,,,,,,2013,,,,iboxdb/ftserver,Y,0.14,373
+kdb,,kdb,Y_Single,Y_auto,Kdb,Time Series,,,,"Kx Systems, a division of First Derivatives plc",,2000,2018,,free 32-bit version,KxSystems/kdb,N,8.22,55
+kyoto-tycoon,,kyoto-tycoon,Y_Single,Y_auto,Kyoto Tycoon,Key-value,,,,,,2009,,,GPL,AlticeLabsProjects/kyoto,Y,0.22,353
+leveldb,,leveldb,Y_Single,Y_auto,LevelDB,Key-value,,,,Google,,2011,2021,,BSD,google/leveldb,Y,3.44,103
+matisse,,matisse,Y_Single,Y_auto,Matisse,Object oriented,,,,Matisse Software Inc.,,1986,,,free developer license available,zhihu/Matisse,N,1.86,160
+neventstore,,neventstore,Y_Single,Y_auto,NEventStore,Event,,,,,,2011,,,MIT-License,NEventStore/NEventStore,Y,0.36,315
+newts,,newts,Y_Single,Y_auto,Newts,Time Series,,,,OpenNMS Group,,2014,,,Apache 2.0,OpenNMS/newts,Y,0.0,403
+nsdb,,nsdb,Y_Single,Y_auto,NSDb,Time Series,,,,,,2017,,,Apache Version 2.0,radicalbit/NSDb,Y,0.18,364
+opengauss,,opengauss,Y_Single,Y_auto,openGauss,Relational,,,,Huawei and openGauss community,,2019,2022,,,opengauss-mirror/openGauss-server,Y,1.41,187
+opensearch,,opensearch,Y_Single,Y_auto,OpenSearch,Search engine,,,,Amazon Web Services,,2021,2023,,Apache Version 2.0,opensearch-project/OpenSearch,Y,12.88,46
+oracle-coherence,,oracle-coherence,Y_Single,Y_auto,Oracle Coherence,Key-value,,,,Oracle,,2007,2016,,,oracle/coherence,N,2.79,122
+postgis,,postgis,Y_Single,Y_auto,PostGIS,Spatial DBMS,,,,,,2005,2023,,GPL v2.0,postgis/postgis,Y,30.01,29
+postgres-xl,,postgres-xl,Y_Single,Y_auto,Postgres-XL,Relational,,,,,,2014,2018,,Mozilla public license,Postgres-XL/Postgres-XL,Y,0.7,266
+qdrant,,qdrant,Y_Single,Y_auto,Qdrant,Vector DBMS,,,,Qdrant,,2021,,,Apache Version 2.0,qdrant/qdrant,Y,0.61,275
+rdf4j,,rdf4j,Y_Single,Y_auto,RDF4J,RDF,,,,"Since 2016 officially forked into an Eclipse project, former developer was Aduna Software.",,2004,,,"Eclipse Distribution License (EDL), v1.0.",eclipse/rdf4j,Y,1.11,215
+redland,,redland,Y_Single,Y_auto,Redland,RDF,,,,,,2000,,,"Multi License (LGPL, GPLv2, Apache V2)",dajobe/librdf,Y,0.69,268
+resin-cache,,resin-cache,Y_Single,Y_auto,Resin Cache,Key-value,,,,,,1998,2020,,"GPLv3, extended commercial license available",dlitz/resin,Y,0.01,399
+rrdtool,,rrdtool,Y_Single,Y_auto,RRDtool,Time Series,,,,Tobias Oetiker,,1999,2022,,GPL V2 and FLOSS,oetiker/rrdtool-1.x,Y,3.42,104
+siaqodb,,siaqodb,Y_Single,Y_auto,Siaqodb,Object oriented,,,,,,,,,,morecraf/Siaqodb,N,0.24,346
+sitewhere,,sitewhere,Y_Single,Y_auto,SiteWhere,Time Series,,,,SiteWhere,,2010,,,Common Public Attribution License Version 1.0,sitewhere/sitewhere,Y,0.23,349
+snowflake,,snowflake,Y_Single,Y_auto,Snowflake,Relational,,,,Snowflake Computing Inc.,,2014,,,,twitter-archive/snowflake,N,117.69,11
+spatialite,,spatialite,Y_Single,Y_auto,SpatiaLite,Spatial DBMS,,,,Alessandro Furieri,,2008,2020,,"MPL 1.1, GPL v2.0 or LGPL v2.1",illarionov/SpatiaLite,Y,2.36,136
+speedb,,speedb,Y_Single,Y_auto,Speedb,Key-value,,,,Speedb,,2020,,,Apache Version 2.0; commercial license available,speedb-io/speedb,Y,0.37,311
+sqljs,,sqljs,Y_Single,Y_auto,SQL.JS,Relational,,,,Alon Zakai,,2012,,,,sql-js/sql.js,Y,1.51,180
+tigris,,tigris,Y_Single,Y_auto,Tigris,Document,,,,"Tigris Data, Inc.",,2022,,,Apache Version 2.0,tigrisdata/tigris,Y,0.19,362
+timescaledb,,timescaledb,Y_Single,Y_auto,TimescaleDB,Time Series,,,,Timescale,,2017,2023,,Apache 2.0,timescale/timescaledb,Y,4.78,84
+tinkergraph,,tinkergraph,Y_Single,Y_auto,TinkerGraph,Graph,,,,,,2009,,,Apache 2.0,apache/tinkerpop,Y,0.29,332
+tkrzw,,tkrzw,Y_Single,Y_auto,Tkrzw,Key-value,,,,Mikio Hirabayashi,,2020,2020,,Apache Version 2.0,estraier/tkrzw,Y,0.0,405
+tokyo-tyrant,,tokyo-tyrant,Y_Single,Y_auto,Tokyo Tyrant,Key-value,,,,Mikio  Hirabayashi,,2007,,,GPL,hthetiot/Tokyo-Tyrant,Y,0.43,301
+transwarp-stellardb,,transwarp-stellardb,Y_Single,Y_auto,Transwarp StellarDB,Graph,,,,Transwarp,,,,,,stellardb/StellarDB,N,0.0,405
+typesense,,typesense,Y_Single,Y_auto,Typesense,Search engine,,,,,,2015,,,GPL V3,typesense/typesense,Y,0.87,234
+vald,,vald,Y_Single,Y_auto,Vald,Vector DBMS,,,,,,,,,Apache-2.0 license,vdaas/vald,Y,0.86,237
+virtuoso,,virtuoso,Y_Single,Y_auto,Virtuoso,Document,,,,OpenLink Software,,1998,2022,,"GPLv2, extended commercial license available",openlink/virtuoso-opensource,Y,4.88,83
+wakandadb,,wakandadb,Y_Single,Y_auto,WakandaDB,Object oriented,,,,Wakanda SAS,,2012,2019,,"AGPLv3, extended commercial license available",-,Y,0.03,393
+percona-server-for-mongodb,,percona-server-for-mongodb,:Y_Single,Y_ConflictResolved,Percona Server for MongoDB,Document,,,,Percona,,2015,2017,,GPL Version 2,percona/percona-server-mongodb,Y,0.75,257
+riak-kv,,riak-kv,:Y_Single,Y_ConflictResolved,Riak KV,Key-value,,,,"OpenSource, formerly Basho Technologies",,2009,2022,,"Apache version 2, commercial enterprise edition",basho/riak_kv,Y,5.52,76
+riak-ts,,riak-ts,:Y_Single,Y_ConflictResolved,Riak TS,Time Series,,,,"Open Source, formerly Basho Technologies",,2015,2022,,,-,Y,0.27,342

@@ -756,18 +756,26 @@ def df_getRepoId_to_labeled_data_col(labeled_data_without_repoid_path, all_label
 
 
 if __name__ == '__main__':
+    # Step 0. Update git submodules
+    # git command in bash:
+    # $ git submodule foreach git checkout main
+    # $ git submodule foreach git pull
+
     # prepare data
     BASE_DIR = pkg_rootdir
+    # Step 1. Add new data filenames as input dataset.
     labeled_data_filenames = [
         "dbfeatfusion_records_202303_automerged_manulabeled.csv",
         "dbfeatfusion_records_202304_automerged_manulabeled.csv",
         "dbfeatfusion_records_202305_automerged_manulabeled.csv",
         "dbfeatfusion_records_202306_automerged_manulabeled.csv",
+        "dbfeatfusion_records_202307_automerged_manulabeled.csv",
     ]
     # dynamic settings
     idx_last_v = -2
     idx_curr_v = -1
 
+    # Step 2. Change the curr_stage from 0 to 2 before run main.py and solve the warnings related to data.
     curr_stage = 2
 
     # static settings
@@ -811,9 +819,9 @@ if __name__ == '__main__':
     curr_inc_labeled_data_path = os.path.join(database_repo_label_dataframe_dir, curr_inc_labeled_data_filename)
     curr_inc_path_issue_body_format_txt = os.path.join(BASE_DIR, 'data/result/incremental_generation/curr_relative_incremental/issue_body_format.txt')
     df_curr_inc_labeled_data = pd.read_csv(curr_inc_labeled_data_path, index_col=False, encoding=encoding)
-    if UPDATE_LAST_VERSION:
+    if UPDATE_LAST_VERSION:  # Block this process when last version still needs to be updated.
         pass
-    else:
+    else:  # Merge current incremental dataframe and last version labeled data into curr_inc_path_issue_body_format_txt
         if ORDER_BY_GITHUB_REPO_LINK:
             df_curr_inc_labeled_data.sort_values(by=['github_repo_link'], axis=0, ascending=True, inplace=True)
         auto_gen_issue_body_for_opendigger(df_curr_inc_labeled_data, curr_inc_path_issue_body_format_txt,
@@ -836,7 +844,7 @@ if __name__ == '__main__':
     elif not save_parsed_as_curr_inc_issue_body_format_parse_github_id:
         raise Warning(f"Please Create data issue in open-digger with contents in {curr_inc_issue_body_format_txt_path}, "
                       f"then save the bot comments into {curr_inc_issue_body_format_parse_github_id_path}! "
-                      f"Finally, set parse_github_id_str_to_yaml = True.")
+                      f"\t\nFinally, set parse_github_id_str_to_yaml = True.")
     else:
         pass
 

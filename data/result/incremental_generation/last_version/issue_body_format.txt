@@ -4,6 +4,7 @@ Type: Tech-1
 
 Repos:
 
+- EuclidOLAP/EuclidOLAP
 - TileDB-Inc/TileDB
 - cran/scidb
 - datajaguar/jaguardb
@@ -320,6 +321,7 @@ Repos:
 - oracle/nosql-go-sdk
 - orbitdb/orbit-db
 - orientechnologies/orientdb
+- paypal/junodb
 - petermattis/pebble
 - photondb/photondb
 - pilgr/Paper
@@ -488,6 +490,7 @@ Repos:
 - DevrexLabs/OrigoDB
 - Expensify/Bedrock
 - FirebirdSQL/firebird
+- GlareDB/glaredb
 - GreatSQL/GreatSQL
 - HydrasDB/hydra
 - JakSprats/Alchemy-Database
@@ -508,6 +511,7 @@ Repos:
 - apache/derby
 - apache/doris
 - apache/druid
+- apache/flink
 - apache/hawq
 - apache/hive
 - apache/impala
@@ -558,6 +562,7 @@ Repos:
 - fosslc/Ingres
 - georgia-tech-db/eva
 - ggaughan/ThinkSQL
+- gnocchixyz/gnocchi
 - google/lovefield
 - greenplum-db/gpdb
 - h2database/h2database
@@ -583,6 +588,7 @@ Repos:
 - neondatabase/neon
 - njaard/sonnerie
 - oceanbase/oceanbase
+- openGemini/openGemini
 - opengauss-mirror/openGauss-server
 - pentaho/mondrian
 - percona/percona-server
@@ -637,12 +643,10 @@ Repos:
 - manticoresoftware/manticoresearch
 - marqo-ai/marqo
 - meilisearch/meilisearch
-- milvus-io/milvus
 - opensearch-project/OpenSearch
-- qdrant/qdrant
-- semi-technologies/weaviate
 - sphinxsearch/sphinx
 - typesense/typesense
+- vespa-engine/vespa
 - xapian/xapian
 
 Label: Spatial DBMS
@@ -687,6 +691,19 @@ Repos:
 - spotify/heroic
 - taosdata/TDengine
 - timescale/timescaledb
+
+Label: Vector DBMS
+
+Type: Tech-1
+
+Repos:
+
+- activeloopai/deeplake
+- chroma-core/chroma
+- milvus-io/milvus
+- qdrant/qdrant
+- semi-technologies/weaviate
+- vdaas/vald
 
 Label: Wide column
 

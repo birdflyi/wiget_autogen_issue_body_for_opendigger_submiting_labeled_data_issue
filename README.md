@@ -12,6 +12,8 @@ $ git submodule sync --recursive
 $ git submodule update --init --recursive
 ```
 
+## A. Data processing workflow
+
 ### 1. Auto generate [data] issue body for opendigger
 Use `curr_stage` to control the processing flow of the first version dataset.
 Incremental generation mode: The mode refers to 3 directories: last_version, curr_relative_incremental, current_version_incremental_order_merged.
@@ -42,3 +44,18 @@ Use function df_getRepoId_to_yaml to generate yaml based on "issue_body_format_p
 ### 3.auto generate current_version_incremental_order_merged
 Use function auto_gen_current_version_incremental_order_merged to merge all the yaml files in directories last_version and curr_relative_incremental into current_version_incremental_order_merged.
 The function runs in stage 2 by setting take_parsed_repo_id_as_df_new_col = True.
+
+## B. How to update data
+
+### Step1: Update git submodules
+Use git command in the root directory of this data fusion project to update each git submodule:
+```git
+git submodule foreach git checkout main
+git submodule foreach git pull
+git submodule update --recursive --remote --init
+```
+
+### Step2: Make changes and push
+Add new data filenames as input dataset into "labeled_data_filenames".
+Change the curr_stage from 0 to 2 before run main.py and solve the warnings related to data.
+Move the results from directory "current_version_incremental_order_merged" to [open-digger: labeled_data/technology/database](https://github.com/X-lab2017/open-digger/tree/master/labeled_data/technology/database).
