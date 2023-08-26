@@ -1,20 +1,10 @@
-Label: Array
-
-Type: Tech-1
-
-Repos:
-
-- dioptre/rasdaman
-- marqo-ai/marqo
-
 Label: Document
 
 Type: Tech-1
 
 Repos:
 
-- chroma-core/chroma
-- lancedb/lancedb
+- tarantool/tarantool
 
 Label: Graph
 
@@ -22,23 +12,7 @@ Type: Tech-1
 
 Repos:
 
-- apache/age
-
-Label: Key-value
-
-Type: Tech-1
-
-Repos:
-
-- firstbatchxyz/hollowdb
-
-Label: Object oriented
-
-Type: Tech-1
-
-Repos:
-
-- orioledb/orioledb
+- falkordb/falkordb
 
 Label: Relational
 
@@ -46,8 +20,5 @@ Type: Tech-1
 
 Repos:
 
-- ByConity/ByConity
-- lingo-db/lingo-db
-- man-group/ArcticDB
-- orioledb/orioledb
+- libsql/libsql
 

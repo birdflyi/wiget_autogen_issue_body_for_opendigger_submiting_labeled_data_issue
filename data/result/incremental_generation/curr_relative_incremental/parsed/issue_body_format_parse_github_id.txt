@@ -1,20 +1,10 @@
-Label: Array
-
-Type: Tech-1
-
-Repos:
-
-- 5407611 # repo:dioptre/rasdaman
-- 520096046 # repo:marqo-ai/marqo
-
 Label: Document
 
 Type: Tech-1
 
 Repos:
 
-- 546206616 # repo:chroma-core/chroma
-- 607441698 # repo:lancedb/lancedb
+- 911980 # repo:tarantool/tarantool
 
 Label: Graph
 
@@ -22,23 +12,7 @@ Type: Tech-1
 
 Repos:
 
-- 276293034 # repo:apache/age
-
-Label: Key-value
-
-Type: Tech-1
-
-Repos:
-
-- 606800919 # repo:firstbatchxyz/hollowdb
-
-Label: Object oriented
-
-Type: Tech-1
-
-Repos:
-
-- 432844875 # repo:orioledb/orioledb
+- 668673665 # repo:falkordb/falkordb
 
 Label: Relational
 
@@ -46,7 +20,4 @@ Type: Tech-1
 
 Repos:
 
-- 581145740 # repo:ByConity/ByConity
-- 509396909 # repo:lingo-db/lingo-db
-- 564689243 # repo:man-group/ArcticDB
-- 432844875 # repo:orioledb/orioledb
+- 543276238 # repo:libsql/libsql

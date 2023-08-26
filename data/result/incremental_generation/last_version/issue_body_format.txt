@@ -8,8 +8,10 @@ Repos:
 - TileDB-Inc/TileDB
 - cran/scidb
 - datajaguar/jaguardb
+- dioptre/rasdaman
 - featureform/embeddinghub
 - jnidzwetzki/bboxdb
+- marqo-ai/marqo
 - milvus-io/milvus
 - nuclia/nucliadb
 - peermaps/eyros
@@ -65,6 +67,7 @@ Repos:
 - bitnine-oss/agensgraph
 - bluzi/jsonstore
 - c9fe/sirdb
+- chroma-core/chroma
 - cinchapi/concourse
 - couchbase/couchbase-lite-core
 - crate/crate
@@ -87,6 +90,7 @@ Repos:
 - jedisct1/Pincaster
 - jsqldb/jsqldb
 - kimchy/compass
+- lancedb/lancedb
 - losfair/RefineDB
 - louischatriot/nedb
 - mbdavid/LiteDB
@@ -158,6 +162,7 @@ Repos:
 - PureSolTechnologies/DuctileDB
 - RedisGraph/RedisGraph
 - amark/gun
+- apache/age
 - apache/giraph
 - apache/incubator-hugegraph
 - apache/tinkerpop
@@ -280,6 +285,7 @@ Repos:
 - etcd-io/etcd
 - facebook/rocksdb
 - facebookarchive/beringei
+- firstbatchxyz/hollowdb
 - genderev/assassin
 - gfredericks/quinedb
 - google/leveldb
@@ -438,6 +444,7 @@ Repos:
 - neondatabase/neon
 - objectbox/objectbox-java
 - orientechnologies/orientdb
+- orioledb/orioledb
 - pilgr/Paper
 - pipelinedb/pipelinedb
 - postgres/postgres
@@ -480,6 +487,7 @@ Repos:
 - ALTIBASE/altibase
 - AlaSQL/alasql
 - BTrDB/btrdb-server
+- ByConity/ByConity
 - CUBRID/cubrid
 - CeresDB/ceresdb
 - ClickHouse/ClickHouse
@@ -577,8 +585,10 @@ Repos:
 - kelindar/column
 - kkuchta/tabdb
 - lealone/Lealone
+- lingo-db/lingo-db
 - lsst/qserv
 - m3db/m3
+- man-group/ArcticDB
 - manticoresoftware/manticoresearch
 - marsupialtail/quokka
 - matrixorigin/matrixone
@@ -590,6 +600,7 @@ Repos:
 - oceanbase/oceanbase
 - openGemini/openGemini
 - opengauss-mirror/openGauss-server
+- orioledb/orioledb
 - pentaho/mondrian
 - percona/percona-server
 - percona/tokudb-engine
