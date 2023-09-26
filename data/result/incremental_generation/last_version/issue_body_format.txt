@@ -126,6 +126,7 @@ Repos:
 - small-tech/jsdb
 - surrealdb/surrealdb
 - symisc/unqlite
+- tarantool/tarantool
 - teamdev/densodb
 - techfort/LokiJS
 - terminusdb/terminusdb
@@ -174,6 +175,7 @@ Repos:
 - degdb/degdb
 - dgraph-io/dgraph
 - dyedgreen/cqlite
+- falkordb/falkordb
 - fluree/db
 - gchq/Gaffer
 - hypergraphdb/hypergraphdb
@@ -585,6 +587,7 @@ Repos:
 - kelindar/column
 - kkuchta/tabdb
 - lealone/Lealone
+- libsql/libsql
 - lingo-db/lingo-db
 - lsst/qserv
 - m3db/m3

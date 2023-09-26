@@ -21,6 +21,7 @@ if pkg_rootdir not in sys.path:  # 解决ipynb引用上层路径中的模块时�
     sys.path.append(pkg_rootdir)
     print('-- Add root directory "{}" to system path.'.format(pkg_rootdir))
 
+import copy
 import re
 import shutil
 import textwrap
@@ -587,13 +588,15 @@ def get_filenames_from_dir(dir_str, suffix='.yml', recursive=False):
     return filenames
 
 
-def merge_data_incremental_order(last_v_path, inc_path, tar_path, keep_list=None, encoding='utf-8'):
+def merge_data_incremental_order(last_v_path, inc_path, tar_path, keep_list=None, encoding='utf-8', **kwargs):
     with open(last_v_path, 'r', encoding=encoding) as f:
         last_v_yaml_formatstr = f.read()
     with open(inc_path, 'r', encoding=encoding) as f:
         inc_yaml_formatstr = f.read()
     github_repo_text_header = "\n  github_repo:"
     github_repo_text_paragraph_pattern = r"(\n  github_repo:((\n    - [^\n]*)*))"
+    not_found_str = " # not found"
+    drop_not_found = kwargs.get("drop_not_found", True)
     last_v_yaml_data_github_repo_formatstr_matchlist = re.findall(github_repo_text_paragraph_pattern, last_v_yaml_formatstr)[0]
     inc_yaml_data_github_repo_formatstr_matchlist = re.findall(github_repo_text_paragraph_pattern, inc_yaml_formatstr)[0]
     repos_delimiter = '\n    - '
@@ -610,9 +613,17 @@ def merge_data_incremental_order(last_v_path, inc_path, tar_path, keep_list=None
         inc_repos_parsed_records = inc_yaml_data_github_repo_formatstr_matchlist[1].split(repos_delimiter)
         inc_repos_parsed_records = list(filter(None, inc_repos_parsed_records))
         inc_repos_parsed_keys = [re.sub(r"\d+ #[ \w]+:", '', s) for s in inc_repos_parsed_records]
+        inc_repos_parsed_keys = [s.replace(not_found_str, "") for s in inc_repos_parsed_keys]
         inc_repos_parsed_dict = dict(zip(inc_repos_parsed_keys, inc_repos_parsed_records))
 
-        merged_repos_parsed_dict = dict(**last_v_repos_parsed_dict, **inc_repos_parsed_dict)
+        try:
+            merged_repos_parsed_dict = dict(**last_v_repos_parsed_dict, **inc_repos_parsed_dict)
+        except TypeError:
+            merged_repos_parsed_dict = copy.deepcopy(last_v_repos_parsed_dict)
+            merged_repos_parsed_dict.update(inc_repos_parsed_dict)
+
+        if drop_not_found:
+            merged_repos_parsed_dict = {k: v for k, v in merged_repos_parsed_dict.items() if not str(v).__contains__(not_found_str)}
         merged_repos_parsed_dict_sorted = dict(sorted(merged_repos_parsed_dict.items(), key=lambda x: x[0], reverse=False))
 
         if keep_list is not None:
@@ -690,7 +701,8 @@ def order_github_repo_by_github_repo_link(yaml_path, ascending=True):
     return
 
 
-def auto_gen_current_version_incremental_order_merged(last_v_dir, inc_dir, curr_merged_tar_dir, suffix='.yml', redundancy_check_df=None):
+def auto_gen_current_version_incremental_order_merged(last_v_dir, inc_dir, curr_merged_tar_dir, suffix='.yml',
+                                                      redundancy_check_df=None, **kwargs):
     last_v_filenames = get_filenames_from_dir(last_v_dir, suffix=suffix, recursive=False)
     inc_filenames = get_filenames_from_dir(inc_dir, suffix=suffix, recursive=False)
     curr_merged_filenames = last_v_filenames
@@ -720,7 +732,7 @@ def auto_gen_current_version_incremental_order_merged(last_v_dir, inc_dir, curr_
                     replace(" ", "_").replace("-", "_").lower().__contains__(curr_category)
                 temp_df_checked = temp_df[temp_df["category_label"].apply(belong_to_curr_category).values]
                 keep_list = temp_df_checked["github_repo_link"].values
-            merge_data_incremental_order(temp_last_v_path, temp_inc_path, temp_tar_path, keep_list=keep_list)
+            merge_data_incremental_order(temp_last_v_path, temp_inc_path, temp_tar_path, keep_list=keep_list, **kwargs)
         else:  # should never happen
             continue
         # order_github_repo_by_github_repo_link(temp_tar_path, ascending=True)
@@ -771,6 +783,7 @@ if __name__ == '__main__':
         "dbfeatfusion_records_202306_automerged_manulabeled.csv",
         "dbfeatfusion_records_202307_automerged_manulabeled.csv",
         "dbfeatfusion_records_202308_automerged_manulabeled.csv",
+        "dbfeatfusion_records_202309_automerged_manulabeled.csv",
     ]
     # dynamic settings
     idx_last_v = -2
@@ -877,8 +890,10 @@ if __name__ == '__main__':
         for filename in os.listdir(curr_merged_tar_dir):  # remove the last version incremental data
             if filename.endswith('.yml'):
                 os.remove(os.path.join(curr_merged_tar_dir, filename))
+        DROP_NOT_FOUND = True
         auto_gen_current_version_incremental_order_merged(last_version_tar_dir, curr_inc_src_dir, curr_merged_tar_dir,
-                                                          suffix='.yml', redundancy_check_df=df_curr_inc_labeled_data)
+                                                          suffix='.yml', redundancy_check_df=df_curr_inc_labeled_data,
+                                                          drop_not_found=DROP_NOT_FOUND)
 
     # -------------5. get repo id from issue_body_format_parse_github_id.txt as a new column of database repo label dataframe--------------
     idx_v = idx_last_v if UPDATE_LAST_VERSION else idx_curr_v

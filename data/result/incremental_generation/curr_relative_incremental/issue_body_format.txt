@@ -1,18 +1,67 @@
+Label: Array
+
+Type: Tech-1
+
+Repos:
+
+- epsilla-cloud/vectordb
+
 Label: Document
 
 Type: Tech-1
 
 Repos:
 
-- tarantool/tarantool
+- awa-ai/awadb
+- endatabas/endb
+- jdagdelen/hyperDB
+- jina-ai/vectordb
+- kagisearch/vectordb
+- marqo-ai/marqo
+- resilientdb/resilientdb
+- vearch/vearch
+- vector5ai/vector5db
 
-Label: Graph
+Label: Object Oriented
 
 Type: Tech-1
 
 Repos:
 
-- falkordb/falkordb
+- ADBSQL/AntDB
+- Bobris/BTDB
+- CUBRID/cubrid
+- CondensationDB/Condensation-java
+- DevrexLabs/OrigoDB
+- HydrasDB/hydra
+- ModeShape/modeshape
+- SapphireDb/SapphireDb
+- The-Alchemist/perst
+- VeloxDB/VeloxDB
+- apache/jackrabbit
+- atoti/atoti
+- authzed/spicedb
+- devrexlabs/memstate
+- edgedb/edgedb
+- etoile/CoreObject
+- fern4lvarez/piladb
+- gaia-platform/GaiaPlatform
+- iboxdb/db4o-gpl
+- jankotek/mapdb
+- kimchy/compass
+- markmeeus/MarcelloDB
+- morecraf/Siaqodb
+- neondatabase/neon
+- objectbox/objectbox-java
+- orientechnologies/orientdb
+- orioledb/orioledb
+- pilgr/Paper
+- pipelinedb/pipelinedb
+- postgres/postgres
+- realm/realm-core
+- tzaeschke/zoodb
+- zhihu/Matisse
+- zopefoundation/ZODB
 
 Label: Relational
 
@@ -20,5 +69,42 @@ Type: Tech-1
 
 Repos:
 
-- libsql/libsql
+- endatabas/endb
+- erikgrinaker/toydb
+- proullon/ramsql
+
+Label: Search Engine
+
+Type: Tech-1
+
+Repos:
+
+- apache/solr
+- elastic/elasticsearch
+- manticoresoftware/manticoresearch
+- marqo-ai/marqo
+- meilisearch/meilisearch
+- opensearch-project/OpenSearch
+- sphinxsearch/sphinx
+- typesense/typesense
+- vespa-engine/vespa
+- xapian/xapian
+
+Label: Vector
+
+Type: Tech-1
+
+Repos:
+
+- awa-ai/awadb
+- featureform/embeddinghub
+- jdagdelen/hyperDB
+- jina-ai/vectordb
+- kagisearch/vectordb
+- marekgalovic/anndb
+- marqo-ai/marqo
+- nuclia/nucliadb
+- pilosa/pilosa
+- vearch/vearch
+- vector5ai/vector5db
 

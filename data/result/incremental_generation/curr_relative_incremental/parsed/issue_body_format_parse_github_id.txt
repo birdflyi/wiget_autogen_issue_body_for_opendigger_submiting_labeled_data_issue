@@ -1,18 +1,67 @@
+Label: Array
+
+Type: Tech-1
+
+Repos:
+
+- 664133375 # repo:epsilla-cloud/vectordb
+
 Label: Document
 
 Type: Tech-1
 
 Repos:
 
-- 911980 # repo:tarantool/tarantool
+- 642912355 # repo:awa-ai/awadb
+- 587246478 # repo:endatabas/endb
+- 628503457 # repo:jdagdelen/hyperDB
+- 635374751 # repo:jina-ai/vectordb
+- 632269609 # repo:kagisearch/vectordb
+- 520096046 # repo:marqo-ai/marqo
+- 223462217 # repo:resilientdb/resilientdb
+- 186332888 # repo:vearch/vearch
+- 634656527 # repo:vector5ai/vector5db
 
-Label: Graph
+Label: Object Oriented
 
 Type: Tech-1
 
 Repos:
 
-- 668673665 # repo:falkordb/falkordb
+- ADBSQL/AntDB # not found
+- 681142 # repo:Bobris/BTDB
+- 52080367 # repo:CUBRID/cubrid
+- 329729926 # repo:CondensationDB/Condensation-java
+- 8799170 # repo:DevrexLabs/OrigoDB
+- 516821813 # repo:HydrasDB/hydra
+- 1244027 # repo:ModeShape/modeshape
+- 150752008 # repo:SapphireDb/SapphireDb
+- 124423054 # repo:The-Alchemist/perst
+- 569871553 # repo:VeloxDB/VeloxDB
+- 206403 # repo:apache/jackrabbit
+- 246343828 # repo:atoti/atoti
+- 396856161 # repo:authzed/spicedb
+- 95070401 # repo:devrexlabs/memstate
+- 95817032 # repo:edgedb/edgedb
+- 15001136 # repo:etoile/CoreObject
+- 42143916 # repo:fern4lvarez/piladb
+- 240387847 # repo:gaia-platform/GaiaPlatform
+- 204261394 # repo:iboxdb/db4o-gpl
+- 5453989 # repo:jankotek/mapdb
+- 1776883 # repo:kimchy/compass
+- 25225465 # repo:markmeeus/MarcelloDB
+- 273564373 # repo:morecraf/Siaqodb
+- 351806852 # repo:neondatabase/neon
+- 79901405 # repo:objectbox/objectbox-java
+- 7083240 # repo:orientechnologies/orientdb
+- 432844875 # repo:orioledb/orioledb
+- 37285717 # repo:pilgr/Paper
+- 14702444 # repo:pipelinedb/pipelinedb
+- 927442 # repo:postgres/postgres
+- 1917262 # repo:realm/realm-core
+- 3893984 # repo:tzaeschke/zoodb
+- 88111990 # repo:zhihu/Matisse
+- 7357595 # repo:zopefoundation/ZODB
 
 Label: Relational
 
@@ -20,4 +69,41 @@ Type: Tech-1
 
 Repos:
 
-- 543276238 # repo:libsql/libsql
+- 587246478 # repo:endatabas/endb
+- 183929744 # repo:erikgrinaker/toydb
+- 26774602 # repo:proullon/ramsql
+
+Label: Search Engine
+
+Type: Tech-1
+
+Repos:
+
+- 341374920 # repo:apache/solr
+- 507775 # repo:elastic/elasticsearch
+- 95614931 # repo:manticoresoftware/manticoresearch
+- 520096046 # repo:marqo-ai/marqo
+- 130688011 # repo:meilisearch/meilisearch
+- 334274271 # repo:opensearch-project/OpenSearch
+- 36992044 # repo:sphinxsearch/sphinx
+- 79317191 # repo:typesense/typesense
+- 60377070 # repo:vespa-engine/vespa
+- 735981 # repo:xapian/xapian
+
+Label: Vector
+
+Type: Tech-1
+
+Repos:
+
+- 642912355 # repo:awa-ai/awadb
+- 304530333 # repo:featureform/embeddinghub
+- 628503457 # repo:jdagdelen/hyperDB
+- 635374751 # repo:jina-ai/vectordb
+- 632269609 # repo:kagisearch/vectordb
+- 242383787 # repo:marekgalovic/anndb
+- 520096046 # repo:marqo-ai/marqo
+- 478288303 # repo:nuclia/nucliadb
+- 40127179 # repo:pilosa/pilosa
+- 186332888 # repo:vearch/vearch
+- 634656527 # repo:vector5ai/vector5db
