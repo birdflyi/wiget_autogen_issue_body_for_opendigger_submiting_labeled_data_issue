@@ -2,12 +2,7 @@ name: Database - Document
 type: Tech-1
 data:
   github_repo:
-    - 642912355 # repo:awa-ai/awadb
-    - 587246478 # repo:endatabas/endb
-    - 628503457 # repo:jdagdelen/hyperDB
-    - 635374751 # repo:jina-ai/vectordb
-    - 632269609 # repo:kagisearch/vectordb
-    - 520096046 # repo:marqo-ai/marqo
-    - 223462217 # repo:resilientdb/resilientdb
-    - 186332888 # repo:vearch/vearch
-    - 634656527 # repo:vector5ai/vector5db
+    - 646427433 # repo:LonaDB/Hadro
+    - 639434928 # repo:cfu288/SylvieJS
+    - 661663226 # repo:maxnowack/signaldb
+    - 197858776 # repo:textileio/go-threads

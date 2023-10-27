@@ -2,6 +2,8 @@ name: Database - Relational
 type: Tech-1
 data:
   github_repo:
-    - 587246478 # repo:endatabas/endb
-    - 183929744 # repo:erikgrinaker/toydb
-    - 26774602 # repo:proullon/ramsql
+    - 644742603 # repo:cloudberrydb/cloudberrydb
+    - 463071559 # repo:minovakovi/akdb
+    - 510607652 # repo:pocketbase/pocketbase
+    - 591304097 # repo:sutoiku/puffin
+    - 678214856 # repo:timeplus-io/proton

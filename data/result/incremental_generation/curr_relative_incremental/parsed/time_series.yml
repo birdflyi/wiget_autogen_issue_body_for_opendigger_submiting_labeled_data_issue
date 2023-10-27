@@ -1,0 +1,5 @@
+name: Database - Time Series
+type: Tech-1
+data:
+  github_repo:
+    - 507829396 # repo:openGemini/openGemini

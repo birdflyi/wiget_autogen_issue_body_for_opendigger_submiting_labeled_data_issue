@@ -9,15 +9,10 @@ Repos:
 - 17699493 # repo:cran/scidb
 - 96580430 # repo:datajaguar/jaguardb
 - 5407611 # repo:dioptre/rasdaman
-- 304530333 # repo:featureform/embeddinghub
+- 664133375 # repo:epsilla-cloud/vectordb
 - 45732002 # repo:jnidzwetzki/bboxdb
-- 520096046 # repo:marqo-ai/marqo
-- 208728772 # repo:milvus-io/milvus
-- 478288303 # repo:nuclia/nucliadb
 - 162765004 # repo:peermaps/eyros
 - 156942199 # repo:perone/euclidesdb
-- 40127179 # repo:pilosa/pilosa
-- 55072677 # repo:semi-technologies/weaviate
 
 Label: Content
 
@@ -60,6 +55,7 @@ Repos:
 - 137869753 # repo:appy-one/acebase
 - 2649214 # repo:arangodb/arangodb
 - 36778364 # repo:attic-labs/noms
+- 642912355 # repo:awa-ai/awadb
 - 141378316 # repo:beardedeagle/mnesiac
 - 88422672 # repo:bergdb/bergdb
 - 2380364 # repo:berkeleydb/libdb
@@ -78,6 +74,7 @@ Repos:
 - 11695619 # repo:eXist-db/exist
 - 266444815 # repo:earthstar-project/earthstar
 - 507775 # repo:elastic/elasticsearch
+- 587246478 # repo:endatabas/endb
 - 14143348 # repo:fakemongo/fongo
 - 305513242 # repo:fluree/db
 - 138411034 # repo:genjidb/genji
@@ -87,12 +84,16 @@ Repos:
 - 4984118 # repo:ioquatix/relaxo
 - 58524063 # repo:jclo/picodb
 - 4859 # repo:jcrosby/cloudkit
+- 628503457 # repo:jdagdelen/hyperDB
 - 652189 # repo:jedisct1/Pincaster
+- 635374751 # repo:jina-ai/vectordb
 - jsqldb/jsqldb # not found
+- 632269609 # repo:kagisearch/vectordb
 - 1776883 # repo:kimchy/compass
 - 607441698 # repo:lancedb/lancedb
 - 376679845 # repo:losfair/RefineDB
 - 9795883 # repo:louischatriot/nedb
+- 520096046 # repo:marqo-ai/marqo
 - 23315232 # repo:mbdavid/LiteDB
 - 130688011 # repo:meilisearch/meilisearch
 - 26573806 # repo:mgholam/RaptorDB-Document
@@ -117,6 +118,7 @@ Repos:
 - 129436009 # repo:rakibtg/SleekDB
 - 542714 # repo:ravendb/ravendb
 - 1917262 # repo:realm/realm-core
+- 223462217 # repo:resilientdb/resilientdb
 - 6452529 # repo:rethinkdb/rethinkdb
 - 336867666 # repo:ribelo/doxa
 - 34056205 # repo:sachin-sinha/BangDB
@@ -135,6 +137,8 @@ Repos:
 - 184711 # repo:typicaljoe/taffydb
 - 18351848 # repo:typicode/lowdb
 - 25364889 # repo:unnamed38/fueldb
+- 186332888 # repo:vearch/vearch
+- 634656527 # repo:vector5ai/vector5db
 - 60377070 # repo:vespa-engine/vespa
 - 735981 # repo:xapian/xapian
 - 125824259 # repo:xtdb/xtdb
@@ -414,7 +418,7 @@ Repos:
 
 - 10153163 # repo:priitj/whitedb
 
-Label: Object oriented
+Label: Object Oriented
 
 Type: Tech-1
 
@@ -564,6 +568,8 @@ Repos:
 - 341208515 # repo:edgelesssys/edgelessdb
 - 61373806 # repo:elasql/elasql
 - 387622288 # repo:elliotchance/vsql
+- 587246478 # repo:endatabas/endb
+- 183929744 # repo:erikgrinaker/toydb
 - 59475316 # repo:eventql/eventql
 - 388946490 # repo:facebookincubator/velox
 - 40127179 # repo:featurebasedb/featurebase
@@ -614,6 +620,7 @@ Repos:
 - 927442 # repo:postgres/postgres
 - 258454329 # repo:ppml38/icecoal
 - 5349565 # repo:prestodb/presto
+- 26774602 # repo:proullon/ramsql
 - 275838748 # repo:qikkDB/qikkdb
 - 19257422 # repo:questdb/questdb
 - 5665061 # repo:radare/sdb
@@ -646,7 +653,7 @@ Repos:
 - 23452009 # repo:yxymit/DBx1000
 - 334353425 # repo:zettadb/kunlun
 
-Label: Search engine
+Label: Search Engine
 
 Type: Tech-1
 
@@ -663,7 +670,7 @@ Repos:
 - 60377070 # repo:vespa-engine/vespa
 - 735981 # repo:xapian/xapian
 
-Label: Spatial DBMS
+Label: Spatial
 
 Type: Tech-1
 
@@ -706,18 +713,29 @@ Repos:
 - 196353673 # repo:taosdata/TDengine
 - 84240850 # repo:timescale/timescaledb
 
-Label: Vector DBMS
+Label: Vector
 
 Type: Tech-1
 
 Repos:
 
 - 201403923 # repo:activeloopai/deeplake
+- 642912355 # repo:awa-ai/awadb
 - 546206616 # repo:chroma-core/chroma
+- 304530333 # repo:featureform/embeddinghub
+- 628503457 # repo:jdagdelen/hyperDB
+- 635374751 # repo:jina-ai/vectordb
+- 632269609 # repo:kagisearch/vectordb
+- 242383787 # repo:marekgalovic/anndb
+- 520096046 # repo:marqo-ai/marqo
 - 208728772 # repo:milvus-io/milvus
+- 478288303 # repo:nuclia/nucliadb
+- 40127179 # repo:pilosa/pilosa
 - 268163609 # repo:qdrant/qdrant
 - 55072677 # repo:semi-technologies/weaviate
 - 195619075 # repo:vdaas/vald
+- 186332888 # repo:vearch/vearch
+- 634656527 # repo:vector5ai/vector5db
 
 Label: Wide column
 

@@ -9,15 +9,10 @@ Repos:
 - cran/scidb
 - datajaguar/jaguardb
 - dioptre/rasdaman
-- featureform/embeddinghub
+- epsilla-cloud/vectordb
 - jnidzwetzki/bboxdb
-- marqo-ai/marqo
-- milvus-io/milvus
-- nuclia/nucliadb
 - peermaps/eyros
 - perone/euclidesdb
-- pilosa/pilosa
-- semi-technologies/weaviate
 
 Label: Content
 
@@ -60,6 +55,7 @@ Repos:
 - appy-one/acebase
 - arangodb/arangodb
 - attic-labs/noms
+- awa-ai/awadb
 - beardedeagle/mnesiac
 - bergdb/bergdb
 - berkeleydb/libdb
@@ -78,6 +74,7 @@ Repos:
 - eXist-db/exist
 - earthstar-project/earthstar
 - elastic/elasticsearch
+- endatabas/endb
 - fakemongo/fongo
 - fluree/db
 - genjidb/genji
@@ -87,12 +84,16 @@ Repos:
 - ioquatix/relaxo
 - jclo/picodb
 - jcrosby/cloudkit
+- jdagdelen/hyperDB
 - jedisct1/Pincaster
+- jina-ai/vectordb
 - jsqldb/jsqldb
+- kagisearch/vectordb
 - kimchy/compass
 - lancedb/lancedb
 - losfair/RefineDB
 - louischatriot/nedb
+- marqo-ai/marqo
 - mbdavid/LiteDB
 - meilisearch/meilisearch
 - mgholam/RaptorDB-Document
@@ -117,6 +118,7 @@ Repos:
 - rakibtg/SleekDB
 - ravendb/ravendb
 - realm/realm-core
+- resilientdb/resilientdb
 - rethinkdb/rethinkdb
 - ribelo/doxa
 - sachin-sinha/BangDB
@@ -135,6 +137,8 @@ Repos:
 - typicaljoe/taffydb
 - typicode/lowdb
 - unnamed38/fueldb
+- vearch/vearch
+- vector5ai/vector5db
 - vespa-engine/vespa
 - xapian/xapian
 - xtdb/xtdb
@@ -414,7 +418,7 @@ Repos:
 
 - priitj/whitedb
 
-Label: Object oriented
+Label: Object Oriented
 
 Type: Tech-1
 
@@ -564,6 +568,8 @@ Repos:
 - edgelesssys/edgelessdb
 - elasql/elasql
 - elliotchance/vsql
+- endatabas/endb
+- erikgrinaker/toydb
 - eventql/eventql
 - facebookincubator/velox
 - featurebasedb/featurebase
@@ -614,6 +620,7 @@ Repos:
 - postgres/postgres
 - ppml38/icecoal
 - prestodb/presto
+- proullon/ramsql
 - qikkDB/qikkdb
 - questdb/questdb
 - radare/sdb
@@ -646,7 +653,7 @@ Repos:
 - yxymit/DBx1000
 - zettadb/kunlun
 
-Label: Search engine
+Label: Search Engine
 
 Type: Tech-1
 
@@ -663,7 +670,7 @@ Repos:
 - vespa-engine/vespa
 - xapian/xapian
 
-Label: Spatial DBMS
+Label: Spatial
 
 Type: Tech-1
 
@@ -706,18 +713,29 @@ Repos:
 - taosdata/TDengine
 - timescale/timescaledb
 
-Label: Vector DBMS
+Label: Vector
 
 Type: Tech-1
 
 Repos:
 
 - activeloopai/deeplake
+- awa-ai/awadb
 - chroma-core/chroma
+- featureform/embeddinghub
+- jdagdelen/hyperDB
+- jina-ai/vectordb
+- kagisearch/vectordb
+- marekgalovic/anndb
+- marqo-ai/marqo
 - milvus-io/milvus
+- nuclia/nucliadb
+- pilosa/pilosa
 - qdrant/qdrant
 - semi-technologies/weaviate
 - vdaas/vald
+- vearch/vearch
+- vector5ai/vector5db
 
 Label: Wide column
 

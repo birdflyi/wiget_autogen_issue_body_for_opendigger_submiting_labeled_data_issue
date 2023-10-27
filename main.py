@@ -784,6 +784,7 @@ if __name__ == '__main__':
         "dbfeatfusion_records_202307_automerged_manulabeled.csv",
         "dbfeatfusion_records_202308_automerged_manulabeled.csv",
         "dbfeatfusion_records_202309_automerged_manulabeled.csv",
+        "dbfeatfusion_records_202310_automerged_manulabeled.csv",
     ]
     # dynamic settings
     idx_last_v = -2
@@ -795,7 +796,7 @@ if __name__ == '__main__':
     # static settings
     STAGE__UPDATE_LAST_VERSION__SAVE_PARSED = {
         0: [True, False, False],  # update the last version parsed data
-        1: [False, False, False],  # auto generate the issue body for df_curr_inc_labeled_data
+        1: [False, False, False],  # auto generate the issue body(see Warning in 2. Create data issue in open-digger) for df_curr_inc_labeled_data
         # Resolve the warning by creating data issue in open-digger and save parsed data before next step!
         2: [False, True, True]  # split the curr_inc_issue_body_format_parse_github_id into yml files
     }
