@@ -4,28 +4,9 @@ Type: Tech-1
 
 Repos:
 
-- 646427433 # repo:LonaDB/Hadro
-- 639434928 # repo:cfu288/SylvieJS
-- 661663226 # repo:maxnowack/signaldb
-- 197858776 # repo:textileio/go-threads
-
-Label: Key-value
-
-Type: Tech-1
-
-Repos:
-
-- 454981666 # repo:streamnative/oxia
-
-Label: Object Oriented
-
-Type: Tech-1
-
-Repos:
-
-- 644742603 # repo:cloudberrydb/cloudberrydb
-- 48279725 # repo:goshawkdb/server
-- 119234782 # repo:jonahharris/osdb-beaglesql
+- 605189726 # repo:FgForrest/evitaDB
+- 453191009 # repo:ostafen/clover
+- 664816265 # repo:scratchdata/ScratchDB
 
 Label: Relational
 
@@ -33,16 +14,4 @@ Type: Tech-1
 
 Repos:
 
-- 644742603 # repo:cloudberrydb/cloudberrydb
-- 463071559 # repo:minovakovi/akdb
-- 510607652 # repo:pocketbase/pocketbase
-- 591304097 # repo:sutoiku/puffin
-- 678214856 # repo:timeplus-io/proton
-
-Label: Time Series
-
-Type: Tech-1
-
-Repos:
-
-- 507829396 # repo:openGemini/openGemini
+- 323389945 # repo:logicalclocks/rondb

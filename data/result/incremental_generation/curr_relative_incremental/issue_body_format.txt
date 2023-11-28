@@ -4,28 +4,9 @@ Type: Tech-1
 
 Repos:
 
-- LonaDB/Hadro
-- cfu288/SylvieJS
-- maxnowack/signaldb
-- textileio/go-threads
-
-Label: Key-value
-
-Type: Tech-1
-
-Repos:
-
-- streamnative/oxia
-
-Label: Object Oriented
-
-Type: Tech-1
-
-Repos:
-
-- cloudberrydb/cloudberrydb
-- goshawkdb/server
-- jonahharris/osdb-beaglesql
+- FgForrest/evitaDB
+- ostafen/clover
+- scratchdata/ScratchDB
 
 Label: Relational
 
@@ -33,17 +14,5 @@ Type: Tech-1
 
 Repos:
 
-- cloudberrydb/cloudberrydb
-- minovakovi/akdb
-- pocketbase/pocketbase
-- sutoiku/puffin
-- timeplus-io/proton
-
-Label: Time Series
-
-Type: Tech-1
-
-Repos:
-
-- openGemini/openGemini
+- logicalclocks/rondb
 

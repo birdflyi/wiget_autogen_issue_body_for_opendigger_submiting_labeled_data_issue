@@ -42,6 +42,7 @@ Repos:
 - 19271154 # repo:JetBrains/xodus
 - 31315021 # repo:Kinto/kinto
 - 533032 # repo:LinkedInAttic/sensei
+- 646427433 # repo:LonaDB/Hadro
 - 188354257 # repo:SequoiaDB/SequoiaDB
 - 474070793 # repo:SnellerInc/sneller
 - 6427744 # repo:Softmotions/ejdb
@@ -63,6 +64,7 @@ Repos:
 - 57401138 # repo:bitnine-oss/agensgraph
 - 127338417 # repo:bluzi/jsonstore
 - 234091935 # repo:c9fe/sirdb
+- 639434928 # repo:cfu288/SylvieJS
 - 546206616 # repo:chroma-core/chroma
 - 13353426 # repo:cinchapi/concourse
 - 66783145 # repo:couchbase/couchbase-lite-core
@@ -94,6 +96,7 @@ Repos:
 - 376679845 # repo:losfair/RefineDB
 - 9795883 # repo:louischatriot/nedb
 - 520096046 # repo:marqo-ai/marqo
+- 661663226 # repo:maxnowack/signaldb
 - 23315232 # repo:mbdavid/LiteDB
 - 130688011 # repo:meilisearch/meilisearch
 - 26573806 # repo:mgholam/RaptorDB-Document
@@ -132,6 +135,7 @@ Repos:
 - 3920536 # repo:teamdev/densodb
 - 11654790 # repo:techfort/LokiJS
 - 198466472 # repo:terminusdb/terminusdb
+- 197858776 # repo:textileio/go-threads
 - 449924556 # repo:tigrisdata/tigris
 - 86339169 # repo:torodb/server
 - 184711 # repo:typicaljoe/taffydb
@@ -364,6 +368,7 @@ Repos:
 - 462329984 # repo:speedb-io/speedb
 - 36483902 # repo:spotify/heroic
 - 34593732 # repo:stephenmcd/curiodb
+- 454981666 # repo:streamnative/oxia
 - 26888631 # repo:stripe/sequins
 - 421444565 # repo:surrealdb/echodb
 - 22761491 # repo:symisc/unqlite
@@ -437,13 +442,16 @@ Repos:
 - 206403 # repo:apache/jackrabbit
 - 246343828 # repo:atoti/atoti
 - 396856161 # repo:authzed/spicedb
+- 644742603 # repo:cloudberrydb/cloudberrydb
 - 95070401 # repo:devrexlabs/memstate
 - 95817032 # repo:edgedb/edgedb
 - 15001136 # repo:etoile/CoreObject
 - 42143916 # repo:fern4lvarez/piladb
 - 240387847 # repo:gaia-platform/GaiaPlatform
+- 48279725 # repo:goshawkdb/server
 - 204261394 # repo:iboxdb/db4o-gpl
 - 5453989 # repo:jankotek/mapdb
+- 119234782 # repo:jonahharris/osdb-beaglesql
 - 1776883 # repo:kimchy/compass
 - 25225465 # repo:markmeeus/MarcelloDB
 - 273564373 # repo:morecraf/Siaqodb
@@ -456,7 +464,6 @@ Repos:
 - 927442 # repo:postgres/postgres
 - 1917262 # repo:realm/realm-core
 - 3893984 # repo:tzaeschke/zoodb
-- 88111990 # repo:zhihu/Matisse
 - 7357595 # repo:zopefoundation/ZODB
 
 Label: RDF
@@ -489,7 +496,6 @@ Repos:
 
 - 346976717 # repo:4paradigm/OpenMLDB
 - 107504377 # repo:ADBSQL/AntDB
-- 33552246 # repo:AILab-FOI/akdb
 - 623337117 # repo:ALTIBASE/altibase
 - 25780780 # repo:AlaSQL/alasql
 - 22427082 # repo:BTrDB/btrdb-server
@@ -537,7 +543,6 @@ Repos:
 - 49876476 # repo:apache/shardingsphere
 - 17165658 # repo:apache/spark
 - 17971138 # repo:apache/tajo
-- 36349344 # repo:apache/trafodion
 - 3104540 # repo:apavlo/h-store
 - 134193743 # repo:apavlo/metalbase
 - 143436277 # repo:baidu/BaikalDB
@@ -549,6 +554,7 @@ Repos:
 - 92329433 # repo:canonical/dqlite
 - 372181547 # repo:cashapp/pranadb
 - 50874442 # repo:citusdata/citus
+- 644742603 # repo:cloudberrydb/cloudberrydb
 - 207663235 # repo:cmu-db/bustub
 - 140325970 # repo:cmu-db/noisepage
 - 420965027 # repo:cnosdb/cnosdb
@@ -602,6 +608,7 @@ Repos:
 - 429630067 # repo:marsupialtail/quokka
 - 339993112 # repo:matrixorigin/matrixone
 - 71015036 # repo:mattbostock/timbala
+- 463071559 # repo:minovakovi/akdb
 - 62660036 # repo:mozilla/mentat
 - 24494032 # repo:mysql/mysql-server
 - 351806852 # repo:neondatabase/neon
@@ -616,6 +623,7 @@ Repos:
 - 41986369 # repo:pingcap/tidb
 - 205350261 # repo:pinusdb/pinusdb
 - 14702444 # repo:pipelinedb/pipelinedb
+- 510607652 # repo:pocketbase/pocketbase
 - 166387176 # repo:polypheny/Polypheny-DB
 - 927442 # repo:postgres/postgres
 - 258454329 # repo:ppml38/icecoal
@@ -638,8 +646,10 @@ Repos:
 - 151367139 # repo:stellarsql/StellarSQL
 - 12067343 # repo:stephentu/silo
 - 436658287 # repo:surrealdb/surrealdb
+- 591304097 # repo:sutoiku/puffin
 - 196353673 # repo:taosdata/TDengine
 - 285012797 # repo:tensorbase/tensorbase
+- 678214856 # repo:timeplus-io/proton
 - 443220240 # repo:tinyplex/tinybase
 - 22868877 # repo:traildb/traildb
 - 166515022 # repo:trinodb/trino
@@ -703,6 +713,7 @@ Repos:
 - 8039659 # repo:kairosdb/kairosdb
 - 61153677 # repo:m3db/m3
 - 5761553 # repo:oetiker/rrdtool-1.x
+- 507829396 # repo:openGemini/openGemini
 - 6838921 # repo:prometheus/prometheus
 - 19257422 # repo:questdb/questdb
 - 10081109 # repo:rackerlabs/blueflood

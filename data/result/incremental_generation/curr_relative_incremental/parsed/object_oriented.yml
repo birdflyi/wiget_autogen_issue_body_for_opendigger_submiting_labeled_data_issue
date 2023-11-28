@@ -1,7 +1,0 @@
-name: Database - Object Oriented
-type: Tech-1
-data:
-  github_repo:
-    - 644742603 # repo:cloudberrydb/cloudberrydb
-    - 48279725 # repo:goshawkdb/server
-    - 119234782 # repo:jonahharris/osdb-beaglesql

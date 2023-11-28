@@ -42,6 +42,7 @@ Repos:
 - JetBrains/xodus
 - Kinto/kinto
 - LinkedInAttic/sensei
+- LonaDB/Hadro
 - SequoiaDB/SequoiaDB
 - SnellerInc/sneller
 - Softmotions/ejdb
@@ -63,6 +64,7 @@ Repos:
 - bitnine-oss/agensgraph
 - bluzi/jsonstore
 - c9fe/sirdb
+- cfu288/SylvieJS
 - chroma-core/chroma
 - cinchapi/concourse
 - couchbase/couchbase-lite-core
@@ -94,6 +96,7 @@ Repos:
 - losfair/RefineDB
 - louischatriot/nedb
 - marqo-ai/marqo
+- maxnowack/signaldb
 - mbdavid/LiteDB
 - meilisearch/meilisearch
 - mgholam/RaptorDB-Document
@@ -132,6 +135,7 @@ Repos:
 - teamdev/densodb
 - techfort/LokiJS
 - terminusdb/terminusdb
+- textileio/go-threads
 - tigrisdata/tigris
 - torodb/server
 - typicaljoe/taffydb
@@ -364,6 +368,7 @@ Repos:
 - speedb-io/speedb
 - spotify/heroic
 - stephenmcd/curiodb
+- streamnative/oxia
 - stripe/sequins
 - surrealdb/echodb
 - symisc/unqlite
@@ -437,13 +442,16 @@ Repos:
 - apache/jackrabbit
 - atoti/atoti
 - authzed/spicedb
+- cloudberrydb/cloudberrydb
 - devrexlabs/memstate
 - edgedb/edgedb
 - etoile/CoreObject
 - fern4lvarez/piladb
 - gaia-platform/GaiaPlatform
+- goshawkdb/server
 - iboxdb/db4o-gpl
 - jankotek/mapdb
+- jonahharris/osdb-beaglesql
 - kimchy/compass
 - markmeeus/MarcelloDB
 - morecraf/Siaqodb
@@ -456,7 +464,6 @@ Repos:
 - postgres/postgres
 - realm/realm-core
 - tzaeschke/zoodb
-- zhihu/Matisse
 - zopefoundation/ZODB
 
 Label: RDF
@@ -489,7 +496,6 @@ Repos:
 
 - 4paradigm/OpenMLDB
 - ADBSQL/AntDB
-- AILab-FOI/akdb
 - ALTIBASE/altibase
 - AlaSQL/alasql
 - BTrDB/btrdb-server
@@ -537,7 +543,6 @@ Repos:
 - apache/shardingsphere
 - apache/spark
 - apache/tajo
-- apache/trafodion
 - apavlo/h-store
 - apavlo/metalbase
 - baidu/BaikalDB
@@ -549,6 +554,7 @@ Repos:
 - canonical/dqlite
 - cashapp/pranadb
 - citusdata/citus
+- cloudberrydb/cloudberrydb
 - cmu-db/bustub
 - cmu-db/noisepage
 - cnosdb/cnosdb
@@ -602,6 +608,7 @@ Repos:
 - marsupialtail/quokka
 - matrixorigin/matrixone
 - mattbostock/timbala
+- minovakovi/akdb
 - mozilla/mentat
 - mysql/mysql-server
 - neondatabase/neon
@@ -616,6 +623,7 @@ Repos:
 - pingcap/tidb
 - pinusdb/pinusdb
 - pipelinedb/pipelinedb
+- pocketbase/pocketbase
 - polypheny/Polypheny-DB
 - postgres/postgres
 - ppml38/icecoal
@@ -638,8 +646,10 @@ Repos:
 - stellarsql/StellarSQL
 - stephentu/silo
 - surrealdb/surrealdb
+- sutoiku/puffin
 - taosdata/TDengine
 - tensorbase/tensorbase
+- timeplus-io/proton
 - tinyplex/tinybase
 - traildb/traildb
 - trinodb/trino
@@ -703,6 +713,7 @@ Repos:
 - kairosdb/kairosdb
 - m3db/m3
 - oetiker/rrdtool-1.x
+- openGemini/openGemini
 - prometheus/prometheus
 - questdb/questdb
 - rackerlabs/blueflood

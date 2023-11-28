@@ -2,7 +2,6 @@ name: Database - Document
 type: Tech-1
 data:
   github_repo:
-    - 646427433 # repo:LonaDB/Hadro
-    - 639434928 # repo:cfu288/SylvieJS
-    - 661663226 # repo:maxnowack/signaldb
-    - 197858776 # repo:textileio/go-threads
+    - 605189726 # repo:FgForrest/evitaDB
+    - 453191009 # repo:ostafen/clover
+    - 664816265 # repo:scratchdata/ScratchDB
