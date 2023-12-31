@@ -17,6 +17,7 @@ data:
     - 13124802 # repo:influxdata/influxdb
     - 8039659 # repo:kairosdb/kairosdb
     - 61153677 # repo:m3db/m3
+    - 584240610 # repo:machbase/neo-server
     - 5761553 # repo:oetiker/rrdtool-1.x
     - 507829396 # repo:openGemini/openGemini
     - 6838921 # repo:prometheus/prometheus

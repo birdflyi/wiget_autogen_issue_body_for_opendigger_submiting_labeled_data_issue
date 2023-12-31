@@ -2,6 +2,7 @@ name: Database - Spatial
 type: Tech-1
 data:
   github_repo:
+    - 34533675 # repo:apache/sedona
     - 93667206 # repo:geomesa/geomesa-geoserver
     - 7171304 # repo:illarionov/SpatiaLite
     - 9074548 # repo:orbisgis/h2gis

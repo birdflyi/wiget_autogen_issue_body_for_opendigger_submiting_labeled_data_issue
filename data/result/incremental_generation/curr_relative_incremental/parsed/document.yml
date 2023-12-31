@@ -2,6 +2,10 @@ name: Database - Document
 type: Tech-1
 data:
   github_repo:
-    - 605189726 # repo:FgForrest/evitaDB
-    - 453191009 # repo:ostafen/clover
-    - 664816265 # repo:scratchdata/ScratchDB
+    - 32611526 # repo:AnantLabs/terrastore
+    - 404610048 # repo:Fl1yd/LightDB
+    - 50098469 # repo:Nexedi/neoppod
+    - 722117815 # repo:cursusdb/cursusdb
+    - 298920362 # repo:oracle/nosql-java-sdk
+    - 597066476 # repo:tontinton/dbeel
+    - 574588439 # repo:ytsaurus/ytsaurus

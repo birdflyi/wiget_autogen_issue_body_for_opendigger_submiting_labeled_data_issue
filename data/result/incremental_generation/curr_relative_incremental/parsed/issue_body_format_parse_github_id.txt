@@ -1,12 +1,98 @@
+Label: Array
+
+Type: Tech-1
+
+Repos:
+
+- 31373521 # repo:autermann/scidb
+- 489656726 # repo:onefanwu/RasDaMan-v10.0
+
 Label: Document
 
 Type: Tech-1
 
 Repos:
 
-- 605189726 # repo:FgForrest/evitaDB
-- 453191009 # repo:ostafen/clover
-- 664816265 # repo:scratchdata/ScratchDB
+- 32611526 # repo:AnantLabs/terrastore
+- 404610048 # repo:Fl1yd/LightDB
+- 50098469 # repo:Nexedi/neoppod
+- 722117815 # repo:cursusdb/cursusdb
+- 298920362 # repo:oracle/nosql-java-sdk
+- 597066476 # repo:tontinton/dbeel
+- 574588439 # repo:ytsaurus/ytsaurus
+
+Label: Graph
+
+Type: Tech-1
+
+Repos:
+
+- 43494700 # repo:SparsityTechnologies/sparksee-server
+- 74678263 # repo:fanjinfei/grapheekdb
+- 207484782 # repo:gurneyalex/cubicweb
+- 26917250 # repo:pkumod/gStore
+
+Label: Key-value
+
+Type: Tech-1
+
+Repos:
+
+- 10650868 # repo:Amaury/FineDB
+- 953500 # repo:LuaDist/tokyocabinet
+- 26826806 # repo:cloudflarearchive/kyotocabinet
+- 44061596 # repo:erthink/libmdbx
+- 74678263 # repo:fanjinfei/grapheekdb
+- 3914539 # repo:jbarham/cdb
+- 3596087 # repo:mdaniel/svn-caucho-com-resin
+- 143239 # repo:mitchellh/lightcloud
+- 149145424 # repo:nextgres/oss-haildb
+- 298920362 # repo:oracle/nosql-java-sdk
+- 6714651 # repo:perchouli/codernitydb
+- 1499938 # repo:shino/kai
+
+Label: Multivalue
+
+Type: Tech-1
+
+Repos:
+
+- 31373521 # repo:autermann/scidb
+- 489656726 # repo:onefanwu/RasDaMan-v10.0
+
+Label: Network
+
+Type: Tech-1
+
+Repos:
+
+- 531145841 # repo:igor-bul/vyhodb
+
+Label: Object Oriented
+
+Type: Tech-1
+
+Repos:
+
+- 37905036 # repo:Alachisoft/TayzGrid
+- 43494700 # repo:SparsityTechnologies/sparksee-server
+- 40787594 # repo:aur-archive/gigabase
+- 145843258 # repo:eyedb/eyedb
+- 32137101 # repo:google-code-export/twig-persist
+- 37340459 # repo:jayhopeter/NDatabase
+- 89699591 # repo:magma-database/magma
+- 90349373 # repo:profanedb/ProfaneDB
+- 16457385 # repo:sirlordt/NeoDatis
+- 107304517 # repo:wware/FramerD
+
+Label: RDF
+
+Type: Tech-1
+
+Repos:
+
+- 6235870 # repo:ansell/openrdf-sesame
+- 207484782 # repo:gurneyalex/cubicweb
 
 Label: Relational
 
@@ -14,4 +100,26 @@ Type: Tech-1
 
 Repos:
 
-- 323389945 # repo:logicalclocks/rondb
+- 274000765 # repo:GunterMueller/LEAP_RDBMS
+- 40787594 # repo:aur-archive/gigabase
+- 14090388 # repo:cznic/ql
+- 196702393 # repo:eyalroz/c-store
+- 29210020 # repo:gavioto/fastdb
+- 11734713 # repo:stewartsmith/drizzle
+- 3900741 # repo:wundrian/csql
+
+Label: Spatial
+
+Type: Tech-1
+
+Repos:
+
+- 34533675 # repo:apache/sedona
+
+Label: Time Series
+
+Type: Tech-1
+
+Repos:
+
+- 584240610 # repo:machbase/neo-server

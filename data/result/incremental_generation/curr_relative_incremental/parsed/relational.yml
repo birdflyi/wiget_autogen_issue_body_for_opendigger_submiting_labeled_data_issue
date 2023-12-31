@@ -2,4 +2,10 @@ name: Database - Relational
 type: Tech-1
 data:
   github_repo:
-    - 323389945 # repo:logicalclocks/rondb
+    - 274000765 # repo:GunterMueller/LEAP_RDBMS
+    - 40787594 # repo:aur-archive/gigabase
+    - 14090388 # repo:cznic/ql
+    - 196702393 # repo:eyalroz/c-store
+    - 29210020 # repo:gavioto/fastdb
+    - 11734713 # repo:stewartsmith/drizzle
+    - 3900741 # repo:wundrian/csql

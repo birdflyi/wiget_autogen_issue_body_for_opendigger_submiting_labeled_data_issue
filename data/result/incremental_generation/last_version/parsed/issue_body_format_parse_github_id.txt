@@ -37,6 +37,7 @@ Repos:
 - 1374129 # repo:BaseXdb/basex
 - 8799170 # repo:DevrexLabs/OrigoDB
 - 422821402 # repo:FerretDB/FerretDB
+- 605189726 # repo:FgForrest/evitaDB
 - 8313554 # repo:Greg0/Lazer-Database
 - 10296238 # repo:HouzuoGuo/tiedot
 - 19271154 # repo:JetBrains/xodus
@@ -110,6 +111,7 @@ Repos:
 - 192418550 # repo:oracle/nosql-go-sdk
 - 48617634 # repo:orbitdb/orbit-db
 - 7083240 # repo:orientechnologies/orientdb
+- 453191009 # repo:ostafen/clover
 - 2662146 # repo:patx/pickledb
 - 39519916 # repo:percona/percona-server-mongodb
 - 166387176 # repo:polypheny/Polypheny-DB
@@ -125,6 +127,7 @@ Repos:
 - 6452529 # repo:rethinkdb/rethinkdb
 - 336867666 # repo:ribelo/doxa
 - 34056205 # repo:sachin-sinha/BangDB
+- 664816265 # repo:scratchdata/ScratchDB
 - 5841618 # repo:sedna/sedna
 - 9525219 # repo:sergeyksv/tingodb
 - 4604367 # repo:sirixdb/sirix
@@ -601,6 +604,7 @@ Repos:
 - 7502247 # repo:lealone/Lealone
 - 543276238 # repo:libsql/libsql
 - 509396909 # repo:lingo-db/lingo-db
+- 323389945 # repo:logicalclocks/rondb
 - 23013460 # repo:lsst/qserv
 - 61153677 # repo:m3db/m3
 - 564689243 # repo:man-group/ArcticDB

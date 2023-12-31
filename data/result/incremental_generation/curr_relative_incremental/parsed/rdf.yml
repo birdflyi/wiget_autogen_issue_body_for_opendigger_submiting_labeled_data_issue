@@ -1,0 +1,6 @@
+name: Database - RDF
+type: Tech-1
+data:
+  github_repo:
+    - 6235870 # repo:ansell/openrdf-sesame
+    - 207484782 # repo:gurneyalex/cubicweb

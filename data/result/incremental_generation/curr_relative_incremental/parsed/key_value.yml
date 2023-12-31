@@ -1,0 +1,16 @@
+name: Database - Key-value
+type: Tech-1
+data:
+  github_repo:
+    - 10650868 # repo:Amaury/FineDB
+    - 953500 # repo:LuaDist/tokyocabinet
+    - 26826806 # repo:cloudflarearchive/kyotocabinet
+    - 44061596 # repo:erthink/libmdbx
+    - 74678263 # repo:fanjinfei/grapheekdb
+    - 3914539 # repo:jbarham/cdb
+    - 3596087 # repo:mdaniel/svn-caucho-com-resin
+    - 143239 # repo:mitchellh/lightcloud
+    - 149145424 # repo:nextgres/oss-haildb
+    - 298920362 # repo:oracle/nosql-java-sdk
+    - 6714651 # repo:perchouli/codernitydb
+    - 1499938 # repo:shino/kai

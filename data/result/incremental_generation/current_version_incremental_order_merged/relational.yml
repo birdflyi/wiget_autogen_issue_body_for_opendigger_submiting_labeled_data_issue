@@ -20,6 +20,7 @@ data:
     - 54005538 # repo:FirebirdSQL/firebird
     - 496817075 # repo:GlareDB/glaredb
     - 345982729 # repo:GreatSQL/GreatSQL
+    - 274000765 # repo:GunterMueller/LEAP_RDBMS
     - 516821813 # repo:HydrasDB/hydra
     - 858418 # repo:JakSprats/Alchemy-Database
     - 80645561 # repo:JuliaData/JuliaDB.jl
@@ -53,6 +54,7 @@ data:
     - 17971138 # repo:apache/tajo
     - 3104540 # repo:apavlo/h-store
     - 134193743 # repo:apavlo/metalbase
+    - 40787594 # repo:aur-archive/gigabase
     - 143436277 # repo:baidu/BaikalDB
     - 141378316 # repo:beardedeagle/mnesiac
     - 16109206 # repo:biokoda/actordb
@@ -72,6 +74,7 @@ data:
     - 69400326 # repo:confluentinc/ksql
     - 551374215 # repo:cozodb/cozo
     - 132361668 # repo:cswinter/LocustDB
+    - 14090388 # repo:cznic/ql
     - 302827809 # repo:datafuselabs/databend
     - 52507351 # repo:diennea/herddb
     - 198683574 # repo:dolthub/dolt
@@ -85,11 +88,13 @@ data:
     - 587246478 # repo:endatabas/endb
     - 183929744 # repo:erikgrinaker/toydb
     - 59475316 # repo:eventql/eventql
+    - 196702393 # repo:eyalroz/c-store
     - 388946490 # repo:facebookincubator/velox
     - 40127179 # repo:featurebasedb/featurebase
     - 392839612 # repo:firebolt-db/firebolt-python-sdk
     - 305513242 # repo:fluree/db
     - 600860 # repo:fosslc/Ingres
+    - 29210020 # repo:gavioto/fastdb
     - 148087762 # repo:georgia-tech-db/eva
     - 3084708 # repo:ggaughan/ThinkSQL
     - 91715647 # repo:gnocchixyz/gnocchi
@@ -153,6 +158,7 @@ data:
     - 176278485 # repo:sqlite/sqlite
     - 151367139 # repo:stellarsql/StellarSQL
     - 12067343 # repo:stephentu/silo
+    - 11734713 # repo:stewartsmith/drizzle
     - 436658287 # repo:surrealdb/surrealdb
     - 591304097 # repo:sutoiku/puffin
     - 196353673 # repo:taosdata/TDengine
@@ -165,6 +171,7 @@ data:
     - 149626591 # repo:uber/aresdb
     - 234910993 # repo:vectorengine/vectorsql
     - 11008207 # repo:vitessio/vitess
+    - 3900741 # repo:wundrian/csql
     - 19503320 # repo:yaledb/calvin
     - 456549280 # repo:ydb-platform/ydb
     - 105944401 # repo:yugabyte/yugabyte-db

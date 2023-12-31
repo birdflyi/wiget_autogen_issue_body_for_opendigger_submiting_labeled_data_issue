@@ -5,18 +5,21 @@ data:
     - 215532341 # repo:256dpi/lungo
     - 25780780 # repo:AlaSQL/alasql
     - 61179047 # repo:Alachisoft/NosDB
+    - 32611526 # repo:AnantLabs/terrastore
     - 522606931 # repo:Anna-Team/AnnaDB
     - 396867188 # repo:ArcadeData/arcadedb
     - 1374129 # repo:BaseXdb/basex
     - 8799170 # repo:DevrexLabs/OrigoDB
     - 422821402 # repo:FerretDB/FerretDB
     - 605189726 # repo:FgForrest/evitaDB
+    - 404610048 # repo:Fl1yd/LightDB
     - 8313554 # repo:Greg0/Lazer-Database
     - 10296238 # repo:HouzuoGuo/tiedot
     - 19271154 # repo:JetBrains/xodus
     - 31315021 # repo:Kinto/kinto
     - 533032 # repo:LinkedInAttic/sensei
     - 646427433 # repo:LonaDB/Hadro
+    - 50098469 # repo:Nexedi/neoppod
     - 188354257 # repo:SequoiaDB/SequoiaDB
     - 474070793 # repo:SnellerInc/sneller
     - 6427744 # repo:Softmotions/ejdb
@@ -43,6 +46,7 @@ data:
     - 13353426 # repo:cinchapi/concourse
     - 66783145 # repo:couchbase/couchbase-lite-core
     - 9342529 # repo:crate/crate
+    - 722117815 # repo:cursusdb/cursusdb
     - 249981301 # repo:dappkit/aviondb
     - 4732384 # repo:dcramer/mangodb
     - 88777477 # repo:dizitart/nitrite-database
@@ -80,7 +84,7 @@ data:
     - 5912693 # repo:ncannasse/castle
     - 33053071 # repo:oberasoftware/jasdb
     - 3788366 # repo:openlink/virtuoso-opensource
-    - 192418550 # repo:oracle/nosql-go-sdk
+    - 298920362 # repo:oracle/nosql-java-sdk
     - 48617634 # repo:orbitdb/orbit-db
     - 7083240 # repo:orientechnologies/orientdb
     - 453191009 # repo:ostafen/clover
@@ -112,6 +116,7 @@ data:
     - 198466472 # repo:terminusdb/terminusdb
     - 197858776 # repo:textileio/go-threads
     - 449924556 # repo:tigrisdata/tigris
+    - 597066476 # repo:tontinton/dbeel
     - 86339169 # repo:torodb/server
     - 184711 # repo:typicaljoe/taffydb
     - 18351848 # repo:typicode/lowdb
@@ -122,4 +127,5 @@ data:
     - 735981 # repo:xapian/xapian
     - 125824259 # repo:xtdb/xtdb
     - 456549280 # repo:ydb-platform/ydb
+    - 574588439 # repo:ytsaurus/ytsaurus
     - 47479424 # repo:zerodb/zerodb

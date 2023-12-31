@@ -37,6 +37,7 @@ Repos:
 - BaseXdb/basex
 - DevrexLabs/OrigoDB
 - FerretDB/FerretDB
+- FgForrest/evitaDB
 - Greg0/Lazer-Database
 - HouzuoGuo/tiedot
 - JetBrains/xodus
@@ -110,6 +111,7 @@ Repos:
 - oracle/nosql-go-sdk
 - orbitdb/orbit-db
 - orientechnologies/orientdb
+- ostafen/clover
 - patx/pickledb
 - percona/percona-server-mongodb
 - polypheny/Polypheny-DB
@@ -125,6 +127,7 @@ Repos:
 - rethinkdb/rethinkdb
 - ribelo/doxa
 - sachin-sinha/BangDB
+- scratchdata/ScratchDB
 - sedna/sedna
 - sergeyksv/tingodb
 - sirixdb/sirix
@@ -601,6 +604,7 @@ Repos:
 - lealone/Lealone
 - libsql/libsql
 - lingo-db/lingo-db
+- logicalclocks/rondb
 - lsst/qserv
 - m3db/m3
 - man-group/ArcticDB

@@ -4,10 +4,10 @@ data:
   github_repo:
     - 534109388 # repo:EuclidOLAP/EuclidOLAP
     - 86868560 # repo:TileDB-Inc/TileDB
-    - 17699493 # repo:cran/scidb
+    - 31373521 # repo:autermann/scidb
     - 96580430 # repo:datajaguar/jaguardb
-    - 5407611 # repo:dioptre/rasdaman
     - 664133375 # repo:epsilla-cloud/vectordb
     - 45732002 # repo:jnidzwetzki/bboxdb
+    - 489656726 # repo:onefanwu/RasDaMan-v10.0
     - 162765004 # repo:peermaps/eyros
     - 156942199 # repo:perone/euclidesdb
