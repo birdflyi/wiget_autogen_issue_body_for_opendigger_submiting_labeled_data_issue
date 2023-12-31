@@ -45,6 +45,12 @@ Use function df_getRepoId_to_yaml to generate yaml based on "issue_body_format_p
 Use function auto_gen_current_version_incremental_order_merged to merge all the yaml files in directories last_version and curr_relative_incremental into current_version_incremental_order_merged.
 The function runs in stage 2 by setting take_parsed_repo_id_as_df_new_col = True.
 
+### 4.other extra data preprocessing based on the current version merged data
+After finished the steps above, set the "curr_stage > MAX_INC_UPDATE_STAGE" and rerun main.py.
+Functions:
+- get repo id from issue_body_format_parse_github_id.txt as a new column of database repo label dataframe
+- output in the open-digger labeled data format
+
 ## B. How to update data
 
 ### Step1: Update git submodules
@@ -57,5 +63,5 @@ git submodule update --recursive --remote --init
 
 ### Step2: Make changes and push
 Add new data filenames as input dataset into "labeled_data_filenames".
-Change the curr_stage from 0 to 2 before run main.py and solve the warnings related to data.
+Change the curr_stage from 0 to MAX_INC_UPDATE_STAGE + 1 before run main.py and solve the warnings related to data.
 Move the results from directory "current_version_incremental_order_merged" to [open-digger: labeled_data/technology/database](https://github.com/X-lab2017/open-digger/tree/master/labeled_data/technology/database).

@@ -1,0 +1,17 @@
+name: Database - Spatial
+type: Tech-1
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 34533675
+          name: apache/sedona
+        - id: 93667206
+          name: geomesa/geomesa-geoserver
+        - id: 7171304
+          name: illarionov/SpatiaLite
+        - id: 9074548
+          name: orbisgis/h2gis
+        - id: 4407129
+          name: postgis/postgis

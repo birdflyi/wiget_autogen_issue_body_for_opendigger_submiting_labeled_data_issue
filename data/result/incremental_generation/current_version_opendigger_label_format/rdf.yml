@@ -1,0 +1,41 @@
+name: Database - RDF
+type: Tech-1
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 248094
+          name: 4store/4store
+        - id: 8335020
+          name: BrightstarDB/BrightstarDB
+        - id: 6235870
+          name: ansell/openrdf-sesame
+        - id: 7437073
+          name: apache/jena
+        - id: 111333972
+          name: arun1729/cog
+        - id: 48451041
+          name: blazegraph/database
+        - id: 20537104
+          name: cayleygraph/cayley
+        - id: 855939
+          name: dajobe/librdf
+        - id: 1340162
+          name: dydra/dydra
+        - id: 179586596
+          name: eBay/akutan
+        - id: 49670957
+          name: eclipse/rdf4j
+        - id: 31719727
+          name: esarbanis/strabon
+        - id: 305513242
+          name: fluree/db
+        - id: 207484782
+          name: gurneyalex/cubicweb
+        - id: 754873
+          name: njh/redstore
+        - id: 16710751
+          name: quoll/mulgara
+        - id: 198466472
+          name: terminusdb/terminusdb

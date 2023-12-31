@@ -1,0 +1,11 @@
+name: Database - Network
+type: Tech-1
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 531145841
+          name: igor-bul/vyhodb
+        - id: 10153163
+          name: priitj/whitedb

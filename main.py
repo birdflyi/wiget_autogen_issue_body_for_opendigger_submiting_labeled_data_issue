@@ -767,6 +767,31 @@ def df_getRepoId_to_labeled_data_col(labeled_data_without_repoid_path, all_label
     return
 
 
+def format_labeled_data_file(src_path, dst_path, regx_kwargs_list, **kwargs):
+    encoding = kwargs.get("encoding", "utf-8")
+    with open(src_path, 'r', encoding=encoding) as f:
+        s = f.read()
+
+    for regx_kwargs in regx_kwargs_list:
+        regx_kwargs = dict(regx_kwargs)
+        regx_kwargs["string"] = str(s)
+        s = re.sub(**regx_kwargs)
+
+    with open(dst_path, 'w', encoding=encoding) as f:
+        f.write(s)
+    return
+
+
+def format_labeled_data_files_in_dir(input_files_dir, output_files_dir, suffix=".yml", regx_kwargs_list=None, **kwargs):
+    regx_kwargs_list = regx_kwargs_list or []  # e.g. [{"pattern": "", "repl": "", "string": "", "count": 0, "flags": 0}]
+    input_filenames = get_filenames_from_dir(input_files_dir, suffix=suffix, recursive=False)
+    for input_filename in input_filenames:
+        src_path = os.path.join(input_files_dir, input_filename)
+        dst_path = os.path.join(output_files_dir, input_filename)
+        format_labeled_data_file(src_path, dst_path, regx_kwargs_list, **kwargs)
+    return
+
+
 if __name__ == '__main__':
     # Step 0. Update git submodules
     # git command in bash:
@@ -797,13 +822,15 @@ if __name__ == '__main__':
 
     # static settings
     STAGE__UPDATE_LAST_VERSION__SAVE_PARSED = {
-        0: [True, False, False],  # update the last version parsed data
-        1: [False, False, False],  # auto generate the issue body(see Warning in 2. Create data issue in open-digger) for df_curr_inc_labeled_data
+        0: [True, False],  # update the last version parsed data
+        1: [False, False],  # auto generate the issue body(see Warning in 2. Create data issue in open-digger) for df_curr_inc_labeled_data
         # Resolve the warning by creating data issue in open-digger and save parsed data before next step!
-        2: [False, True, True]  # split the curr_inc_issue_body_format_parse_github_id into yml files
+        2: [False, True]  # split the curr_inc_issue_body_format_parse_github_id into yml files
     }
-    UPDATE_LAST_VERSION = STAGE__UPDATE_LAST_VERSION__SAVE_PARSED[curr_stage][0]
-    save_parsed_as_curr_inc_issue_body_format_parse_github_id = STAGE__UPDATE_LAST_VERSION__SAVE_PARSED[curr_stage][1]
+    MAX_INC_UPDATE_STAGE = max(STAGE__UPDATE_LAST_VERSION__SAVE_PARSED.keys())
+    inc_update_stage = MAX_INC_UPDATE_STAGE if curr_stage > MAX_INC_UPDATE_STAGE else curr_stage
+    UPDATE_LAST_VERSION = STAGE__UPDATE_LAST_VERSION__SAVE_PARSED[inc_update_stage][0]
+    save_parsed_as_curr_inc_issue_body_format_parse_github_id = STAGE__UPDATE_LAST_VERSION__SAVE_PARSED[inc_update_stage][1]
 
     # initialize the source data
     INITIALIZE_DATABASE_REPO_LABEL_DATAFRAME = True
@@ -824,26 +851,28 @@ if __name__ == '__main__':
     last_v_labeled_data_path = os.path.join(database_repo_label_dataframe_dir, last_v_labeled_data_filename)
     last_v_issue_body_format_txt_path = os.path.join(BASE_DIR, 'data/result/incremental_generation/last_version/issue_body_format.txt')
     last_v_dir = os.path.join(os.path.dirname(last_v_issue_body_format_txt_path), "parsed")
-    if REGEN_ISSUE_BODY_RAW_STR_LAST_VERSION:
+    if REGEN_ISSUE_BODY_RAW_STR_LAST_VERSION and curr_stage == 0:
         df_last_v_labeled_data = pd.read_csv(last_v_labeled_data_path, index_col=False, encoding=encoding)
         if ORDER_BY_GITHUB_REPO_LINK:
             df_last_v_labeled_data.sort_values(by=['github_repo_link'], axis=0, ascending=True, inplace=True)
         auto_gen_issue_body_for_opendigger(df_last_v_labeled_data, last_v_issue_body_format_txt_path,
                                            use_column__mode_col_config=(1, "category_label"), del_emptyval_data=False)
+    else:
+        pass
 
     # 2. generate curr_relative_incremental
     curr_inc_labeled_data_filename = labeled_data_filenames[idx_curr_v]
     curr_inc_labeled_data_path = os.path.join(database_repo_label_dataframe_dir, curr_inc_labeled_data_filename)
     curr_inc_path_issue_body_format_txt = os.path.join(BASE_DIR, 'data/result/incremental_generation/curr_relative_incremental/issue_body_format.txt')
     df_curr_inc_labeled_data = pd.read_csv(curr_inc_labeled_data_path, index_col=False, encoding=encoding)
-    if UPDATE_LAST_VERSION:  # Block this process when last version still needs to be updated.
-        pass
-    else:  # Merge current incremental dataframe and last version labeled data into curr_inc_path_issue_body_format_txt
+    if curr_stage == 1:  # Merge current incremental dataframe and last version labeled data into curr_inc_path_issue_body_format_txt
         if ORDER_BY_GITHUB_REPO_LINK:
             df_curr_inc_labeled_data.sort_values(by=['github_repo_link'], axis=0, ascending=True, inplace=True)
         auto_gen_issue_body_for_opendigger(df_curr_inc_labeled_data, curr_inc_path_issue_body_format_txt,
                                            use_column__mode_col_config=(1, "category_label"),  # 1 for "category_label_col"
                                            incremental=True, last_v_labeled_data_path=last_v_labeled_data_path)
+    else:
+        pass
 
     # ------------------------2. Create data issue in open-digger--------------------------
     #  e.g. [X-lab2017/open-digger#1245](https://github.com/X-lab2017/open-digger/issues/1245)
@@ -853,12 +882,12 @@ if __name__ == '__main__':
     curr_inc_issue_body_format_txt_path = os.path.join(BASE_DIR, 'data/result/incremental_generation/curr_relative_incremental/issue_body_format.txt')
     curr_inc_dir = os.path.join(os.path.dirname(curr_inc_issue_body_format_txt_path), "parsed")
     curr_inc_issue_body_format_parse_github_id_path = os.path.join(curr_inc_dir, "issue_body_format_parse_github_id.txt")
-    if UPDATE_LAST_VERSION:
+    if UPDATE_LAST_VERSION and curr_stage == 0:
         update_issue_body_format_parse_github_id(last_v_issue_body_format_txt_path,
                                                  last_v_issue_body_format_parse_github_id_path,
                                                  last_v_path=last_v_issue_body_format_parse_github_id_path,
                                                  curr_inc_path=curr_inc_issue_body_format_parse_github_id_path)
-    elif not save_parsed_as_curr_inc_issue_body_format_parse_github_id:
+    elif curr_stage == 1 and (not save_parsed_as_curr_inc_issue_body_format_parse_github_id):
         raise Warning(f"Please Create data issue in open-digger with contents in {curr_inc_issue_body_format_txt_path}, "
                       f"then save the bot comments into {curr_inc_issue_body_format_parse_github_id_path}! "
                       f"\t\nFinally, set parse_github_id_str_to_yaml = True.")
@@ -879,9 +908,9 @@ if __name__ == '__main__':
     curr_inc_src_dir = os.path.join(os.path.dirname(curr_inc_path_issue_body_format_txt), "parsed")
     src_curr_inc_parsed_txt_path = os.path.join(curr_inc_src_dir, "issue_body_format_parse_github_id.txt")  # manually saved csv: contents are from the open-digger Bot(github-actions) comments
     tar_curr_inc_parsed_txt_dir = curr_inc_src_dir
-    if UPDATE_LAST_VERSION:
+    if UPDATE_LAST_VERSION and curr_stage == 0:
         df_getRepoId_to_yaml(src_last_v_parsed_txt_path, tar_dir=tar_last_v_parsed_txt_dir)
-    else:
+    elif curr_stage == 2:
         for filename in os.listdir(tar_curr_inc_parsed_txt_dir):  # remove the last version incremental data
             if filename.endswith('.yml'):
                 os.remove(os.path.join(tar_curr_inc_parsed_txt_dir, filename))
@@ -897,14 +926,29 @@ if __name__ == '__main__':
         auto_gen_current_version_incremental_order_merged(last_version_tar_dir, curr_inc_src_dir, curr_merged_tar_dir,
                                                           suffix='.yml', redundancy_check_df=df_curr_inc_labeled_data,
                                                           drop_not_found=DROP_NOT_FOUND)
+    else:
+        pass
 
     # -------------5. get repo id from issue_body_format_parse_github_id.txt as a new column of database repo label dataframe--------------
     idx_v = idx_last_v if UPDATE_LAST_VERSION else idx_curr_v
-    take_parsed_repo_id_as_df_new_col = STAGE__UPDATE_LAST_VERSION__SAVE_PARSED[curr_stage][2]
     labeled_data_without_repoid_path = os.path.join(database_repo_label_dataframe_dir, labeled_data_filenames[idx_v])
     labeled_data_with_repoid_filename = labeled_data_without_repoid_path.replace('\\', '/').split('/')[-1].strip('.csv') + '_with_repoid' + '.csv'
     labeled_data_with_repoid_path = os.path.join(database_repo_label_dataframe_dir, labeled_data_with_repoid_filename)
-    all_label_records_parsed_dict, _ = get_all_label_records_parsed_dict_from_parsed_txt([src_last_v_parsed_txt_path, src_curr_inc_parsed_txt_path])
-    if take_parsed_repo_id_as_df_new_col:
+    if curr_stage > MAX_INC_UPDATE_STAGE:
+        all_label_records_parsed_dict, _ = get_all_label_records_parsed_dict_from_parsed_txt([src_last_v_parsed_txt_path, src_curr_inc_parsed_txt_path])
         df_getRepoId_to_labeled_data_col(labeled_data_without_repoid_path, all_label_records_parsed_dict,
                                          labeled_data_with_repoid_path, github_repo_link_colname="github_repo_link")
+    else:
+        pass
+
+    # --------------------------------6. output in the open-digger labeled data format----------------------------------
+    curr_merged_tar_dir = os.path.join(BASE_DIR, 'data/result/incremental_generation/current_version_incremental_order_merged')
+    curr_ver_od_label_format_dir = os.path.join(BASE_DIR, 'data/result/incremental_generation/current_version_opendigger_label_format')
+    regx_kwargs_list = [
+        {"pattern": r"  github_repo:", "repl": "  platforms:\n    - name: GitHub\n      type: Code Hosting\n      repos:"},
+        {"pattern": r"    - (\d+) # repo:(.+)", "repl": "        - id: \\1\n          name: \\2"},
+    ]
+    if curr_stage > MAX_INC_UPDATE_STAGE:
+        format_labeled_data_files_in_dir(curr_merged_tar_dir, curr_ver_od_label_format_dir, regx_kwargs_list=regx_kwargs_list, encoding=encoding)
+    else:
+        pass

@@ -1,0 +1,27 @@
+name: Database - Search Engine
+type: Tech-1
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 341374920
+          name: apache/solr
+        - id: 507775
+          name: elastic/elasticsearch
+        - id: 95614931
+          name: manticoresoftware/manticoresearch
+        - id: 520096046
+          name: marqo-ai/marqo
+        - id: 130688011
+          name: meilisearch/meilisearch
+        - id: 334274271
+          name: opensearch-project/OpenSearch
+        - id: 36992044
+          name: sphinxsearch/sphinx
+        - id: 79317191
+          name: typesense/typesense
+        - id: 60377070
+          name: vespa-engine/vespa
+        - id: 735981
+          name: xapian/xapian

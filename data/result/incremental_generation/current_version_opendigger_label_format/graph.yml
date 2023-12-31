@@ -1,0 +1,103 @@
+name: Database - Graph
+type: Tech-1
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 396867188
+          name: ArcadeData/arcadedb
+        - id: 1832551
+          name: CulturePlex/Sylva
+        - id: 8799170
+          name: DevrexLabs/OrigoDB
+        - id: 77385607
+          name: JanusGraph/janusgraph
+        - id: 45098765
+          name: PureSolTechnologies/DuctileDB
+        - id: 84458512
+          name: RedisGraph/RedisGraph
+        - id: 43494700
+          name: SparsityTechnologies/sparksee-server
+        - id: 22475123
+          name: amark/gun
+        - id: 276293034
+          name: apache/age
+        - id: 2282376
+          name: apache/giraph
+        - id: 141376301
+          name: apache/incubator-hugegraph
+        - id: 30449481
+          name: apache/tinkerpop
+        - id: 2649214
+          name: arangodb/arangodb
+        - id: 57401138
+          name: bitnine-oss/agensgraph
+        - id: 48451041
+          name: blazegraph/database
+        - id: 511030127
+          name: ceramicstudio/js-composedb
+        - id: 2672286
+          name: cosh/fallen-8
+        - id: 41946572
+          name: degdb/degdb
+        - id: 41349039
+          name: dgraph-io/dgraph
+        - id: 402209532
+          name: dyedgreen/cqlite
+        - id: 668673665
+          name: falkordb/falkordb
+        - id: 74678263
+          name: fanjinfei/grapheekdb
+        - id: 305513242
+          name: fluree/db
+        - id: 47973088
+          name: gchq/Gaffer
+        - id: 207484782
+          name: gurneyalex/cubicweb
+        - id: 38727503
+          name: hypergraphdb/hypergraphdb
+        - id: 166429903
+          name: jssmith/stigdb
+        - id: 65619619
+          name: krotik/eliasdb
+        - id: 298763623
+          name: kuzudb/kuzu
+        - id: 85236158
+          name: lambdazen/bitsy
+        - id: 297302063
+          name: memgraph/memgraph
+        - id: 81411018
+          name: microsoft/GraphEngine
+        - id: 6650539
+          name: neo4j/neo4j
+        - id: 7083240
+          name: orientechnologies/orientdb
+        - id: 26917250
+          name: pkumod/gStore
+        - id: 166387176
+          name: polypheny/Polypheny-DB
+        - id: 131763823
+          name: quoll/asami
+        - id: 383927661
+          name: ragedb/ragedb
+        - id: 73235061
+          name: rayokota/hgraphdb
+        - id: 743502
+          name: sones/sones
+        - id: 55578752
+          name: stellardb/StellarDB
+        - id: 238509
+          name: stevedekorte/vertexdb
+        - id: 436658287
+          name: surrealdb/surrealdb
+        - id: 198466472
+          name: terminusdb/terminusdb
+        - id: 3548254
+          name: thinkaurelius/titan
+        - id: 605999
+          name: twitter-archive/flockdb
+        - id: 63110867
+          name: vaticle/typedb
+        - id: 146459443
+          name: vesoft-inc/nebula
