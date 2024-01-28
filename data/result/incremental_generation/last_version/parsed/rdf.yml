@@ -4,6 +4,7 @@ data:
   github_repo:
     - 248094 # repo:4store/4store
     - 8335020 # repo:BrightstarDB/BrightstarDB
+    - 6235870 # repo:ansell/openrdf-sesame
     - 7437073 # repo:apache/jena
     - 111333972 # repo:arun1729/cog
     - 48451041 # repo:blazegraph/database
@@ -14,6 +15,7 @@ data:
     - 49670957 # repo:eclipse/rdf4j
     - 31719727 # repo:esarbanis/strabon
     - 305513242 # repo:fluree/db
+    - 207484782 # repo:gurneyalex/cubicweb
     - 754873 # repo:njh/redstore
     - 16710751 # repo:quoll/mulgara
     - 198466472 # repo:terminusdb/terminusdb

@@ -8,6 +8,7 @@ data:
     - 77385607 # repo:JanusGraph/janusgraph
     - 45098765 # repo:PureSolTechnologies/DuctileDB
     - 84458512 # repo:RedisGraph/RedisGraph
+    - 43494700 # repo:SparsityTechnologies/sparksee-server
     - 22475123 # repo:amark/gun
     - 276293034 # repo:apache/age
     - 2282376 # repo:apache/giraph
@@ -22,8 +23,10 @@ data:
     - 41349039 # repo:dgraph-io/dgraph
     - 402209532 # repo:dyedgreen/cqlite
     - 668673665 # repo:falkordb/falkordb
+    - 74678263 # repo:fanjinfei/grapheekdb
     - 305513242 # repo:fluree/db
     - 47973088 # repo:gchq/Gaffer
+    - 207484782 # repo:gurneyalex/cubicweb
     - 38727503 # repo:hypergraphdb/hypergraphdb
     - 166429903 # repo:jssmith/stigdb
     - 65619619 # repo:krotik/eliasdb
@@ -33,6 +36,7 @@ data:
     - 81411018 # repo:microsoft/GraphEngine
     - 6650539 # repo:neo4j/neo4j
     - 7083240 # repo:orientechnologies/orientdb
+    - 26917250 # repo:pkumod/gStore
     - 166387176 # repo:polypheny/Polypheny-DB
     - 131763823 # repo:quoll/asami
     - 383927661 # repo:ragedb/ragedb

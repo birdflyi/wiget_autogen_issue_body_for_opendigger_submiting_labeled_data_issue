@@ -6,11 +6,11 @@ Repos:
 
 - 534109388 # repo:EuclidOLAP/EuclidOLAP
 - 86868560 # repo:TileDB-Inc/TileDB
-- 17699493 # repo:cran/scidb
+- 31373521 # repo:autermann/scidb
 - 96580430 # repo:datajaguar/jaguardb
-- 5407611 # repo:dioptre/rasdaman
 - 664133375 # repo:epsilla-cloud/vectordb
 - 45732002 # repo:jnidzwetzki/bboxdb
+- 489656726 # repo:onefanwu/RasDaMan-v10.0
 - 162765004 # repo:peermaps/eyros
 - 156942199 # repo:perone/euclidesdb
 
@@ -32,18 +32,21 @@ Repos:
 - 215532341 # repo:256dpi/lungo
 - 25780780 # repo:AlaSQL/alasql
 - 61179047 # repo:Alachisoft/NosDB
+- 32611526 # repo:AnantLabs/terrastore
 - 522606931 # repo:Anna-Team/AnnaDB
 - 396867188 # repo:ArcadeData/arcadedb
 - 1374129 # repo:BaseXdb/basex
 - 8799170 # repo:DevrexLabs/OrigoDB
 - 422821402 # repo:FerretDB/FerretDB
 - 605189726 # repo:FgForrest/evitaDB
+- 404610048 # repo:Fl1yd/LightDB
 - 8313554 # repo:Greg0/Lazer-Database
 - 10296238 # repo:HouzuoGuo/tiedot
 - 19271154 # repo:JetBrains/xodus
 - 31315021 # repo:Kinto/kinto
 - 533032 # repo:LinkedInAttic/sensei
 - 646427433 # repo:LonaDB/Hadro
+- 50098469 # repo:Nexedi/neoppod
 - 188354257 # repo:SequoiaDB/SequoiaDB
 - 474070793 # repo:SnellerInc/sneller
 - 6427744 # repo:Softmotions/ejdb
@@ -70,6 +73,7 @@ Repos:
 - 13353426 # repo:cinchapi/concourse
 - 66783145 # repo:couchbase/couchbase-lite-core
 - 9342529 # repo:crate/crate
+- 722117815 # repo:cursusdb/cursusdb
 - 249981301 # repo:dappkit/aviondb
 - 4732384 # repo:dcramer/mangodb
 - 88777477 # repo:dizitart/nitrite-database
@@ -108,7 +112,7 @@ Repos:
 - 5912693 # repo:ncannasse/castle
 - 33053071 # repo:oberasoftware/jasdb
 - 3788366 # repo:openlink/virtuoso-opensource
-- 192418550 # repo:oracle/nosql-go-sdk
+- 298920362 # repo:oracle/nosql-java-sdk
 - 48617634 # repo:orbitdb/orbit-db
 - 7083240 # repo:orientechnologies/orientdb
 - 453191009 # repo:ostafen/clover
@@ -140,6 +144,7 @@ Repos:
 - 198466472 # repo:terminusdb/terminusdb
 - 197858776 # repo:textileio/go-threads
 - 449924556 # repo:tigrisdata/tigris
+- 597066476 # repo:tontinton/dbeel
 - 86339169 # repo:torodb/server
 - 184711 # repo:typicaljoe/taffydb
 - 18351848 # repo:typicode/lowdb
@@ -150,6 +155,7 @@ Repos:
 - 735981 # repo:xapian/xapian
 - 125824259 # repo:xtdb/xtdb
 - 456549280 # repo:ydb-platform/ydb
+- 574588439 # repo:ytsaurus/ytsaurus
 - 47479424 # repo:zerodb/zerodb
 
 Label: Event
@@ -173,6 +179,7 @@ Repos:
 - 77385607 # repo:JanusGraph/janusgraph
 - 45098765 # repo:PureSolTechnologies/DuctileDB
 - 84458512 # repo:RedisGraph/RedisGraph
+- 43494700 # repo:SparsityTechnologies/sparksee-server
 - 22475123 # repo:amark/gun
 - 276293034 # repo:apache/age
 - 2282376 # repo:apache/giraph
@@ -187,8 +194,10 @@ Repos:
 - 41349039 # repo:dgraph-io/dgraph
 - 402209532 # repo:dyedgreen/cqlite
 - 668673665 # repo:falkordb/falkordb
+- 74678263 # repo:fanjinfei/grapheekdb
 - 305513242 # repo:fluree/db
 - 47973088 # repo:gchq/Gaffer
+- 207484782 # repo:gurneyalex/cubicweb
 - 38727503 # repo:hypergraphdb/hypergraphdb
 - 166429903 # repo:jssmith/stigdb
 - 65619619 # repo:krotik/eliasdb
@@ -198,6 +207,7 @@ Repos:
 - 81411018 # repo:microsoft/GraphEngine
 - 6650539 # repo:neo4j/neo4j
 - 7083240 # repo:orientechnologies/orientdb
+- 26917250 # repo:pkumod/gStore
 - 166387176 # repo:polypheny/Polypheny-DB
 - 131763823 # repo:quoll/asami
 - 383927661 # repo:ragedb/ragedb
@@ -230,6 +240,7 @@ Repos:
 - 28956774 # repo:Alachisoft/NCache
 - 28457976 # repo:AlticeLabsProjects/kyoto
 - 12991321 # repo:Amaury/AngstromDB
+- 10650868 # repo:Amaury/FineDB
 - 17826843 # repo:AntidoteDB/antidote
 - 396867188 # repo:ArcadeData/arcadedb
 - 681142 # repo:Bobris/BTDB
@@ -240,6 +251,7 @@ Repos:
 - 202483348 # repo:KvrocksLabs/kvrocks
 - 34406933 # repo:LMDB/lmdb
 - 259542436 # repo:LineairDB/LineairDB
+- 953500 # repo:LuaDist/tokyocabinet
 - 7085128 # repo:Nanolat/nldb
 - 8103021 # repo:Netflix/EVCache
 - 21985130 # repo:OpenHFT/Chronicle-Map
@@ -279,6 +291,7 @@ Repos:
 - 33275300 # repo:cachelot/cachelot
 - 1196286 # repo:cbd/edis
 - 150013328 # repo:cberner/redb
+- 26826806 # repo:cloudflarearchive/kyotocabinet
 - 220186120 # repo:codenotary/immudb
 - 69400326 # repo:confluentinc/ksql
 - 66783145 # repo:couchbase/couchbase-lite-core
@@ -289,15 +302,16 @@ Repos:
 - 292903178 # repo:deroproject/graviton
 - 132499340 # repo:developit/histore
 - 80087836 # repo:dgraph-io/badger
-- 3115025 # repo:dlitz/resin
 - 437245741 # repo:dragonflydb/dragonfly
 - 17224514 # repo:ehcache/ehcache3
 - 393005910 # repo:engula/engula
+- 44061596 # repo:erthink/libmdbx
 - 278320002 # repo:estraier/tkrzw
 - 94593596 # repo:etcd-io/bbolt
 - 11225014 # repo:etcd-io/etcd
 - 6934395 # repo:facebook/rocksdb
 - 70541093 # repo:facebookarchive/beringei
+- 74678263 # repo:fanjinfei/grapheekdb
 - 606800919 # repo:firstbatchxyz/hollowdb
 - 292049131 # repo:genderev/assassin
 - 67936193 # repo:gfredericks/quinedb
@@ -319,6 +333,7 @@ Repos:
 - 31342455 # repo:iondbproject/iondb
 - 265390281 # repo:jakekgrog/GhostDB
 - 5453989 # repo:jankotek/mapdb
+- 3914539 # repo:jbarham/cdb
 - 547593 # repo:jingwei/krati
 - 37932930 # repo:justin-db/JustinDB
 - 191442206 # repo:kashirin-alex/swc-db
@@ -330,17 +345,21 @@ Repos:
 - 62980788 # repo:marceloboeira/bojack
 - 30123805 # repo:mbdavid/FileDB
 - 5494148 # repo:mchidk/BinaryRage
+- 3596087 # repo:mdaniel/svn-caucho-com-resin
 - 184981 # repo:memcached/memcached
 - 331747853 # repo:microsoft/Extensible-Storage-Engine
 - 143253020 # repo:microsoft/FASTER
+- 143239 # repo:mitchellh/lightcloud
 - 1372117 # repo:nathanmarz/elephantdb
+- 149145424 # repo:nextgres/oss-haildb
 - 4211523 # repo:oleiade/Elevator
 - 12106192 # repo:oleiade/trousseau
 - 242776849 # repo:oracle/coherence
-- 192418550 # repo:oracle/nosql-go-sdk
+- 298920362 # repo:oracle/nosql-java-sdk
 - 48617634 # repo:orbitdb/orbit-db
 - 7083240 # repo:orientechnologies/orientdb
 - 606125384 # repo:paypal/junodb
+- 6714651 # repo:perchouli/codernitydb
 - 278684767 # repo:petermattis/pebble
 - 502268740 # repo:photondb/photondb
 - 37285717 # repo:pilgr/Paper
@@ -365,6 +384,7 @@ Repos:
 - 33605302 # repo:scalaris-team/scalaris
 - 715589 # repo:scalien/scaliendb
 - 28449431 # repo:scylladb/scylla
+- 1499938 # repo:shino/kai
 - 121126549 # repo:simerplaha/SwayDB
 - 276042304 # repo:skytable/skytable
 - 49401416 # repo:spacejam/sled
@@ -402,10 +422,10 @@ Type: Tech-1
 
 Repos:
 
-- 17699493 # repo:cran/scidb
-- 5407611 # repo:dioptre/rasdaman
+- 31373521 # repo:autermann/scidb
 - 1984888 # repo:gregjurman/openqm
 - 34215181 # repo:jrmarino/AdaBase
+- 489656726 # repo:onefanwu/RasDaMan-v10.0
 - 61269853 # repo:vanilladb/vanillacore
 
 Label: Native XML
@@ -424,6 +444,7 @@ Type: Tech-1
 
 Repos:
 
+- 531145841 # repo:igor-bul/vyhodb
 - 10153163 # repo:priitj/whitedb
 
 Label: Object Oriented
@@ -433,6 +454,7 @@ Type: Tech-1
 Repos:
 
 - 107504377 # repo:ADBSQL/AntDB
+- 37905036 # repo:Alachisoft/TayzGrid
 - 681142 # repo:Bobris/BTDB
 - 52080367 # repo:CUBRID/cubrid
 - 329729926 # repo:CondensationDB/Condensation-java
@@ -440,22 +462,28 @@ Repos:
 - 516821813 # repo:HydrasDB/hydra
 - 1244027 # repo:ModeShape/modeshape
 - 150752008 # repo:SapphireDb/SapphireDb
+- 43494700 # repo:SparsityTechnologies/sparksee-server
 - 124423054 # repo:The-Alchemist/perst
 - 569871553 # repo:VeloxDB/VeloxDB
 - 206403 # repo:apache/jackrabbit
 - 246343828 # repo:atoti/atoti
+- 40787594 # repo:aur-archive/gigabase
 - 396856161 # repo:authzed/spicedb
 - 644742603 # repo:cloudberrydb/cloudberrydb
 - 95070401 # repo:devrexlabs/memstate
 - 95817032 # repo:edgedb/edgedb
 - 15001136 # repo:etoile/CoreObject
+- 145843258 # repo:eyedb/eyedb
 - 42143916 # repo:fern4lvarez/piladb
 - 240387847 # repo:gaia-platform/GaiaPlatform
+- 32137101 # repo:google-code-export/twig-persist
 - 48279725 # repo:goshawkdb/server
 - 204261394 # repo:iboxdb/db4o-gpl
 - 5453989 # repo:jankotek/mapdb
+- 37340459 # repo:jayhopeter/NDatabase
 - 119234782 # repo:jonahharris/osdb-beaglesql
 - 1776883 # repo:kimchy/compass
+- 89699591 # repo:magma-database/magma
 - 25225465 # repo:markmeeus/MarcelloDB
 - 273564373 # repo:morecraf/Siaqodb
 - 351806852 # repo:neondatabase/neon
@@ -465,8 +493,11 @@ Repos:
 - 37285717 # repo:pilgr/Paper
 - 14702444 # repo:pipelinedb/pipelinedb
 - 927442 # repo:postgres/postgres
+- 90349373 # repo:profanedb/ProfaneDB
 - 1917262 # repo:realm/realm-core
+- 16457385 # repo:sirlordt/NeoDatis
 - 3893984 # repo:tzaeschke/zoodb
+- 107304517 # repo:wware/FramerD
 - 7357595 # repo:zopefoundation/ZODB
 
 Label: RDF
@@ -477,6 +508,7 @@ Repos:
 
 - 248094 # repo:4store/4store
 - 8335020 # repo:BrightstarDB/BrightstarDB
+- 6235870 # repo:ansell/openrdf-sesame
 - 7437073 # repo:apache/jena
 - 111333972 # repo:arun1729/cog
 - 48451041 # repo:blazegraph/database
@@ -487,6 +519,7 @@ Repos:
 - 49670957 # repo:eclipse/rdf4j
 - 31719727 # repo:esarbanis/strabon
 - 305513242 # repo:fluree/db
+- 207484782 # repo:gurneyalex/cubicweb
 - 754873 # repo:njh/redstore
 - 16710751 # repo:quoll/mulgara
 - 198466472 # repo:terminusdb/terminusdb
@@ -515,6 +548,7 @@ Repos:
 - 54005538 # repo:FirebirdSQL/firebird
 - 496817075 # repo:GlareDB/glaredb
 - 345982729 # repo:GreatSQL/GreatSQL
+- 274000765 # repo:GunterMueller/LEAP_RDBMS
 - 516821813 # repo:HydrasDB/hydra
 - 858418 # repo:JakSprats/Alchemy-Database
 - 80645561 # repo:JuliaData/JuliaDB.jl
@@ -548,6 +582,7 @@ Repos:
 - 17971138 # repo:apache/tajo
 - 3104540 # repo:apavlo/h-store
 - 134193743 # repo:apavlo/metalbase
+- 40787594 # repo:aur-archive/gigabase
 - 143436277 # repo:baidu/BaikalDB
 - 141378316 # repo:beardedeagle/mnesiac
 - 16109206 # repo:biokoda/actordb
@@ -567,6 +602,7 @@ Repos:
 - 69400326 # repo:confluentinc/ksql
 - 551374215 # repo:cozodb/cozo
 - 132361668 # repo:cswinter/LocustDB
+- 14090388 # repo:cznic/ql
 - 302827809 # repo:datafuselabs/databend
 - 52507351 # repo:diennea/herddb
 - 198683574 # repo:dolthub/dolt
@@ -580,11 +616,13 @@ Repos:
 - 587246478 # repo:endatabas/endb
 - 183929744 # repo:erikgrinaker/toydb
 - 59475316 # repo:eventql/eventql
+- 196702393 # repo:eyalroz/c-store
 - 388946490 # repo:facebookincubator/velox
 - 40127179 # repo:featurebasedb/featurebase
 - 392839612 # repo:firebolt-db/firebolt-python-sdk
 - 305513242 # repo:fluree/db
 - 600860 # repo:fosslc/Ingres
+- 29210020 # repo:gavioto/fastdb
 - 148087762 # repo:georgia-tech-db/eva
 - 3084708 # repo:ggaughan/ThinkSQL
 - 91715647 # repo:gnocchixyz/gnocchi
@@ -649,6 +687,7 @@ Repos:
 - 176278485 # repo:sqlite/sqlite
 - 151367139 # repo:stellarsql/StellarSQL
 - 12067343 # repo:stephentu/silo
+- 11734713 # repo:stewartsmith/drizzle
 - 436658287 # repo:surrealdb/surrealdb
 - 591304097 # repo:sutoiku/puffin
 - 196353673 # repo:taosdata/TDengine
@@ -661,6 +700,7 @@ Repos:
 - 149626591 # repo:uber/aresdb
 - 234910993 # repo:vectorengine/vectorsql
 - 11008207 # repo:vitessio/vitess
+- 3900741 # repo:wundrian/csql
 - 19503320 # repo:yaledb/calvin
 - 456549280 # repo:ydb-platform/ydb
 - 105944401 # repo:yugabyte/yugabyte-db
@@ -690,6 +730,7 @@ Type: Tech-1
 
 Repos:
 
+- 34533675 # repo:apache/sedona
 - 93667206 # repo:geomesa/geomesa-geoserver
 - 7171304 # repo:illarionov/SpatiaLite
 - 9074548 # repo:orbisgis/h2gis
@@ -716,6 +757,7 @@ Repos:
 - 13124802 # repo:influxdata/influxdb
 - 8039659 # repo:kairosdb/kairosdb
 - 61153677 # repo:m3db/m3
+- 584240610 # repo:machbase/neo-server
 - 5761553 # repo:oetiker/rrdtool-1.x
 - 507829396 # repo:openGemini/openGemini
 - 6838921 # repo:prometheus/prometheus

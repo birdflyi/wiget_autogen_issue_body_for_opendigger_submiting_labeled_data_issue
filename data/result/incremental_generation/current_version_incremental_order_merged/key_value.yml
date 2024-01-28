@@ -116,6 +116,7 @@ data:
     - 143239 # repo:mitchellh/lightcloud
     - 1372117 # repo:nathanmarz/elephantdb
     - 149145424 # repo:nextgres/oss-haildb
+    - 722854801 # repo:oasysai/oasysdb
     - 4211523 # repo:oleiade/Elevator
     - 12106192 # repo:oleiade/trousseau
     - 242776849 # repo:oracle/coherence

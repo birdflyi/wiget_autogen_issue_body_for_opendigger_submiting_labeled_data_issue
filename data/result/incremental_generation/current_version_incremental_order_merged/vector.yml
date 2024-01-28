@@ -13,6 +13,7 @@ data:
     - 520096046 # repo:marqo-ai/marqo
     - 208728772 # repo:milvus-io/milvus
     - 478288303 # repo:nuclia/nucliadb
+    - 722854801 # repo:oasysai/oasysdb
     - 40127179 # repo:pilosa/pilosa
     - 268163609 # repo:qdrant/qdrant
     - 55072677 # repo:semi-technologies/weaviate

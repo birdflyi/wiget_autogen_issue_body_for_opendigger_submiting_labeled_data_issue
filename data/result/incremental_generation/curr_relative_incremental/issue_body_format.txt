@@ -1,126 +1,16 @@
-Label: Array
-
-Type: Tech-1
-
-Repos:
-
-- autermann/scidb
-- onefanwu/RasDaMan-v10.0
-
-Label: Document
-
-Type: Tech-1
-
-Repos:
-
-- AnantLabs/terrastore
-- Fl1yd/LightDB
-- Nexedi/neoppod
-- cursusdb/cursusdb
-- oracle/nosql-java-sdk
-- tontinton/dbeel
-- ytsaurus/ytsaurus
-
-Label: Graph
-
-Type: Tech-1
-
-Repos:
-
-- SparsityTechnologies/sparksee-server
-- fanjinfei/grapheekdb
-- gurneyalex/cubicweb
-- pkumod/gStore
-
 Label: Key-value
 
 Type: Tech-1
 
 Repos:
 
-- Amaury/FineDB
-- LuaDist/tokyocabinet
-- cloudflarearchive/kyotocabinet
-- erthink/libmdbx
-- fanjinfei/grapheekdb
-- jbarham/cdb
-- mdaniel/svn-caucho-com-resin
-- mitchellh/lightcloud
-- nextgres/oss-haildb
-- oracle/nosql-java-sdk
-- perchouli/codernitydb
-- shino/kai
+- oasysai/oasysdb
 
-Label: Multivalue
+Label: Vector
 
 Type: Tech-1
 
 Repos:
 
-- autermann/scidb
-- onefanwu/RasDaMan-v10.0
-
-Label: Network
-
-Type: Tech-1
-
-Repos:
-
-- igor-bul/vyhodb
-
-Label: Object Oriented
-
-Type: Tech-1
-
-Repos:
-
-- Alachisoft/TayzGrid
-- SparsityTechnologies/sparksee-server
-- aur-archive/gigabase
-- eyedb/eyedb
-- google-code-export/twig-persist
-- jayhopeter/NDatabase
-- magma-database/magma
-- profanedb/ProfaneDB
-- sirlordt/NeoDatis
-- wware/FramerD
-
-Label: RDF
-
-Type: Tech-1
-
-Repos:
-
-- ansell/openrdf-sesame
-- gurneyalex/cubicweb
-
-Label: Relational
-
-Type: Tech-1
-
-Repos:
-
-- GunterMueller/LEAP_RDBMS
-- aur-archive/gigabase
-- cznic/ql
-- eyalroz/c-store
-- gavioto/fastdb
-- stewartsmith/drizzle
-- wundrian/csql
-
-Label: Spatial
-
-Type: Tech-1
-
-Repos:
-
-- apache/sedona
-
-Label: Time Series
-
-Type: Tech-1
-
-Repos:
-
-- machbase/neo-server
+- oasysai/oasysdb
 

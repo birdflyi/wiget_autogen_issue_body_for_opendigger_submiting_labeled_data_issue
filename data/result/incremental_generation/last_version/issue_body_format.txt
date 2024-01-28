@@ -6,11 +6,11 @@ Repos:
 
 - EuclidOLAP/EuclidOLAP
 - TileDB-Inc/TileDB
-- cran/scidb
+- autermann/scidb
 - datajaguar/jaguardb
-- dioptre/rasdaman
 - epsilla-cloud/vectordb
 - jnidzwetzki/bboxdb
+- onefanwu/RasDaMan-v10.0
 - peermaps/eyros
 - perone/euclidesdb
 
@@ -32,18 +32,21 @@ Repos:
 - 256dpi/lungo
 - AlaSQL/alasql
 - Alachisoft/NosDB
+- AnantLabs/terrastore
 - Anna-Team/AnnaDB
 - ArcadeData/arcadedb
 - BaseXdb/basex
 - DevrexLabs/OrigoDB
 - FerretDB/FerretDB
 - FgForrest/evitaDB
+- Fl1yd/LightDB
 - Greg0/Lazer-Database
 - HouzuoGuo/tiedot
 - JetBrains/xodus
 - Kinto/kinto
 - LinkedInAttic/sensei
 - LonaDB/Hadro
+- Nexedi/neoppod
 - SequoiaDB/SequoiaDB
 - SnellerInc/sneller
 - Softmotions/ejdb
@@ -70,6 +73,7 @@ Repos:
 - cinchapi/concourse
 - couchbase/couchbase-lite-core
 - crate/crate
+- cursusdb/cursusdb
 - dappkit/aviondb
 - dcramer/mangodb
 - dizitart/nitrite-database
@@ -108,7 +112,7 @@ Repos:
 - ncannasse/castle
 - oberasoftware/jasdb
 - openlink/virtuoso-opensource
-- oracle/nosql-go-sdk
+- oracle/nosql-java-sdk
 - orbitdb/orbit-db
 - orientechnologies/orientdb
 - ostafen/clover
@@ -140,6 +144,7 @@ Repos:
 - terminusdb/terminusdb
 - textileio/go-threads
 - tigrisdata/tigris
+- tontinton/dbeel
 - torodb/server
 - typicaljoe/taffydb
 - typicode/lowdb
@@ -150,6 +155,7 @@ Repos:
 - xapian/xapian
 - xtdb/xtdb
 - ydb-platform/ydb
+- ytsaurus/ytsaurus
 - zerodb/zerodb
 
 Label: Event
@@ -173,6 +179,7 @@ Repos:
 - JanusGraph/janusgraph
 - PureSolTechnologies/DuctileDB
 - RedisGraph/RedisGraph
+- SparsityTechnologies/sparksee-server
 - amark/gun
 - apache/age
 - apache/giraph
@@ -187,8 +194,10 @@ Repos:
 - dgraph-io/dgraph
 - dyedgreen/cqlite
 - falkordb/falkordb
+- fanjinfei/grapheekdb
 - fluree/db
 - gchq/Gaffer
+- gurneyalex/cubicweb
 - hypergraphdb/hypergraphdb
 - jssmith/stigdb
 - krotik/eliasdb
@@ -198,6 +207,7 @@ Repos:
 - microsoft/GraphEngine
 - neo4j/neo4j
 - orientechnologies/orientdb
+- pkumod/gStore
 - polypheny/Polypheny-DB
 - quoll/asami
 - ragedb/ragedb
@@ -230,6 +240,7 @@ Repos:
 - Alachisoft/NCache
 - AlticeLabsProjects/kyoto
 - Amaury/AngstromDB
+- Amaury/FineDB
 - AntidoteDB/antidote
 - ArcadeData/arcadedb
 - Bobris/BTDB
@@ -240,6 +251,7 @@ Repos:
 - KvrocksLabs/kvrocks
 - LMDB/lmdb
 - LineairDB/LineairDB
+- LuaDist/tokyocabinet
 - Nanolat/nldb
 - Netflix/EVCache
 - OpenHFT/Chronicle-Map
@@ -279,6 +291,7 @@ Repos:
 - cachelot/cachelot
 - cbd/edis
 - cberner/redb
+- cloudflarearchive/kyotocabinet
 - codenotary/immudb
 - confluentinc/ksql
 - couchbase/couchbase-lite-core
@@ -289,15 +302,16 @@ Repos:
 - deroproject/graviton
 - developit/histore
 - dgraph-io/badger
-- dlitz/resin
 - dragonflydb/dragonfly
 - ehcache/ehcache3
 - engula/engula
+- erthink/libmdbx
 - estraier/tkrzw
 - etcd-io/bbolt
 - etcd-io/etcd
 - facebook/rocksdb
 - facebookarchive/beringei
+- fanjinfei/grapheekdb
 - firstbatchxyz/hollowdb
 - genderev/assassin
 - gfredericks/quinedb
@@ -319,6 +333,7 @@ Repos:
 - iondbproject/iondb
 - jakekgrog/GhostDB
 - jankotek/mapdb
+- jbarham/cdb
 - jingwei/krati
 - justin-db/JustinDB
 - kashirin-alex/swc-db
@@ -330,17 +345,21 @@ Repos:
 - marceloboeira/bojack
 - mbdavid/FileDB
 - mchidk/BinaryRage
+- mdaniel/svn-caucho-com-resin
 - memcached/memcached
 - microsoft/Extensible-Storage-Engine
 - microsoft/FASTER
+- mitchellh/lightcloud
 - nathanmarz/elephantdb
+- nextgres/oss-haildb
 - oleiade/Elevator
 - oleiade/trousseau
 - oracle/coherence
-- oracle/nosql-go-sdk
+- oracle/nosql-java-sdk
 - orbitdb/orbit-db
 - orientechnologies/orientdb
 - paypal/junodb
+- perchouli/codernitydb
 - petermattis/pebble
 - photondb/photondb
 - pilgr/Paper
@@ -365,6 +384,7 @@ Repos:
 - scalaris-team/scalaris
 - scalien/scaliendb
 - scylladb/scylla
+- shino/kai
 - simerplaha/SwayDB
 - skytable/skytable
 - spacejam/sled
@@ -402,10 +422,10 @@ Type: Tech-1
 
 Repos:
 
-- cran/scidb
-- dioptre/rasdaman
+- autermann/scidb
 - gregjurman/openqm
 - jrmarino/AdaBase
+- onefanwu/RasDaMan-v10.0
 - vanilladb/vanillacore
 
 Label: Native XML
@@ -424,6 +444,7 @@ Type: Tech-1
 
 Repos:
 
+- igor-bul/vyhodb
 - priitj/whitedb
 
 Label: Object Oriented
@@ -433,6 +454,7 @@ Type: Tech-1
 Repos:
 
 - ADBSQL/AntDB
+- Alachisoft/TayzGrid
 - Bobris/BTDB
 - CUBRID/cubrid
 - CondensationDB/Condensation-java
@@ -440,22 +462,28 @@ Repos:
 - HydrasDB/hydra
 - ModeShape/modeshape
 - SapphireDb/SapphireDb
+- SparsityTechnologies/sparksee-server
 - The-Alchemist/perst
 - VeloxDB/VeloxDB
 - apache/jackrabbit
 - atoti/atoti
+- aur-archive/gigabase
 - authzed/spicedb
 - cloudberrydb/cloudberrydb
 - devrexlabs/memstate
 - edgedb/edgedb
 - etoile/CoreObject
+- eyedb/eyedb
 - fern4lvarez/piladb
 - gaia-platform/GaiaPlatform
+- google-code-export/twig-persist
 - goshawkdb/server
 - iboxdb/db4o-gpl
 - jankotek/mapdb
+- jayhopeter/NDatabase
 - jonahharris/osdb-beaglesql
 - kimchy/compass
+- magma-database/magma
 - markmeeus/MarcelloDB
 - morecraf/Siaqodb
 - neondatabase/neon
@@ -465,8 +493,11 @@ Repos:
 - pilgr/Paper
 - pipelinedb/pipelinedb
 - postgres/postgres
+- profanedb/ProfaneDB
 - realm/realm-core
+- sirlordt/NeoDatis
 - tzaeschke/zoodb
+- wware/FramerD
 - zopefoundation/ZODB
 
 Label: RDF
@@ -477,6 +508,7 @@ Repos:
 
 - 4store/4store
 - BrightstarDB/BrightstarDB
+- ansell/openrdf-sesame
 - apache/jena
 - arun1729/cog
 - blazegraph/database
@@ -487,6 +519,7 @@ Repos:
 - eclipse/rdf4j
 - esarbanis/strabon
 - fluree/db
+- gurneyalex/cubicweb
 - njh/redstore
 - quoll/mulgara
 - terminusdb/terminusdb
@@ -515,6 +548,7 @@ Repos:
 - FirebirdSQL/firebird
 - GlareDB/glaredb
 - GreatSQL/GreatSQL
+- GunterMueller/LEAP_RDBMS
 - HydrasDB/hydra
 - JakSprats/Alchemy-Database
 - JuliaData/JuliaDB.jl
@@ -548,6 +582,7 @@ Repos:
 - apache/tajo
 - apavlo/h-store
 - apavlo/metalbase
+- aur-archive/gigabase
 - baidu/BaikalDB
 - beardedeagle/mnesiac
 - biokoda/actordb
@@ -567,6 +602,7 @@ Repos:
 - confluentinc/ksql
 - cozodb/cozo
 - cswinter/LocustDB
+- cznic/ql
 - datafuselabs/databend
 - diennea/herddb
 - dolthub/dolt
@@ -580,11 +616,13 @@ Repos:
 - endatabas/endb
 - erikgrinaker/toydb
 - eventql/eventql
+- eyalroz/c-store
 - facebookincubator/velox
 - featurebasedb/featurebase
 - firebolt-db/firebolt-python-sdk
 - fluree/db
 - fosslc/Ingres
+- gavioto/fastdb
 - georgia-tech-db/eva
 - ggaughan/ThinkSQL
 - gnocchixyz/gnocchi
@@ -649,6 +687,7 @@ Repos:
 - sqlite/sqlite
 - stellarsql/StellarSQL
 - stephentu/silo
+- stewartsmith/drizzle
 - surrealdb/surrealdb
 - sutoiku/puffin
 - taosdata/TDengine
@@ -661,6 +700,7 @@ Repos:
 - uber/aresdb
 - vectorengine/vectorsql
 - vitessio/vitess
+- wundrian/csql
 - yaledb/calvin
 - ydb-platform/ydb
 - yugabyte/yugabyte-db
@@ -690,6 +730,7 @@ Type: Tech-1
 
 Repos:
 
+- apache/sedona
 - geomesa/geomesa-geoserver
 - illarionov/SpatiaLite
 - orbisgis/h2gis
@@ -716,6 +757,7 @@ Repos:
 - influxdata/influxdb
 - kairosdb/kairosdb
 - m3db/m3
+- machbase/neo-server
 - oetiker/rrdtool-1.x
 - openGemini/openGemini
 - prometheus/prometheus

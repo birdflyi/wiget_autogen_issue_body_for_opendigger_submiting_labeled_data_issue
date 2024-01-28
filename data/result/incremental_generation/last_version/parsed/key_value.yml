@@ -5,6 +5,7 @@ data:
     - 28956774 # repo:Alachisoft/NCache
     - 28457976 # repo:AlticeLabsProjects/kyoto
     - 12991321 # repo:Amaury/AngstromDB
+    - 10650868 # repo:Amaury/FineDB
     - 17826843 # repo:AntidoteDB/antidote
     - 396867188 # repo:ArcadeData/arcadedb
     - 681142 # repo:Bobris/BTDB
@@ -15,6 +16,7 @@ data:
     - 202483348 # repo:KvrocksLabs/kvrocks
     - 34406933 # repo:LMDB/lmdb
     - 259542436 # repo:LineairDB/LineairDB
+    - 953500 # repo:LuaDist/tokyocabinet
     - 7085128 # repo:Nanolat/nldb
     - 8103021 # repo:Netflix/EVCache
     - 21985130 # repo:OpenHFT/Chronicle-Map
@@ -54,6 +56,7 @@ data:
     - 33275300 # repo:cachelot/cachelot
     - 1196286 # repo:cbd/edis
     - 150013328 # repo:cberner/redb
+    - 26826806 # repo:cloudflarearchive/kyotocabinet
     - 220186120 # repo:codenotary/immudb
     - 69400326 # repo:confluentinc/ksql
     - 66783145 # repo:couchbase/couchbase-lite-core
@@ -64,15 +67,16 @@ data:
     - 292903178 # repo:deroproject/graviton
     - 132499340 # repo:developit/histore
     - 80087836 # repo:dgraph-io/badger
-    - 3115025 # repo:dlitz/resin
     - 437245741 # repo:dragonflydb/dragonfly
     - 17224514 # repo:ehcache/ehcache3
     - 393005910 # repo:engula/engula
+    - 44061596 # repo:erthink/libmdbx
     - 278320002 # repo:estraier/tkrzw
     - 94593596 # repo:etcd-io/bbolt
     - 11225014 # repo:etcd-io/etcd
     - 6934395 # repo:facebook/rocksdb
     - 70541093 # repo:facebookarchive/beringei
+    - 74678263 # repo:fanjinfei/grapheekdb
     - 606800919 # repo:firstbatchxyz/hollowdb
     - 292049131 # repo:genderev/assassin
     - 67936193 # repo:gfredericks/quinedb
@@ -94,6 +98,7 @@ data:
     - 31342455 # repo:iondbproject/iondb
     - 265390281 # repo:jakekgrog/GhostDB
     - 5453989 # repo:jankotek/mapdb
+    - 3914539 # repo:jbarham/cdb
     - 547593 # repo:jingwei/krati
     - 37932930 # repo:justin-db/JustinDB
     - 191442206 # repo:kashirin-alex/swc-db
@@ -105,17 +110,21 @@ data:
     - 62980788 # repo:marceloboeira/bojack
     - 30123805 # repo:mbdavid/FileDB
     - 5494148 # repo:mchidk/BinaryRage
+    - 3596087 # repo:mdaniel/svn-caucho-com-resin
     - 184981 # repo:memcached/memcached
     - 331747853 # repo:microsoft/Extensible-Storage-Engine
     - 143253020 # repo:microsoft/FASTER
+    - 143239 # repo:mitchellh/lightcloud
     - 1372117 # repo:nathanmarz/elephantdb
+    - 149145424 # repo:nextgres/oss-haildb
     - 4211523 # repo:oleiade/Elevator
     - 12106192 # repo:oleiade/trousseau
     - 242776849 # repo:oracle/coherence
-    - 192418550 # repo:oracle/nosql-go-sdk
+    - 298920362 # repo:oracle/nosql-java-sdk
     - 48617634 # repo:orbitdb/orbit-db
     - 7083240 # repo:orientechnologies/orientdb
     - 606125384 # repo:paypal/junodb
+    - 6714651 # repo:perchouli/codernitydb
     - 278684767 # repo:petermattis/pebble
     - 502268740 # repo:photondb/photondb
     - 37285717 # repo:pilgr/Paper
@@ -140,6 +149,7 @@ data:
     - 33605302 # repo:scalaris-team/scalaris
     - 715589 # repo:scalien/scaliendb
     - 28449431 # repo:scylladb/scylla
+    - 1499938 # repo:shino/kai
     - 121126549 # repo:simerplaha/SwayDB
     - 276042304 # repo:skytable/skytable
     - 49401416 # repo:spacejam/sled

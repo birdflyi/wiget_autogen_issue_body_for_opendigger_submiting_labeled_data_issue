@@ -812,13 +812,14 @@ if __name__ == '__main__':
         "dbfeatfusion_records_202310_automerged_manulabeled.csv",
         "dbfeatfusion_records_202311_automerged_manulabeled.csv",
         "dbfeatfusion_records_202312_automerged_manulabeled.csv",
+        "dbfeatfusion_records_202401_automerged_manulabeled.csv",
     ]
     # dynamic settings
     idx_last_v = -2
     idx_curr_v = -1
 
     # Step 2. Change the curr_stage from 0 to 2 before run main.py and solve the warnings related to data.
-    curr_stage = 2
+    curr_stage = 3
 
     # static settings
     STAGE__UPDATE_LAST_VERSION__SAVE_PARSED = {

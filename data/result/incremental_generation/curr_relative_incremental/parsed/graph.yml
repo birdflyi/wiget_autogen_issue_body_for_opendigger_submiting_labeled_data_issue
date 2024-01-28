@@ -1,8 +1,0 @@
-name: Database - Graph
-type: Tech-1
-data:
-  github_repo:
-    - 43494700 # repo:SparsityTechnologies/sparksee-server
-    - 74678263 # repo:fanjinfei/grapheekdb
-    - 207484782 # repo:gurneyalex/cubicweb
-    - 26917250 # repo:pkumod/gStore
