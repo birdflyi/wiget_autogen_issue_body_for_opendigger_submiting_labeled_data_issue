@@ -67,6 +67,7 @@ data:
     - 628503457 # repo:jdagdelen/hyperDB
     - 652189 # repo:jedisct1/Pincaster
     - 635374751 # repo:jina-ai/vectordb
+    - 270858421 # repo:juji-io/datalevin
     - 632269609 # repo:kagisearch/vectordb
     - 1776883 # repo:kimchy/compass
     - 607441698 # repo:lancedb/lancedb
@@ -108,6 +109,7 @@ data:
     - 9525219 # repo:sergeyksv/tingodb
     - 4604367 # repo:sirixdb/sirix
     - 295745510 # repo:small-tech/jsdb
+    - 192631273 # repo:sourcenetwork/defradb
     - 436658287 # repo:surrealdb/surrealdb
     - 22761491 # repo:symisc/unqlite
     - 911980 # repo:tarantool/tarantool

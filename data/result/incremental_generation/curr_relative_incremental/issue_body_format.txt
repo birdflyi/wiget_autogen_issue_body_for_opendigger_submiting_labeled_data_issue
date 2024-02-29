@@ -1,16 +1,17 @@
-Label: Key-value
+Label: Document
 
 Type: Tech-1
 
 Repos:
 
-- oasysai/oasysdb
+- juji-io/datalevin
+- sourcenetwork/defradb
 
-Label: Vector
+Label: Relational
 
 Type: Tech-1
 
 Repos:
 
-- oasysai/oasysdb
+- apache/incubator-horaedb
 

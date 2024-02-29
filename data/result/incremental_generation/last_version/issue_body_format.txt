@@ -352,6 +352,7 @@ Repos:
 - mitchellh/lightcloud
 - nathanmarz/elephantdb
 - nextgres/oss-haildb
+- oasysai/oasysdb
 - oleiade/Elevator
 - oleiade/trousseau
 - oracle/coherence
@@ -787,6 +788,7 @@ Repos:
 - marqo-ai/marqo
 - milvus-io/milvus
 - nuclia/nucliadb
+- oasysai/oasysdb
 - pilosa/pilosa
 - qdrant/qdrant
 - semi-technologies/weaviate
