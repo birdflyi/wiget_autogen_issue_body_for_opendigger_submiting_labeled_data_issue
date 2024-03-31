@@ -48,7 +48,6 @@ data:
     - 791522 # repo:basho/riak_kv
     - 88422672 # repo:bergdb/bergdb
     - 2380364 # repo:berkeleydb/libdb
-    - beryldb/beryldb # not found
     - 51290852 # repo:bigchaindb/bigchaindb
     - 57401138 # repo:bitnine-oss/agensgraph
     - 15345331 # repo:boltdb/bolt
@@ -114,6 +113,7 @@ data:
     - 184981 # repo:memcached/memcached
     - 331747853 # repo:microsoft/Extensible-Storage-Engine
     - 143253020 # repo:microsoft/FASTER
+    - 681372871 # repo:microsoft/garnet
     - 143239 # repo:mitchellh/lightcloud
     - 1372117 # repo:nathanmarz/elephantdb
     - 149145424 # repo:nextgres/oss-haildb
@@ -170,6 +170,7 @@ data:
     - 3114475 # repo:tomp2p/TomP2P
     - 18800032 # repo:tonsky/datascript
     - 223895357 # repo:tuxmonk/pupdb
+    - 775743011 # repo:valkey-io/valkey
     - 179588377 # repo:vinniefalco/NuDB
     - 385356389 # repo:vmware/splinterdb
     - 214605 # repo:voldemort/voldemort

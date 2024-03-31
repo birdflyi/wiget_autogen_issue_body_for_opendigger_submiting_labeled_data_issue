@@ -4,8 +4,16 @@ Type: Tech-1
 
 Repos:
 
-- 270858421 # repo:juji-io/datalevin
-- 192631273 # repo:sourcenetwork/defradb
+- 750864017 # repo:LonaDB/Server
+
+Label: Key-value
+
+Type: Tech-1
+
+Repos:
+
+- 681372871 # repo:microsoft/garnet
+- 775743011 # repo:valkey-io/valkey
 
 Label: Relational
 
@@ -13,5 +21,6 @@ Type: Tech-1
 
 Repos:
 
-- 496505424 # repo:apache/incubator-horaedb
+- 684046299 # repo:OpenTenBase/OpenTenBase
+- 606433492 # repo:chdb-io/chdb
 

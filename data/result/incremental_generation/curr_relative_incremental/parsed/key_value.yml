@@ -1,0 +1,6 @@
+name: Database - Key-value
+type: Tech-1
+data:
+  github_repo:
+    - 681372871 # repo:microsoft/garnet
+    - 775743011 # repo:valkey-io/valkey

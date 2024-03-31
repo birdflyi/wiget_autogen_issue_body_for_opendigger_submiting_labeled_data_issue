@@ -95,6 +95,7 @@ Repos:
 - jedisct1/Pincaster
 - jina-ai/vectordb
 - jsqldb/jsqldb
+- juji-io/datalevin
 - kagisearch/vectordb
 - kimchy/compass
 - lancedb/lancedb
@@ -136,6 +137,7 @@ Repos:
 - sergeyksv/tingodb
 - sirixdb/sirix
 - small-tech/jsdb
+- sourcenetwork/defradb
 - surrealdb/surrealdb
 - symisc/unqlite
 - tarantool/tarantool
@@ -538,7 +540,6 @@ Repos:
 - BTrDB/btrdb-server
 - ByConity/ByConity
 - CUBRID/cubrid
-- CeresDB/ceresdb
 - ClickHouse/ClickHouse
 - CovenantSQL/CovenantSQL
 - CptTZ/SmallSQL
@@ -573,6 +574,7 @@ Repos:
 - apache/hawq
 - apache/hive
 - apache/impala
+- apache/incubator-horaedb
 - apache/incubator-retired-quickstep
 - apache/kudu
 - apache/kylin

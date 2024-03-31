@@ -2,4 +2,5 @@ name: Database - Relational
 type: Tech-1
 data:
   github_repo:
-    - 496505424 # repo:apache/incubator-horaedb
+    - 684046299 # repo:OpenTenBase/OpenTenBase
+    - 606433492 # repo:chdb-io/chdb

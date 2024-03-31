@@ -2,5 +2,4 @@ name: Database - Document
 type: Tech-1
 data:
   github_repo:
-    - 270858421 # repo:juji-io/datalevin
-    - 192631273 # repo:sourcenetwork/defradb
+    - 750864017 # repo:LonaDB/Server

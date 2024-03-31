@@ -4,8 +4,16 @@ Type: Tech-1
 
 Repos:
 
-- juji-io/datalevin
-- sourcenetwork/defradb
+- LonaDB/Server
+
+Label: Key-value
+
+Type: Tech-1
+
+Repos:
+
+- microsoft/garnet
+- valkey-io/valkey
 
 Label: Relational
 
@@ -13,5 +21,6 @@ Type: Tech-1
 
 Repos:
 
-- apache/incubator-horaedb
+- OpenTenBase/OpenTenBase
+- chdb-io/chdb
 
