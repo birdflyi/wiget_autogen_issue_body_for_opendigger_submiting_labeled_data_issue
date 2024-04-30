@@ -27,6 +27,7 @@ data:
     - 19816070 # repo:MariaDB/server
     - 135423959 # repo:Mckoi/origsqldb
     - 316690542 # repo:MonetDB/MonetDB
+    - 684046299 # repo:OpenTenBase/OpenTenBase
     - 41443810 # repo:Postgres-XL/Postgres-XL
     - 74375185 # repo:RedBeardLab/rediSQL
     - 42580991 # repo:SnappyDataInc/snappydata
@@ -63,6 +64,7 @@ data:
     - 91593042 # repo:bloomberg/comdb2
     - 92329433 # repo:canonical/dqlite
     - 372181547 # repo:cashapp/pranadb
+    - 606433492 # repo:chdb-io/chdb
     - 50874442 # repo:citusdata/citus
     - 644742603 # repo:cloudberrydb/cloudberrydb
     - 207663235 # repo:cmu-db/bustub

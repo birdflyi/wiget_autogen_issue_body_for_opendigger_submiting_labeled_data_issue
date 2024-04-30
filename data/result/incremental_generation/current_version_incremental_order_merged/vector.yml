@@ -2,6 +2,7 @@ name: Database - Vector
 type: Tech-1
 data:
   github_repo:
+    - 753244287 # repo:DeployQL/LintDB
     - 201403923 # repo:activeloopai/deeplake
     - 642912355 # repo:awa-ai/awadb
     - 546206616 # repo:chroma-core/chroma
@@ -14,6 +15,7 @@ data:
     - 208728772 # repo:milvus-io/milvus
     - 478288303 # repo:nuclia/nucliadb
     - 722854801 # repo:oasysai/oasysdb
+    - 735283134 # repo:philippgille/chromem-go
     - 40127179 # repo:pilosa/pilosa
     - 268163609 # repo:qdrant/qdrant
     - 55072677 # repo:semi-technologies/weaviate

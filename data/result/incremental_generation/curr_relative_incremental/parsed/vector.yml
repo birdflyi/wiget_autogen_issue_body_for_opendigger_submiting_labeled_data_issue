@@ -1,0 +1,6 @@
+name: Database - Vector
+type: Tech-1
+data:
+  github_repo:
+    - 753244287 # repo:DeployQL/LintDB
+    - 735283134 # repo:philippgille/chromem-go

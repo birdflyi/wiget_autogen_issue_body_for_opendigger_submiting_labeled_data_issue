@@ -2,5 +2,7 @@ name: Database - Relational
 type: Tech-1
 data:
   github_repo:
-    - 684046299 # repo:OpenTenBase/OpenTenBase
-    - 606433492 # repo:chdb-io/chdb
+    - 574694308 # repo:RhizomeDB/rs-rhizome
+    - 172208960 # repo:eztools-software/FileDb
+    - 442441933 # repo:mabel-dev/opteryx
+    - 618452402 # repo:plabayo/venndb

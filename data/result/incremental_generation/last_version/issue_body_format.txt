@@ -45,7 +45,7 @@ Repos:
 - JetBrains/xodus
 - Kinto/kinto
 - LinkedInAttic/sensei
-- LonaDB/Hadro
+- LonaDB/Server
 - Nexedi/neoppod
 - SequoiaDB/SequoiaDB
 - SnellerInc/sneller
@@ -351,6 +351,7 @@ Repos:
 - memcached/memcached
 - microsoft/Extensible-Storage-Engine
 - microsoft/FASTER
+- microsoft/garnet
 - mitchellh/lightcloud
 - nathanmarz/elephantdb
 - nextgres/oss-haildb
@@ -407,6 +408,7 @@ Repos:
 - tomp2p/TomP2P
 - tonsky/datascript
 - tuxmonk/pupdb
+- valkey-io/valkey
 - vinniefalco/NuDB
 - vmware/splinterdb
 - voldemort/voldemort
@@ -558,6 +560,7 @@ Repos:
 - MariaDB/server
 - Mckoi/origsqldb
 - MonetDB/MonetDB
+- OpenTenBase/OpenTenBase
 - Postgres-XL/Postgres-XL
 - RedBeardLab/rediSQL
 - SnappyDataInc/snappydata
@@ -594,6 +597,7 @@ Repos:
 - bloomberg/comdb2
 - canonical/dqlite
 - cashapp/pranadb
+- chdb-io/chdb
 - citusdata/citus
 - cloudberrydb/cloudberrydb
 - cmu-db/bustub

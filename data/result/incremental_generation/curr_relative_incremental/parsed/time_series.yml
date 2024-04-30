@@ -1,0 +1,5 @@
+name: Database - Time Series
+type: Tech-1
+data:
+  github_repo:
+    - 346976717 # repo:4paradigm/OpenMLDB

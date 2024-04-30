@@ -30,6 +30,7 @@ data:
     - 684046299 # repo:OpenTenBase/OpenTenBase
     - 41443810 # repo:Postgres-XL/Postgres-XL
     - 74375185 # repo:RedBeardLab/rediSQL
+    - 574694308 # repo:RhizomeDB/rs-rhizome
     - 42580991 # repo:SnappyDataInc/snappydata
     - 402945349 # repo:StarRocks/StarRocks
     - 501460708 # repo:StoneAtom/stonedb
@@ -91,6 +92,7 @@ data:
     - 183929744 # repo:erikgrinaker/toydb
     - 59475316 # repo:eventql/eventql
     - 196702393 # repo:eyalroz/c-store
+    - 172208960 # repo:eztools-software/FileDb
     - 388946490 # repo:facebookincubator/velox
     - 40127179 # repo:featurebasedb/featurebase
     - 392839612 # repo:firebolt-db/firebolt-python-sdk
@@ -118,6 +120,7 @@ data:
     - 323389945 # repo:logicalclocks/rondb
     - 23013460 # repo:lsst/qserv
     - 61153677 # repo:m3db/m3
+    - 442441933 # repo:mabel-dev/opteryx
     - 564689243 # repo:man-group/ArcticDB
     - 95614931 # repo:manticoresoftware/manticoresearch
     - 429630067 # repo:marsupialtail/quokka
@@ -138,6 +141,7 @@ data:
     - 41986369 # repo:pingcap/tidb
     - 205350261 # repo:pinusdb/pinusdb
     - 14702444 # repo:pipelinedb/pipelinedb
+    - 618452402 # repo:plabayo/venndb
     - 510607652 # repo:pocketbase/pocketbase
     - 166387176 # repo:polypheny/Polypheny-DB
     - 927442 # repo:postgres/postgres

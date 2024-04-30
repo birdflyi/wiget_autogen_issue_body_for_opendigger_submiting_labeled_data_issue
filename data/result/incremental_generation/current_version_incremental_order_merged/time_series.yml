@@ -2,6 +2,7 @@ name: Database - Time Series
 type: Tech-1
 data:
   github_repo:
+    - 346976717 # repo:4paradigm/OpenMLDB
     - 396867188 # repo:ArcadeData/arcadedb
     - 480217156 # repo:GreptimeTeam/greptimedb
     - 89848289 # repo:KxSystems/kdb

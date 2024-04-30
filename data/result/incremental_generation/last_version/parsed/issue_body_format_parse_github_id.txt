@@ -45,7 +45,7 @@ Repos:
 - 19271154 # repo:JetBrains/xodus
 - 31315021 # repo:Kinto/kinto
 - 533032 # repo:LinkedInAttic/sensei
-- 646427433 # repo:LonaDB/Hadro
+- 750864017 # repo:LonaDB/Server
 - 50098469 # repo:Nexedi/neoppod
 - 188354257 # repo:SequoiaDB/SequoiaDB
 - 474070793 # repo:SnellerInc/sneller
@@ -351,6 +351,7 @@ Repos:
 - 184981 # repo:memcached/memcached
 - 331747853 # repo:microsoft/Extensible-Storage-Engine
 - 143253020 # repo:microsoft/FASTER
+- 681372871 # repo:microsoft/garnet
 - 143239 # repo:mitchellh/lightcloud
 - 1372117 # repo:nathanmarz/elephantdb
 - 149145424 # repo:nextgres/oss-haildb
@@ -407,6 +408,7 @@ Repos:
 - 3114475 # repo:tomp2p/TomP2P
 - 18800032 # repo:tonsky/datascript
 - 223895357 # repo:tuxmonk/pupdb
+- 775743011 # repo:valkey-io/valkey
 - 179588377 # repo:vinniefalco/NuDB
 - 385356389 # repo:vmware/splinterdb
 - 214605 # repo:voldemort/voldemort
@@ -558,6 +560,7 @@ Repos:
 - 19816070 # repo:MariaDB/server
 - 135423959 # repo:Mckoi/origsqldb
 - 316690542 # repo:MonetDB/MonetDB
+- 684046299 # repo:OpenTenBase/OpenTenBase
 - 41443810 # repo:Postgres-XL/Postgres-XL
 - 74375185 # repo:RedBeardLab/rediSQL
 - 42580991 # repo:SnappyDataInc/snappydata
@@ -594,6 +597,7 @@ Repos:
 - 91593042 # repo:bloomberg/comdb2
 - 92329433 # repo:canonical/dqlite
 - 372181547 # repo:cashapp/pranadb
+- 606433492 # repo:chdb-io/chdb
 - 50874442 # repo:citusdata/citus
 - 644742603 # repo:cloudberrydb/cloudberrydb
 - 207663235 # repo:cmu-db/bustub

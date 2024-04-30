@@ -1,10 +1,26 @@
+Label: Array
+
+Type: Tech-1
+
+Repos:
+
+- 90768966 # repo:uwdb/lightdb
+
 Label: Document
 
 Type: Tech-1
 
 Repos:
 
-- 750864017 # repo:LonaDB/Server
+- 679889516 # repo:fireproof-storage/fireproof
+
+Label: Graph
+
+Type: Tech-1
+
+Repos:
+
+- 528766495 # repo:TuGraph-family/tugraph-db
 
 Label: Key-value
 
@@ -12,8 +28,15 @@ Type: Tech-1
 
 Repos:
 
-- 681372871 # repo:microsoft/garnet
-- 775743011 # repo:valkey-io/valkey
+- 779811016 # repo:sabledb-io/sabledb
+
+Label: Object Oriented
+
+Type: Tech-1
+
+Repos:
+
+- 442441933 # repo:mabel-dev/opteryx
 
 Label: Relational
 
@@ -21,6 +44,25 @@ Type: Tech-1
 
 Repos:
 
-- 684046299 # repo:OpenTenBase/OpenTenBase
-- 606433492 # repo:chdb-io/chdb
+- 574694308 # repo:RhizomeDB/rs-rhizome
+- 172208960 # repo:eztools-software/FileDb
+- 442441933 # repo:mabel-dev/opteryx
+- 618452402 # repo:plabayo/venndb
+
+Label: Time Series
+
+Type: Tech-1
+
+Repos:
+
+- 346976717 # repo:4paradigm/OpenMLDB
+
+Label: Vector
+
+Type: Tech-1
+
+Repos:
+
+- 753244287 # repo:DeployQL/LintDB
+- 735283134 # repo:philippgille/chromem-go
 

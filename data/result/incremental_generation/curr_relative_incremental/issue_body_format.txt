@@ -1,10 +1,26 @@
+Label: Array
+
+Type: Tech-1
+
+Repos:
+
+- uwdb/lightdb
+
 Label: Document
 
 Type: Tech-1
 
 Repos:
 
-- LonaDB/Server
+- fireproof-storage/fireproof
+
+Label: Graph
+
+Type: Tech-1
+
+Repos:
+
+- TuGraph-family/tugraph-db
 
 Label: Key-value
 
@@ -12,8 +28,15 @@ Type: Tech-1
 
 Repos:
 
-- microsoft/garnet
-- valkey-io/valkey
+- sabledb-io/sabledb
+
+Label: Object Oriented
+
+Type: Tech-1
+
+Repos:
+
+- mabel-dev/opteryx
 
 Label: Relational
 
@@ -21,6 +44,25 @@ Type: Tech-1
 
 Repos:
 
-- OpenTenBase/OpenTenBase
-- chdb-io/chdb
+- RhizomeDB/rs-rhizome
+- eztools-software/FileDb
+- mabel-dev/opteryx
+- plabayo/venndb
+
+Label: Time Series
+
+Type: Tech-1
+
+Repos:
+
+- 4paradigm/OpenMLDB
+
+Label: Vector
+
+Type: Tech-1
+
+Repos:
+
+- DeployQL/LintDB
+- philippgille/chromem-go
 

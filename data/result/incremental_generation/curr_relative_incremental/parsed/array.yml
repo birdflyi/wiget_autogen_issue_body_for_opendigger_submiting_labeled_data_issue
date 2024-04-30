@@ -1,0 +1,5 @@
+name: Database - Array
+type: Tech-1
+data:
+  github_repo:
+    - 90768966 # repo:uwdb/lightdb
