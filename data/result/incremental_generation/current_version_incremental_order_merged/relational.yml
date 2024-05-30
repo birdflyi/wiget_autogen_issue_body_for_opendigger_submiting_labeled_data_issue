@@ -33,6 +33,7 @@ data:
     - 574694308 # repo:RhizomeDB/rs-rhizome
     - 42580991 # repo:SnappyDataInc/snappydata
     - 402945349 # repo:StarRocks/StarRocks
+    - 590507334 # repo:StereoDB/StereoDB
     - 501460708 # repo:StoneAtom/stonedb
     - 2445970 # repo:VoltDB/voltdb
     - 416777125 # repo:alexraffy/sksql
@@ -49,6 +50,7 @@ data:
     - 56214719 # repo:apache/incubator-retired-quickstep
     - 50647838 # repo:apache/kudu
     - 28738447 # repo:apache/kylin
+    - 114619105 # repo:apache/kyuubi
     - 20473418 # repo:apache/phoenix
     - 19961085 # repo:apache/pinot
     - 49876476 # repo:apache/shardingsphere

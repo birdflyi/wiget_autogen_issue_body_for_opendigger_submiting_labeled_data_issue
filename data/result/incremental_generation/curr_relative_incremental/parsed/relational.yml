@@ -2,7 +2,5 @@ name: Database - Relational
 type: Tech-1
 data:
   github_repo:
-    - 574694308 # repo:RhizomeDB/rs-rhizome
-    - 172208960 # repo:eztools-software/FileDb
-    - 442441933 # repo:mabel-dev/opteryx
-    - 618452402 # repo:plabayo/venndb
+    - 590507334 # repo:StereoDB/StereoDB
+    - 114619105 # repo:apache/kyuubi

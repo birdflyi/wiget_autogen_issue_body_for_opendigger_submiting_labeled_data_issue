@@ -32,6 +32,7 @@ data:
     - 37340459 # repo:jayhopeter/NDatabase
     - 119234782 # repo:jonahharris/osdb-beaglesql
     - 1776883 # repo:kimchy/compass
+    - 442441933 # repo:mabel-dev/opteryx
     - 89699591 # repo:magma-database/magma
     - 25225465 # repo:markmeeus/MarcelloDB
     - 273564373 # repo:morecraf/Siaqodb

@@ -35,6 +35,7 @@ data:
     - 442441933 # repo:mabel-dev/opteryx
     - 89699591 # repo:magma-database/magma
     - 25225465 # repo:markmeeus/MarcelloDB
+    - 160528020 # repo:mateusfreira/nun-db
     - 273564373 # repo:morecraf/Siaqodb
     - 351806852 # repo:neondatabase/neon
     - 79901405 # repo:objectbox/objectbox-java

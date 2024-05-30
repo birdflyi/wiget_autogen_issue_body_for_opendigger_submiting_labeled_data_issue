@@ -13,6 +13,7 @@ Repos:
 - onefanwu/RasDaMan-v10.0
 - peermaps/eyros
 - perone/euclidesdb
+- uwdb/lightdb
 
 Label: Content
 
@@ -83,6 +84,7 @@ Repos:
 - elastic/elasticsearch
 - endatabas/endb
 - fakemongo/fongo
+- fireproof-storage/fireproof
 - fluree/db
 - genjidb/genji
 - graphikDB/graphik
@@ -182,6 +184,7 @@ Repos:
 - PureSolTechnologies/DuctileDB
 - RedisGraph/RedisGraph
 - SparsityTechnologies/sparksee-server
+- TuGraph-family/tugraph-db
 - amark/gun
 - apache/age
 - apache/giraph
@@ -383,6 +386,7 @@ Repos:
 - robmerrell/hipsterdb
 - roma/roma
 - roseduan/rosedb
+- sabledb-io/sabledb
 - sachin-sinha/BangDB
 - saurabh0719/elara
 - scalaris-team/scalaris
@@ -488,6 +492,7 @@ Repos:
 - jayhopeter/NDatabase
 - jonahharris/osdb-beaglesql
 - kimchy/compass
+- mabel-dev/opteryx
 - magma-database/magma
 - markmeeus/MarcelloDB
 - morecraf/Siaqodb
@@ -563,6 +568,7 @@ Repos:
 - OpenTenBase/OpenTenBase
 - Postgres-XL/Postgres-XL
 - RedBeardLab/rediSQL
+- RhizomeDB/rs-rhizome
 - SnappyDataInc/snappydata
 - StarRocks/StarRocks
 - StoneAtom/stonedb
@@ -624,6 +630,7 @@ Repos:
 - erikgrinaker/toydb
 - eventql/eventql
 - eyalroz/c-store
+- eztools-software/FileDb
 - facebookincubator/velox
 - featurebasedb/featurebase
 - firebolt-db/firebolt-python-sdk
@@ -652,6 +659,7 @@ Repos:
 - logicalclocks/rondb
 - lsst/qserv
 - m3db/m3
+- mabel-dev/opteryx
 - man-group/ArcticDB
 - manticoresoftware/manticoresearch
 - marsupialtail/quokka
@@ -672,6 +680,7 @@ Repos:
 - pingcap/tidb
 - pinusdb/pinusdb
 - pipelinedb/pipelinedb
+- plabayo/venndb
 - pocketbase/pocketbase
 - polypheny/Polypheny-DB
 - postgres/postgres
@@ -749,6 +758,7 @@ Type: Tech-1
 
 Repos:
 
+- 4paradigm/OpenMLDB
 - ArcadeData/arcadedb
 - GreptimeTeam/greptimedb
 - KxSystems/kdb
@@ -783,6 +793,7 @@ Type: Tech-1
 
 Repos:
 
+- DeployQL/LintDB
 - activeloopai/deeplake
 - awa-ai/awadb
 - chroma-core/chroma
@@ -795,6 +806,7 @@ Repos:
 - milvus-io/milvus
 - nuclia/nucliadb
 - oasysai/oasysdb
+- philippgille/chromem-go
 - pilosa/pilosa
 - qdrant/qdrant
 - semi-technologies/weaviate

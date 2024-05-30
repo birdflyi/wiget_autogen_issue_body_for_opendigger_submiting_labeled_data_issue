@@ -56,6 +56,7 @@ data:
     - 507775 # repo:elastic/elasticsearch
     - 587246478 # repo:endatabas/endb
     - 14143348 # repo:fakemongo/fongo
+    - 679889516 # repo:fireproof-storage/fireproof
     - 305513242 # repo:fluree/db
     - 138411034 # repo:genjidb/genji
     - 285669400 # repo:graphikDB/graphik

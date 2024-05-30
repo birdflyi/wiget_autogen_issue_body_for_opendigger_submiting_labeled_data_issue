@@ -2,4 +2,5 @@ name: Database - Key-value
 type: Tech-1
 data:
   github_repo:
-    - 779811016 # repo:sabledb-io/sabledb
+    - 580788054 # repo:web3-storage/pail
+    - 20433978 # repo:xtreemfs/babudb

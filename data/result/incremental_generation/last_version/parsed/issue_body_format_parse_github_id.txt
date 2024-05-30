@@ -13,6 +13,7 @@ Repos:
 - 489656726 # repo:onefanwu/RasDaMan-v10.0
 - 162765004 # repo:peermaps/eyros
 - 156942199 # repo:perone/euclidesdb
+- 90768966 # repo:uwdb/lightdb
 
 Label: Content
 
@@ -83,6 +84,7 @@ Repos:
 - 507775 # repo:elastic/elasticsearch
 - 587246478 # repo:endatabas/endb
 - 14143348 # repo:fakemongo/fongo
+- 679889516 # repo:fireproof-storage/fireproof
 - 305513242 # repo:fluree/db
 - 138411034 # repo:genjidb/genji
 - 285669400 # repo:graphikDB/graphik
@@ -182,6 +184,7 @@ Repos:
 - 45098765 # repo:PureSolTechnologies/DuctileDB
 - 84458512 # repo:RedisGraph/RedisGraph
 - 43494700 # repo:SparsityTechnologies/sparksee-server
+- 528766495 # repo:TuGraph-family/tugraph-db
 - 22475123 # repo:amark/gun
 - 276293034 # repo:apache/age
 - 2282376 # repo:apache/giraph
@@ -383,6 +386,7 @@ Repos:
 - 9847951 # repo:robmerrell/hipsterdb
 - 345739 # repo:roma/roma
 - 318972528 # repo:roseduan/rosedb
+- 779811016 # repo:sabledb-io/sabledb
 - 34056205 # repo:sachin-sinha/BangDB
 - 354659748 # repo:saurabh0719/elara
 - 33605302 # repo:scalaris-team/scalaris
@@ -488,6 +492,7 @@ Repos:
 - 37340459 # repo:jayhopeter/NDatabase
 - 119234782 # repo:jonahharris/osdb-beaglesql
 - 1776883 # repo:kimchy/compass
+- 442441933 # repo:mabel-dev/opteryx
 - 89699591 # repo:magma-database/magma
 - 25225465 # repo:markmeeus/MarcelloDB
 - 273564373 # repo:morecraf/Siaqodb
@@ -563,6 +568,7 @@ Repos:
 - 684046299 # repo:OpenTenBase/OpenTenBase
 - 41443810 # repo:Postgres-XL/Postgres-XL
 - 74375185 # repo:RedBeardLab/rediSQL
+- 574694308 # repo:RhizomeDB/rs-rhizome
 - 42580991 # repo:SnappyDataInc/snappydata
 - 402945349 # repo:StarRocks/StarRocks
 - 501460708 # repo:StoneAtom/stonedb
@@ -624,6 +630,7 @@ Repos:
 - 183929744 # repo:erikgrinaker/toydb
 - 59475316 # repo:eventql/eventql
 - 196702393 # repo:eyalroz/c-store
+- 172208960 # repo:eztools-software/FileDb
 - 388946490 # repo:facebookincubator/velox
 - 40127179 # repo:featurebasedb/featurebase
 - 392839612 # repo:firebolt-db/firebolt-python-sdk
@@ -652,6 +659,7 @@ Repos:
 - 323389945 # repo:logicalclocks/rondb
 - 23013460 # repo:lsst/qserv
 - 61153677 # repo:m3db/m3
+- 442441933 # repo:mabel-dev/opteryx
 - 564689243 # repo:man-group/ArcticDB
 - 95614931 # repo:manticoresoftware/manticoresearch
 - 429630067 # repo:marsupialtail/quokka
@@ -672,6 +680,7 @@ Repos:
 - 41986369 # repo:pingcap/tidb
 - 205350261 # repo:pinusdb/pinusdb
 - 14702444 # repo:pipelinedb/pipelinedb
+- 618452402 # repo:plabayo/venndb
 - 510607652 # repo:pocketbase/pocketbase
 - 166387176 # repo:polypheny/Polypheny-DB
 - 927442 # repo:postgres/postgres
@@ -749,6 +758,7 @@ Type: Tech-1
 
 Repos:
 
+- 346976717 # repo:4paradigm/OpenMLDB
 - 396867188 # repo:ArcadeData/arcadedb
 - 480217156 # repo:GreptimeTeam/greptimedb
 - 89848289 # repo:KxSystems/kdb
@@ -783,6 +793,7 @@ Type: Tech-1
 
 Repos:
 
+- 753244287 # repo:DeployQL/LintDB
 - 201403923 # repo:activeloopai/deeplake
 - 642912355 # repo:awa-ai/awadb
 - 546206616 # repo:chroma-core/chroma
@@ -795,6 +806,7 @@ Repos:
 - 208728772 # repo:milvus-io/milvus
 - 478288303 # repo:nuclia/nucliadb
 - 722854801 # repo:oasysai/oasysdb
+- 735283134 # repo:philippgille/chromem-go
 - 40127179 # repo:pilosa/pilosa
 - 268163609 # repo:qdrant/qdrant
 - 55072677 # repo:semi-technologies/weaviate

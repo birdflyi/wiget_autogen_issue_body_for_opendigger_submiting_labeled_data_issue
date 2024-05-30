@@ -1,26 +1,10 @@
-Label: Array
-
-Type: Tech-1
-
-Repos:
-
-- uwdb/lightdb
-
 Label: Document
 
 Type: Tech-1
 
 Repos:
 
-- fireproof-storage/fireproof
-
-Label: Graph
-
-Type: Tech-1
-
-Repos:
-
-- TuGraph-family/tugraph-db
+- elmarti/camadb
 
 Label: Key-value
 
@@ -28,7 +12,8 @@ Type: Tech-1
 
 Repos:
 
-- sabledb-io/sabledb
+- web3-storage/pail
+- xtreemfs/babudb
 
 Label: Object Oriented
 
@@ -36,7 +21,7 @@ Type: Tech-1
 
 Repos:
 
-- mabel-dev/opteryx
+- mateusfreira/nun-db
 
 Label: Relational
 
@@ -44,10 +29,8 @@ Type: Tech-1
 
 Repos:
 
-- RhizomeDB/rs-rhizome
-- eztools-software/FileDb
-- mabel-dev/opteryx
-- plabayo/venndb
+- StereoDB/StereoDB
+- apache/kyuubi
 
 Label: Time Series
 
@@ -55,7 +38,7 @@ Type: Tech-1
 
 Repos:
 
-- 4paradigm/OpenMLDB
+- reductstore/reductstore
 
 Label: Vector
 
@@ -63,6 +46,5 @@ Type: Tech-1
 
 Repos:
 
-- DeployQL/LintDB
-- philippgille/chromem-go
+- carsonpo/haystackdb
 
