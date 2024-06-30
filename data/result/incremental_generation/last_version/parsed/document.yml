@@ -54,6 +54,7 @@ data:
     - 11695619 # repo:eXist-db/exist
     - 266444815 # repo:earthstar-project/earthstar
     - 507775 # repo:elastic/elasticsearch
+    - 411979983 # repo:elmarti/camadb
     - 587246478 # repo:endatabas/endb
     - 14143348 # repo:fakemongo/fongo
     - 679889516 # repo:fireproof-storage/fireproof

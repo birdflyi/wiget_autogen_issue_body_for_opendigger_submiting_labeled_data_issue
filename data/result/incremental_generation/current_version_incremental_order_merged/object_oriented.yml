@@ -41,6 +41,7 @@ data:
     - 79901405 # repo:objectbox/objectbox-java
     - 7083240 # repo:orientechnologies/orientdb
     - 432844875 # repo:orioledb/orioledb
+    - 660776503 # repo:paradedb/paradedb
     - 37285717 # repo:pilgr/Paper
     - 14702444 # repo:pipelinedb/pipelinedb
     - 927442 # repo:postgres/postgres

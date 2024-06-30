@@ -82,6 +82,7 @@ Repos:
 - 11695619 # repo:eXist-db/exist
 - 266444815 # repo:earthstar-project/earthstar
 - 507775 # repo:elastic/elasticsearch
+- 411979983 # repo:elmarti/camadb
 - 587246478 # repo:endatabas/endb
 - 14143348 # repo:fakemongo/fongo
 - 679889516 # repo:fireproof-storage/fireproof
@@ -416,9 +417,11 @@ Repos:
 - 179588377 # repo:vinniefalco/NuDB
 - 385356389 # repo:vmware/splinterdb
 - 214605 # repo:voldemort/voldemort
+- 580788054 # repo:web3-storage/pail
 - 30828379 # repo:willemt/pearldb
 - 2944302 # repo:wiredtiger/wiredtiger
 - 65259211 # repo:xap/xap
+- 20433978 # repo:xtreemfs/babudb
 - 160784930 # repo:xujiajun/nutsdb
 - 137792810 # repo:yahoo/HaloDB
 - 9048279 # repo:yinqiwen/ardb
@@ -495,6 +498,7 @@ Repos:
 - 442441933 # repo:mabel-dev/opteryx
 - 89699591 # repo:magma-database/magma
 - 25225465 # repo:markmeeus/MarcelloDB
+- 160528020 # repo:mateusfreira/nun-db
 - 273564373 # repo:morecraf/Siaqodb
 - 351806852 # repo:neondatabase/neon
 - 79901405 # repo:objectbox/objectbox-java
@@ -571,6 +575,7 @@ Repos:
 - 574694308 # repo:RhizomeDB/rs-rhizome
 - 42580991 # repo:SnappyDataInc/snappydata
 - 402945349 # repo:StarRocks/StarRocks
+- 590507334 # repo:StereoDB/StereoDB
 - 501460708 # repo:StoneAtom/stonedb
 - 2445970 # repo:VoltDB/voltdb
 - 416777125 # repo:alexraffy/sksql
@@ -587,6 +592,7 @@ Repos:
 - 56214719 # repo:apache/incubator-retired-quickstep
 - 50647838 # repo:apache/kudu
 - 28738447 # repo:apache/kylin
+- 114619105 # repo:apache/kyuubi
 - 20473418 # repo:apache/phoenix
 - 19961085 # repo:apache/pinot
 - 49876476 # repo:apache/shardingsphere
@@ -781,6 +787,7 @@ Repos:
 - 19257422 # repo:questdb/questdb
 - 10081109 # repo:rackerlabs/blueflood
 - 135549948 # repo:radicalbit/NSDb
+- 441299511 # repo:reductstore/reductstore
 - 50594316 # repo:senx/warp10-platform
 - 15682781 # repo:sitewhere/sitewhere
 - 36483902 # repo:spotify/heroic
@@ -796,6 +803,7 @@ Repos:
 - 753244287 # repo:DeployQL/LintDB
 - 201403923 # repo:activeloopai/deeplake
 - 642912355 # repo:awa-ai/awadb
+- 793209340 # repo:carsonpo/haystackdb
 - 546206616 # repo:chroma-core/chroma
 - 304530333 # repo:featureform/embeddinghub
 - 628503457 # repo:jdagdelen/hyperDB

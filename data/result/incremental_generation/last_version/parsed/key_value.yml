@@ -176,9 +176,11 @@ data:
     - 179588377 # repo:vinniefalco/NuDB
     - 385356389 # repo:vmware/splinterdb
     - 214605 # repo:voldemort/voldemort
+    - 580788054 # repo:web3-storage/pail
     - 30828379 # repo:willemt/pearldb
     - 2944302 # repo:wiredtiger/wiredtiger
     - 65259211 # repo:xap/xap
+    - 20433978 # repo:xtreemfs/babudb
     - 160784930 # repo:xujiajun/nutsdb
     - 137792810 # repo:yahoo/HaloDB
     - 9048279 # repo:yinqiwen/ardb

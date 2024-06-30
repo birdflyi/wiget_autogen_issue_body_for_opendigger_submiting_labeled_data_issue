@@ -4,16 +4,9 @@ Type: Tech-1
 
 Repos:
 
-- 411979983 # repo:elmarti/camadb
-
-Label: Key-value
-
-Type: Tech-1
-
-Repos:
-
-- 580788054 # repo:web3-storage/pail
-- 20433978 # repo:xtreemfs/babudb
+- 416174776 # repo:pysonDB/pysonDB-v2
+- 357707809 # repo:quickwit-oss/quickwit
+- 49412556 # repo:quickwit-oss/tantivy
 
 Label: Object Oriented
 
@@ -21,7 +14,7 @@ Type: Tech-1
 
 Repos:
 
-- 160528020 # repo:mateusfreira/nun-db
+- 660776503 # repo:paradedb/paradedb
 
 Label: Relational
 
@@ -29,22 +22,6 @@ Type: Tech-1
 
 Repos:
 
-- 590507334 # repo:StereoDB/StereoDB
-- 114619105 # repo:apache/kyuubi
-
-Label: Time Series
-
-Type: Tech-1
-
-Repos:
-
-- 441299511 # repo:reductstore/reductstore
-
-Label: Vector
-
-Type: Tech-1
-
-Repos:
-
-- 793209340 # repo:carsonpo/haystackdb
+- 771847852 # repo:myscale/MyScaleDB
+- 660776503 # repo:paradedb/paradedb
 

@@ -4,16 +4,9 @@ Type: Tech-1
 
 Repos:
 
-- elmarti/camadb
-
-Label: Key-value
-
-Type: Tech-1
-
-Repos:
-
-- web3-storage/pail
-- xtreemfs/babudb
+- pysonDB/pysonDB-v2
+- quickwit-oss/quickwit
+- quickwit-oss/tantivy
 
 Label: Object Oriented
 
@@ -21,7 +14,7 @@ Type: Tech-1
 
 Repos:
 
-- mateusfreira/nun-db
+- paradedb/paradedb
 
 Label: Relational
 
@@ -29,22 +22,6 @@ Type: Tech-1
 
 Repos:
 
-- StereoDB/StereoDB
-- apache/kyuubi
-
-Label: Time Series
-
-Type: Tech-1
-
-Repos:
-
-- reductstore/reductstore
-
-Label: Vector
-
-Type: Tech-1
-
-Repos:
-
-- carsonpo/haystackdb
+- myscale/MyScaleDB
+- paradedb/paradedb
 

@@ -25,6 +25,7 @@ data:
     - 19257422 # repo:questdb/questdb
     - 10081109 # repo:rackerlabs/blueflood
     - 135549948 # repo:radicalbit/NSDb
+    - 441299511 # repo:reductstore/reductstore
     - 50594316 # repo:senx/warp10-platform
     - 15682781 # repo:sitewhere/sitewhere
     - 36483902 # repo:spotify/heroic

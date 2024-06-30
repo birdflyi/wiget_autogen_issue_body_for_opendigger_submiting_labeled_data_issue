@@ -2,4 +2,6 @@ name: Database - Document
 type: Tech-1
 data:
   github_repo:
-    - 411979983 # repo:elmarti/camadb
+    - 416174776 # repo:pysonDB/pysonDB-v2
+    - 357707809 # repo:quickwit-oss/quickwit
+    - 49412556 # repo:quickwit-oss/tantivy

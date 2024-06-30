@@ -5,6 +5,7 @@ data:
     - 753244287 # repo:DeployQL/LintDB
     - 201403923 # repo:activeloopai/deeplake
     - 642912355 # repo:awa-ai/awadb
+    - 793209340 # repo:carsonpo/haystackdb
     - 546206616 # repo:chroma-core/chroma
     - 304530333 # repo:featureform/embeddinghub
     - 628503457 # repo:jdagdelen/hyperDB

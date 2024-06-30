@@ -2,5 +2,5 @@ name: Database - Relational
 type: Tech-1
 data:
   github_repo:
-    - 590507334 # repo:StereoDB/StereoDB
-    - 114619105 # repo:apache/kyuubi
+    - 771847852 # repo:myscale/MyScaleDB
+    - 660776503 # repo:paradedb/paradedb
