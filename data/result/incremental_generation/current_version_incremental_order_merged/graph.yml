@@ -49,5 +49,5 @@ data:
     - 198466472 # repo:terminusdb/terminusdb
     - 3548254 # repo:thinkaurelius/titan
     - 605999 # repo:twitter-archive/flockdb
-    - 63110867 # repo:vaticle/typedb
+    - 63110867 # repo:typedb/typedb
     - 146459443 # repo:vesoft-inc/nebula

@@ -99,6 +99,9 @@ data:
     - 5349565 # repo:prestodb/presto
     - 10153163 # repo:priitj/whitedb
     - 75425073 # repo:pubkey/rxdb
+    - 416174776 # repo:pysonDB/pysonDB-v2
+    - 357707809 # repo:quickwit-oss/quickwit
+    - 49412556 # repo:quickwit-oss/tantivy
     - 5665061 # repo:radare/sdb
     - 129436009 # repo:rakibtg/SleekDB
     - 542714 # repo:ravendb/ravendb

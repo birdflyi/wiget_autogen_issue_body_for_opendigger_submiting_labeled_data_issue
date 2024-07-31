@@ -2,5 +2,4 @@ name: Database - Relational
 type: Tech-1
 data:
   github_repo:
-    - 771847852 # repo:myscale/MyScaleDB
-    - 660776503 # repo:paradedb/paradedb
+    - 385634291 # repo:grafana/mimir

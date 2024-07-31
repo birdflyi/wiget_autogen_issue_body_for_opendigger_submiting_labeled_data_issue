@@ -127,6 +127,9 @@ Repos:
 - prestodb/presto
 - priitj/whitedb
 - pubkey/rxdb
+- pysonDB/pysonDB-v2
+- quickwit-oss/quickwit
+- quickwit-oss/tantivy
 - radare/sdb
 - rakibtg/SleekDB
 - ravendb/ravendb
@@ -504,6 +507,7 @@ Repos:
 - objectbox/objectbox-java
 - orientechnologies/orientdb
 - orioledb/orioledb
+- paradedb/paradedb
 - pilgr/Paper
 - pipelinedb/pipelinedb
 - postgres/postgres
@@ -673,6 +677,7 @@ Repos:
 - mattbostock/timbala
 - minovakovi/akdb
 - mozilla/mentat
+- myscale/MyScaleDB
 - mysql/mysql-server
 - neondatabase/neon
 - njaard/sonnerie
@@ -680,6 +685,7 @@ Repos:
 - openGemini/openGemini
 - opengauss-mirror/openGauss-server
 - orioledb/orioledb
+- paradedb/paradedb
 - pentaho/mondrian
 - percona/percona-server
 - percona/tokudb-engine

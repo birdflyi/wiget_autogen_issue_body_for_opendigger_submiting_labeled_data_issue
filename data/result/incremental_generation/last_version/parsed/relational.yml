@@ -131,6 +131,7 @@ data:
     - 71015036 # repo:mattbostock/timbala
     - 463071559 # repo:minovakovi/akdb
     - 62660036 # repo:mozilla/mentat
+    - 771847852 # repo:myscale/MyScaleDB
     - 24494032 # repo:mysql/mysql-server
     - 351806852 # repo:neondatabase/neon
     - 147880351 # repo:njaard/sonnerie
@@ -138,6 +139,7 @@ data:
     - 507829396 # repo:openGemini/openGemini
     - 276117477 # repo:opengauss-mirror/openGauss-server
     - 432844875 # repo:orioledb/orioledb
+    - 660776503 # repo:paradedb/paradedb
     - 3766330 # repo:pentaho/mondrian
     - 30753733 # repo:percona/percona-server
     - 9509125 # repo:percona/tokudb-engine

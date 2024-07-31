@@ -1,20 +1,10 @@
-Label: Document
+Label: Graph
 
 Type: Tech-1
 
 Repos:
 
-- 416174776 # repo:pysonDB/pysonDB-v2
-- 357707809 # repo:quickwit-oss/quickwit
-- 49412556 # repo:quickwit-oss/tantivy
-
-Label: Object Oriented
-
-Type: Tech-1
-
-Repos:
-
-- 660776503 # repo:paradedb/paradedb
+- 63110867 # repo:typedb/typedb
 
 Label: Relational
 
@@ -22,6 +12,5 @@ Type: Tech-1
 
 Repos:
 
-- 771847852 # repo:myscale/MyScaleDB
-- 660776503 # repo:paradedb/paradedb
+- 385634291 # repo:grafana/mimir
 
