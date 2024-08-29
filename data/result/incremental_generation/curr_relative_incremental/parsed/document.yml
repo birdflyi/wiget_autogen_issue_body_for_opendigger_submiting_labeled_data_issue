@@ -1,0 +1,6 @@
+name: Database - Document
+type: Tech-1
+data:
+  github_repo:
+    - 50229487 # repo:apache/lucene-solr
+    - 811062736 # repo:joswayski/averagedatabase

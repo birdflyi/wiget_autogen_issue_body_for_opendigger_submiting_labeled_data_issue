@@ -105,9 +105,9 @@ data:
     - 3084708 # repo:ggaughan/ThinkSQL
     - 91715647 # repo:gnocchixyz/gnocchi
     - 24650236 # repo:google/lovefield
+    - 385634291 # repo:grafana/mimir
     - 44781140 # repo:greenplum-db/gpdb
     - 33745913 # repo:h2database/h2database
-    - 90541149 # repo:heavyai/heavydb
     - 90541149 # repo:heavyai/heavydb
     - 291675222 # repo:hstreamdb/hstream
     - 87414843 # repo:hyrise/hyrise

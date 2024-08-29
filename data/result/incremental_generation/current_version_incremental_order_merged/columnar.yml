@@ -1,0 +1,5 @@
+name: Database - Columnar
+type: Tech-1
+data:
+  github_repo:
+    - 170496871 # repo:gridgain/gridgain

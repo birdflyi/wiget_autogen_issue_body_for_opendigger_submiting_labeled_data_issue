@@ -28,7 +28,7 @@ data:
     - 206417 # repo:apache/couchdb
     - 5683653 # repo:apache/drill
     - 341631350 # repo:apache/lucene
-    - 341374920 # repo:apache/solr
+    - 50229487 # repo:apache/lucene-solr
     - 114187903 # repo:apple/foundationdb
     - 137869753 # repo:appy-one/acebase
     - 2649214 # repo:arangodb/arangodb
@@ -69,6 +69,7 @@ data:
     - 628503457 # repo:jdagdelen/hyperDB
     - 652189 # repo:jedisct1/Pincaster
     - 635374751 # repo:jina-ai/vectordb
+    - 811062736 # repo:joswayski/averagedatabase
     - 270858421 # repo:juji-io/datalevin
     - 632269609 # repo:kagisearch/vectordb
     - 1776883 # repo:kimchy/compass

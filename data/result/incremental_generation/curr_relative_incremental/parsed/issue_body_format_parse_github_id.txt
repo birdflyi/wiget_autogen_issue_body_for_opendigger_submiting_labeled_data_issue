@@ -1,16 +1,42 @@
-Label: Graph
+Label: Columnar
 
 Type: Tech-1
 
 Repos:
 
-- 63110867 # repo:typedb/typedb
+- 170496871 # repo:gridgain/gridgain
 
-Label: Relational
+Label: Document
 
 Type: Tech-1
 
 Repos:
 
-- 385634291 # repo:grafana/mimir
+- 50229487 # repo:apache/lucene-solr
+- 811062736 # repo:joswayski/averagedatabase
+
+Label: Key-value
+
+Type: Tech-1
+
+Repos:
+
+- 840308148 # repo:Gifted-s/velarixdb
+- 747399975 # repo:chromodb/chromodb
+
+Label: Search Engine
+
+Type: Tech-1
+
+Repos:
+
+- 50229487 # repo:apache/lucene-solr
+
+Label: Wide column
+
+Type: Tech-1
+
+Repos:
+
+- 402945349 # repo:StarRocks/StarRocks
 

@@ -11,6 +11,7 @@ data:
     - 681142 # repo:Bobris/BTDB
     - 1922333 # repo:BohuTANG/nessDB
     - 8799170 # repo:DevrexLabs/OrigoDB
+    - 840308148 # repo:Gifted-s/velarixdb
     - 344711168 # repo:IceFireDB/IceFireDB
     - 3019304 # repo:Incubaid/arakoon
     - 202483348 # repo:KvrocksLabs/kvrocks
@@ -48,7 +49,6 @@ data:
     - 791522 # repo:basho/riak_kv
     - 88422672 # repo:bergdb/bergdb
     - 2380364 # repo:berkeleydb/libdb
-    - beryldb/beryldb # not found
     - 51290852 # repo:bigchaindb/bigchaindb
     - 57401138 # repo:bitnine-oss/agensgraph
     - 15345331 # repo:boltdb/bolt
@@ -56,6 +56,7 @@ data:
     - 33275300 # repo:cachelot/cachelot
     - 1196286 # repo:cbd/edis
     - 150013328 # repo:cberner/redb
+    - 747399975 # repo:chromodb/chromodb
     - 26826806 # repo:cloudflarearchive/kyotocabinet
     - 220186120 # repo:codenotary/immudb
     - 69400326 # repo:confluentinc/ksql
@@ -83,7 +84,6 @@ data:
     - 23405758 # repo:google/leveldb
     - 21800722 # repo:goossaert/kingdb
     - 52420005 # repo:griddb/griddb
-    - 170496871 # repo:gridgain/gridgain
     - 154541438 # repo:gruns/ImmortalDB
     - 2272541 # repo:gstrauss/mcdb
     - 3786237 # repo:hazelcast/hazelcast
