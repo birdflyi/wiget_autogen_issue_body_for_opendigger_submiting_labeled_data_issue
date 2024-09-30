@@ -15,6 +15,14 @@ Repos:
 - perone/euclidesdb
 - uwdb/lightdb
 
+Label: Columnar
+
+Type: Tech-1
+
+Repos:
+
+- gridgain/gridgain
+
 Label: Content
 
 Type: Tech-1
@@ -56,7 +64,7 @@ Repos:
 - apache/couchdb
 - apache/drill
 - apache/lucene
-- apache/solr
+- apache/lucene-solr
 - apple/foundationdb
 - appy-one/acebase
 - arangodb/arangodb
@@ -97,6 +105,7 @@ Repos:
 - jdagdelen/hyperDB
 - jedisct1/Pincaster
 - jina-ai/vectordb
+- joswayski/averagedatabase
 - jsqldb/jsqldb
 - juji-io/datalevin
 - kagisearch/vectordb
@@ -228,7 +237,7 @@ Repos:
 - terminusdb/terminusdb
 - thinkaurelius/titan
 - twitter-archive/flockdb
-- vaticle/typedb
+- typedb/typedb
 - vesoft-inc/nebula
 
 Label: Hierarchical
@@ -255,6 +264,7 @@ Repos:
 - Bobris/BTDB
 - BohuTANG/nessDB
 - DevrexLabs/OrigoDB
+- Gifted-s/velarixdb
 - IceFireDB/IceFireDB
 - Incubaid/arakoon
 - KvrocksLabs/kvrocks
@@ -300,6 +310,7 @@ Repos:
 - cachelot/cachelot
 - cbd/edis
 - cberner/redb
+- chromodb/chromodb
 - cloudflarearchive/kyotocabinet
 - codenotary/immudb
 - confluentinc/ksql
@@ -327,7 +338,6 @@ Repos:
 - google/leveldb
 - goossaert/kingdb
 - griddb/griddb
-- gridgain/gridgain
 - gruns/ImmortalDB
 - gstrauss/mcdb
 - hazelcast/hazelcast
@@ -651,9 +661,9 @@ Repos:
 - ggaughan/ThinkSQL
 - gnocchixyz/gnocchi
 - google/lovefield
+- grafana/mimir
 - greenplum-db/gpdb
 - h2database/h2database
-- heavyai/heavydb
 - heavyai/heavydb
 - hstreamdb/hstream
 - hyrise/hyrise
@@ -741,7 +751,7 @@ Type: Tech-1
 
 Repos:
 
-- apache/solr
+- apache/lucene-solr
 - elastic/elasticsearch
 - manticoresoftware/manticoresearch
 - marqo-ai/marqo
@@ -835,6 +845,7 @@ Type: Tech-1
 Repos:
 
 - MonetDB/MonetDB
+- StarRocks/StarRocks
 - VictoriaMetrics/VictoriaMetrics
 - apache/accumulo
 - apache/cassandra

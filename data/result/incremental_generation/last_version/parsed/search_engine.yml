@@ -2,7 +2,7 @@ name: Database - Search Engine
 type: Tech-1
 data:
   github_repo:
-    - 341374920 # repo:apache/solr
+    - 50229487 # repo:apache/lucene-solr
     - 507775 # repo:elastic/elasticsearch
     - 95614931 # repo:manticoresoftware/manticoresearch
     - 520096046 # repo:marqo-ai/marqo

@@ -15,6 +15,14 @@ Repos:
 - 156942199 # repo:perone/euclidesdb
 - 90768966 # repo:uwdb/lightdb
 
+Label: Columnar
+
+Type: Tech-1
+
+Repos:
+
+- 170496871 # repo:gridgain/gridgain
+
 Label: Content
 
 Type: Tech-1
@@ -56,7 +64,7 @@ Repos:
 - 206417 # repo:apache/couchdb
 - 5683653 # repo:apache/drill
 - 341631350 # repo:apache/lucene
-- 341374920 # repo:apache/solr
+- 50229487 # repo:apache/lucene-solr
 - 114187903 # repo:apple/foundationdb
 - 137869753 # repo:appy-one/acebase
 - 2649214 # repo:arangodb/arangodb
@@ -97,6 +105,7 @@ Repos:
 - 628503457 # repo:jdagdelen/hyperDB
 - 652189 # repo:jedisct1/Pincaster
 - 635374751 # repo:jina-ai/vectordb
+- 811062736 # repo:joswayski/averagedatabase
 - jsqldb/jsqldb # not found
 - 270858421 # repo:juji-io/datalevin
 - 632269609 # repo:kagisearch/vectordb
@@ -255,6 +264,7 @@ Repos:
 - 681142 # repo:Bobris/BTDB
 - 1922333 # repo:BohuTANG/nessDB
 - 8799170 # repo:DevrexLabs/OrigoDB
+- 840308148 # repo:Gifted-s/velarixdb
 - 344711168 # repo:IceFireDB/IceFireDB
 - 3019304 # repo:Incubaid/arakoon
 - 202483348 # repo:KvrocksLabs/kvrocks
@@ -300,6 +310,7 @@ Repos:
 - 33275300 # repo:cachelot/cachelot
 - 1196286 # repo:cbd/edis
 - 150013328 # repo:cberner/redb
+- 747399975 # repo:chromodb/chromodb
 - 26826806 # repo:cloudflarearchive/kyotocabinet
 - 220186120 # repo:codenotary/immudb
 - 69400326 # repo:confluentinc/ksql
@@ -327,7 +338,6 @@ Repos:
 - 23405758 # repo:google/leveldb
 - 21800722 # repo:goossaert/kingdb
 - 52420005 # repo:griddb/griddb
-- 170496871 # repo:gridgain/gridgain
 - 154541438 # repo:gruns/ImmortalDB
 - 2272541 # repo:gstrauss/mcdb
 - 3786237 # repo:hazelcast/hazelcast
@@ -741,7 +751,7 @@ Type: Tech-1
 
 Repos:
 
-- 341374920 # repo:apache/solr
+- 50229487 # repo:apache/lucene-solr
 - 507775 # repo:elastic/elasticsearch
 - 95614931 # repo:manticoresoftware/manticoresearch
 - 520096046 # repo:marqo-ai/marqo
@@ -835,6 +845,7 @@ Type: Tech-1
 Repos:
 
 - 316690542 # repo:MonetDB/MonetDB
+- 402945349 # repo:StarRocks/StarRocks
 - 150954997 # repo:VictoriaMetrics/VictoriaMetrics
 - 2524488 # repo:apache/accumulo
 - 206424 # repo:apache/cassandra

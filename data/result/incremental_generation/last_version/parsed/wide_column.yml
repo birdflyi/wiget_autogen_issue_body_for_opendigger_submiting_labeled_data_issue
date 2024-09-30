@@ -3,6 +3,7 @@ type: Tech-1
 data:
   github_repo:
     - 316690542 # repo:MonetDB/MonetDB
+    - 402945349 # repo:StarRocks/StarRocks
     - 150954997 # repo:VictoriaMetrics/VictoriaMetrics
     - 2524488 # repo:apache/accumulo
     - 206424 # repo:apache/cassandra
