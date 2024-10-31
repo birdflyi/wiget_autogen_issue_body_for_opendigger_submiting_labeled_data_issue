@@ -68,6 +68,7 @@ data:
     - 292903178 # repo:deroproject/graviton
     - 132499340 # repo:developit/histore
     - 80087836 # repo:dgraph-io/badger
+    - 531220682 # repo:dicedb/dice
     - 437245741 # repo:dragonflydb/dragonfly
     - 17224514 # repo:ehcache/ehcache3
     - 393005910 # repo:engula/engula
@@ -155,6 +156,7 @@ data:
     - 1499938 # repo:shino/kai
     - 121126549 # repo:simerplaha/SwayDB
     - 276042304 # repo:skytable/skytable
+    - 777912773 # repo:slatedb/slatedb
     - 49401416 # repo:spacejam/sled
     - 462329984 # repo:speedb-io/speedb
     - 36483902 # repo:spotify/heroic
@@ -170,6 +172,7 @@ data:
     - 184227406 # repo:tikv/agatedb
     - 48833910 # repo:tikv/tikv
     - 3114475 # repo:tomp2p/TomP2P
+    - 828742634 # repo:tonbo-io/tonbo
     - 18800032 # repo:tonsky/datascript
     - 223895357 # repo:tuxmonk/pupdb
     - 775743011 # repo:valkey-io/valkey

@@ -1,0 +1,25 @@
+Label: Document
+
+Type: Tech-1
+
+Repos:
+
+- 852516379 # repo:goshops-com/StormiDB
+
+Label: Key-value
+
+Type: Tech-1
+
+Repos:
+
+- 531220682 # repo:dicedb/dice
+- 777912773 # repo:slatedb/slatedb
+- 828742634 # repo:tonbo-io/tonbo
+
+Label: Relational
+
+Type: Tech-1
+
+Repos:
+
+- 654870350 # repo:ClockworkLabs/SpacetimeDB
