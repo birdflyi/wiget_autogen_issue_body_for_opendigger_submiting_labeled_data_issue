@@ -1,20 +1,10 @@
-Label: Document
-
-Type: Tech-1
-
-Repos:
-
-- goshops-com/StormiDB
-
 Label: Key-value
 
 Type: Tech-1
 
 Repos:
 
-- dicedb/dice
-- slatedb/slatedb
-- tonbo-io/tonbo
+- dmarro89/dare-db
 
 Label: Relational
 
@@ -22,5 +12,5 @@ Type: Tech-1
 
 Repos:
 
-- ClockworkLabs/SpacetimeDB
+- deveel/deveeldb
 

@@ -2,6 +2,4 @@ name: Database - Key-value
 type: Tech-1
 data:
   github_repo:
-    - 531220682 # repo:dicedb/dice
-    - 777912773 # repo:slatedb/slatedb
-    - 828742634 # repo:tonbo-io/tonbo
+    - 789424265 # repo:dmarro89/dare-db

@@ -96,6 +96,7 @@ Repos:
 - fireproof-storage/fireproof
 - fluree/db
 - genjidb/genji
+- goshops-com/StormiDB
 - graphikDB/graphik
 - hhblaze/DBreeze
 - iboxdb/ftserver
@@ -322,6 +323,7 @@ Repos:
 - deroproject/graviton
 - developit/histore
 - dgraph-io/badger
+- dicedb/dice
 - dragonflydb/dragonfly
 - ehcache/ehcache3
 - engula/engula
@@ -409,6 +411,7 @@ Repos:
 - shino/kai
 - simerplaha/SwayDB
 - skytable/skytable
+- slatedb/slatedb
 - spacejam/sled
 - speedb-io/speedb
 - spotify/heroic
@@ -424,6 +427,7 @@ Repos:
 - tikv/agatedb
 - tikv/tikv
 - tomp2p/TomP2P
+- tonbo-io/tonbo
 - tonsky/datascript
 - tuxmonk/pupdb
 - valkey-io/valkey
@@ -566,6 +570,7 @@ Repos:
 - ByConity/ByConity
 - CUBRID/cubrid
 - ClickHouse/ClickHouse
+- ClockworkLabs/SpacetimeDB
 - CovenantSQL/CovenantSQL
 - CptTZ/SmallSQL
 - DaveVoorhis/Rel
