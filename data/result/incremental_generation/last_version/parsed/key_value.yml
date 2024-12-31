@@ -70,6 +70,7 @@ data:
     - 132499340 # repo:developit/histore
     - 80087836 # repo:dgraph-io/badger
     - 531220682 # repo:dicedb/dice
+    - 789424265 # repo:dmarro89/dare-db
     - 437245741 # repo:dragonflydb/dragonfly
     - 17224514 # repo:ehcache/ehcache3
     - 393005910 # repo:engula/engula

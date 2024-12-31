@@ -82,6 +82,7 @@ data:
     - 132361668 # repo:cswinter/LocustDB
     - 14090388 # repo:cznic/ql
     - 302827809 # repo:datafuselabs/databend
+    - 2894420 # repo:deveel/deveeldb
     - 52507351 # repo:diennea/herddb
     - 198683574 # repo:dolthub/dolt
     - 8544988 # repo:dreamdbvilas/wonderdb

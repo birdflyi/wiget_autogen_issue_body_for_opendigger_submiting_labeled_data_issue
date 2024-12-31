@@ -324,6 +324,7 @@ Repos:
 - 132499340 # repo:developit/histore
 - 80087836 # repo:dgraph-io/badger
 - 531220682 # repo:dicedb/dice
+- 789424265 # repo:dmarro89/dare-db
 - 437245741 # repo:dragonflydb/dragonfly
 - 17224514 # repo:ehcache/ehcache3
 - 393005910 # repo:engula/engula
@@ -642,6 +643,7 @@ Repos:
 - 132361668 # repo:cswinter/LocustDB
 - 14090388 # repo:cznic/ql
 - 302827809 # repo:datafuselabs/databend
+- 2894420 # repo:deveel/deveeldb
 - 52507351 # repo:diennea/herddb
 - 198683574 # repo:dolthub/dolt
 - 8544988 # repo:dreamdbvilas/wonderdb

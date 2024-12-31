@@ -1,0 +1,5 @@
+name: Database - Wide Column
+type: Tech-1
+data:
+  github_repo:
+    - 872645739 # repo:tidesdb/tidesdb

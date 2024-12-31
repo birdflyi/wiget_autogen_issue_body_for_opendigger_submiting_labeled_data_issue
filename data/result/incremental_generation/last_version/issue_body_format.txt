@@ -324,6 +324,7 @@ Repos:
 - developit/histore
 - dgraph-io/badger
 - dicedb/dice
+- dmarro89/dare-db
 - dragonflydb/dragonfly
 - ehcache/ehcache3
 - engula/engula
@@ -642,6 +643,7 @@ Repos:
 - cswinter/LocustDB
 - cznic/ql
 - datafuselabs/databend
+- deveel/deveeldb
 - diennea/herddb
 - dolthub/dolt
 - dreamdbvilas/wonderdb

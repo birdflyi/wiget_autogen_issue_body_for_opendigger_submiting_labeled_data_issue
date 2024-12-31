@@ -81,6 +81,7 @@ data:
     - 551374215 # repo:cozodb/cozo
     - 132361668 # repo:cswinter/LocustDB
     - 14090388 # repo:cznic/ql
+    - 824462634 # repo:darshan117/BroDB
     - 302827809 # repo:datafuselabs/databend
     - 2894420 # repo:deveel/deveeldb
     - 52507351 # repo:diennea/herddb
@@ -108,7 +109,7 @@ data:
     - 91715647 # repo:gnocchixyz/gnocchi
     - 24650236 # repo:google/lovefield
     - 385634291 # repo:grafana/mimir
-    - 44781140 # repo:greenplum-db/gpdb
+    - 805041952 # repo:greenplum-db/gpdb-archive
     - 33745913 # repo:h2database/h2database
     - 90541149 # repo:heavyai/heavydb
     - 291675222 # repo:hstreamdb/hstream

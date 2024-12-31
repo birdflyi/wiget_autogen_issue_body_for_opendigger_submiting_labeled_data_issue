@@ -1,10 +1,12 @@
-Label: Key-value
+Label: Document
 
 Type: Tech-1
 
 Repos:
 
-- 789424265 # repo:dmarro89/dare-db
+- 750864017 # repo:Lona-Development/Server
+- 284225188 # repo:PoloDB/PoloDB
+- 844591313 # repo:capjamesg/jamesql
 
 Label: Relational
 
@@ -12,4 +14,13 @@ Type: Tech-1
 
 Repos:
 
-- 2894420 # repo:deveel/deveeldb
+- 824462634 # repo:darshan117/BroDB
+- 805041952 # repo:greenplum-db/gpdb-archive
+
+Label: Wide column
+
+Type: Tech-1
+
+Repos:
+
+- 872645739 # repo:tidesdb/tidesdb
