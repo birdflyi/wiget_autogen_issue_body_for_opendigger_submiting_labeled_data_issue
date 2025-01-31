@@ -1,26 +1,15 @@
-Label: Document
+Label: Graph
 
 Type: Tech-1
 
 Repos:
 
-- 750864017 # repo:Lona-Development/Server
-- 284225188 # repo:PoloDB/PoloDB
-- 844591313 # repo:capjamesg/jamesql
+- 92834468 # repo:Pometry/Raphtory
 
-Label: Relational
+Label: Key-value
 
 Type: Tech-1
 
 Repos:
 
-- 824462634 # repo:darshan117/BroDB
-- 805041952 # repo:greenplum-db/gpdb-archive
-
-Label: Wide column
-
-Type: Tech-1
-
-Repos:
-
-- 872645739 # repo:tidesdb/tidesdb
+- 919276446 # repo:starskey-io/starskey

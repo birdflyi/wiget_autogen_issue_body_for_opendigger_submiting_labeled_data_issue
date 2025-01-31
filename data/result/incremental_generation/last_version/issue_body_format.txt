@@ -54,8 +54,9 @@ Repos:
 - JetBrains/xodus
 - Kinto/kinto
 - LinkedInAttic/sensei
-- LonaDB/Server
+- Lona-Development/Server
 - Nexedi/neoppod
+- PoloDB/PoloDB
 - SequoiaDB/SequoiaDB
 - SnellerInc/sneller
 - Softmotions/ejdb
@@ -77,6 +78,7 @@ Repos:
 - bitnine-oss/agensgraph
 - bluzi/jsonstore
 - c9fe/sirdb
+- capjamesg/jamesql
 - cfu288/SylvieJS
 - chroma-core/chroma
 - cinchapi/concourse
@@ -642,6 +644,7 @@ Repos:
 - cozodb/cozo
 - cswinter/LocustDB
 - cznic/ql
+- darshan117/BroDB
 - datafuselabs/databend
 - deveel/deveeldb
 - diennea/herddb
@@ -669,7 +672,7 @@ Repos:
 - gnocchixyz/gnocchi
 - google/lovefield
 - grafana/mimir
-- greenplum-db/gpdb
+- greenplum-db/gpdb-archive
 - h2database/h2database
 - heavyai/heavydb
 - hstreamdb/hstream
@@ -870,4 +873,5 @@ Repos:
 - prestodb/presto
 - scylladb/scylla
 - strapdata/elassandra
+- tidesdb/tidesdb
 

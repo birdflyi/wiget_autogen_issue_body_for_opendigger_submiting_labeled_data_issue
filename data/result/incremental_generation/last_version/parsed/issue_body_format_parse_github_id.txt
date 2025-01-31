@@ -54,8 +54,9 @@ Repos:
 - 19271154 # repo:JetBrains/xodus
 - 31315021 # repo:Kinto/kinto
 - 533032 # repo:LinkedInAttic/sensei
-- 750864017 # repo:LonaDB/Server
+- 750864017 # repo:Lona-Development/Server
 - 50098469 # repo:Nexedi/neoppod
+- 284225188 # repo:PoloDB/PoloDB
 - 188354257 # repo:SequoiaDB/SequoiaDB
 - 474070793 # repo:SnellerInc/sneller
 - 6427744 # repo:Softmotions/ejdb
@@ -77,6 +78,7 @@ Repos:
 - 57401138 # repo:bitnine-oss/agensgraph
 - 127338417 # repo:bluzi/jsonstore
 - 234091935 # repo:c9fe/sirdb
+- 844591313 # repo:capjamesg/jamesql
 - 639434928 # repo:cfu288/SylvieJS
 - 546206616 # repo:chroma-core/chroma
 - 13353426 # repo:cinchapi/concourse
@@ -642,6 +644,7 @@ Repos:
 - 551374215 # repo:cozodb/cozo
 - 132361668 # repo:cswinter/LocustDB
 - 14090388 # repo:cznic/ql
+- 824462634 # repo:darshan117/BroDB
 - 302827809 # repo:datafuselabs/databend
 - 2894420 # repo:deveel/deveeldb
 - 52507351 # repo:diennea/herddb
@@ -669,7 +672,7 @@ Repos:
 - 91715647 # repo:gnocchixyz/gnocchi
 - 24650236 # repo:google/lovefield
 - 385634291 # repo:grafana/mimir
-- 44781140 # repo:greenplum-db/gpdb
+- 805041952 # repo:greenplum-db/gpdb-archive
 - 33745913 # repo:h2database/h2database
 - 90541149 # repo:heavyai/heavydb
 - 291675222 # repo:hstreamdb/hstream
@@ -870,4 +873,5 @@ Repos:
 - 5349565 # repo:prestodb/presto
 - 28449431 # repo:scylladb/scylla
 - 41209174 # repo:strapdata/elassandra
+- 872645739 # repo:tidesdb/tidesdb
 

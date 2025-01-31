@@ -18,8 +18,9 @@ data:
     - 19271154 # repo:JetBrains/xodus
     - 31315021 # repo:Kinto/kinto
     - 533032 # repo:LinkedInAttic/sensei
-    - 750864017 # repo:LonaDB/Server
+    - 750864017 # repo:Lona-Development/Server
     - 50098469 # repo:Nexedi/neoppod
+    - 284225188 # repo:PoloDB/PoloDB
     - 188354257 # repo:SequoiaDB/SequoiaDB
     - 474070793 # repo:SnellerInc/sneller
     - 6427744 # repo:Softmotions/ejdb
@@ -41,6 +42,7 @@ data:
     - 57401138 # repo:bitnine-oss/agensgraph
     - 127338417 # repo:bluzi/jsonstore
     - 234091935 # repo:c9fe/sirdb
+    - 844591313 # repo:capjamesg/jamesql
     - 639434928 # repo:cfu288/SylvieJS
     - 546206616 # repo:chroma-core/chroma
     - 13353426 # repo:cinchapi/concourse

@@ -21,3 +21,4 @@ data:
     - 5349565 # repo:prestodb/presto
     - 28449431 # repo:scylladb/scylla
     - 41209174 # repo:strapdata/elassandra
+    - 872645739 # repo:tidesdb/tidesdb
