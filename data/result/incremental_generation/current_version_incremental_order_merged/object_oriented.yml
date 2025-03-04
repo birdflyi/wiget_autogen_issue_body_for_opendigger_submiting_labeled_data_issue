@@ -20,11 +20,11 @@ data:
     - 396856161 # repo:authzed/spicedb
     - 644742603 # repo:cloudberrydb/cloudberrydb
     - 95070401 # repo:devrexlabs/memstate
-    - 95817032 # repo:edgedb/edgedb
     - 15001136 # repo:etoile/CoreObject
     - 145843258 # repo:eyedb/eyedb
     - 42143916 # repo:fern4lvarez/piladb
     - 240387847 # repo:gaia-platform/GaiaPlatform
+    - 95817032 # repo:geldata/gel
     - 32137101 # repo:google-code-export/twig-persist
     - 48279725 # repo:goshawkdb/server
     - 204261394 # repo:iboxdb/db4o-gpl

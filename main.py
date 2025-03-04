@@ -825,6 +825,7 @@ if __name__ == '__main__':
         "dbfeatfusion_records_202411_automerged_manulabeled.csv",
         "dbfeatfusion_records_202412_automerged_manulabeled.csv",
         "dbfeatfusion_records_202501_automerged_manulabeled.csv",
+        "dbfeatfusion_records_202502_automerged_manulabeled.csv",
     ]
     # dynamic settings
     idx_last_v = -2

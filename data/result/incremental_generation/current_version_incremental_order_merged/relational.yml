@@ -38,6 +38,7 @@ data:
     - 501460708 # repo:StoneAtom/stonedb
     - 2445970 # repo:VoltDB/voltdb
     - 416777125 # repo:alexraffy/sksql
+    - 692348247 # repo:amelielabs/amelie
     - 3927863 # repo:antonmks/Alenka
     - 358917318 # repo:apache/arrow-datafusion
     - 1918497 # repo:apache/derby
@@ -89,7 +90,6 @@ data:
     - 8544988 # repo:dreamdbvilas/wonderdb
     - 97518356 # repo:dremio/dremio-oss
     - 138754790 # repo:duckdb/duckdb
-    - 95817032 # repo:edgedb/edgedb
     - 341208515 # repo:edgelesssys/edgelessdb
     - 61373806 # repo:elasql/elasql
     - 387622288 # repo:elliotchance/vsql
@@ -104,6 +104,7 @@ data:
     - 305513242 # repo:fluree/db
     - 600860 # repo:fosslc/Ingres
     - 29210020 # repo:gavioto/fastdb
+    - 95817032 # repo:geldata/gel
     - 148087762 # repo:georgia-tech-db/eva
     - 3084708 # repo:ggaughan/ThinkSQL
     - 91715647 # repo:gnocchixyz/gnocchi

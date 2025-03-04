@@ -6,6 +6,7 @@ data:
     - 1832551 # repo:CulturePlex/Sylva
     - 8799170 # repo:DevrexLabs/OrigoDB
     - 77385607 # repo:JanusGraph/janusgraph
+    - 92834468 # repo:Pometry/Raphtory
     - 45098765 # repo:PureSolTechnologies/DuctileDB
     - 84458512 # repo:RedisGraph/RedisGraph
     - 43494700 # repo:SparsityTechnologies/sparksee-server

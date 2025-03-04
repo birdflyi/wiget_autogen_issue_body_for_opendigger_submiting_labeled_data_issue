@@ -197,6 +197,7 @@ Repos:
 - 1832551 # repo:CulturePlex/Sylva
 - 8799170 # repo:DevrexLabs/OrigoDB
 - 77385607 # repo:JanusGraph/janusgraph
+- 92834468 # repo:Pometry/Raphtory
 - 45098765 # repo:PureSolTechnologies/DuctileDB
 - 84458512 # repo:RedisGraph/RedisGraph
 - 43494700 # repo:SparsityTechnologies/sparksee-server
@@ -418,6 +419,7 @@ Repos:
 - 49401416 # repo:spacejam/sled
 - 462329984 # repo:speedb-io/speedb
 - 36483902 # repo:spotify/heroic
+- 919276446 # repo:starskey-io/starskey
 - 34593732 # repo:stephenmcd/curiodb
 - 454981666 # repo:streamnative/oxia
 - 26888631 # repo:stripe/sequins

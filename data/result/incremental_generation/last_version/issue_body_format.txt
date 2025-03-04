@@ -197,6 +197,7 @@ Repos:
 - CulturePlex/Sylva
 - DevrexLabs/OrigoDB
 - JanusGraph/janusgraph
+- Pometry/Raphtory
 - PureSolTechnologies/DuctileDB
 - RedisGraph/RedisGraph
 - SparsityTechnologies/sparksee-server
@@ -418,6 +419,7 @@ Repos:
 - spacejam/sled
 - speedb-io/speedb
 - spotify/heroic
+- starskey-io/starskey
 - stephenmcd/curiodb
 - streamnative/oxia
 - stripe/sequins

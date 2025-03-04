@@ -1,16 +1,33 @@
+Label: Document
+
+Type: Tech-1
+
+Repos:
+
+- patx/kenobi
+
 Label: Graph
 
 Type: Tech-1
 
 Repos:
 
-- Pometry/Raphtory
+- youtrackdb/youtrackdb
 
-Label: Key-value
+Label: Object Oriented
 
 Type: Tech-1
 
 Repos:
 
-- starskey-io/starskey
+- geldata/gel
+
+Label: Relational
+
+Type: Tech-1
+
+Repos:
+
+- amelielabs/amelie
+- geldata/gel
 
