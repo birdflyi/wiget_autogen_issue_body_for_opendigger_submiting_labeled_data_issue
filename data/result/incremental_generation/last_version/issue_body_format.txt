@@ -132,6 +132,7 @@ Repos:
 - orbitdb/orbit-db
 - orientechnologies/orientdb
 - ostafen/clover
+- patx/kenobi
 - patx/pickledb
 - percona/percona-server-mongodb
 - polypheny/Polypheny-DB
@@ -243,6 +244,7 @@ Repos:
 - twitter-archive/flockdb
 - typedb/typedb
 - vesoft-inc/nebula
+- youtrackdb/youtrackdb
 
 Label: Hierarchical
 
@@ -505,11 +507,11 @@ Repos:
 - authzed/spicedb
 - cloudberrydb/cloudberrydb
 - devrexlabs/memstate
-- edgedb/edgedb
 - etoile/CoreObject
 - eyedb/eyedb
 - fern4lvarez/piladb
 - gaia-platform/GaiaPlatform
+- geldata/gel
 - google-code-export/twig-persist
 - goshawkdb/server
 - iboxdb/db4o-gpl
@@ -603,6 +605,7 @@ Repos:
 - StoneAtom/stonedb
 - VoltDB/voltdb
 - alexraffy/sksql
+- amelielabs/amelie
 - antonmks/Alenka
 - apache/arrow-datafusion
 - apache/derby
@@ -654,7 +657,6 @@ Repos:
 - dreamdbvilas/wonderdb
 - dremio/dremio-oss
 - duckdb/duckdb
-- edgedb/edgedb
 - edgelesssys/edgelessdb
 - elasql/elasql
 - elliotchance/vsql
@@ -669,6 +671,7 @@ Repos:
 - fluree/db
 - fosslc/Ingres
 - gavioto/fastdb
+- geldata/gel
 - georgia-tech-db/eva
 - ggaughan/ThinkSQL
 - gnocchixyz/gnocchi

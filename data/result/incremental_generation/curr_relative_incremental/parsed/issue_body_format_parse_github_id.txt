@@ -4,29 +4,4 @@ Type: Tech-1
 
 Repos:
 
-- 207457900 # repo:patx/kenobi
-
-Label: Graph
-
-Type: Tech-1
-
-Repos:
-
-- 759929648 # repo:youtrackdb/youtrackdb
-
-Label: Object Oriented
-
-Type: Tech-1
-
-Repos:
-
-- 95817032 # repo:geldata/gel
-
-Label: Relational
-
-Type: Tech-1
-
-Repos:
-
-- 692348247 # repo:amelielabs/amelie
-- 95817032 # repo:geldata/gel
+- 349172057 # repo:linkedin/venice

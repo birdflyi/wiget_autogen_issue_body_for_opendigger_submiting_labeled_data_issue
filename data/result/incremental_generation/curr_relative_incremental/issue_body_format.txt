@@ -4,30 +4,5 @@ Type: Tech-1
 
 Repos:
 
-- patx/kenobi
-
-Label: Graph
-
-Type: Tech-1
-
-Repos:
-
-- youtrackdb/youtrackdb
-
-Label: Object Oriented
-
-Type: Tech-1
-
-Repos:
-
-- geldata/gel
-
-Label: Relational
-
-Type: Tech-1
-
-Repos:
-
-- amelielabs/amelie
-- geldata/gel
+- linkedin/venice
 

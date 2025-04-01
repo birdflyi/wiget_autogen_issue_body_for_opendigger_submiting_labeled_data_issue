@@ -132,6 +132,7 @@ Repos:
 - 48617634 # repo:orbitdb/orbit-db
 - 7083240 # repo:orientechnologies/orientdb
 - 453191009 # repo:ostafen/clover
+- 207457900 # repo:patx/kenobi
 - 2662146 # repo:patx/pickledb
 - 39519916 # repo:percona/percona-server-mongodb
 - 166387176 # repo:polypheny/Polypheny-DB
@@ -243,6 +244,7 @@ Repos:
 - 605999 # repo:twitter-archive/flockdb
 - 63110867 # repo:typedb/typedb
 - 146459443 # repo:vesoft-inc/nebula
+- 759929648 # repo:youtrackdb/youtrackdb
 
 Label: Hierarchical
 
@@ -505,11 +507,11 @@ Repos:
 - 396856161 # repo:authzed/spicedb
 - 644742603 # repo:cloudberrydb/cloudberrydb
 - 95070401 # repo:devrexlabs/memstate
-- 95817032 # repo:edgedb/edgedb
 - 15001136 # repo:etoile/CoreObject
 - 145843258 # repo:eyedb/eyedb
 - 42143916 # repo:fern4lvarez/piladb
 - 240387847 # repo:gaia-platform/GaiaPlatform
+- 95817032 # repo:geldata/gel
 - 32137101 # repo:google-code-export/twig-persist
 - 48279725 # repo:goshawkdb/server
 - 204261394 # repo:iboxdb/db4o-gpl
@@ -603,6 +605,7 @@ Repos:
 - 501460708 # repo:StoneAtom/stonedb
 - 2445970 # repo:VoltDB/voltdb
 - 416777125 # repo:alexraffy/sksql
+- 692348247 # repo:amelielabs/amelie
 - 3927863 # repo:antonmks/Alenka
 - 358917318 # repo:apache/arrow-datafusion
 - 1918497 # repo:apache/derby
@@ -654,7 +657,6 @@ Repos:
 - 8544988 # repo:dreamdbvilas/wonderdb
 - 97518356 # repo:dremio/dremio-oss
 - 138754790 # repo:duckdb/duckdb
-- 95817032 # repo:edgedb/edgedb
 - 341208515 # repo:edgelesssys/edgelessdb
 - 61373806 # repo:elasql/elasql
 - 387622288 # repo:elliotchance/vsql
@@ -669,6 +671,7 @@ Repos:
 - 305513242 # repo:fluree/db
 - 600860 # repo:fosslc/Ingres
 - 29210020 # repo:gavioto/fastdb
+- 95817032 # repo:geldata/gel
 - 148087762 # repo:georgia-tech-db/eva
 - 3084708 # repo:ggaughan/ThinkSQL
 - 91715647 # repo:gnocchixyz/gnocchi

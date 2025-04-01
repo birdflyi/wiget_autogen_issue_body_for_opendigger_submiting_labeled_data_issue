@@ -96,6 +96,7 @@ data:
     - 48617634 # repo:orbitdb/orbit-db
     - 7083240 # repo:orientechnologies/orientdb
     - 453191009 # repo:ostafen/clover
+    - 207457900 # repo:patx/kenobi
     - 2662146 # repo:patx/pickledb
     - 39519916 # repo:percona/percona-server-mongodb
     - 166387176 # repo:polypheny/Polypheny-DB
