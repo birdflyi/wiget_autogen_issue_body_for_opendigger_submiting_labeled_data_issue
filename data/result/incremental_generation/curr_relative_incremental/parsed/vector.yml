@@ -1,6 +1,6 @@
-name: Database - Document
+name: Database - Vector
 type: Tech-1
 data:
   github_repo:
+    - 893031915 # repo:HelixDB/helix-db
     - 124315604 # repo:aerospike/aerospike-server
-    - 897888926 # repo:goatplatform/goatdb

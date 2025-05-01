@@ -114,6 +114,7 @@ Repos:
 - 632269609 # repo:kagisearch/vectordb
 - 1776883 # repo:kimchy/compass
 - 607441698 # repo:lancedb/lancedb
+- 349172057 # repo:linkedin/venice
 - 376679845 # repo:losfair/RefineDB
 - 9795883 # repo:louischatriot/nedb
 - 520096046 # repo:marqo-ai/marqo

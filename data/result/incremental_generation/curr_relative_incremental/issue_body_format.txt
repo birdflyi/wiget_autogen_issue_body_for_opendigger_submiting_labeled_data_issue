@@ -4,5 +4,23 @@ Type: Tech-1
 
 Repos:
 
-- linkedin/venice
+- aerospike/aerospike-server
+- goatplatform/goatdb
+
+Label: Graph
+
+Type: Tech-1
+
+Repos:
+
+- HelixDB/helix-db
+
+Label: Vector
+
+Type: Tech-1
+
+Repos:
+
+- HelixDB/helix-db
+- aerospike/aerospike-server
 

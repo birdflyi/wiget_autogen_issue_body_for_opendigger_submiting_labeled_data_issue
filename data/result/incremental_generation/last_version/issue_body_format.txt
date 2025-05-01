@@ -114,6 +114,7 @@ Repos:
 - kagisearch/vectordb
 - kimchy/compass
 - lancedb/lancedb
+- linkedin/venice
 - losfair/RefineDB
 - louischatriot/nedb
 - marqo-ai/marqo

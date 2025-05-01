@@ -25,6 +25,7 @@ data:
     - 474070793 # repo:SnellerInc/sneller
     - 6427744 # repo:Softmotions/ejdb
     - 8428443 # repo:X2rdas/easedb
+    - 124315604 # repo:aerospike/aerospike-server
     - 31976266 # repo:apache/asterixdb
     - 206417 # repo:apache/couchdb
     - 5683653 # repo:apache/drill
@@ -62,6 +63,7 @@ data:
     - 679889516 # repo:fireproof-storage/fireproof
     - 305513242 # repo:fluree/db
     - 138411034 # repo:genjidb/genji
+    - 897888926 # repo:goatplatform/goatdb
     - 852516379 # repo:goshops-com/StormiDB
     - 285669400 # repo:graphikDB/graphik
     - 12050336 # repo:hhblaze/DBreeze

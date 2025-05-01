@@ -4,4 +4,22 @@ Type: Tech-1
 
 Repos:
 
-- 349172057 # repo:linkedin/venice
+- 124315604 # repo:aerospike/aerospike-server
+- 897888926 # repo:goatplatform/goatdb
+
+Label: Graph
+
+Type: Tech-1
+
+Repos:
+
+- 893031915 # repo:HelixDB/helix-db
+
+Label: Vector
+
+Type: Tech-1
+
+Repos:
+
+- 893031915 # repo:HelixDB/helix-db
+- 124315604 # repo:aerospike/aerospike-server
