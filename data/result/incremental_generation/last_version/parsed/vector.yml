@@ -3,7 +3,9 @@ type: Tech-1
 data:
   github_repo:
     - 753244287 # repo:DeployQL/LintDB
+    - 893031915 # repo:HelixDB/helix-db
     - 201403923 # repo:activeloopai/deeplake
+    - 124315604 # repo:aerospike/aerospike-server
     - 642912355 # repo:awa-ai/awadb
     - 793209340 # repo:carsonpo/haystackdb
     - 546206616 # repo:chroma-core/chroma

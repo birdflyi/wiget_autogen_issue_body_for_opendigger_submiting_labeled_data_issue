@@ -1,25 +1,8 @@
-Label: Document
+Label: Relational
 
 Type: Tech-1
 
 Repos:
 
-- 124315604 # repo:aerospike/aerospike-server
-- 897888926 # repo:goatplatform/goatdb
-
-Label: Graph
-
-Type: Tech-1
-
-Repos:
-
-- 893031915 # repo:HelixDB/helix-db
-
-Label: Vector
-
-Type: Tech-1
-
-Repos:
-
-- 893031915 # repo:HelixDB/helix-db
-- 124315604 # repo:aerospike/aerospike-server
+- 30113463 # repo:Remi-Coulom/joedb
+- 975891605 # repo:stoolap/stoolap

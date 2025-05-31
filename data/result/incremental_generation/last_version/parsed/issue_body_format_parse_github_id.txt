@@ -61,6 +61,7 @@ Repos:
 - 474070793 # repo:SnellerInc/sneller
 - 6427744 # repo:Softmotions/ejdb
 - 8428443 # repo:X2rdas/easedb
+- 124315604 # repo:aerospike/aerospike-server
 - 31976266 # repo:apache/asterixdb
 - 206417 # repo:apache/couchdb
 - 5683653 # repo:apache/drill
@@ -98,6 +99,7 @@ Repos:
 - 679889516 # repo:fireproof-storage/fireproof
 - 305513242 # repo:fluree/db
 - 138411034 # repo:genjidb/genji
+- 897888926 # repo:goatplatform/goatdb
 - 852516379 # repo:goshops-com/StormiDB
 - 285669400 # repo:graphikDB/graphik
 - 12050336 # repo:hhblaze/DBreeze
@@ -198,6 +200,7 @@ Repos:
 - 396867188 # repo:ArcadeData/arcadedb
 - 1832551 # repo:CulturePlex/Sylva
 - 8799170 # repo:DevrexLabs/OrigoDB
+- 893031915 # repo:HelixDB/helix-db
 - 77385607 # repo:JanusGraph/janusgraph
 - 92834468 # repo:Pometry/Raphtory
 - 45098765 # repo:PureSolTechnologies/DuctileDB
@@ -833,7 +836,9 @@ Type: Tech-1
 Repos:
 
 - 753244287 # repo:DeployQL/LintDB
+- 893031915 # repo:HelixDB/helix-db
 - 201403923 # repo:activeloopai/deeplake
+- 124315604 # repo:aerospike/aerospike-server
 - 642912355 # repo:awa-ai/awadb
 - 793209340 # repo:carsonpo/haystackdb
 - 546206616 # repo:chroma-core/chroma

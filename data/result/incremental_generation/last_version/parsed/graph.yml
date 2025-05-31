@@ -5,6 +5,7 @@ data:
     - 396867188 # repo:ArcadeData/arcadedb
     - 1832551 # repo:CulturePlex/Sylva
     - 8799170 # repo:DevrexLabs/OrigoDB
+    - 893031915 # repo:HelixDB/helix-db
     - 77385607 # repo:JanusGraph/janusgraph
     - 92834468 # repo:Pometry/Raphtory
     - 45098765 # repo:PureSolTechnologies/DuctileDB
