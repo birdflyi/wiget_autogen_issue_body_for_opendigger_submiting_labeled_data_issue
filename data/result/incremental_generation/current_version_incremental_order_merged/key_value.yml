@@ -49,7 +49,6 @@ data:
     - 791522 # repo:basho/riak_kv
     - 88422672 # repo:bergdb/bergdb
     - 2380364 # repo:berkeleydb/libdb
-    - beryldb/beryldb # not found
     - 51290852 # repo:bigchaindb/bigchaindb
     - 57401138 # repo:bitnine-oss/agensgraph
     - 15345331 # repo:boltdb/bolt
@@ -177,6 +176,7 @@ data:
     - 3114475 # repo:tomp2p/TomP2P
     - 828742634 # repo:tonbo-io/tonbo
     - 18800032 # repo:tonsky/datascript
+    - 274611759 # repo:topling/toplingdb
     - 223895357 # repo:tuxmonk/pupdb
     - 775743011 # repo:valkey-io/valkey
     - 179588377 # repo:vinniefalco/NuDB

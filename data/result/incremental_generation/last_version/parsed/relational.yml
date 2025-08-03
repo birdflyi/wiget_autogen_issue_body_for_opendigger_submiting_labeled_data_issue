@@ -31,6 +31,7 @@ data:
     - 684046299 # repo:OpenTenBase/OpenTenBase
     - 41443810 # repo:Postgres-XL/Postgres-XL
     - 74375185 # repo:RedBeardLab/rediSQL
+    - 30113463 # repo:Remi-Coulom/joedb
     - 574694308 # repo:RhizomeDB/rs-rhizome
     - 42580991 # repo:SnappyDataInc/snappydata
     - 402945349 # repo:StarRocks/StarRocks
@@ -174,6 +175,7 @@ data:
     - 151367139 # repo:stellarsql/StellarSQL
     - 12067343 # repo:stephentu/silo
     - 11734713 # repo:stewartsmith/drizzle
+    - 975891605 # repo:stoolap/stoolap
     - 436658287 # repo:surrealdb/surrealdb
     - 591304097 # repo:sutoiku/puffin
     - 196353673 # repo:taosdata/TDengine

@@ -114,6 +114,7 @@ data:
     - 805041952 # repo:greenplum-db/gpdb-archive
     - 33745913 # repo:h2database/h2database
     - 90541149 # repo:heavyai/heavydb
+    - 911776933 # repo:hpides/skyrise
     - 291675222 # repo:hstreamdb/hstream
     - 87414843 # repo:hyrise/hyrise
     - 13589020 # repo:infinidb/infinidb

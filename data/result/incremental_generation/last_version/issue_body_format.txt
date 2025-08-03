@@ -602,6 +602,7 @@ Repos:
 - OpenTenBase/OpenTenBase
 - Postgres-XL/Postgres-XL
 - RedBeardLab/rediSQL
+- Remi-Coulom/joedb
 - RhizomeDB/rs-rhizome
 - SnappyDataInc/snappydata
 - StarRocks/StarRocks
@@ -745,6 +746,7 @@ Repos:
 - stellarsql/StellarSQL
 - stephentu/silo
 - stewartsmith/drizzle
+- stoolap/stoolap
 - surrealdb/surrealdb
 - sutoiku/puffin
 - taosdata/TDengine

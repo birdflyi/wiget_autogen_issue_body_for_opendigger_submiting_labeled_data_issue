@@ -1,9 +1,16 @@
+Label: Key-value
+
+Type: Tech-1
+
+Repos:
+
+- topling/toplingdb
+
 Label: Relational
 
 Type: Tech-1
 
 Repos:
 
-- Remi-Coulom/joedb
-- stoolap/stoolap
+- hpides/skyrise
 
