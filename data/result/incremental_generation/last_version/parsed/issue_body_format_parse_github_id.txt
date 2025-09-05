@@ -440,6 +440,7 @@ Repos:
 - 3114475 # repo:tomp2p/TomP2P
 - 828742634 # repo:tonbo-io/tonbo
 - 18800032 # repo:tonsky/datascript
+- 274611759 # repo:topling/toplingdb
 - 223895357 # repo:tuxmonk/pupdb
 - 775743011 # repo:valkey-io/valkey
 - 179588377 # repo:vinniefalco/NuDB
@@ -685,6 +686,7 @@ Repos:
 - 805041952 # repo:greenplum-db/gpdb-archive
 - 33745913 # repo:h2database/h2database
 - 90541149 # repo:heavyai/heavydb
+- 911776933 # repo:hpides/skyrise
 - 291675222 # repo:hstreamdb/hstream
 - 87414843 # repo:hyrise/hyrise
 - 13589020 # repo:infinidb/infinidb

@@ -440,6 +440,7 @@ Repos:
 - tomp2p/TomP2P
 - tonbo-io/tonbo
 - tonsky/datascript
+- topling/toplingdb
 - tuxmonk/pupdb
 - valkey-io/valkey
 - vinniefalco/NuDB
@@ -685,6 +686,7 @@ Repos:
 - greenplum-db/gpdb-archive
 - h2database/h2database
 - heavyai/heavydb
+- hpides/skyrise
 - hstreamdb/hstream
 - hyrise/hyrise
 - infinidb/infinidb
