@@ -4,6 +4,8 @@ data:
   github_repo:
     - 753244287 # repo:DeployQL/LintDB
     - 893031915 # repo:HelixDB/helix-db
+    - 1041584089 # repo:RijinRaju/octanedb
+    - 685897222 # repo:Shannon-Data/ShannonBase
     - 201403923 # repo:activeloopai/deeplake
     - 124315604 # repo:aerospike/aerospike-server
     - 642912355 # repo:awa-ai/awadb

@@ -1,0 +1,18 @@
+Label: Relational
+
+Type: Tech-1
+
+Repos:
+
+- Shannon-Data/ShannonBase
+- launix-de/memcp
+
+Label: Vector
+
+Type: Tech-1
+
+Repos:
+
+- RijinRaju/octanedb
+- Shannon-Data/ShannonBase
+
