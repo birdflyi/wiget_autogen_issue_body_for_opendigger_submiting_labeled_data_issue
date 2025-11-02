@@ -1,18 +1,8 @@
-Label: Relational
+Label: Key-value
 
 Type: Tech-1
 
 Repos:
 
-- 685897222 # repo:Shannon-Data/ShannonBase
-- 591417438 # repo:launix-de/memcp
-
-Label: Vector
-
-Type: Tech-1
-
-Repos:
-
-- 1041584089 # repo:RijinRaju/octanedb
-- 685897222 # repo:Shannon-Data/ShannonBase
+- 879826699 # repo:voidDB/voidDB
 

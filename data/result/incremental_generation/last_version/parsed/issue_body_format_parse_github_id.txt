@@ -605,6 +605,7 @@ Repos:
 - 74375185 # repo:RedBeardLab/rediSQL
 - 30113463 # repo:Remi-Coulom/joedb
 - 574694308 # repo:RhizomeDB/rs-rhizome
+- 685897222 # repo:Shannon-Data/ShannonBase
 - 42580991 # repo:SnappyDataInc/snappydata
 - 402945349 # repo:StarRocks/StarRocks
 - 590507334 # repo:StereoDB/StereoDB
@@ -695,6 +696,7 @@ Repos:
 - 119234429 # repo:jonahharris/osdb-typhoon
 - 371172777 # repo:kelindar/column
 - 199466858 # repo:kkuchta/tabdb
+- 591417438 # repo:launix-de/memcp
 - 7502247 # repo:lealone/Lealone
 - 543276238 # repo:libsql/libsql
 - 509396909 # repo:lingo-db/lingo-db
@@ -841,6 +843,8 @@ Repos:
 
 - 753244287 # repo:DeployQL/LintDB
 - 893031915 # repo:HelixDB/helix-db
+- 1041584089 # repo:RijinRaju/octanedb
+- 685897222 # repo:Shannon-Data/ShannonBase
 - 201403923 # repo:activeloopai/deeplake
 - 124315604 # repo:aerospike/aerospike-server
 - 642912355 # repo:awa-ai/awadb

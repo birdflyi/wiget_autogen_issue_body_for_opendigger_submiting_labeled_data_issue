@@ -605,6 +605,7 @@ Repos:
 - RedBeardLab/rediSQL
 - Remi-Coulom/joedb
 - RhizomeDB/rs-rhizome
+- Shannon-Data/ShannonBase
 - SnappyDataInc/snappydata
 - StarRocks/StarRocks
 - StereoDB/StereoDB
@@ -695,6 +696,7 @@ Repos:
 - jonahharris/osdb-typhoon
 - kelindar/column
 - kkuchta/tabdb
+- launix-de/memcp
 - lealone/Lealone
 - libsql/libsql
 - lingo-db/lingo-db
@@ -841,6 +843,8 @@ Repos:
 
 - DeployQL/LintDB
 - HelixDB/helix-db
+- RijinRaju/octanedb
+- Shannon-Data/ShannonBase
 - activeloopai/deeplake
 - aerospike/aerospike-server
 - awa-ai/awadb
