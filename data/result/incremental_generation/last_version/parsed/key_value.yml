@@ -182,6 +182,7 @@ data:
     - 775743011 # repo:valkey-io/valkey
     - 179588377 # repo:vinniefalco/NuDB
     - 385356389 # repo:vmware/splinterdb
+    - 879826699 # repo:voidDB/voidDB
     - 214605 # repo:voldemort/voldemort
     - 580788054 # repo:web3-storage/pail
     - 30828379 # repo:willemt/pearldb

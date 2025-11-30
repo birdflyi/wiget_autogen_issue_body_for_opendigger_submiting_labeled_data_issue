@@ -445,6 +445,7 @@ Repos:
 - valkey-io/valkey
 - vinniefalco/NuDB
 - vmware/splinterdb
+- voidDB/voidDB
 - voldemort/voldemort
 - web3-storage/pail
 - willemt/pearldb
