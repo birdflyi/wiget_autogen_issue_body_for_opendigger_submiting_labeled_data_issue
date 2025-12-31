@@ -15,6 +15,8 @@ data:
           name: HelixDB/helix-db
         - id: 77385607
           name: JanusGraph/janusgraph
+        - id: 1071734040
+          name: LadybugDB/ladybug
         - id: 92834468
           name: Pometry/Raphtory
         - id: 45098765
@@ -79,6 +81,8 @@ data:
           name: neo4j/neo4j
         - id: 7083240
           name: orientechnologies/orientdb
+        - id: 1075506724
+          name: orneryd/Mimir
         - id: 26917250
           name: pkumod/gStore
         - id: 166387176

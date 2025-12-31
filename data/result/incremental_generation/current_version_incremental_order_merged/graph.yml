@@ -7,6 +7,7 @@ data:
     - 8799170 # repo:DevrexLabs/OrigoDB
     - 893031915 # repo:HelixDB/helix-db
     - 77385607 # repo:JanusGraph/janusgraph
+    - 1071734040 # repo:LadybugDB/ladybug
     - 92834468 # repo:Pometry/Raphtory
     - 45098765 # repo:PureSolTechnologies/DuctileDB
     - 84458512 # repo:RedisGraph/RedisGraph
@@ -39,6 +40,7 @@ data:
     - 81411018 # repo:microsoft/GraphEngine
     - 6650539 # repo:neo4j/neo4j
     - 7083240 # repo:orientechnologies/orientdb
+    - 1075506724 # repo:orneryd/Mimir
     - 26917250 # repo:pkumod/gStore
     - 166387176 # repo:polypheny/Polypheny-DB
     - 131763823 # repo:quoll/asami

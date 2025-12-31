@@ -1,0 +1,6 @@
+name: Database - Graph
+type: Tech-1
+data:
+  github_repo:
+    - 1071734040 # repo:LadybugDB/ladybug
+    - 1075506724 # repo:orneryd/Mimir

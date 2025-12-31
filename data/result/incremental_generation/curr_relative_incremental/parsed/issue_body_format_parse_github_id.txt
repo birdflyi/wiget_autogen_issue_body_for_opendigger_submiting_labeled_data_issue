@@ -1,0 +1,17 @@
+Label: Graph
+
+Type: Tech-1
+
+Repos:
+
+- 1071734040 # repo:LadybugDB/ladybug
+- 1075506724 # repo:orneryd/Mimir
+
+Label: Relational
+
+Type: Tech-1
+
+Repos:
+
+- 605546193 # repo:RayforceDB/rayforce
+

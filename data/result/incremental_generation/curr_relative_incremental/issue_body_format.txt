@@ -1,0 +1,17 @@
+Label: Graph
+
+Type: Tech-1
+
+Repos:
+
+- LadybugDB/ladybug
+- orneryd/Mimir
+
+Label: Relational
+
+Type: Tech-1
+
+Repos:
+
+- RayforceDB/rayforce
+
