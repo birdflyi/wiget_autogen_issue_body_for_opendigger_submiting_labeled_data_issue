@@ -23,6 +23,8 @@ data:
           name: PureSolTechnologies/DuctileDB
         - id: 84458512
           name: RedisGraph/RedisGraph
+        - id: 1040715058
+          name: Relatude/Relatude.DB
         - id: 43494700
           name: SparsityTechnologies/sparksee-server
         - id: 528766495
@@ -81,8 +83,8 @@ data:
           name: neo4j/neo4j
         - id: 7083240
           name: orientechnologies/orientdb
-        - id: 1075506724
-          name: orneryd/Mimir
+        - id: 1111263109
+          name: orneryd/NornicDB
         - id: 26917250
           name: pkumod/gStore
         - id: 166387176
@@ -93,6 +95,8 @@ data:
           name: ragedb/ragedb
         - id: 73235061
           name: rayokota/hgraphdb
+        - id: 1051002990
+          name: sanonone/kektordb
         - id: 743502
           name: sones/sones
         - id: 55578752

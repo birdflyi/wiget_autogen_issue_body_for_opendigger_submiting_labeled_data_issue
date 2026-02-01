@@ -69,6 +69,8 @@ data:
           name: appy-one/acebase
         - id: 2649214
           name: arangodb/arangodb
+        - id: 1085719788
+          name: ashfromsky/yaradb
         - id: 36778364
           name: attic-labs/noms
         - id: 642912355
@@ -133,6 +135,8 @@ data:
           name: goshops-com/StormiDB
         - id: 285669400
           name: graphikDB/graphik
+        - id: 957143813
+          name: hash-anu/AnuDB
         - id: 12050336
           name: hhblaze/DBreeze
         - id: 50836580
@@ -157,6 +161,8 @@ data:
           name: kagisearch/vectordb
         - id: 1776883
           name: kimchy/compass
+        - id: 622856821
+          name: kronotop/kronotop
         - id: 607441698
           name: lancedb/lancedb
         - id: 349172057

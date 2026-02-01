@@ -80,6 +80,7 @@ data:
     - 6934395 # repo:facebook/rocksdb
     - 70541093 # repo:facebookarchive/beringei
     - 74678263 # repo:fanjinfei/grapheekdb
+    - 841059560 # repo:feichai0017/NoKV
     - 606800919 # repo:firstbatchxyz/hollowdb
     - 292049131 # repo:genderev/assassin
     - 67936193 # repo:gfredericks/quinedb
@@ -109,6 +110,7 @@ data:
     - 19296225 # repo:ledisdb/ledisdb
     - 38254684 # repo:linkedin/PalDB
     - 323389945 # repo:logicalclocks/rondb
+    - 1066389431 # repo:mailmug/zentropy
     - 62980788 # repo:marceloboeira/bojack
     - 30123805 # repo:mbdavid/FileDB
     - 5494148 # repo:mchidk/BinaryRage

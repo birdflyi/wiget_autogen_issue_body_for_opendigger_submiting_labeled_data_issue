@@ -14,10 +14,12 @@ data:
     - 129072319 # repo:CovenantSQL/CovenantSQL
     - 151762200 # repo:CptTZ/SmallSQL
     - 25871447 # repo:DaveVoorhis/Rel
+    - 1056702615 # repo:DavidLiedle/DriftDB
     - 93621710 # repo:DeepFound/deep_engine
     - 8799170 # repo:DevrexLabs/OrigoDB
     - 67904342 # repo:Expensify/Bedrock
     - 54005538 # repo:FirebirdSQL/firebird
+    - 1034164151 # repo:Frigatebird-db/frigatebird
     - 496817075 # repo:GlareDB/glaredb
     - 345982729 # repo:GreatSQL/GreatSQL
     - 274000765 # repo:GunterMueller/LEAP_RDBMS

@@ -11,6 +11,7 @@ data:
     - 92834468 # repo:Pometry/Raphtory
     - 45098765 # repo:PureSolTechnologies/DuctileDB
     - 84458512 # repo:RedisGraph/RedisGraph
+    - 1040715058 # repo:Relatude/Relatude.DB
     - 43494700 # repo:SparsityTechnologies/sparksee-server
     - 528766495 # repo:TuGraph-family/tugraph-db
     - 22475123 # repo:amark/gun
@@ -40,12 +41,13 @@ data:
     - 81411018 # repo:microsoft/GraphEngine
     - 6650539 # repo:neo4j/neo4j
     - 7083240 # repo:orientechnologies/orientdb
-    - 1075506724 # repo:orneryd/Mimir
+    - 1111263109 # repo:orneryd/NornicDB
     - 26917250 # repo:pkumod/gStore
     - 166387176 # repo:polypheny/Polypheny-DB
     - 131763823 # repo:quoll/asami
     - 383927661 # repo:ragedb/ragedb
     - 73235061 # repo:rayokota/hgraphdb
+    - 1051002990 # repo:sanonone/kektordb
     - 743502 # repo:sones/sones
     - 55578752 # repo:stellardb/StellarDB
     - 238509 # repo:stevedekorte/vertexdb

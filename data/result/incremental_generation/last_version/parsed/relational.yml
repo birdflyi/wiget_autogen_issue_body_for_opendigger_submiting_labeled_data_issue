@@ -30,6 +30,7 @@ data:
     - 316690542 # repo:MonetDB/MonetDB
     - 684046299 # repo:OpenTenBase/OpenTenBase
     - 41443810 # repo:Postgres-XL/Postgres-XL
+    - 605546193 # repo:RayforceDB/rayforce
     - 74375185 # repo:RedBeardLab/rediSQL
     - 30113463 # repo:Remi-Coulom/joedb
     - 574694308 # repo:RhizomeDB/rs-rhizome

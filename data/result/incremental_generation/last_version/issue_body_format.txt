@@ -202,6 +202,7 @@ Repos:
 - DevrexLabs/OrigoDB
 - HelixDB/helix-db
 - JanusGraph/janusgraph
+- LadybugDB/ladybug
 - Pometry/Raphtory
 - PureSolTechnologies/DuctileDB
 - RedisGraph/RedisGraph
@@ -234,6 +235,7 @@ Repos:
 - microsoft/GraphEngine
 - neo4j/neo4j
 - orientechnologies/orientdb
+- orneryd/Mimir
 - pkumod/gStore
 - polypheny/Polypheny-DB
 - quoll/asami
@@ -603,6 +605,7 @@ Repos:
 - MonetDB/MonetDB
 - OpenTenBase/OpenTenBase
 - Postgres-XL/Postgres-XL
+- RayforceDB/rayforce
 - RedBeardLab/rediSQL
 - Remi-Coulom/joedb
 - RhizomeDB/rs-rhizome

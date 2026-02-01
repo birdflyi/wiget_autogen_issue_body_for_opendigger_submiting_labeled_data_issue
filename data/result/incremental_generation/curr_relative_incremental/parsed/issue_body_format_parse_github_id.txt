@@ -1,11 +1,39 @@
+Label: Document
+
+Type: Tech-1
+
+Repos:
+
+- 1085719788 # repo:ashfromsky/yaradb
+- 957143813 # repo:hash-anu/AnuDB
+- 622856821 # repo:kronotop/kronotop
+
 Label: Graph
 
 Type: Tech-1
 
 Repos:
 
-- 1071734040 # repo:LadybugDB/ladybug
-- 1075506724 # repo:orneryd/Mimir
+- 1040715058 # repo:Relatude/Relatude.DB
+- 1111263109 # repo:orneryd/NornicDB
+- 1051002990 # repo:sanonone/kektordb
+
+Label: Key-value
+
+Type: Tech-1
+
+Repos:
+
+- 841059560 # repo:feichai0017/NoKV
+- 1066389431 # repo:mailmug/zentropy
+
+Label: Object Oriented
+
+Type: Tech-1
+
+Repos:
+
+- 1040715058 # repo:Relatude/Relatude.DB
 
 Label: Relational
 
@@ -13,5 +41,6 @@ Type: Tech-1
 
 Repos:
 
-- 605546193 # repo:RayforceDB/rayforce
+- 1056702615 # repo:DavidLiedle/DriftDB
+- 1034164151 # repo:Frigatebird-db/frigatebird
 

@@ -34,6 +34,7 @@ data:
     - 114187903 # repo:apple/foundationdb
     - 137869753 # repo:appy-one/acebase
     - 2649214 # repo:arangodb/arangodb
+    - 1085719788 # repo:ashfromsky/yaradb
     - 36778364 # repo:attic-labs/noms
     - 642912355 # repo:awa-ai/awadb
     - 141378316 # repo:beardedeagle/mnesiac
@@ -66,6 +67,7 @@ data:
     - 897888926 # repo:goatplatform/goatdb
     - 852516379 # repo:goshops-com/StormiDB
     - 285669400 # repo:graphikDB/graphik
+    - 957143813 # repo:hash-anu/AnuDB
     - 12050336 # repo:hhblaze/DBreeze
     - 50836580 # repo:iboxdb/ftserver
     - 4984118 # repo:ioquatix/relaxo
@@ -78,6 +80,7 @@ data:
     - 270858421 # repo:juji-io/datalevin
     - 632269609 # repo:kagisearch/vectordb
     - 1776883 # repo:kimchy/compass
+    - 622856821 # repo:kronotop/kronotop
     - 607441698 # repo:lancedb/lancedb
     - 349172057 # repo:linkedin/venice
     - 376679845 # repo:losfair/RefineDB

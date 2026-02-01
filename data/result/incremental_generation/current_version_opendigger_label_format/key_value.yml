@@ -161,6 +161,8 @@ data:
           name: facebookarchive/beringei
         - id: 74678263
           name: fanjinfei/grapheekdb
+        - id: 841059560
+          name: feichai0017/NoKV
         - id: 606800919
           name: firstbatchxyz/hollowdb
         - id: 292049131
@@ -219,6 +221,8 @@ data:
           name: linkedin/PalDB
         - id: 323389945
           name: logicalclocks/rondb
+        - id: 1066389431
+          name: mailmug/zentropy
         - id: 62980788
           name: marceloboeira/bojack
         - id: 30123805

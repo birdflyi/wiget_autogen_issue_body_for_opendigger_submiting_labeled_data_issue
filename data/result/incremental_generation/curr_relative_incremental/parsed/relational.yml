@@ -2,4 +2,5 @@ name: Database - Relational
 type: Tech-1
 data:
   github_repo:
-    - 605546193 # repo:RayforceDB/rayforce
+    - 1056702615 # repo:DavidLiedle/DriftDB
+    - 1034164151 # repo:Frigatebird-db/frigatebird

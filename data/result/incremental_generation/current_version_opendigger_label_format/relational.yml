@@ -29,6 +29,8 @@ data:
           name: CptTZ/SmallSQL
         - id: 25871447
           name: DaveVoorhis/Rel
+        - id: 1056702615
+          name: DavidLiedle/DriftDB
         - id: 93621710
           name: DeepFound/deep_engine
         - id: 8799170
@@ -37,6 +39,8 @@ data:
           name: Expensify/Bedrock
         - id: 54005538
           name: FirebirdSQL/firebird
+        - id: 1034164151
+          name: Frigatebird-db/frigatebird
         - id: 496817075
           name: GlareDB/glaredb
         - id: 345982729
