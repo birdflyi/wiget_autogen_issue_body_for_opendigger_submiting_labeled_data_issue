@@ -99,6 +99,7 @@ data:
           name: bergdb/bergdb
         - id: 2380364
           name: berkeleydb/libdb
+    - beryldb/beryldb # not found
         - id: 51290852
           name: bigchaindb/bigchaindb
         - id: 57401138

@@ -4,36 +4,8 @@ Type: Tech-1
 
 Repos:
 
-- ashfromsky/yaradb
-- hash-anu/AnuDB
-- kronotop/kronotop
-
-Label: Graph
-
-Type: Tech-1
-
-Repos:
-
-- Relatude/Relatude.DB
-- orneryd/NornicDB
-- sanonone/kektordb
-
-Label: Key-value
-
-Type: Tech-1
-
-Repos:
-
-- feichai0017/NoKV
-- mailmug/zentropy
-
-Label: Object Oriented
-
-Type: Tech-1
-
-Repos:
-
-- Relatude/Relatude.DB
+- sohzm/jasonisnthappy
+- topk-io/topk
 
 Label: Relational
 
@@ -41,6 +13,5 @@ Type: Tech-1
 
 Repos:
 
-- DavidLiedle/DriftDB
-- Frigatebird-db/frigatebird
+- sirius-db/sirius
 

@@ -2,6 +2,5 @@ name: Database - Document
 type: Tech-1
 data:
   github_repo:
-    - 1085719788 # repo:ashfromsky/yaradb
-    - 957143813 # repo:hash-anu/AnuDB
-    - 622856821 # repo:kronotop/kronotop
+    - 1087408719 # repo:sohzm/jasonisnthappy
+    - 922527165 # repo:topk-io/topk

@@ -125,6 +125,7 @@ data:
     - 9525219 # repo:sergeyksv/tingodb
     - 4604367 # repo:sirixdb/sirix
     - 295745510 # repo:small-tech/jsdb
+    - 1087408719 # repo:sohzm/jasonisnthappy
     - 192631273 # repo:sourcenetwork/defradb
     - 436658287 # repo:surrealdb/surrealdb
     - 22761491 # repo:symisc/unqlite
@@ -135,6 +136,7 @@ data:
     - 197858776 # repo:textileio/go-threads
     - 449924556 # repo:tigrisdata/tigris
     - 597066476 # repo:tontinton/dbeel
+    - 922527165 # repo:topk-io/topk
     - 86339169 # repo:torodb/server
     - 184711 # repo:typicaljoe/taffydb
     - 18351848 # repo:typicode/lowdb

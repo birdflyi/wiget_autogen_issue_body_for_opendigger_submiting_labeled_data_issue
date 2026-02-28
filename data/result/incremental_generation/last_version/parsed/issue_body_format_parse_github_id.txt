@@ -70,6 +70,7 @@ Repos:
 - 114187903 # repo:apple/foundationdb
 - 137869753 # repo:appy-one/acebase
 - 2649214 # repo:arangodb/arangodb
+- 1085719788 # repo:ashfromsky/yaradb
 - 36778364 # repo:attic-labs/noms
 - 642912355 # repo:awa-ai/awadb
 - 141378316 # repo:beardedeagle/mnesiac
@@ -102,6 +103,7 @@ Repos:
 - 897888926 # repo:goatplatform/goatdb
 - 852516379 # repo:goshops-com/StormiDB
 - 285669400 # repo:graphikDB/graphik
+- 957143813 # repo:hash-anu/AnuDB
 - 12050336 # repo:hhblaze/DBreeze
 - 50836580 # repo:iboxdb/ftserver
 - 4984118 # repo:ioquatix/relaxo
@@ -115,6 +117,7 @@ Repos:
 - 270858421 # repo:juji-io/datalevin
 - 632269609 # repo:kagisearch/vectordb
 - 1776883 # repo:kimchy/compass
+- 622856821 # repo:kronotop/kronotop
 - 607441698 # repo:lancedb/lancedb
 - 349172057 # repo:linkedin/venice
 - 376679845 # repo:losfair/RefineDB
@@ -206,6 +209,7 @@ Repos:
 - 92834468 # repo:Pometry/Raphtory
 - 45098765 # repo:PureSolTechnologies/DuctileDB
 - 84458512 # repo:RedisGraph/RedisGraph
+- 1040715058 # repo:Relatude/Relatude.DB
 - 43494700 # repo:SparsityTechnologies/sparksee-server
 - 528766495 # repo:TuGraph-family/tugraph-db
 - 22475123 # repo:amark/gun
@@ -235,12 +239,13 @@ Repos:
 - 81411018 # repo:microsoft/GraphEngine
 - 6650539 # repo:neo4j/neo4j
 - 7083240 # repo:orientechnologies/orientdb
-- 1075506724 # repo:orneryd/Mimir
+- 1111263109 # repo:orneryd/NornicDB
 - 26917250 # repo:pkumod/gStore
 - 166387176 # repo:polypheny/Polypheny-DB
 - 131763823 # repo:quoll/asami
 - 383927661 # repo:ragedb/ragedb
 - 73235061 # repo:rayokota/hgraphdb
+- 1051002990 # repo:sanonone/kektordb
 - 743502 # repo:sones/sones
 - 55578752 # repo:stellardb/StellarDB
 - 238509 # repo:stevedekorte/vertexdb
@@ -346,6 +351,7 @@ Repos:
 - 6934395 # repo:facebook/rocksdb
 - 70541093 # repo:facebookarchive/beringei
 - 74678263 # repo:fanjinfei/grapheekdb
+- 841059560 # repo:feichai0017/NoKV
 - 606800919 # repo:firstbatchxyz/hollowdb
 - 292049131 # repo:genderev/assassin
 - 67936193 # repo:gfredericks/quinedb
@@ -375,6 +381,7 @@ Repos:
 - 19296225 # repo:ledisdb/ledisdb
 - 38254684 # repo:linkedin/PalDB
 - 323389945 # repo:logicalclocks/rondb
+- 1066389431 # repo:mailmug/zentropy
 - 62980788 # repo:marceloboeira/bojack
 - 30123805 # repo:mbdavid/FileDB
 - 5494148 # repo:mchidk/BinaryRage
@@ -505,6 +512,7 @@ Repos:
 - 8799170 # repo:DevrexLabs/OrigoDB
 - 516821813 # repo:HydrasDB/hydra
 - 1244027 # repo:ModeShape/modeshape
+- 1040715058 # repo:Relatude/Relatude.DB
 - 150752008 # repo:SapphireDb/SapphireDb
 - 43494700 # repo:SparsityTechnologies/sparksee-server
 - 124423054 # repo:The-Alchemist/perst
@@ -589,10 +597,12 @@ Repos:
 - 129072319 # repo:CovenantSQL/CovenantSQL
 - 151762200 # repo:CptTZ/SmallSQL
 - 25871447 # repo:DaveVoorhis/Rel
+- 1056702615 # repo:DavidLiedle/DriftDB
 - 93621710 # repo:DeepFound/deep_engine
 - 8799170 # repo:DevrexLabs/OrigoDB
 - 67904342 # repo:Expensify/Bedrock
 - 54005538 # repo:FirebirdSQL/firebird
+- 1034164151 # repo:Frigatebird-db/frigatebird
 - 496817075 # repo:GlareDB/glaredb
 - 345982729 # repo:GreatSQL/GreatSQL
 - 274000765 # repo:GunterMueller/LEAP_RDBMS

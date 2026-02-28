@@ -70,6 +70,7 @@ Repos:
 - apple/foundationdb
 - appy-one/acebase
 - arangodb/arangodb
+- ashfromsky/yaradb
 - attic-labs/noms
 - awa-ai/awadb
 - beardedeagle/mnesiac
@@ -102,6 +103,7 @@ Repos:
 - goatplatform/goatdb
 - goshops-com/StormiDB
 - graphikDB/graphik
+- hash-anu/AnuDB
 - hhblaze/DBreeze
 - iboxdb/ftserver
 - ioquatix/relaxo
@@ -115,6 +117,7 @@ Repos:
 - juji-io/datalevin
 - kagisearch/vectordb
 - kimchy/compass
+- kronotop/kronotop
 - lancedb/lancedb
 - linkedin/venice
 - losfair/RefineDB
@@ -206,6 +209,7 @@ Repos:
 - Pometry/Raphtory
 - PureSolTechnologies/DuctileDB
 - RedisGraph/RedisGraph
+- Relatude/Relatude.DB
 - SparsityTechnologies/sparksee-server
 - TuGraph-family/tugraph-db
 - amark/gun
@@ -235,12 +239,13 @@ Repos:
 - microsoft/GraphEngine
 - neo4j/neo4j
 - orientechnologies/orientdb
-- orneryd/Mimir
+- orneryd/NornicDB
 - pkumod/gStore
 - polypheny/Polypheny-DB
 - quoll/asami
 - ragedb/ragedb
 - rayokota/hgraphdb
+- sanonone/kektordb
 - sones/sones
 - stellardb/StellarDB
 - stevedekorte/vertexdb
@@ -346,6 +351,7 @@ Repos:
 - facebook/rocksdb
 - facebookarchive/beringei
 - fanjinfei/grapheekdb
+- feichai0017/NoKV
 - firstbatchxyz/hollowdb
 - genderev/assassin
 - gfredericks/quinedb
@@ -375,6 +381,7 @@ Repos:
 - ledisdb/ledisdb
 - linkedin/PalDB
 - logicalclocks/rondb
+- mailmug/zentropy
 - marceloboeira/bojack
 - mbdavid/FileDB
 - mchidk/BinaryRage
@@ -505,6 +512,7 @@ Repos:
 - DevrexLabs/OrigoDB
 - HydrasDB/hydra
 - ModeShape/modeshape
+- Relatude/Relatude.DB
 - SapphireDb/SapphireDb
 - SparsityTechnologies/sparksee-server
 - The-Alchemist/perst
@@ -589,10 +597,12 @@ Repos:
 - CovenantSQL/CovenantSQL
 - CptTZ/SmallSQL
 - DaveVoorhis/Rel
+- DavidLiedle/DriftDB
 - DeepFound/deep_engine
 - DevrexLabs/OrigoDB
 - Expensify/Bedrock
 - FirebirdSQL/firebird
+- Frigatebird-db/frigatebird
 - GlareDB/glaredb
 - GreatSQL/GreatSQL
 - GunterMueller/LEAP_RDBMS
