@@ -1,17 +1,8 @@
-Label: Document
+Label: Key-value
 
 Type: Tech-1
 
 Repos:
 
-- sohzm/jasonisnthappy
-- topk-io/topk
-
-Label: Relational
-
-Type: Tech-1
-
-Repos:
-
-- sirius-db/sirius
+- fjall-rs/fjall
 

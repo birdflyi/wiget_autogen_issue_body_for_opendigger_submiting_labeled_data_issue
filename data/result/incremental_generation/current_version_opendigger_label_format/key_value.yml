@@ -99,7 +99,6 @@ data:
           name: bergdb/bergdb
         - id: 2380364
           name: berkeleydb/libdb
-    - beryldb/beryldb # not found
         - id: 51290852
           name: bigchaindb/bigchaindb
         - id: 57401138
@@ -166,6 +165,8 @@ data:
           name: feichai0017/NoKV
         - id: 606800919
           name: firstbatchxyz/hollowdb
+        - id: 719588139
+          name: fjall-rs/fjall
         - id: 292049131
           name: genderev/assassin
         - id: 67936193

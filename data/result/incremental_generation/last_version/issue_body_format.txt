@@ -162,6 +162,7 @@ Repos:
 - sergeyksv/tingodb
 - sirixdb/sirix
 - small-tech/jsdb
+- sohzm/jasonisnthappy
 - sourcenetwork/defradb
 - surrealdb/surrealdb
 - symisc/unqlite
@@ -172,6 +173,7 @@ Repos:
 - textileio/go-threads
 - tigrisdata/tigris
 - tontinton/dbeel
+- topk-io/topk
 - torodb/server
 - typicaljoe/taffydb
 - typicode/lowdb
@@ -757,6 +759,7 @@ Repos:
 - rqlite/rqlite
 - ryenus/hsqldb
 - sameeragarwal/blinkdb
+- sirius-db/sirius
 - splicemachine/spliceengine
 - splitgraph/seafowl
 - sql-js/sql.js

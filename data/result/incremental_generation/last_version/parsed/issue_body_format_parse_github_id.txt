@@ -162,6 +162,7 @@ Repos:
 - 9525219 # repo:sergeyksv/tingodb
 - 4604367 # repo:sirixdb/sirix
 - 295745510 # repo:small-tech/jsdb
+- 1087408719 # repo:sohzm/jasonisnthappy
 - 192631273 # repo:sourcenetwork/defradb
 - 436658287 # repo:surrealdb/surrealdb
 - 22761491 # repo:symisc/unqlite
@@ -172,6 +173,7 @@ Repos:
 - 197858776 # repo:textileio/go-threads
 - 449924556 # repo:tigrisdata/tigris
 - 597066476 # repo:tontinton/dbeel
+- 922527165 # repo:topk-io/topk
 - 86339169 # repo:torodb/server
 - 184711 # repo:typicaljoe/taffydb
 - 18351848 # repo:typicode/lowdb
@@ -757,6 +759,7 @@ Repos:
 - 23247808 # repo:rqlite/rqlite
 - 101723057 # repo:ryenus/hsqldb
 - 2529750 # repo:sameeragarwal/blinkdb
+- 817507312 # repo:sirius-db/sirius
 - 8582237 # repo:splicemachine/spliceengine
 - 510375115 # repo:splitgraph/seafowl
 - 3556910 # repo:sql-js/sql.js

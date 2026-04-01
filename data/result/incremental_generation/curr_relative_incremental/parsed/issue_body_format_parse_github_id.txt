@@ -1,17 +1,8 @@
-Label: Document
+Label: Key-value
 
 Type: Tech-1
 
 Repos:
 
-- 1087408719 # repo:sohzm/jasonisnthappy
-- 922527165 # repo:topk-io/topk
-
-Label: Relational
-
-Type: Tech-1
-
-Repos:
-
-- 817507312 # repo:sirius-db/sirius
+- 719588139 # repo:fjall-rs/fjall
 
